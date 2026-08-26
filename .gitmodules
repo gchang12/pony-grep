@@ -1,0 +1,3 @@
+[submodule "mlp_transcript_server"]
+	path = mlp_transcript_server
+	url = https://github.com/gchang12/mlp_transcript_server.git
