@@ -1,5 +1,10 @@
 //import MiniSearch from "minisearch";
 
+// TODO: Get data from here from now on.
+// https://mlp-transcript-server-9f89d5ea5b4e.herokuapp.com/index/{series}/{season}/{episodeNo}
+// https://mlp-transcript-server-9f89d5ea5b4e.herokuapp.com/index/{series}/{season}/
+// https://mlp-transcript-server-9f89d5ea5b4e.herokuapp.com/search/{dialoguePattern}?seasons=&speaker=&offset=&limit=
+
 // All of G4
 //import transcriptLines from "../constants/transcriptLines.js";
 // MLP:FiM S1-S9

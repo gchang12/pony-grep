@@ -105,3 +105,23 @@
 }
 </style>
 
+
+<!--
+# Instructions
+We'll spend our final couple of lessons working on the final project, so this will act as the final project rubric. We'll be using Nuxt, so please watch the video on Nuxt for a walkthrough of starting up a new project. Nuxt is very similar to Vue CLI, and we'll be able to deploy the course projects for free on Netlify automatically. We'll also be adding in our API calls and tying everything together.
+
+## Requirements
+- Create a new Nuxt app in a new repository, and push it to Github. Do not create it in the html300 repository that other assignments have been in.
+- In your newly created Nuxt app, start migrating over your Vue template files and assets from the Vue CLI project to their respective spots. Basically any content in the App.vue file now goes in the layouts/default.vue The <nuxt-link> tag acts like the <router-view />.
+- For internal links, now use <nuxt-link> components.
+- Migrate any views/page components to the pages directory. You can create folder structures, or have an index.vue file within a folder that will generate the route to the folder's name (i.e. about/index.vue shows up in the browser at /about).
+- Routes are generated based on the pages file structure, don't worry about a router file.
+- Migrate any components or additional assets
+- Add any additional packages you are using
+- Incorporate data from an API. You may use this on various components or pages, but at least 1 instance of retrieving data from an API and:
+-     With that returned data, build a corresponding component and use v-for to loop over the data
+-     That component should have props validation as well as use at least 4 data points in the template itself (heading, description, image, statistics, etc)
+-     The component should have some sort of method that causes a UI interaction on that instance of the component (show/hide, change the CSS, animation, etc)
+- Your site should have at least 4 pages (including the home) with <nuxt-link> used to navigate between them in your nav
+- Feel free to reuse as much content as you'd like from what you created in previous assignments.
+- Deploy to Netlify. Remember that this will not work if the final assignment code is in the html300 repository. It must be in a new repository. -->

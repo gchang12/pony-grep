@@ -39,6 +39,7 @@
 
 </script>
 
+
 <template>
   <div id="app">
     <!-- <NuxtRouteAnnouncer /> -->
