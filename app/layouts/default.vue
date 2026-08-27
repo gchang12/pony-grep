@@ -13,20 +13,20 @@
         <div class="NaviBar row justify-content-between align-items-center">
           <!-- Bootstrap: 'col-auto' makes container width shrink to fit contents -->
           <div class="col-auto">
-            <a href="/" class="img-link Logo">
+            <NuxtLink to="/" class="img-link Logo">
               <img src="./assets/banner.png" />
-            </a>
+            </NuxtLink>
           </div>
           <div class="col-auto">
             <nav>
               <!-- Bootstrap: 'nav' makes container an actual navibar -->
               <ul class="nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="/search">Search</a>
+                  <NuxtLink class="nav-link" to="/search">Search</NuxtLink>
                 </li>
                 <li class="nav-item">
                   <!-- Bootstrap: 'nav-link' provides v-centering. -->
-                  <a class="nav-link" href="/episode-transcripts">Transcripts</a>
+                  <NuxtLink class="nav-link" to="/episode-transcripts">Transcripts</NuxtLink>
                 </li>
               </ul>
             </nav>
@@ -35,7 +35,7 @@
       </div> 
     </header>
     <main>
-      <NuxtPage />
+      <slot />
     </main>
     <footer>
       <article class="Credits">
