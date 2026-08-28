@@ -27,7 +27,7 @@
                 </li>
                 <li class="nav-item">
                   <!-- Bootstrap: 'nav-link' provides v-centering. -->
-                  <NuxtLink class="nav-link" to="/episode-transcripts">Transcripts</NuxtLink>
+                  <NuxtLink class="nav-link" to="/episode-index">Episodes</NuxtLink>
                 </li>
               </ul>
             </nav>
