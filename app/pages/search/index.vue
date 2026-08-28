@@ -3,10 +3,10 @@
 
   import { ref } from "vue";
 
-  import searchTranscript from "../functions/searchTranscript.js";
-  import parseTranscriptLines from "../functions/parseTranscriptLines.js";
+  import searchTranscript from "../../functions/searchTranscript.js";
+  import parseTranscriptLines from "../../functions/parseTranscriptLines.js";
 
-  import AccordionElement from "../components/AccordionElement.vue";
+  import AccordionElement from "../../components/AccordionElement.vue";
 
   let searchResults = ref([]);
   let dialoguePattern = ref("");
@@ -82,7 +82,7 @@
             collapseKey="1"
              >
              <template v-slot:header>
-              <span class="SeriesTitle">My Little Pony: Friendship is Magic</span><span class="ResultCount">{{ searchResults.length }}</span>
+               <span class="SeriesTitle">My Little Pony: Friendship is Magic</span><span class="ResultCount">{{ searchResults.length }}</span>
              </template>
              <template v-slot:body>
               <table class="table table-primary table-light table-striped">

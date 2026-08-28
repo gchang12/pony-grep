@@ -9,11 +9,11 @@
   //import episodeList from "../constants/animationIndex.js";
   //import transcriptLines from "../constants/transcriptLines.js";
 
-  import episodeList from "../constants/episodeList.js";
-  import transcriptLines from "../constants/smallTranscriptLines.js";
+  import episodeList from "../../constants/episodeList.js";
+  import transcriptLines from "../../constants/smallTranscriptLines.js";
 
-  import ImageButton from "../components/ImageButton.vue";
-  import LinkButton from "../components/LinkButton.vue";
+  import ImageButton from "../../components/ImageButton.vue";
+  import LinkButton from "../../components/LinkButton.vue";
 
   const currentEpisode = ref({});
   const activeSeason = ref(-1);

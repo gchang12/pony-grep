@@ -1,6 +1,11 @@
 <script setup>
   /* Landing Page */
   /* Image Page */
+  import SearchFormImg from "~/assets/images/search-form.png";
+  import SeasonIndexImg from "~/assets/images/season-index.png";
+  import EpisodeIndexImg from "~/assets/images/episode-index.png";
+  import TranscriptImg from "~/assets/images/transcript.png";
+  import CloseTranscriptImg from "~/assets/images/close-transcript.png";
 </script>
 
 <template>
@@ -20,7 +25,7 @@
           <h3>Example</h3>
           <div class="Usage-Step d-flex">
             <!-- Bootstrap: 'img-thumbnail' for the image border. -->
-            <img class="img-thumbnail" src="/images/search-form.png" />
+            <img class="img-thumbnail" :src="SearchFormImg" />
             <ol class="m-5">
               <!-- Bootstrap: 'm-3' because the spaces between each line of instruction makes it more readable. -->
               <li class="Help m-3">&ldquo;I want to see if &lsquo;friendship is magic&rsquo; is said in MLP G4. I'll input <span class="_fieldValue">friendship is magic</span> into the <span class="_fieldName">Dialogue</span> box now.&rdquo;</li>
@@ -36,22 +41,22 @@
         <hr />
         <section class="BrowsingStep">
           <h3>1. Select Season</h3>
-          <img width="500px" class="img-thumbnail" src="/images/season-index.png" />
+          <img width="500px" class="img-thumbnail" :src="SeasonIndexImg" />
         </section>
         <hr />
         <section class="BrowsingStep">
           <h3>2. Select Episode</h3>
-          <img width="500px" class="img-thumbnail" src="/images/episode-index.png" />
+          <img width="500px" class="img-thumbnail" :src="EpisodeIndexImg" />
         </section>
         <hr />
         <section class="BrowsingStep">
           <h3>3. Scroll Down and View</h3>
-          <img width="500px" class="img-thumbnail" src="/images/transcript.png" />
+          <img width="500px" class="img-thumbnail" :src="TranscriptImg" />
         </section>
         <hr />
         <section class="BrowsingStep">
           <h3>4. Close Transcript</h3>
-          <img width="500px" class="img-thumbnail" src="/images/close-transcript.png" />
+          <img width="500px" class="img-thumbnail" :src="CloseTranscriptImg" />
         </section>
         <hr />
       </article>

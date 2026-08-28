@@ -24,7 +24,7 @@ body {
 header {
   /* padding: 4rem; */
   background-color: $blue-outline;
-  background-image: url("./assets/star.png");
+  background-image: url("../images/star.png");
   border: 1rem solid $light-green;
   //display: flex;
   //justify-content: space-between;
@@ -48,12 +48,12 @@ header {
     border: 0.5rem solid $light-green;
     margin: 1rem;
   }
-  & nav a {
+  & nav a.nav-link {
     color: $light-green;
     transition: text-shadow 0.25s;
     //font-size: 1.5rem;
   }
-  & nav a:hover {
+  & nav a.nav-link:hover {
     text-shadow: 0 0 1rem white;
     color: white;
     text-decoration: none;

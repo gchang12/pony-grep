@@ -1,20 +1,21 @@
 <script setup>
+  import Banner from '~/assets/images/banner.png';
 
 </script>
 
-
 <template>
-  <div id="app">
+  <div>
     <!-- <NuxtRouteAnnouncer /> -->
     <!-- <NuxtWelcome /> -->
-    <header>
+   <header>
       <!-- Bootstrap: 'container' declares grid layout; 1 row, 2 columns. (Logo, Navibar) -->
       <div class="container"> 
         <div class="NaviBar row justify-content-between align-items-center">
           <!-- Bootstrap: 'col-auto' makes container width shrink to fit contents -->
           <div class="col-auto">
             <NuxtLink to="/" class="img-link Logo">
-              <img src="./assets/banner.png" />
+            <!-- <img src="./assets/banner.png" /> -->
+              <img :src="Banner" />
             </NuxtLink>
           </div>
           <div class="col-auto">
@@ -59,4 +60,5 @@
     </footer>
   </div>
 </template>
+
 
