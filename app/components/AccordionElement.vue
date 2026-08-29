@@ -12,24 +12,24 @@
 </script>
 
 <template>
-  <Accordion parent>
-    <AccordionItem>
-      <AccordionHeader level="3">
+  <div class="accordion">
+    <div class="accordion-item">
+      <h3 class="accordion-header">
         <!-- Bootstrap: 'd-flex', 'justify-content-between' to separate series title and result-count.-->
         <!-- Bootstrap: 'btn-block' so that it spans entire width of container.-->
-        <AccordionButton :data-series="seriesName" class="ShowResults d-flex justify-content-between btn btn-lg btn-block accordion-button" aria-expanded="true" :aria-controls="'collapse-' + collapseKey">
+        <div  :data-series="seriesName" class="ShowResults d-flex justify-content-between btn btn-lg btn-block accordion-button" aria-expanded="true" :aria-controls="'collapse-' + collapseKey">
           <slot name="header">
           </slot>
-        </AccordionButton>
-      </AccordionHeader>
-      <AccordionCollapse :id="'collapse-' + collapseKey" :aria-labelledby="'heading-' + collapseKey">
-        <AccordionBody class="SearchResults accordion-body">
+        </div>
+      </h3>
+      <div :id="'collapse-' + collapseKey" :aria-labelledby="'heading-' + collapseKey">
+        <div class="SearchResults accordion-body">
           <!-- Bootstrap: 'table-striped' for line visibility. -->
           <slot name="body">
           </slot>
-        </AccordionBody>
-      </AccordionCollapse>
-    </AccordionItem>
-  </Accordion>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
