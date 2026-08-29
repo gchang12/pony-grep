@@ -3,7 +3,12 @@
 
   /* TODO
   Lay out all content.
-  Re-implement components from scratch.
+  - Dropdown menus for episode index.
+  - Display accordions when appropriate in search menu.
+  - Create new dynamic page containing episode transcript.
+  - In search result, link to episode transcript page with #ID.
+  - Add <select> input to allow user to select season.
+  Re-implement components from scratch, sourcing components as needed.
   Re-style everything from scratch.
   Redo all the Bootstrap classes so that they're up-to-date WRT BS5
 
