@@ -17,11 +17,17 @@
      <slot />
    </main>
    <footer>
-     All textual content is owned by <a target="_blank" href="https://www.fandom.com/licensing">Fandom</a>
-     This project's <a target="_blank" href="https://github.com/gchang12/pony-grep">GitHub</a> page
-     Site logo provided by <a target="_blank" href="https://fontmeme.com/friendship-is-magic-font/">this site</a>
-     All images are owned by Hasbro
-     Made with no AI
+     <div class="credits">
+       <span class="header">Credits</span>
+       <p>All textual content is owned by <a target="_blank" href="https://www.fandom.com/licensing">Fandom</a></p>
+       <p>Site logo provided by <a target="_blank" href="https://fontmeme.com/friendship-is-magic-font/">this site</a></p>
+       <p>All images are owned by Hasbro</p>
+     </div>
+     <div class="about">
+       <span class="header">About</span>
+       <p>This project's <a target="_blank" href="https://github.com/gchang12/pony-grep">GitHub</a> page</p>
+       <p>Made with no AI</p>
+     </div>
    </footer>
   </div>
 </template>
