@@ -3,5 +3,5 @@
 </script>
 
 <template>
-  <h1>Episode Transcripts</h1>
+  <h1>Episode Index</h1>
 </template>
