@@ -18,6 +18,16 @@
     e.preventDefault();
   }
 
+  function toggleSeason(e) {
+    //console.log(e);
+    //console.log(e.currentTarget.id);
+    //console.log(e.currentTarget.checked);
+    const checkbox = e.currentTarget;
+    const selectList = document.getElementById(checkbox.id + "-season");
+    selectList.disabled = !checkbox.checked;
+    //console.log(selectList);
+  }
+
   const items = [
     {
       label: "Rainbow Dash",
@@ -49,11 +59,11 @@
         <legend>Series</legend>
         <div class="FiM field">
           <label for="FiM">Friendship is Magic</label>
-          <input checked id="FiM" type="checkbox" />
+          <input checked id="FiM" type="checkbox" @click="toggleSeason" />
         </div>
         <div class="EqG field">
           <label for="EqG">Equestria Girls</label>
-          <input id="EqG" type="checkbox" />
+          <input id="EqG" type="checkbox" @click="toggleSeason" />
         </div>
       </fieldset>
       <fieldset title="Only seasons belonging to selected series will be searched.">
