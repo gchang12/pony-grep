@@ -2,6 +2,7 @@
   import { ref } from "vue";
 
   import getSeasonList from "../functions/getSeasonList.js";
+  import searchTranscript from "../functions/searchTranscript.js";
 
   const seasonList = getSeasonList();
 
@@ -14,7 +15,8 @@
     if (!e.currentTarget.reportValidity() || formData.get("dialoguePattern") === "") {
       return;
     }
-    console.log(formData);
+    //console.log(formData);
+    searchTranscript(formData);
     e.preventDefault();
   }
 
@@ -49,7 +51,7 @@
     <form>
       <div class="dialoguePattern field" title="Pattern to search for in all G4 dialogue.">
         <label for="dialoguePattern">Dialogue</label>
-        <input placeholder="friendship is magic" id="dialoguePattern" type="text" name="dialoguePattern" required />
+        <input value="friendship is magic" placeholder="friendship is magic" id="dialoguePattern" type="text" name="dialoguePattern" required />
       </div>
       <div class="speaker field" title="Limit results to lines spoken only by specified character(s).">
         <label for="speaker">Character</label>
@@ -59,11 +61,11 @@
         <legend>Series</legend>
         <div class="FiM field">
           <label for="FiM">Friendship is Magic</label>
-          <input checked id="FiM" type="checkbox" @click="toggleSeason" />
+          <input value="FiM" name="series" checked id="FiM" type="checkbox" @click="toggleSeason" />
         </div>
         <div class="EqG field">
           <label for="EqG">Equestria Girls</label>
-          <input id="EqG" type="checkbox" @click="toggleSeason" />
+          <input value="EqG" name="series" id="EqG" type="checkbox" @click="toggleSeason" />
         </div>
       </fieldset>
       <fieldset title="Only seasons belonging to selected series will be searched.">
