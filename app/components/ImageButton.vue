@@ -31,7 +31,7 @@
 
 <template>
   <!-- Bootstrap: 'btn' to remove default button styling and especially for zero-opacity -->
-  <b-button v-b-tooltip.hover :title="title" class="btn" :data-season="dataSeason" @click="onClickAndToggleBorder">
+  <button :title="title" class="btn" :data-season="dataSeason" @click="onClickAndToggleBorder">
     <figure>
       <img :src="src" :alt="alt" class="img-thumbnail" />
       <figcaption>
@@ -44,5 +44,5 @@
         </a>
       </figcaption>
     </figure>
-  </b-button>
+  </button>
 </template>
