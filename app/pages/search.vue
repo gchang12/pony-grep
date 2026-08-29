@@ -18,22 +18,37 @@
         <input placeholder="discord|mane six" id="speaker" type="text" name="speaker" />
         <div class="help-text">Limit results to lines spoken only by specified character(s).</div>
       </div>
-      <div class="season field">
-        <label for="season">Seasons</label>
-        <select id="season" name="speaker" multiple>
-          <optgroup label="FiM">
-            <option v-for="season in seasonList['FiM']" :value="season.name" :key="season.name">
+      <fieldset>
+        <legend>Series</legend>
+        <div class="FiM field">
+          <label for="FiM">Friendship is Magic</label>
+          <input checked id="FiM" type="checkbox" />
+        </div>
+        <div class="EqG field">
+          <label for="EqG">Equestria Girls</label>
+          <input id="EqG" type="checkbox" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Seasons</legend>
+        <div class="FiM-season field">
+          <label for="FiM-season">Friendship is Magic</label>
+          <select id="FiM-season" name="FiM-season" multiple>
+            <option v-for="season in seasonList['FiM']" :value="season.name" :key="season.name" :selected="season.name.startsWith('S') && season.name.length === 2">
               {{ season.alias }}
             </option>
-          </optgroup>
-          <optgroup label="EqG">
-            <option v-for="season in seasonList['EqG']" :value="season.name" :key="season.name">
+          </select>
+        </div>
+        <div class="EqG-season field">
+          <label for="EqG-season">Equestria Girls</label>
+          <select id="EqG-season" name="EqG-season" multiple>
+            <option v-for="season in seasonList['EqG']" :value="season.name" :key="season.name" :selected="season.name.startsWith('My Little Pony Equestria Girls')">
               {{ season.alias }}
             </option>
-          </optgroup>
-        </select>
-        <div class="help-text">Limit results to lines in given seasons.</div>
-      </div>
+          </select>
+        </div>
+        <div class="help-text">Seasons to limit results to.</div>
+      </fieldset>
       <button id="search">Search</button>
       <button id="reset" type="button">Reset</button>
     </form>
