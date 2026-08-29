@@ -22,11 +22,13 @@
 </script>
 
 <template>
-  <div id="app">
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-    <!-- <NuxtRouteAnnouncer /> -->
-    <!-- <NuxtWelcome /> -->
-  </div>
+  <UApp>
+    <div id="app">
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
+      <!-- <NuxtRouteAnnouncer /> -->
+      <!-- <NuxtWelcome /> -->
+    </div>
+  </UApp>
 </template>

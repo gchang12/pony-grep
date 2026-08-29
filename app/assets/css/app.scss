@@ -9,6 +9,9 @@
   peach #f8f9c9
 */
 
+/* @import "tailwindcss"; */
+@use "@nuxt/ui";
+
 $light-green: #67e4be;
 $light-orange: #f1ba40;
 $reddish: #cb3208;
