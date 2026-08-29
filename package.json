@@ -1,5 +1,5 @@
 {
-  "name": "pony-grep",
+  "name": "my-new-app-project",
   "type": "module",
   "private": true,
   "scripts": {
@@ -10,12 +10,12 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "bootstrap": "^5.3.8",
     "nuxt": "^4.5.2",
-    "sass": "^1.103.1",
-    "sass-loader": "^17.0.0",
-    "usebootstrap": "^3.5.107",
     "vue": "^3.5.41",
-    "vue-router": "^5.2.0",
-    "webpack": "^5.110.1"
+    "vue-router": "^5.2.0"
+  },
+  "devDependencies": {
+    "sass": "^1.103.1"
   }
 }

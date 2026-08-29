@@ -2,5 +2,6 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['usebootstrap']
+  //modules: ['usebootstrap'],
+  css: ['bootstrap/dist/css/bootstrap.min.css']
 })
