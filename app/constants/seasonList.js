@@ -51,7 +51,7 @@ export default {
       "alt": "Twilight_stares_at_ladybug_with_fright_MLPS4",
     },
     {
-      "season": "Specials",
+      "season": "My Little Pony: Rainbow Roadtrip",
       "imgName": "My_Little_Pony_Rainbow_Roadtrip_title_card",
       "alt": "My_Little_Pony_Rainbow_Roadtrip_title_card",
     },
