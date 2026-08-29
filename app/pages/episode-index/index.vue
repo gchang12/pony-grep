@@ -1,4 +1,5 @@
 <script setup>
+  import getSeasonList from "../../functions/getSeasonList.js";
 </script>
 
 <template>
