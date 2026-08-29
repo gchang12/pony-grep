@@ -1,45 +1,48 @@
 <script setup>
-  import { ref } from "vue";
+  import { ref, computed } from "vue";
 
   import getSeasonList from "../functions/getSeasonList.js";
   import searchTranscript from "../functions/searchTranscript.js";
 
   const seasonList = getSeasonList();
 
-  const selectedSeasons = ref([]);
   const searchResults = ref([]);
-  const dialoguePattern = ref([]);
+  const dialoguePattern = ref("");
+
+  const selectedSeasons = computed(() => {
+    const seasons = [];
+    searchResults.value.map(result => result.season).forEach(season => seasons.includes(season) ? false : seasons.push(season));
+    return seasons;
+  });
+
+  const { data } = await useFetch("/json/transcriptLines.json");
+  // data.value is defined only after HMR
+  console.log("data", data);
+  console.log("data.value", data.value);
 
   function ponyGrep(e) {
     const formData = new FormData(e.currentTarget.form);
     if (!e.currentTarget.reportValidity() || formData.get("dialoguePattern") === "") {
       return;
     }
-    //console.log(formData);
-    searchTranscript(formData);
+    // set:
+    // - dialoguePattern
+    // - searchResults
+    /* dialoguePattern */
+    dialoguePattern.value = formData.get("dialoguePattern");
+    /* searchResults */
+    const transcriptLines = data.value;
+    searchResults.value = searchTranscript(formData, transcriptLines);
+    console.log("searchResults.value", searchResults.value);
+    console.log("selectedSeasons.value", selectedSeasons.value);
     e.preventDefault();
   }
 
   function toggleSeason(e) {
-    //console.log(e);
-    //console.log(e.currentTarget.id);
-    //console.log(e.currentTarget.checked);
     const checkbox = e.currentTarget;
     const selectList = document.getElementById(checkbox.id + "-season");
     selectList.disabled = !checkbox.checked;
-    //console.log(selectList);
   }
-
-  const items = [
-    {
-      label: "Rainbow Dash",
-      icon: "Aye",
-    },
-    {
-      label: "Applejack",
-      icon: "Aye",
-    },
-  ];
 
 </script>
 
@@ -95,23 +98,26 @@
   <article>
     <h2>Results</h2>
     <!-- List of accordions, each corresponding to a season, which are classed by series. -->
-    <UAccordion :items="selectedSeasons.map(season => season)">
-      <template #body="{ season }">
-        <table>
-          <thead>
-            <tr>
-              <th>Let</th>
-              <th>Darkness</th>
-              <th>Take</th>
-              <th>You</th>
-            </tr>
-          </thead>
-        </table>
-        {{ item.icon }}
-        {{ item.label }}
-      </template>
-    </UAccordion>
+    <!-- <UAccordion :items="items"> -->
+    <!-- <template #body="{ item }"> -->
+    <!-- </template> -->
+    <!-- </UAccordion> -->
+    <table v-if="searchResults.length > 0">
+      <thead>
+        <tr>
+          <th>Speaker</th>
+          <th>Dialogue</th>
+          <th>Episode</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="searchResult in searchResults">
+          <th>{{ searchResult.speaker }}</th>
+          <td>{{ searchResult.dialogue }}</td>
+          <td>{{searchResult.season}} E{{ searchResult.episodeNo }}</td>
+        </tr>
+      </tbody>
+    </table>
   </article>
 
 </template>
-
