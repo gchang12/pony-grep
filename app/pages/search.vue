@@ -6,7 +6,7 @@
   import searchTranscript from "../functions/searchTranscript.js";
   import parseTranscriptLines from "../functions/parseTranscriptLines.js";
 
-  //import AccordionElement from "../components/AccordionElement.vue";
+  import AccordionElement from "../components/AccordionElement.vue";
 
   let searchResults = ref([]);
   let dialoguePattern = ref("");
@@ -77,7 +77,7 @@
 
         <article class="col">
           <h2>Results</h2>
-          <!-- <AccordionElement 
+          <AccordionElement 
             seriesName="FiM"
             collapseKey="1"
              >
@@ -109,7 +109,7 @@
                 </tbody>
               </table>
              </template>
-          </AccordionElement> -->
+          </AccordionElement>
         </article>
 
       </div>
