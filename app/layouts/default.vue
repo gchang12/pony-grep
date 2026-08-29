@@ -51,7 +51,7 @@
             All textual content is owned by <a target="_blank" class="External" href="https://www.fandom.com/licensing">Fandom</a>
           </li>
           <li>
-            This project's <a target="_blank" class="External" href="https://github.com/gchang12/html300-2024/tree/lesson8">GitHub</a> page
+            This project's <a target="_blank" class="External" href="https://github.com/gchang12/pony-grep">GitHub</a> page
           </li>
           <li>
             Site logo provided by <a href="https://fontmeme.com/friendship-is-magic-font/" target="_blank" class="External">this site</a>
