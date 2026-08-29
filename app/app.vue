@@ -2,6 +2,10 @@
   import '~/assets/css/app.scss';
 
   /* TODO
+  Re-style everything from scratch.
+  Re-implement components from scratch.
+  Redo all the Bootstrap classes so that they're up-to-date WRT BS5
+
   Source comprehensive transcript file and index file.
   Modify index file and update transcript file to match it.
   Add dropdown menus to episode-directory
