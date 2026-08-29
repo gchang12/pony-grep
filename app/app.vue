@@ -2,8 +2,9 @@
   import '~/assets/css/app.scss';
 
   /* TODO
-  Re-style everything from scratch.
+  Lay out all content.
   Re-implement components from scratch.
+  Re-style everything from scratch.
   Redo all the Bootstrap classes so that they're up-to-date WRT BS5
 
   Source comprehensive transcript file and index file.

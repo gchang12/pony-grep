@@ -23,9 +23,6 @@
               <!-- Bootstrap: 'nav' makes container an actual navibar -->
               <ul class="nav">
                 <li class="nav-item">
-                  <NuxtLink class="nav-link" to="/nyet">Nyet</NuxtLink>
-                </li>
-                <li class="nav-item">
                   <NuxtLink class="nav-link" to="/search">Search</NuxtLink>
                 </li>
                 <li class="nav-item">
