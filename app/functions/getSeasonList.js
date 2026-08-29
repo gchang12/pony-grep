@@ -196,13 +196,13 @@ export default function() {
       },
       {
         "name": "Better Together (season 1)",
-        "alias": "Better Together (Season 1)",
+        "alias": "Better Together (S1)",
         //"img": Rarity_singing_her_heart_out_EGDS27,
         "imgName": "Rarity_singing_her_heart_out_EGDS27",
       },
       {
         "name": "Choose Your Own Ending (season 1)",
-        "alias": "Choose Your Own Ending (Season 1)",
+        "alias": "Choose Your Own Ending (S1)",
         //"img": Twilight_Sparkle_in_contemplative_thought_CYOE3,
         "imgName": "Twilight_Sparkle_in_contemplative_thought_CYOE3",
       },
@@ -218,7 +218,7 @@ export default function() {
       },
       {
         "name": "Better Together (season 2)",
-        "alias": "Better Together (Season 2)",
+        "alias": "Better Together (S2)",
         //"img": Dazzlings_lying_in_the_neon_garden_EGDS48,
         "imgName": "Dazzlings_lying_in_the_neon_garden_EGDS48",
       },
@@ -234,7 +234,7 @@ export default function() {
       },
       {
         "name": "Choose Your Own Ending (season 2)",
-        "alias": "Choose Your Own Ending (Season 2)",
+        "alias": "Choose Your Own Ending (S2)",
         //"img": Rainbow_Dash_wondering_who_to_choose_CYOE17,
         "imgName": "Rainbow_Dash_wondering_who_to_choose_CYOE17",
       },
