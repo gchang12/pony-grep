@@ -5,6 +5,8 @@
   import getAnimationTypes from "../functions/getAnimationTypes.js";
   import searchTranscript from "../functions/searchTranscript.js";
 
+  import SearchResults from "../components/SearchResults.vue";
+
   const seasonList = getSeasonList();
   const animationTypes = getAnimationTypes();
   const seriesList = [
@@ -22,48 +24,10 @@
   console.log("transcriptLines", transcriptLines);
   console.log("animationIndex", animationIndex);
 
-  function reformatTranscriptLines(series) {
-    const items = [];
-    // group by series, then animation-type.
-    // for each animation type:
-    // [transcript line]
-    // {label: animationType, content: {...}
-    for (const animationType of animationTypes) {
-      const resultCount = searchResults.value.filter(result => {
-        const episode = animationIndex.find(episode => episode.id === result.episodeId);
-        return episode.animationType === animationType.name && episode.series === series;
-      }).length;
-      items.push({
-        "label": "[" + resultCount + "] " + animationType.title,
-        "content": searchResults.value
-          .filter(result => {
-            const episode = animationIndex.find(episode => episode.id === result.episodeId);
-            return episode.animationType === animationType.name && episode.series === series;
-          })
-          .map(result => {
-            const episode = animationIndex.find(episode => episode.id === result.episodeId);
-            const item = {
-              "series": episode.series,
-              "episodeTitle": episode.title,
-              //"season": episode.season,
-              "seasonCode": seasonList.find(season => season.name === episode.season).urlName,
-              "episodeCode": String(episode.episodeNo).padStart(2, '0'),
-              "animationPrefix": animationTypes.find(animationType => animationType.name === episode.animationType).alias,
-              "dialogue": result.dialogue,
-              "speaker": result.speaker,
-              "lineNo": result.lineNo,
-              "id": result.id,
-            };
-            return item;
-          }),
-        });
-      }
-    console.log(items);
-    return items;
-  }
-
+  /*
   const fimItems = computed(() => reformatTranscriptLines("FiM"));
   const eqgItems = computed(() => reformatTranscriptLines("EqG"));
+  */
 
   function ponyGrep(e) {
     const formData = new FormData(e.currentTarget.form);
@@ -86,10 +50,6 @@
     const selectList = document.getElementById(checkbox.id + "-season");
     selectList.disabled = !checkbox.checked;
   }
-
-  // TODO: Figure out how accordions work.
-  // TODO: Dump search results onto accordions each of which is based on animation type. series > animation-type > [search-result]
-  // TODO: group by animation type.
 
 </script>
 
@@ -145,36 +105,8 @@
   <article>
     <h2>Results</h2>
     <!-- List of accordions, each corresponding to a season, which are classed by series. -->
-    <UAccordion :items="[{label: 'Equestria Girls'}]">
-      <template #body>
-        <UAccordion :items="eqgItems">
-          <template #body="{ item }">
-            <table>
-              <thead>
-                <tr>
-                  <th>Speaker</th>
-                  <th>Dialogue</th>
-                  <th>Episode</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr v-for="tline in item.content" :key="tline.id">
-                  <th>{{tline.speaker}}</th>
-                  <td>{{tline.dialogue}}</td>
-                  <td>
-                    <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.animationPrefix + tline.episodeCode + '#L' + tline.lineNo].join('/')">
-                      <i>{{tline.episodeTitle}}</i>
-                    </NuxtLink>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <!-- each content must have an array of transcript lines corresponding to an anmType -->
-            <!-- {{ item }} -->
-          </template>
-        </UAccordion>
-      </template>
-    </UAccordion>
+    <SearchResults label="Friendship is Magic" series="FiM" :searchResults="searchResults" :animationIndex="animationIndex" />
+    <SearchResults label="Equestria Girls" series="EqG" :searchResults="searchResults" :animationIndex="animationIndex" />
   </article>
 
 </template>
