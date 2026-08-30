@@ -2,6 +2,7 @@
   import { ref, computed } from "vue";
 
   import getSeasonList from "../functions/getSeasonList.js";
+  import getAnimationTypes from "../functions/getAnimationTypes.js";
   import searchTranscript from "../functions/searchTranscript.js";
 
   const seasonList = getSeasonList();
@@ -46,6 +47,8 @@
     selectList.disabled = !checkbox.checked;
   }
 
+  // TODO: group by animation type.
+
 </script>
 
 <template>
@@ -79,7 +82,7 @@
           <label for="FiM-season">Friendship is Magic</label>
           <select id="FiM-season" name="FiM-season" multiple>
             <option v-for="season in seasonList['FiM']" :value="season.name" :key="season.name" :selected="season.name.startsWith('S') && season.name.length === 2">
-              {{ season.alias }}
+              {{ season.name }}
             </option>
           </select>
         </div>
@@ -87,7 +90,7 @@
           <label for="EqG-season">Equestria Girls</label>
           <select id="EqG-season" name="EqG-season" multiple disabled>
             <option v-for="season in seasonList['EqG']" :value="season.name" :key="season.name" :selected="season.name.startsWith('My Little Pony Equestria Girls')">
-              {{ season.alias }}
+              {{ season.name }}
             </option>
           </select>
         </div>
