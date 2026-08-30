@@ -10,7 +10,7 @@ export default function() {
     },
     {
       "name": "episode",
-      "alias": "EP",
+      "alias": "E",
     },
     {
       "name": "special",

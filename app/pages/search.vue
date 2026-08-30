@@ -57,43 +57,41 @@
   <article>
     <h2>Parameters</h2>
     <form>
-      <div class="dialoguePattern field" title="Pattern to search for in all G4 dialogue.">
+      <div class="dialoguePattern field">
         <label for="dialoguePattern">Dialogue</label>
         <input value="friendship is magic" placeholder="friendship is magic" id="dialoguePattern" type="text" name="dialoguePattern" required />
+        <div class="help-text">Pattern to search for in all G4 dialogue.</div>
       </div>
-      <div class="speaker field" title="Limit results to lines spoken only by specified character(s).">
+      <div class="speaker field">
         <label for="speaker">Character</label>
         <input placeholder="discord|mane six" id="speaker" type="text" name="speaker" />
+        <div class="help-text">Limit results to lines spoken only by specified character(s).</div>
       </div>
-      <fieldset title="Only selected series will be searched.">
+      <fieldset>
         <legend>Series</legend>
         <div class="FiM field">
           <label for="FiM">Friendship is Magic</label>
           <input value="FiM" name="series" checked id="FiM" type="checkbox" @click="toggleSeason" />
+          <div class="season field">
+            <select id="FiM-season" name="FiM-season" multiple>
+              <option v-for="season in seasonList['FiM']" :value="season.name" :key="season.name" :selected="season.name.startsWith('S') && season.name.length === 2">
+                {{ season.name }}
+              </option>
+            </select>
+          </div>
         </div>
         <div class="EqG field">
           <label for="EqG">Equestria Girls</label>
           <input value="EqG" name="series" id="EqG" type="checkbox" @click="toggleSeason" />
+          <div class="season field">
+            <select id="EqG-season" name="EqG-season" multiple disabled>
+              <option v-for="season in seasonList['EqG']" :value="season.name" :key="season.name" :selected="['Equestria Girls', 'Rainbow Rocks', 'Friendship Games', 'Legend of Everfree'].includes(season.name)">
+                {{ season.name }}
+              </option>
+            </select>
+          </div>
         </div>
-      </fieldset>
-      <fieldset title="Only seasons belonging to selected series will be searched.">
-        <legend>Seasons</legend>
-        <div class="FiM-season field">
-          <label for="FiM-season">Friendship is Magic</label>
-          <select id="FiM-season" name="FiM-season" multiple>
-            <option v-for="season in seasonList['FiM']" :value="season.name" :key="season.name" :selected="season.name.startsWith('S') && season.name.length === 2">
-              {{ season.name }}
-            </option>
-          </select>
-        </div>
-        <div class="EqG-season field">
-          <label for="EqG-season">Equestria Girls</label>
-          <select id="EqG-season" name="EqG-season" multiple disabled>
-            <option v-for="season in seasonList['EqG']" :value="season.name" :key="season.name" :selected="season.name.startsWith('My Little Pony Equestria Girls')">
-              {{ season.name }}
-            </option>
-          </select>
-        </div>
+        <div class="help-text">Only selected seasons will be searched.</div>
       </fieldset>
       <button @click="ponyGrep" id="search">Search</button>
       <button id="reset" type="button">Reset</button>
@@ -124,3 +122,4 @@
   </article>
 
 </template>
+        <!-- <div class="help-text">Only seasons belonging to selected series will be searched.</div> -->

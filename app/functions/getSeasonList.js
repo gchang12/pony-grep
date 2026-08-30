@@ -129,14 +129,14 @@ export default function() {
         "imgName": "My_Little_Pony_Rainbow_Roadtrip_title_card",
       },
       {
-        "name": "FiF",
+        "name": "Friendship is Forever",
         "urlName": "Friendship_is_Forever",
         "imgName": "Mane_Six,_Starlight,_and_Spike_after_the_coronation_MLPCS6",
       },
     ],
     "EqG": [
       {
-        "name": "My Little Pony Equestria Girls",
+        "name": "Equestria Girls",
         "urlName": "Equestria_Girls",
         "imgName": "Equestria_Girls_second_movie_poster",
       },
