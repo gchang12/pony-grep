@@ -17,12 +17,14 @@
   const searchResults = ref([]);
   const dialoguePattern = ref("");
 
-  const transcriptLines = (await useFetch("/json/transcriptLines.json")).data.value;
-  const animationIndex = (await useFetch("/json/animationIndex.json")).data.value;
+  //const transcriptLines = (await useFetch("/json/transcriptLines.json")).data.value;
+  import getTranscriptLines from "../functions/getTranscriptLines.js"; const transcriptLines = getTranscriptLines();
+  import getAnimationIndex from "../functions/getAnimationIndex.js"; const animationIndex = getAnimationIndex();
+  //const animationIndex = (await useFetch("/json/animationIndex.json")).data.value;
 
   // NOTE: data.value is defined only after HMR after changing something inside <script> element
-  console.log("transcriptLines", transcriptLines);
-  console.log("animationIndex", animationIndex);
+  console.log("transcriptLines", transcriptLines.length);
+  console.log("animationIndex", animationIndex.length);
 
   /*
   const fimItems = computed(() => reformatTranscriptLines("FiM"));

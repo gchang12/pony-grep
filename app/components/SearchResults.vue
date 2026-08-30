@@ -54,16 +54,16 @@
     return items;
   }
 
-  const items = reformatTranscriptLines();
-  const resultCount = computed(() => {
+  function countResults() {
     const { searchResults, animationIndex, series } = props;
     return searchResults.filter(result => {
       const episode = animationIndex.find(episode => episode.id === result.episodeId);
       return episode.series === series;
     }).length;
-  });
+  }
 
-  console.log(items);
+  const items = reformatTranscriptLines();
+  const resultCount = countResults();
 
 </script>
 
