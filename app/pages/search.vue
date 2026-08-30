@@ -34,9 +34,10 @@
     const parsedResults = [];
     for (const result of rawResults) {
       const episode = animationIndex.find(episode => episode.id === result.episodeId);
-      episode.episodeNo = String(episode.episodeNo).padStart(2, '0');
-      episode.animationType = animationTypes.find(animationType => animationType.name === episode.animationType).alias;
       result.episode = episode;
+      result.seasonCode = seasonList.find(season => season.name === episode.season).urlName;
+      result.episodeCode = String(episode.episodeNo).padStart(2, '0');
+      result.animationPrefix = animationTypes.find(animationType => animationType.name === episode.animationType).alias;
       parsedResults.push(result);
     }
     searchResults.value = parsedResults;
@@ -117,7 +118,11 @@
           <th>{{ searchResult.speaker }}</th>
           <td>{{ searchResult.dialogue }}</td>
           <td>
-            <NuxtLink :to="'/episodes/' + searchResult.episode.season + '/' + searchResult.episode.animationType + searchResult.episode.episodeNo + '#L' + searchResult.lineNo">{{searchResult.episode.season}} {{searchResult.episode.animationType}}{{ searchResult.episode.episodeNo }}</NuxtLink>
+            <NuxtLink :to="'/episodes/' + searchResult.seasonCode + '/' + searchResult.animationPrefix + searchResult.episodeCode + '#L' + searchResult.lineNo">
+            <!-- {{searchResult.episode.season}} {{searchResult.animationPrefix}}{{ searchResult.episodeCode }} -->
+            <!-- <br /> -->
+              <i>{{searchResult.episode.title}}</i>
+            </NuxtLink>
           </td>
         </tr>
       </tbody>
