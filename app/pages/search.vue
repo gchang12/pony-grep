@@ -19,6 +19,9 @@
   console.log("transcriptLines", transcriptLines);
   console.log("animationIndex", animationIndex);
 
+  const accordionResults = computed(() => {
+  });
+
   function ponyGrep(e) {
     const formData = new FormData(e.currentTarget.form);
     if (!e.currentTarget.reportValidity() || formData.get("dialoguePattern") === "") {
@@ -30,7 +33,9 @@
     /* dialoguePattern */
     dialoguePattern.value = formData.get("dialoguePattern");
     /* searchResults */
-    const rawResults = searchTranscript(formData, transcriptLines);
+    searchResults.value = searchTranscript(formData, transcriptLines);
+    /*
+    const rawResults = 
     const parsedResults = [];
     for (const result of rawResults) {
       const episode = animationIndex.find(episode => episode.id === result.episodeId);
@@ -40,7 +45,8 @@
       result.animationPrefix = animationTypes.find(animationType => animationType.name === episode.animationType).alias;
       parsedResults.push(result);
     }
-    searchResults.value = parsedResults;
+    = parsedResults;
+    */
     console.log("searchResults.value", searchResults.value);
     e.preventDefault();
   }
@@ -51,6 +57,8 @@
     selectList.disabled = !checkbox.checked;
   }
 
+  // TODO: Figure out how accordions work.
+  // TODO: Dump search results onto accordions each of which is based on animation type. series > animation-type > [search-result]
   // TODO: group by animation type.
 
 </script>
@@ -102,9 +110,21 @@
     </form>
   </article>
 
+
+  <!-- By series, by animation type. -->
   <article>
     <h2>Results</h2>
     <!-- List of accordions, each corresponding to a season, which are classed by series. -->
+    <UAccordion :items="searchResults.filter(result => result.animationPrefix === 'E')">
+      <template #body>
+      </template>
+    </UAccordion>
+  </article>
+
+</template>
+
+<!-- <div class="help-text">Only seasons belonging to selected series will be searched.</div> -->
+<!--
     <table v-if="searchResults.length > 0">
       <thead>
         <tr>
@@ -127,8 +147,4 @@
         </tr>
       </tbody>
     </table>
-  </article>
-
-</template>
-
-<!-- <div class="help-text">Only seasons belonging to selected series will be searched.</div> -->
+    -->
