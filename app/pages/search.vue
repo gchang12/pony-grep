@@ -1,5 +1,4 @@
 <script setup>
-
   import { ref, computed } from "vue";
 
   import getSeasonList from "../functions/getSeasonList.js";
@@ -8,6 +7,10 @@
 
   const seasonList = getSeasonList();
   const animationTypes = getAnimationTypes();
+  const seriesList = [
+    ["FiM", "Friendship is Magic"],
+    ["EqG", "Equestria Girls"],
+  ];
 
   const searchResults = ref([]);
   const dialoguePattern = ref("");
@@ -19,7 +22,39 @@
   console.log("transcriptLines", transcriptLines);
   console.log("animationIndex", animationIndex);
 
-  const accordionResults = computed(() => {
+  const accordionItems = computed(() => {
+    const items = [];
+    // group by series, then animation-type.
+    // for each animation type:
+    // [transcript line]
+    // {label: animationType, content: {...}
+    for (const animationType of animationTypes) {
+      items.push({
+        "label": animationType.title,
+        "content": searchResults.value
+          .filter(result => {
+            const episode = animationIndex.find(episode => episode.id === result.episodeId);
+            return episode.animationType === animationType.name;
+          })
+          .map(result => {
+            const episode = animationIndex.find(episode => episode.id === result.episodeId);
+            const item = {
+              "series": episode.series,
+              "episodeTitle": episode.title,
+              "seasonCode": seasonList.find(season => season.name === episode.season).urlName,
+              "episodeCode": String(episode.episodeNo).padStart(2, '0'),
+              "animationPrefix": animationTypes.find(animationType => animationType.name === episode.animationType).alias,
+              "dialogue": result.dialogue,
+              "speaker": result.speaker,
+              "lineNo": result.lineNo,
+              "id": result.id,
+            };
+            return item;
+          }),
+        });
+      }
+    console.log(items);
+    return items;
   });
 
   function ponyGrep(e) {
@@ -34,19 +69,6 @@
     dialoguePattern.value = formData.get("dialoguePattern");
     /* searchResults */
     searchResults.value = searchTranscript(formData, transcriptLines);
-    /*
-    const rawResults = 
-    const parsedResults = [];
-    for (const result of rawResults) {
-      const episode = animationIndex.find(episode => episode.id === result.episodeId);
-      result.episode = episode;
-      result.seasonCode = seasonList.find(season => season.name === episode.season).urlName;
-      result.episodeCode = String(episode.episodeNo).padStart(2, '0');
-      result.animationPrefix = animationTypes.find(animationType => animationType.name === episode.animationType).alias;
-      parsedResults.push(result);
-    }
-    = parsedResults;
-    */
     console.log("searchResults.value", searchResults.value);
     e.preventDefault();
   }
@@ -115,8 +137,31 @@
   <article>
     <h2>Results</h2>
     <!-- List of accordions, each corresponding to a season, which are classed by series. -->
-    <UAccordion :items="searchResults.filter(result => result.animationPrefix === 'E')">
-      <template #body>
+    <UAccordion :items="accordionItems">
+      <template #body="{ item }">
+        <table>
+          <thead>
+            <tr>
+              <th>Speaker</th>
+              <th>Dialogue</th>
+              <th>Episode</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="tline in item.content" :key="tline.id">
+              <th>{{tline.speaker}}</th>
+              <td>{{tline.dialogue}}</td>
+              <td>
+                <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.animationPrefix + tline.episodeCode + '#L' + tline.lineNo].join('/')">
+                  {{tline.seasonCode}} {{tline.animationPrefix}}{{tline.episodeCode}}
+                  <i>{{tline.episodeTitle}}</i>
+                </NuxtLink>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- each content must have an array of transcript lines corresponding to an anmType -->
+        <!-- {{ item }} -->
       </template>
     </UAccordion>
   </article>
@@ -124,27 +169,32 @@
 </template>
 
 <!-- <div class="help-text">Only seasons belonging to selected series will be searched.</div> -->
-<!--
-    <table v-if="searchResults.length > 0">
-      <thead>
-        <tr>
-          <th>Speaker</th>
-          <th>Dialogue</th>
-          <th>Episode</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="searchResult in searchResults">
-          <th>{{ searchResult.speaker }}</th>
-          <td>{{ searchResult.dialogue }}</td>
-          <td>
-            <NuxtLink :to="'/episodes/' + searchResult.seasonCode + '/' + searchResult.animationPrefix + searchResult.episodeCode + '#L' + searchResult.lineNo">
-            <!-- {{searchResult.episode.season}} {{searchResult.animationPrefix}}{{ searchResult.episodeCode }} -->
-            <!-- <br /> -->
-              <i>{{searchResult.episode.title}}</i>
-            </NuxtLink>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    -->
+<!-- <table v-if="searchResults.length > 0">
+      result.content = {
+        "episodeTitle": episode.title,
+        "seasonCode": seasonList.find(season => season.name === episode.season).urlName,
+        "episodeCode": String(episode.episodeNo).padStart(2, '0'),
+        "animationPrefix": animationTypes.find(animationType => animationType.name === episode.animationType).alias,
+      };
+<thead>
+<tr>
+<th>Speaker</th>
+<th>Dialogue</th>
+<th>Episode</th>
+</tr>
+</thead>
+<tbody>
+<tr v-for="searchResult in searchResults">
+<th>{{ searchResult.speaker }}</th>
+<td>{{ searchResult.dialogue }}</td>
+<td>
+<NuxtLink :to="'/episodes/' + searchResult.seasonCode + '/' + searchResult.animationPrefix + searchResult.episodeCode + '#L' + searchResult.lineNo">
+{{searchResult.episode.season}} {{searchResult.animationPrefix}}{{ searchResult.episodeCode }}
+<br />
+<i>{{searchResult.episode.title}}</i>
+</NuxtLink>
+</td>
+</tr>
+</tbody>
+</table>
+-->
