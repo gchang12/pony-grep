@@ -10,7 +10,7 @@
      </NuxtLink>
      <nav>
        <NuxtLink to="/search">Search</NuxtLink>
-       <NuxtLink to="/episode-index">Episode Index</NuxtLink>
+       <NuxtLink to="/episodes">Episodes</NuxtLink>
      </nav>
    </header>
    <main>

@@ -9,16 +9,19 @@
   const searchResults = ref([]);
   const dialoguePattern = ref("");
 
+  /*
   const selectedSeasons = computed(() => {
     const seasons = [];
     searchResults.value.map(result => result.season).forEach(season => seasons.includes(season) ? false : seasons.push(season));
     return seasons;
   });
+  */
 
-  const { data } = await useFetch("/json/transcriptLines.json");
+  const transcriptLines = (await useFetch("/json/transcriptLines.json")).data.value;
+  const animationIndex = (await useFetch("/json/animationIndex.json")).data.value;
   // data.value is defined only after HMR
-  console.log("data", data);
-  console.log("data.value", data.value);
+  console.log("transcriptLines", transcriptLines);
+  console.log("animationIndex", animationIndex);
 
   function ponyGrep(e) {
     const formData = new FormData(e.currentTarget.form);
@@ -31,10 +34,9 @@
     /* dialoguePattern */
     dialoguePattern.value = formData.get("dialoguePattern");
     /* searchResults */
-    const transcriptLines = data.value;
     searchResults.value = searchTranscript(formData, transcriptLines);
     console.log("searchResults.value", searchResults.value);
-    console.log("selectedSeasons.value", selectedSeasons.value);
+    //console.log("selectedSeasons.value", selectedSeasons.value);
     e.preventDefault();
   }
 
@@ -98,10 +100,6 @@
   <article>
     <h2>Results</h2>
     <!-- List of accordions, each corresponding to a season, which are classed by series. -->
-    <!-- <UAccordion :items="items"> -->
-    <!-- <template #body="{ item }"> -->
-    <!-- </template> -->
-    <!-- </UAccordion> -->
     <table v-if="searchResults.length > 0">
       <thead>
         <tr>
@@ -114,7 +112,9 @@
         <tr v-for="searchResult in searchResults">
           <th>{{ searchResult.speaker }}</th>
           <td>{{ searchResult.dialogue }}</td>
-          <td>{{searchResult.season}} E{{ searchResult.episodeNo }}</td>
+          <td>
+            <NuxtLink :to="'/episodes/' + searchResult.season + '/' + searchResult.episodeNo + '#L' + searchResult.lineNo">{{searchResult.season}} E{{ searchResult.episodeNo }}</NuxtLink>
+          </td>
         </tr>
       </tbody>
     </table>
