@@ -31,6 +31,17 @@
   const eqgItems = computed(() => reformatTranscriptLines("EqG"));
   */
 
+  const vHighlight = {
+    mounted: (el) => {
+      const re = new RegExp(dialoguePattern.value, "ig");
+      //console.log("vHighlight: el", el);
+      //console.log(el.innerHTML);
+      //console.log("vHighlight: re", re);
+      //console.log("vHighlight: el.innerHTML", el.innerHTML);
+      el.innerHTML = el.innerHTML.replaceAll(re, (match) => "<span class='PatternMatch'>" + match + "</span>" );
+    }
+  }
+
   function ponyGrep(e) {
     const formData = new FormData(e.currentTarget.form);
     if (!e.currentTarget.reportValidity() || formData.get("dialoguePattern") === "") {
@@ -178,7 +189,7 @@
             <tbody>
               <tr v-for="tline in item.content" :key="tline.id">
                 <th>{{tline.speaker}}</th>
-                <td>{{tline.dialogue}}</td>
+                <td v-highlight>{{tline.dialogue}}</td>
                 <td>
                   <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.animationPrefix + tline.episodeCode + '#L' + tline.lineNo].join('/')">
                     <i>{{tline.episodeTitle}}</i>
