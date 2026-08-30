@@ -77,7 +77,7 @@
           <input value="FiM" name="series" checked id="FiM" type="checkbox" @click="toggleSeason" />
           <div class="season field">
             <select id="FiM-season" name="FiM-season" multiple>
-              <option v-for="season in seasonList['FiM']" :value="season.name" :key="season.name" :selected="season.name.startsWith('S') && season.name.length === 2">
+              <option v-for="season in seasonList.filter(season => season.series === 'FiM')" :value="season.name" :key="season.name" :selected="season.name.startsWith('S') && season.name.length === 2">
                 {{ season.name }}
               </option>
             </select>
@@ -88,7 +88,7 @@
           <input value="EqG" name="series" id="EqG" type="checkbox" @click="toggleSeason" />
           <div class="season field">
             <select id="EqG-season" name="EqG-season" multiple disabled>
-              <option v-for="season in seasonList['EqG']" :value="season.name" :key="season.name" :selected="['Equestria Girls', 'Rainbow Rocks', 'Friendship Games', 'Legend of Everfree'].includes(season.name)">
+              <option v-for="season in seasonList.filter(season => season.series === 'EqG')" :value="season.name" :key="season.name" :selected="['Equestria Girls', 'Rainbow Rocks', 'Friendship Games', 'Legend of Everfree'].includes(season.name)">
                 {{ season.name }}
               </option>
             </select>

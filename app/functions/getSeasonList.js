@@ -61,165 +61,192 @@ Holidays Unwrapped
 */
 
 export default function() {
-  return {
-    "FiM": [
-      {
-        "name": "S1",
-        "urlName": "S1",
-        "imgName": "My_Little_Pony_Theme_Song",
-      },
-      {
-        "name": "S2",
-        "urlName": "S2",
-        "imgName": "My_Little_Pony_Theme_Song",
-      },
-      {
-        "name": "S3",
-        "urlName": "S3",
-        "imgName": "My_Little_Pony_Theme_Song",
-      },
-      {
-        "name": "S4",
-        "urlName": "S4",
-        "imgName": "Photo_Finish_taking_photo_S4_Opening",
-      },
-      {
-        "name": "S5",
-        "urlName": "S5",
-        "imgName": "Photo_Finish_taking_photo_S4_Opening",
-      },
-      {
-        "name": "S6",
-        "urlName": "S6",
-        "imgName": "Photo_Finish_taking_photo_S6_opening",
-      },
-      {
-        "name": "S7",
-        "urlName": "S7",
-        "imgName": "Photo_Finish_taking_photo_S7_opening",
-      },
-      {
-        "name": "The Movie",
-        "urlName": "The_Movie",
-        "imgName": "My_Little_Pony_The_Movie_new_poster_by_Lionsgate",
-      },
-      {
-        "name": "S8",
-        "urlName": "S8",
-        "imgName": "Photo_Finish_taking_the_class_photo_S8_opening",
-      },
-      {
-        "name": "Best Gift Ever",
-        "urlName": "Best_Gift_Ever",
-        "imgName": "My_Little_Pony_Best_Gift_Ever_promotional_title_card",
-      },
-      {
-        "name": "Shorts",
-        "urlName": "Shorts",
-        "imgName": "Twilight_stares_at_ladybug_with_fright_MLPS4",
-      },
-      {
-        "name": "S9",
-        "urlName": "S9",
-        "imgName": "Photo_Finish_taking_the_class_photo_S8_opening",
-      },
-      {
-        "name": "Rainbow Roadtrip",
-        "urlName": "Rainbow_Roadtrip",
-        "imgName": "My_Little_Pony_Rainbow_Roadtrip_title_card",
-      },
-      {
-        "name": "Friendship is Forever",
-        "urlName": "Friendship_is_Forever",
-        "imgName": "Mane_Six,_Starlight,_and_Spike_after_the_coronation_MLPCS6",
-      },
-    ],
-    "EqG": [
-      {
-        "name": "Equestria Girls",
-        "urlName": "Equestria_Girls",
-        "imgName": "Equestria_Girls_second_movie_poster",
-      },
-      {
-        "name": "Rainbow Rocks",
-        "urlName": "Rainbow_Rocks",
-        "imgName": "Rainbow_Rocks_Poster_2",
-      },
-      {
-        "name": "Friendship Games",
-        "urlName": "Friendship_Games",
-        "imgName": "Friendship_Games_Shout!_Factory_poster",
-      },
-      {
-        "name": "Legend of Everfree",
-        "urlName": "Legend_of_Everfree",
-        "imgName": "Legend_of_Everfree_poster",
-      },
-      {
-        "name": "Dance Magic",
-        "urlName": "Dance_Magic",
-        "imgName": "Dance_Magic_title_card_EGS1",
-      },
-      {
-        "name": "Movie Magic",
-        "urlName": "Movie_Magic",
-        "imgName": "Movie_Magic_title_card_EGS2",
-      },
-      {
-        "name": "Mirror Magic",
-        "urlName": "Mirror_Magic",
-        "imgName": "Mirror_Magic_title_card_EGS3",
-      },
-      {
-        "name": "Summertime Shorts",
-        "urlName": "Summertime_Shorts",
-        "imgName": "Sunset_and_Twilight_enter_Canterlot_High_School_SS6",
-      },
-      {
-        "name": "Better Together (season 1)",
-        "urlName": "Better_Together-S1",
-        "imgName": "Rarity_singing_her_heart_out_EGDS27",
-      },
-      {
-        "name": "Choose Your Own Ending (season 1)",
-        "urlName": "Choose_Your_Own_Ending-S1",
-        "imgName": "Twilight_Sparkle_in_contemplative_thought_CYOE3",
-      },
-      {
-        "name": "Forgotten Friendship",
-        "urlName": "Forgotten_Friendship",
-        "imgName": "Forgotten_Friendship_Netflix_poster",
-      },
-      {
-        "name": "Rollercoaster of Friendship",
-        "urlName": "Rollercoaster_of_Friendship",
-        "imgName": "Rollercoaster_of_Friendship_Netflix_thumbnail",
-      },
-      {
-        "name": "Better Together (season 2)",
-        "urlName": "Better_Together-S2",
-        "imgName": "Dazzlings_lying_in_the_neon_garden_EGDS48",
-      },
-      {
-        "name": "Spring Breakdown",
-        "urlName": "Spring_Breakdown",
-        "imgName": "Spring_Breakdown_title_card_EGSB",
-      },
-      {
-        "name": "Sunset's Backstage Pass",
-        "urlName": "Sunset's_Backstage_Pass",
-        "imgName": "Sunset's_Backstage_Pass_title_card_EGSBP",
-      },
-      {
-        "name": "Choose Your Own Ending (season 2)",
-        "urlName": "Choose_Your_Own_Ending_S2",
-        "imgName": "Rainbow_Dash_wondering_who_to_choose_CYOE17",
-      },
-      {
-        "name": "Holidays Unwrapped",
-        "urlName": "Holidays_Unwrapped",
-        "imgName": "Holidays_Unwrapped_title_card_EGHU",
-      },
-    ],
-  };
+  return [
+    {
+      "series": "FiM",
+      "name": "S1",
+      "urlName": "S1",
+      "imgName": "My_Little_Pony_Theme_Song",
+    },
+    {
+      "series": "FiM",
+      "name": "S2",
+      "urlName": "S2",
+      "imgName": "My_Little_Pony_Theme_Song",
+    },
+    {
+      "series": "FiM",
+      "name": "S3",
+      "urlName": "S3",
+      "imgName": "My_Little_Pony_Theme_Song",
+    },
+    {
+      "series": "FiM",
+      "name": "S4",
+      "urlName": "S4",
+      "imgName": "Photo_Finish_taking_photo_S4_Opening",
+    },
+    {
+      "series": "FiM",
+      "name": "S5",
+      "urlName": "S5",
+      "imgName": "Photo_Finish_taking_photo_S4_Opening",
+    },
+    {
+      "series": "FiM",
+      "name": "S6",
+      "urlName": "S6",
+      "imgName": "Photo_Finish_taking_photo_S6_opening",
+    },
+    {
+      "series": "FiM",
+      "name": "S7",
+      "urlName": "S7",
+      "imgName": "Photo_Finish_taking_photo_S7_opening",
+    },
+    {
+      "series": "FiM",
+      "name": "The Movie",
+      "urlName": "The_Movie",
+      "imgName": "My_Little_Pony_The_Movie_new_poster_by_Lionsgate",
+    },
+    {
+      "series": "FiM",
+      "name": "S8",
+      "urlName": "S8",
+      "imgName": "Photo_Finish_taking_the_class_photo_S8_opening",
+    },
+    {
+      "series": "FiM",
+      "name": "Best Gift Ever",
+      "urlName": "Best_Gift_Ever",
+      "imgName": "My_Little_Pony_Best_Gift_Ever_promotional_title_card",
+    },
+    {
+      "series": "FiM",
+      "name": "Shorts",
+      "urlName": "Shorts",
+      "imgName": "Twilight_stares_at_ladybug_with_fright_MLPS4",
+    },
+    {
+      "series": "FiM",
+      "name": "S9",
+      "urlName": "S9",
+      "imgName": "Photo_Finish_taking_the_class_photo_S8_opening",
+    },
+    {
+      "series": "FiM",
+      "name": "Rainbow Roadtrip",
+      "urlName": "Rainbow_Roadtrip",
+      "imgName": "My_Little_Pony_Rainbow_Roadtrip_title_card",
+    },
+    {
+      "series": "FiM",
+      "name": "Friendship is Forever",
+      "urlName": "Friendship_is_Forever",
+      "imgName": "Mane_Six,_Starlight,_and_Spike_after_the_coronation_MLPCS6",
+    },
+    {
+      "series": "EqG",
+      "name": "Equestria Girls",
+      "urlName": "Equestria_Girls",
+      "imgName": "Equestria_Girls_second_movie_poster",
+    },
+    {
+      "series": "EqG",
+      "name": "Rainbow Rocks",
+      "urlName": "Rainbow_Rocks",
+      "imgName": "Rainbow_Rocks_Poster_2",
+    },
+    {
+      "series": "EqG",
+      "name": "Friendship Games",
+      "urlName": "Friendship_Games",
+      "imgName": "Friendship_Games_Shout!_Factory_poster",
+    },
+    {
+      "series": "EqG",
+      "name": "Legend of Everfree",
+      "urlName": "Legend_of_Everfree",
+      "imgName": "Legend_of_Everfree_poster",
+    },
+    {
+      "series": "EqG",
+      "name": "Dance Magic",
+      "urlName": "Dance_Magic",
+      "imgName": "Dance_Magic_title_card_EGS1",
+    },
+    {
+      "series": "EqG",
+      "name": "Movie Magic",
+      "urlName": "Movie_Magic",
+      "imgName": "Movie_Magic_title_card_EGS2",
+    },
+    {
+      "series": "EqG",
+      "name": "Mirror Magic",
+      "urlName": "Mirror_Magic",
+      "imgName": "Mirror_Magic_title_card_EGS3",
+    },
+    {
+      "series": "EqG",
+      "name": "Summertime Shorts",
+      "urlName": "Summertime_Shorts",
+      "imgName": "Sunset_and_Twilight_enter_Canterlot_High_School_SS6",
+    },
+    {
+      "series": "EqG",
+      "name": "Better Together (season 1)",
+      "urlName": "Better_Together-S1",
+      "imgName": "Rarity_singing_her_heart_out_EGDS27",
+    },
+    {
+      "series": "EqG",
+      "name": "Choose Your Own Ending (season 1)",
+      "urlName": "Choose_Your_Own_Ending-S1",
+      "imgName": "Twilight_Sparkle_in_contemplative_thought_CYOE3",
+    },
+    {
+      "series": "EqG",
+      "name": "Forgotten Friendship",
+      "urlName": "Forgotten_Friendship",
+      "imgName": "Forgotten_Friendship_Netflix_poster",
+    },
+    {
+      "series": "EqG",
+      "name": "Rollercoaster of Friendship",
+      "urlName": "Rollercoaster_of_Friendship",
+      "imgName": "Rollercoaster_of_Friendship_Netflix_thumbnail",
+    },
+    {
+      "series": "EqG",
+      "name": "Better Together (season 2)",
+      "urlName": "Better_Together-S2",
+      "imgName": "Dazzlings_lying_in_the_neon_garden_EGDS48",
+    },
+    {
+      "series": "EqG",
+      "name": "Spring Breakdown",
+      "urlName": "Spring_Breakdown",
+      "imgName": "Spring_Breakdown_title_card_EGSB",
+    },
+    {
+      "series": "EqG",
+      "name": "Sunset's Backstage Pass",
+      "urlName": "Sunset's_Backstage_Pass",
+      "imgName": "Sunset's_Backstage_Pass_title_card_EGSBP",
+    },
+    {
+      "series": "EqG",
+      "name": "Choose Your Own Ending (season 2)",
+      "urlName": "Choose_Your_Own_Ending_S2",
+      "imgName": "Rainbow_Dash_wondering_who_to_choose_CYOE17",
+    },
+    {
+      "series": "EqG",
+      "name": "Holidays Unwrapped",
+      "urlName": "Holidays_Unwrapped",
+      "imgName": "Holidays_Unwrapped_title_card_EGHU",
+    },
+  ];
 }
