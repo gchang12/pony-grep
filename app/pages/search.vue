@@ -81,6 +81,7 @@
         return episode.animationType === animationType.name && episode.series === series;
       }).length;
       items.push({
+        "disabled": resultCount === 0,
         "label": "[" + resultCount + "] " + animationType.title,
         "content": searchResults.value
           .filter(result => {
