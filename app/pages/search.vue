@@ -176,7 +176,7 @@
     <h2>Results</h2>
     <!-- List of accordions, each corresponding to a season, which are classed by series. -->
     <article>
-      <h3><span class="resultCount">{{ resultCount1 }}</span>Friendship is Magic</h3>
+      <h3><span class="ResultCount">{{ resultCount1 }}</span> Friendship is Magic</h3>
       <UAccordion :items="items1">
         <template #body="{ item }">
           <table>
@@ -205,7 +205,7 @@
       </UAccordion>
     </article>
     <article>
-      <h3><span class="resultCount">{{ resultCount2 }}</span>Equestria Girls</h3>
+      <h3><span class="ResultCount">{{ resultCount2 }}</span> Equestria Girls</h3>
       <UAccordion :items="items2">
         <template #body="{ item }">
           <table>
