@@ -53,6 +53,53 @@
     selectList.disabled = !checkbox.checked;
   }
 
+  function reformatTranscriptLines() {
+    // group by series, then animation-type.
+    // for each animation type:
+    // [transcript line]
+    // {label: animationType, content: {...}
+    const items = [];
+    for (const animationType of animationTypes) {
+      const resultCount = searchResults.value.filter(result => {
+        const episode = animationIndex.find(episode => episode.id === result.episodeId);
+        return episode.animationType === animationType.name;
+      }).length;
+      items.push({
+        "label": "[" + resultCount + "] " + animationType.title,
+        "content": searchResults.value
+          .filter(result => {
+            const episode = animationIndex.find(episode => episode.id === result.episodeId);
+            //return episode.animationType === animationType.name && episode.series === series;
+            return episode.animationType === animationType.name;
+          })
+          .map(result => {
+            const episode = animationIndex.find(episode => episode.id === result.episodeId);
+            const item = {
+              "series": episode.series,
+              "episodeTitle": episode.title,
+              //"season": episode.season,
+              "seasonCode": seasonList.find(season => season.name === episode.season).urlName,
+              "episodeCode": String(episode.episodeNo).padStart(2, '0'),
+              "animationPrefix": animationTypes.find(animationType => animationType.name === episode.animationType).alias,
+              "dialogue": result.dialogue,
+              "speaker": result.speaker,
+              "lineNo": result.lineNo,
+              "id": result.id,
+            };
+            return item;
+          }),
+        });
+    }
+    return items;
+  }
+
+  function countResults() {
+    return searchResults.length;
+  }
+
+  const items = computed(() => reformatTranscriptLines());
+  const resultCount = computed(() => countResults());
+
 </script>
 
 <template>
@@ -102,13 +149,36 @@
     </form>
   </article>
 
-
   <!-- By series, by animation type. -->
   <article>
     <h2>Results</h2>
     <!-- List of accordions, each corresponding to a season, which are classed by series. -->
-    <SearchResults label="Friendship is Magic" series="FiM" :searchResults="searchResults" :animationIndex="animationIndex" />
-    <SearchResults label="Equestria Girls" series="EqG" :searchResults="searchResults" :animationIndex="animationIndex" />
+    <UAccordion :items="items">
+      <template #body="{ item }">
+        <table>
+          <thead>
+            <tr>
+              <th>Speaker</th>
+              <th>Dialogue</th>
+              <th>Episode</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="tline in item.content" :key="tline.id">
+              <th>{{tline.speaker}}</th>
+              <td>{{tline.dialogue}}</td>
+              <td>
+                <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.animationPrefix + tline.episodeCode + '#L' + tline.lineNo].join('/')">
+                  <i>{{tline.episodeTitle}}</i>
+                </NuxtLink>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- each content must have an array of transcript lines corresponding to an anmType -->
+        <!-- {{ item }} -->
+      </template>
+    </UAccordion>
   </article>
 
 </template>
