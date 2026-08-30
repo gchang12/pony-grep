@@ -17,14 +17,16 @@
   const searchResults = ref([]);
   const dialoguePattern = ref("");
 
-  //const transcriptLines = (await useFetch("/json/transcriptLines.json")).data.value;
+  //const response1 = (await useFetch("/json/transcriptLines.json")); let transcriptLines = response1.data.value;
   import getTranscriptLines from "../functions/getTranscriptLines.js"; const transcriptLines = getTranscriptLines();
   import getAnimationIndex from "../functions/getAnimationIndex.js"; const animationIndex = getAnimationIndex();
-  //const animationIndex = (await useFetch("/json/animationIndex.json")).data.value;
+  //const response2 = (await useFetch("/json/animationIndex.json")); let animationIndex = response2.data.value;
+  //console.log(response1);
+  //console.log(response2);
 
   // NOTE: data.value is defined only after HMR after changing something inside <script> element
-  console.log("transcriptLines", transcriptLines.length);
-  console.log("animationIndex", animationIndex.length);
+  //console.log("transcriptLines", transcriptLines.length);
+  //console.log("animationIndex", animationIndex.length);
 
   /*
   const fimItems = computed(() => reformatTranscriptLines("FiM"));
@@ -47,6 +49,16 @@
     if (!e.currentTarget.reportValidity() || formData.get("dialoguePattern") === "") {
       return;
     }
+    /*
+    if (response1.error) {
+      response1.refresh();
+    }
+    transcriptLines = response1.data.value;
+    if (response2.error) {
+      response2.refresh();
+    }
+    animationIndex = response2.data.value;
+    */
     // set:
     // - dialoguePattern
     // - searchResults
