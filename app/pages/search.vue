@@ -1,4 +1,5 @@
 <script setup>
+
   import { ref, computed } from "vue";
 
   import getSeasonList from "../functions/getSeasonList.js";
@@ -6,21 +7,15 @@
   import searchTranscript from "../functions/searchTranscript.js";
 
   const seasonList = getSeasonList();
+  const animationTypes = getAnimationTypes();
 
   const searchResults = ref([]);
   const dialoguePattern = ref("");
 
-  /*
-  const selectedSeasons = computed(() => {
-    const seasons = [];
-    searchResults.value.map(result => result.season).forEach(season => seasons.includes(season) ? false : seasons.push(season));
-    return seasons;
-  });
-  */
-
   const transcriptLines = (await useFetch("/json/transcriptLines.json")).data.value;
   const animationIndex = (await useFetch("/json/animationIndex.json")).data.value;
-  // data.value is defined only after HMR
+
+  // NOTE: data.value is defined only after HMR after changing something inside <script> element
   console.log("transcriptLines", transcriptLines);
   console.log("animationIndex", animationIndex);
 
@@ -35,9 +30,17 @@
     /* dialoguePattern */
     dialoguePattern.value = formData.get("dialoguePattern");
     /* searchResults */
-    searchResults.value = searchTranscript(formData, transcriptLines);
+    const rawResults = searchTranscript(formData, transcriptLines);
+    const parsedResults = [];
+    for (const result of rawResults) {
+      const episode = animationIndex.find(episode => episode.id === result.episodeId);
+      episode.episodeNo = String(episode.episodeNo).padStart(2, '0');
+      episode.animationType = animationTypes.find(animationType => animationType.name === episode.animationType).alias;
+      result.episode = episode;
+      parsedResults.push(result);
+    }
+    searchResults.value = parsedResults;
     console.log("searchResults.value", searchResults.value);
-    //console.log("selectedSeasons.value", selectedSeasons.value);
     e.preventDefault();
   }
 
@@ -114,7 +117,7 @@
           <th>{{ searchResult.speaker }}</th>
           <td>{{ searchResult.dialogue }}</td>
           <td>
-            <NuxtLink :to="'/episodes/' + searchResult.season + '/' + searchResult.episodeNo + '#L' + searchResult.lineNo">{{searchResult.season}} E{{ searchResult.episodeNo }}</NuxtLink>
+            <NuxtLink :to="'/episodes/' + searchResult.episode.season + '/' + searchResult.episode.animationType + searchResult.episode.episodeNo + '#L' + searchResult.lineNo">{{searchResult.episode.season}} {{searchResult.episode.animationType}}{{ searchResult.episode.episodeNo }}</NuxtLink>
           </td>
         </tr>
       </tbody>
@@ -122,4 +125,5 @@
   </article>
 
 </template>
-        <!-- <div class="help-text">Only seasons belonging to selected series will be searched.</div> -->
+
+<!-- <div class="help-text">Only seasons belonging to selected series will be searched.</div> -->
