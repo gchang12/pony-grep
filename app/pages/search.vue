@@ -1,14 +1,14 @@
 <script setup>
   import { ref, computed } from "vue";
 
-  import getSeasonList from "../functions/getSeasonList.js";
-  import getAnimationTypes from "../functions/getAnimationTypes.js";
+  import seasonList from "../assets/json/seasonList.json";
+  import animationTypes from "../assets/json/animationTypes.json";
   import searchTranscript from "../functions/searchTranscript.js";
 
   import SearchResults from "../components/SearchResults.vue";
 
-  const seasonList = getSeasonList();
-  const animationTypes = getAnimationTypes();
+  //const seasonList = getSeasonList();
+  //const animationTypes = getAnimationTypes();
   const seriesList = [
     ["FiM", "Friendship is Magic"],
     ["EqG", "Equestria Girls"],
@@ -18,8 +18,10 @@
   const dialoguePattern = ref("");
 
   //const response1 = (await useFetch("/json/transcriptLines.json")); let transcriptLines = response1.data.value;
-  import getTranscriptLines from "../functions/getTranscriptLines.js"; const transcriptLines = getTranscriptLines();
-  import getAnimationIndex from "../functions/getAnimationIndex.js"; const animationIndex = getAnimationIndex();
+  //import getTranscriptLines from "../functions/getTranscriptLines.js"; const transcriptLines = getTranscriptLines();
+  //import getAnimationIndex from "../functions/getAnimationIndex.js"; const animationIndex = getAnimationIndex();
+  import transcriptLines from "../assets/json/transcriptLines.json";
+  import animationIndex from "../assets/json/animationIndex.json";
   //const response2 = (await useFetch("/json/animationIndex.json")); let animationIndex = response2.data.value;
   //console.log(response1);
   //console.log(response2);
@@ -204,7 +206,8 @@
                 <th>{{tline.speaker}}</th>
                 <td v-highlight>{{tline.dialogue}}</td>
                 <td>
-                  <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.animationPrefix + tline.episodeCode + '#L' + tline.lineNo].join('/')">
+                  <!-- <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.animationPrefix + tline.episodeCode + '#L' + tline.lineNo].join('/')"> -->
+                  <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, 'E' + tline.episodeCode + '#L' + tline.lineNo].join('/')">
                     <i>{{tline.episodeTitle}}</i>
                   </NuxtLink>
                 </td>

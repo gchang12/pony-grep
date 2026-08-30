@@ -1,9 +1,9 @@
 <script setup>
 
-  import getSeasonList from "../functions/getSeasonList.js";
-  import getAnimationTypes from "../functions/getAnimationTypes.js";
-  const animationTypes = getAnimationTypes();
-  const seasonList = getSeasonList();
+  import seasonList from "../assets/json/seasonList.json";
+  import animationTypes from "../assets/json/animationTypes.json";
+  //const animationTypes = getAnimationTypes();
+  //const seasonList = getSeasonList();
 
   const props = defineProps({
     label: String,

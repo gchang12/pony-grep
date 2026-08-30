@@ -1,5 +1,5 @@
 <script setup>
-  import getSeasonList from "../../functions/getSeasonList.js";
+  import seasonList from "../../assets/json/seasonList.json";
 </script>
 
 <template>

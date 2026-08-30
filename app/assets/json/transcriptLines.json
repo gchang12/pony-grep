@@ -1,4 +1,4 @@
-const transcriptLines = [
+[
   {
     "episodeId": 0,
     "season": "S1",
@@ -467784,7 +467784,3 @@ const transcriptLines = [
     "dialogue": "[laugh]"
   }
 ]
-
-export default function() {
-  return transcriptLines;
-}

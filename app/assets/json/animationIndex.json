@@ -1,4 +1,4 @@
-const animationIndex = [
+[
   {
     "episodeNo": 1,
     "title": "Friendship is Magic, part 1",
@@ -5561,7 +5561,3 @@ const animationIndex = [
     "id": 408
   }
 ]
-
-export default function() {
-  return animationIndex;
-}
