@@ -133,6 +133,12 @@ footer {
   height: 100%;
   z-index: 2;
   color: #FFFFFF;
+  // fix text
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 
 /*
