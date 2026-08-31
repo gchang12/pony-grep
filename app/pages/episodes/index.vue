@@ -39,14 +39,14 @@
       <ol class="SeasonIndex FiM">
         <!-- Each of these has to be a dropdown menu. -->
         <li :id="season.urlName" v-for="season in seasonList.filter(season => season.series === 'FiM')" :key="season.urlName">
-          <!-- <figure> -->
-            <!-- <img width="300" :src="'/images/' + season.imgName + '.webp'" /> -->
           <div class="SeasonImage">
-            <UDropdownMenu :items="animationIndex.filter(episode => episode.series === 'FiM' && episode.season === season.name)">
+            <UDropdownMenu :content="{side: 'right'}" :items="animationIndex.filter(episode => episode.series === 'FiM' && episode.season === season.name)">
               <UButton color="neutral" :label="season.name" />
             </UDropdownMenu>
-            <!-- <span class="SeasonName">{{ season.name }}</span> -->
           </div>
+          <!-- <figure> -->
+            <!-- <img width="300" :src="'/images/' + season.imgName + '.webp'" /> -->
+            <!-- <span class="SeasonName">{{ season.name }}</span> -->
             <!-- </figure> -->
         </li>
       </ol>
