@@ -11,7 +11,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 0
+    "id": 1
   },
   {
     "episodeNo": 2,
@@ -25,7 +25,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 1
+    "id": 2
   },
   {
     "episodeNo": 3,
@@ -38,7 +38,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 2
+    "id": 3
   },
   {
     "episodeNo": 4,
@@ -51,7 +51,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 3
+    "id": 4
   },
   {
     "episodeNo": 5,
@@ -64,7 +64,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 4
+    "id": 5
   },
   {
     "episodeNo": 6,
@@ -77,7 +77,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 5
+    "id": 6
   },
   {
     "episodeNo": 7,
@@ -90,7 +90,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 6
+    "id": 7
   },
   {
     "episodeNo": 8,
@@ -103,7 +103,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 7
+    "id": 8
   },
   {
     "episodeNo": 9,
@@ -116,7 +116,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 8
+    "id": 9
   },
   {
     "episodeNo": 10,
@@ -129,7 +129,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 9
+    "id": 10
   },
   {
     "episodeNo": 11,
@@ -142,7 +142,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 10
+    "id": 11
   },
   {
     "episodeNo": 12,
@@ -155,7 +155,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 11
+    "id": 12
   },
   {
     "episodeNo": 13,
@@ -168,7 +168,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 12
+    "id": 13
   },
   {
     "episodeNo": 14,
@@ -181,7 +181,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 13
+    "id": 14
   },
   {
     "episodeNo": 15,
@@ -194,7 +194,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 14
+    "id": 15
   },
   {
     "episodeNo": 16,
@@ -207,7 +207,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 15
+    "id": 16
   },
   {
     "episodeNo": 17,
@@ -220,7 +220,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 16
+    "id": 17
   },
   {
     "episodeNo": 18,
@@ -233,7 +233,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 17
+    "id": 18
   },
   {
     "episodeNo": 19,
@@ -246,7 +246,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 18
+    "id": 19
   },
   {
     "episodeNo": 20,
@@ -259,7 +259,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 19
+    "id": 20
   },
   {
     "episodeNo": 21,
@@ -272,7 +272,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 20
+    "id": 21
   },
   {
     "episodeNo": 22,
@@ -285,7 +285,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 21
+    "id": 22
   },
   {
     "episodeNo": 23,
@@ -298,7 +298,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 22
+    "id": 23
   },
   {
     "episodeNo": 24,
@@ -311,7 +311,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 23
+    "id": 24
   },
   {
     "episodeNo": 25,
@@ -324,7 +324,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 24
+    "id": 25
   },
   {
     "episodeNo": 26,
@@ -337,7 +337,7 @@
     "season": "S1",
     "series": "FiM",
     "animationType": "episode",
-    "id": 25
+    "id": 26
   },
   {
     "episodeNo": 1,
@@ -351,7 +351,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 26
+    "id": 27
   },
   {
     "episodeNo": 2,
@@ -365,7 +365,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 27
+    "id": 28
   },
   {
     "episodeNo": 3,
@@ -378,7 +378,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 28
+    "id": 29
   },
   {
     "episodeNo": 4,
@@ -392,7 +392,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 29
+    "id": 30
   },
   {
     "episodeNo": 5,
@@ -405,7 +405,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 30
+    "id": 31
   },
   {
     "episodeNo": 6,
@@ -418,7 +418,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 31
+    "id": 32
   },
   {
     "episodeNo": 7,
@@ -431,7 +431,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 32
+    "id": 33
   },
   {
     "episodeNo": 8,
@@ -444,7 +444,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 33
+    "id": 34
   },
   {
     "episodeNo": 9,
@@ -457,7 +457,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 34
+    "id": 35
   },
   {
     "episodeNo": 10,
@@ -470,7 +470,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 35
+    "id": 36
   },
   {
     "episodeNo": 11,
@@ -483,7 +483,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 36
+    "id": 37
   },
   {
     "episodeNo": 12,
@@ -496,7 +496,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 37
+    "id": 38
   },
   {
     "episodeNo": 13,
@@ -509,7 +509,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 38
+    "id": 39
   },
   {
     "episodeNo": 14,
@@ -522,7 +522,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 39
+    "id": 40
   },
   {
     "episodeNo": 15,
@@ -535,7 +535,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 40
+    "id": 41
   },
   {
     "episodeNo": 16,
@@ -548,7 +548,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 41
+    "id": 42
   },
   {
     "episodeNo": 17,
@@ -562,7 +562,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 42
+    "id": 43
   },
   {
     "episodeNo": 18,
@@ -575,7 +575,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 43
+    "id": 44
   },
   {
     "episodeNo": 19,
@@ -588,7 +588,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 44
+    "id": 45
   },
   {
     "episodeNo": 20,
@@ -601,7 +601,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 45
+    "id": 46
   },
   {
     "episodeNo": 21,
@@ -614,7 +614,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 46
+    "id": 47
   },
   {
     "episodeNo": 22,
@@ -627,7 +627,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 47
+    "id": 48
   },
   {
     "episodeNo": 23,
@@ -640,7 +640,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 48
+    "id": 49
   },
   {
     "episodeNo": 24,
@@ -653,7 +653,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 49
+    "id": 50
   },
   {
     "episodeNo": 25,
@@ -667,7 +667,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 50
+    "id": 51
   },
   {
     "episodeNo": 26,
@@ -681,7 +681,7 @@
     "season": "S2",
     "series": "FiM",
     "animationType": "episode",
-    "id": 51
+    "id": 52
   },
   {
     "episodeNo": 1,
@@ -695,7 +695,7 @@
     "season": "S3",
     "series": "FiM",
     "animationType": "episode",
-    "id": 52
+    "id": 53
   },
   {
     "episodeNo": 2,
@@ -709,7 +709,7 @@
     "season": "S3",
     "series": "FiM",
     "animationType": "episode",
-    "id": 53
+    "id": 54
   },
   {
     "episodeNo": 3,
@@ -722,7 +722,7 @@
     "season": "S3",
     "series": "FiM",
     "animationType": "episode",
-    "id": 54
+    "id": 55
   },
   {
     "episodeNo": 4,
@@ -735,7 +735,7 @@
     "season": "S3",
     "series": "FiM",
     "animationType": "episode",
-    "id": 55
+    "id": 56
   },
   {
     "episodeNo": 5,
@@ -748,7 +748,7 @@
     "season": "S3",
     "series": "FiM",
     "animationType": "episode",
-    "id": 56
+    "id": 57
   },
   {
     "episodeNo": 6,
@@ -761,7 +761,7 @@
     "season": "S3",
     "series": "FiM",
     "animationType": "episode",
-    "id": 57
+    "id": 58
   },
   {
     "episodeNo": 7,
@@ -774,7 +774,7 @@
     "season": "S3",
     "series": "FiM",
     "animationType": "episode",
-    "id": 58
+    "id": 59
   },
   {
     "episodeNo": 8,
@@ -787,7 +787,7 @@
     "season": "S3",
     "series": "FiM",
     "animationType": "episode",
-    "id": 59
+    "id": 60
   },
   {
     "episodeNo": 9,
@@ -800,7 +800,7 @@
     "season": "S3",
     "series": "FiM",
     "animationType": "episode",
-    "id": 60
+    "id": 61
   },
   {
     "episodeNo": 10,
@@ -813,7 +813,7 @@
     "season": "S3",
     "series": "FiM",
     "animationType": "episode",
-    "id": 61
+    "id": 62
   },
   {
     "episodeNo": 11,
@@ -827,7 +827,7 @@
     "season": "S3",
     "series": "FiM",
     "animationType": "episode",
-    "id": 62
+    "id": 63
   },
   {
     "episodeNo": 12,
@@ -841,7 +841,7 @@
     "season": "S3",
     "series": "FiM",
     "animationType": "episode",
-    "id": 63
+    "id": 64
   },
   {
     "episodeNo": 13,
@@ -856,7 +856,7 @@
     "season": "S3",
     "series": "FiM",
     "animationType": "episode",
-    "id": 64
+    "id": 65
   },
   {
     "episodeNo": 1,
@@ -870,7 +870,7 @@
     "season": "Equestria Girls",
     "series": "EqG",
     "animationType": "film",
-    "id": 65
+    "id": 66
   },
   {
     "episodeNo": 1,
@@ -884,7 +884,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 66
+    "id": 67
   },
   {
     "episodeNo": 2,
@@ -898,7 +898,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 67
+    "id": 68
   },
   {
     "episodeNo": 3,
@@ -911,7 +911,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 68
+    "id": 69
   },
   {
     "episodeNo": 4,
@@ -924,7 +924,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 69
+    "id": 70
   },
   {
     "episodeNo": 5,
@@ -937,7 +937,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 70
+    "id": 71
   },
   {
     "episodeNo": 6,
@@ -950,7 +950,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 71
+    "id": 72
   },
   {
     "episodeNo": 7,
@@ -963,7 +963,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 72
+    "id": 73
   },
   {
     "episodeNo": 8,
@@ -976,7 +976,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 73
+    "id": 74
   },
   {
     "episodeNo": 9,
@@ -989,7 +989,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 74
+    "id": 75
   },
   {
     "episodeNo": 10,
@@ -1002,7 +1002,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 75
+    "id": 76
   },
   {
     "episodeNo": 11,
@@ -1015,7 +1015,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 76
+    "id": 77
   },
   {
     "episodeNo": 12,
@@ -1029,7 +1029,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 77
+    "id": 78
   },
   {
     "episodeNo": 13,
@@ -1042,7 +1042,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 78
+    "id": 79
   },
   {
     "episodeNo": 14,
@@ -1055,7 +1055,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 79
+    "id": 80
   },
   {
     "episodeNo": 15,
@@ -1068,7 +1068,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 80
+    "id": 81
   },
   {
     "episodeNo": 16,
@@ -1081,7 +1081,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 81
+    "id": 82
   },
   {
     "episodeNo": 17,
@@ -1094,7 +1094,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 82
+    "id": 83
   },
   {
     "episodeNo": 18,
@@ -1107,7 +1107,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 83
+    "id": 84
   },
   {
     "episodeNo": 19,
@@ -1120,7 +1120,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 84
+    "id": 85
   },
   {
     "episodeNo": 1,
@@ -1134,7 +1134,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Rainbow Rocks",
-    "id": 85
+    "id": 86
   },
   {
     "episodeNo": 20,
@@ -1147,7 +1147,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 86
+    "id": 87
   },
   {
     "episodeNo": 2,
@@ -1162,7 +1162,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Rainbow Rocks",
-    "id": 87
+    "id": 88
   },
   {
     "episodeNo": 21,
@@ -1175,7 +1175,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 88
+    "id": 89
   },
   {
     "episodeNo": 3,
@@ -1188,7 +1188,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Rainbow Rocks",
-    "id": 89
+    "id": 90
   },
   {
     "episodeNo": 22,
@@ -1201,7 +1201,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 90
+    "id": 91
   },
   {
     "episodeNo": 4,
@@ -1217,7 +1217,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Rainbow Rocks",
-    "id": 91
+    "id": 92
   },
   {
     "episodeNo": 23,
@@ -1230,7 +1230,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 92
+    "id": 93
   },
   {
     "episodeNo": 24,
@@ -1243,7 +1243,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 93
+    "id": 94
   },
   {
     "episodeNo": 25,
@@ -1257,7 +1257,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 94
+    "id": 95
   },
   {
     "episodeNo": 26,
@@ -1271,7 +1271,7 @@
     "season": "S4",
     "series": "FiM",
     "animationType": "episode",
-    "id": 95
+    "id": 96
   },
   {
     "episodeNo": 5,
@@ -1286,7 +1286,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Rainbow Rocks",
-    "id": 96
+    "id": 97
   },
   {
     "episodeNo": 6,
@@ -1302,7 +1302,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Rainbow Rocks",
-    "id": 97
+    "id": 98
   },
   {
     "episodeNo": 7,
@@ -1316,7 +1316,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Rainbow Rocks",
-    "id": 98
+    "id": 99
   },
   {
     "episodeNo": 8,
@@ -1331,7 +1331,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Rainbow Rocks",
-    "id": 99
+    "id": 100
   },
   {
     "episodeNo": 9,
@@ -1346,7 +1346,7 @@
     "season": "Rainbow Rocks",
     "series": "EqG",
     "animationType": "film",
-    "id": 100
+    "id": 101
   },
   {
     "episodeNo": 10,
@@ -1360,7 +1360,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Rainbow Rocks",
-    "id": 101
+    "id": 102
   },
   {
     "episodeNo": 11,
@@ -1374,7 +1374,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Rainbow Rocks",
-    "id": 102
+    "id": 103
   },
   {
     "episodeNo": 12,
@@ -1388,7 +1388,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Rainbow Rocks",
-    "id": 103
+    "id": 104
   },
   {
     "episodeNo": 1,
@@ -1402,7 +1402,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 104
+    "id": 105
   },
   {
     "episodeNo": 2,
@@ -1416,7 +1416,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 105
+    "id": 106
   },
   {
     "episodeNo": 3,
@@ -1430,7 +1430,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 106
+    "id": 107
   },
   {
     "episodeNo": 4,
@@ -1444,7 +1444,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 107
+    "id": 108
   },
   {
     "episodeNo": 5,
@@ -1458,7 +1458,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 108
+    "id": 109
   },
   {
     "episodeNo": 6,
@@ -1472,7 +1472,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 109
+    "id": 110
   },
   {
     "episodeNo": 7,
@@ -1486,7 +1486,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 110
+    "id": 111
   },
   {
     "episodeNo": 8,
@@ -1500,7 +1500,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 111
+    "id": 112
   },
   {
     "episodeNo": 9,
@@ -1514,7 +1514,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 112
+    "id": 113
   },
   {
     "episodeNo": 10,
@@ -1528,7 +1528,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 113
+    "id": 114
   },
   {
     "episodeNo": 11,
@@ -1542,7 +1542,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 114
+    "id": 115
   },
   {
     "episodeNo": 12,
@@ -1556,7 +1556,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 115
+    "id": 116
   },
   {
     "episodeNo": 13,
@@ -1570,7 +1570,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 116
+    "id": 117
   },
   {
     "episodeNo": 1,
@@ -1584,7 +1584,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Friendship Games",
-    "id": 117
+    "id": 118
   },
   {
     "episodeNo": 2,
@@ -1598,7 +1598,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Friendship Games",
-    "id": 118
+    "id": 119
   },
   {
     "episodeNo": 3,
@@ -1612,7 +1612,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Friendship Games",
-    "id": 119
+    "id": 120
   },
   {
     "episodeNo": 4,
@@ -1626,7 +1626,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Friendship Games",
-    "id": 120
+    "id": 121
   },
   {
     "episodeNo": 5,
@@ -1639,7 +1639,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Friendship Games",
-    "id": 121
+    "id": 122
   },
   {
     "episodeNo": 14,
@@ -1653,7 +1653,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 122
+    "id": 123
   },
   {
     "episodeNo": 15,
@@ -1667,7 +1667,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 123
+    "id": 124
   },
   {
     "episodeNo": 16,
@@ -1682,7 +1682,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 124
+    "id": 125
   },
   {
     "episodeNo": 6,
@@ -1697,7 +1697,7 @@
     "season": "Friendship Games",
     "series": "EqG",
     "animationType": "film",
-    "id": 125
+    "id": 126
   },
   {
     "episodeNo": 17,
@@ -1712,7 +1712,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 126
+    "id": 127
   },
   {
     "episodeNo": 18,
@@ -1726,7 +1726,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 127
+    "id": 128
   },
   {
     "episodeNo": 19,
@@ -1740,7 +1740,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 128
+    "id": 129
   },
   {
     "episodeNo": 20,
@@ -1754,7 +1754,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 129
+    "id": 130
   },
   {
     "episodeNo": 21,
@@ -1768,7 +1768,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 130
+    "id": 131
   },
   {
     "episodeNo": 22,
@@ -1782,7 +1782,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 131
+    "id": 132
   },
   {
     "episodeNo": 23,
@@ -1796,7 +1796,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 132
+    "id": 133
   },
   {
     "episodeNo": 24,
@@ -1810,7 +1810,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 133
+    "id": 134
   },
   {
     "episodeNo": 25,
@@ -1824,7 +1824,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 134
+    "id": 135
   },
   {
     "episodeNo": 26,
@@ -1838,7 +1838,7 @@
     "season": "S5",
     "series": "FiM",
     "animationType": "episode",
-    "id": 135
+    "id": 136
   },
   {
     "episodeNo": 1,
@@ -1852,7 +1852,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 136
+    "id": 137
   },
   {
     "episodeNo": 2,
@@ -1866,7 +1866,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 137
+    "id": 138
   },
   {
     "episodeNo": 3,
@@ -1880,7 +1880,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 138
+    "id": 139
   },
   {
     "episodeNo": 4,
@@ -1894,7 +1894,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 139
+    "id": 140
   },
   {
     "episodeNo": 5,
@@ -1908,7 +1908,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 140
+    "id": 141
   },
   {
     "episodeNo": 6,
@@ -1922,7 +1922,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 141
+    "id": 142
   },
   {
     "episodeNo": 7,
@@ -1936,7 +1936,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 142
+    "id": 143
   },
   {
     "episodeNo": 8,
@@ -1950,7 +1950,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 143
+    "id": 144
   },
   {
     "episodeNo": 9,
@@ -1964,7 +1964,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 144
+    "id": 145
   },
   {
     "episodeNo": 10,
@@ -1978,7 +1978,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 145
+    "id": 146
   },
   {
     "episodeNo": 11,
@@ -1992,7 +1992,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 146
+    "id": 147
   },
   {
     "episodeNo": 12,
@@ -2006,7 +2006,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 147
+    "id": 148
   },
   {
     "episodeNo": 13,
@@ -2020,7 +2020,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 148
+    "id": 149
   },
   {
     "episodeNo": 14,
@@ -2034,7 +2034,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 149
+    "id": 150
   },
   {
     "episodeNo": 15,
@@ -2048,7 +2048,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 150
+    "id": 151
   },
   {
     "episodeNo": 16,
@@ -2062,7 +2062,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 151
+    "id": 152
   },
   {
     "episodeNo": 17,
@@ -2076,7 +2076,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 152
+    "id": 153
   },
   {
     "episodeNo": 18,
@@ -2090,7 +2090,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 153
+    "id": 154
   },
   {
     "episodeNo": 19,
@@ -2104,7 +2104,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 154
+    "id": 155
   },
   {
     "episodeNo": 20,
@@ -2119,7 +2119,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 155
+    "id": 156
   },
   {
     "episodeNo": 21,
@@ -2133,7 +2133,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 156
+    "id": 157
   },
   {
     "episodeNo": 22,
@@ -2147,7 +2147,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 157
+    "id": 158
   },
   {
     "episodeNo": 1,
@@ -2161,7 +2161,7 @@
     "season": "Legend of Everfree",
     "series": "EqG",
     "animationType": "film",
-    "id": 158
+    "id": 159
   },
   {
     "episodeNo": 23,
@@ -2175,7 +2175,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 159
+    "id": 160
   },
   {
     "episodeNo": 24,
@@ -2189,7 +2189,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 160
+    "id": 161
   },
   {
     "episodeNo": 25,
@@ -2203,7 +2203,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 161
+    "id": 162
   },
   {
     "episodeNo": 26,
@@ -2217,7 +2217,7 @@
     "season": "S6",
     "series": "FiM",
     "animationType": "episode",
-    "id": 162
+    "id": 163
   },
   {
     "episodeNo": 1,
@@ -2231,7 +2231,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 163
+    "id": 164
   },
   {
     "episodeNo": 2,
@@ -2245,7 +2245,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 164
+    "id": 165
   },
   {
     "episodeNo": 3,
@@ -2259,7 +2259,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 165
+    "id": 166
   },
   {
     "episodeNo": 4,
@@ -2273,7 +2273,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 166
+    "id": 167
   },
   {
     "episodeNo": 5,
@@ -2287,7 +2287,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 167
+    "id": 168
   },
   {
     "episodeNo": 6,
@@ -2301,7 +2301,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 168
+    "id": 169
   },
   {
     "episodeNo": 7,
@@ -2315,7 +2315,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 169
+    "id": 170
   },
   {
     "episodeNo": 8,
@@ -2329,7 +2329,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 170
+    "id": 171
   },
   {
     "episodeNo": 9,
@@ -2343,7 +2343,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 171
+    "id": 172
   },
   {
     "episodeNo": 10,
@@ -2357,7 +2357,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 172
+    "id": 173
   },
   {
     "episodeNo": 11,
@@ -2371,7 +2371,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 173
+    "id": 174
   },
   {
     "episodeNo": 1,
@@ -2385,7 +2385,7 @@
     "season": "Dance Magic",
     "series": "EqG",
     "animationType": "special",
-    "id": 174
+    "id": 175
   },
   {
     "episodeNo": 1,
@@ -2399,7 +2399,7 @@
     "season": "Movie Magic",
     "series": "EqG",
     "animationType": "special",
-    "id": 175
+    "id": 176
   },
   {
     "episodeNo": 1,
@@ -2413,7 +2413,7 @@
     "season": "Mirror Magic",
     "series": "EqG",
     "animationType": "special",
-    "id": 176
+    "id": 177
   },
   {
     "episodeNo": 1,
@@ -2426,7 +2426,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Summertime Shorts",
-    "id": 177
+    "id": 178
   },
   {
     "episodeNo": 2,
@@ -2439,7 +2439,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Summertime Shorts",
-    "id": 178
+    "id": 179
   },
   {
     "episodeNo": 3,
@@ -2453,7 +2453,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Summertime Shorts",
-    "id": 179
+    "id": 180
   },
   {
     "episodeNo": 4,
@@ -2466,7 +2466,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Summertime Shorts",
-    "id": 180
+    "id": 181
   },
   {
     "episodeNo": 5,
@@ -2479,7 +2479,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Summertime Shorts",
-    "id": 181
+    "id": 182
   },
   {
     "episodeNo": 6,
@@ -2493,7 +2493,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Summertime Shorts",
-    "id": 182
+    "id": 183
   },
   {
     "episodeNo": 12,
@@ -2507,7 +2507,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 183
+    "id": 184
   },
   {
     "episodeNo": 13,
@@ -2522,7 +2522,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 184
+    "id": 185
   },
   {
     "episodeNo": 7,
@@ -2536,7 +2536,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Summertime Shorts",
-    "id": 185
+    "id": 186
   },
   {
     "episodeNo": 8,
@@ -2549,7 +2549,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Summertime Shorts",
-    "id": 186
+    "id": 187
   },
   {
     "episodeNo": 9,
@@ -2563,7 +2563,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Summertime Shorts",
-    "id": 187
+    "id": 188
   },
   {
     "episodeNo": 14,
@@ -2577,7 +2577,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 188
+    "id": 189
   },
   {
     "episodeNo": 10,
@@ -2591,7 +2591,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Summertime Shorts",
-    "id": 189
+    "id": 190
   },
   {
     "episodeNo": 15,
@@ -2605,7 +2605,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 190
+    "id": 191
   },
   {
     "episodeNo": 11,
@@ -2619,7 +2619,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Summertime Shorts",
-    "id": 191
+    "id": 192
   },
   {
     "episodeNo": 16,
@@ -2633,7 +2633,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 192
+    "id": 193
   },
   {
     "episodeNo": 12,
@@ -2648,7 +2648,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Summertime Shorts",
-    "id": 193
+    "id": 194
   },
   {
     "episodeNo": 13,
@@ -2662,7 +2662,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Summertime Shorts",
-    "id": 194
+    "id": 195
   },
   {
     "episodeNo": 14,
@@ -2681,7 +2681,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Summertime Shorts",
-    "id": 195
+    "id": 196
   },
   {
     "episodeNo": 17,
@@ -2695,7 +2695,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 196
+    "id": 197
   },
   {
     "episodeNo": 18,
@@ -2709,7 +2709,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 197
+    "id": 198
   },
   {
     "episodeNo": 19,
@@ -2723,7 +2723,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 198
+    "id": 199
   },
   {
     "episodeNo": 15,
@@ -2736,7 +2736,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Summertime Shorts",
-    "id": 199
+    "id": 200
   },
   {
     "episodeNo": 16,
@@ -2750,7 +2750,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Summertime Shorts",
-    "id": 200
+    "id": 201
   },
   {
     "episodeNo": 20,
@@ -2764,7 +2764,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 201
+    "id": 202
   },
   {
     "episodeNo": 21,
@@ -2778,7 +2778,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 202
+    "id": 203
   },
   {
     "episodeNo": 1,
@@ -2792,7 +2792,7 @@
     "season": "The Movie",
     "series": "FiM",
     "animationType": "film",
-    "id": 203
+    "id": 204
   },
   {
     "episodeNo": 22,
@@ -2806,7 +2806,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 204
+    "id": 205
   },
   {
     "episodeNo": 23,
@@ -2820,7 +2820,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 205
+    "id": 206
   },
   {
     "episodeNo": 24,
@@ -2834,7 +2834,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 206
+    "id": 207
   },
   {
     "episodeNo": 25,
@@ -2848,7 +2848,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 207
+    "id": 208
   },
   {
     "episodeNo": 26,
@@ -2862,7 +2862,7 @@
     "season": "S7",
     "series": "FiM",
     "animationType": "episode",
-    "id": 208
+    "id": 209
   },
   {
     "episodeNo": 1,
@@ -2875,7 +2875,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 209
+    "id": 210
   },
   {
     "episodeNo": 2,
@@ -2888,7 +2888,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 210
+    "id": 211
   },
   {
     "episodeNo": 3,
@@ -2901,7 +2901,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 211
+    "id": 212
   },
   {
     "episodeNo": 4,
@@ -2914,7 +2914,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 212
+    "id": 213
   },
   {
     "episodeNo": 5,
@@ -2927,7 +2927,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 213
+    "id": 214
   },
   {
     "episodeNo": 6,
@@ -2940,7 +2940,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 214
+    "id": 215
   },
   {
     "episodeNo": 7,
@@ -2953,7 +2953,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 215
+    "id": 216
   },
   {
     "episodeNo": 8,
@@ -2966,7 +2966,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 216
+    "id": 217
   },
   {
     "episodeNo": 9,
@@ -2980,7 +2980,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 217
+    "id": 218
   },
   {
     "episodeNo": 10,
@@ -2993,7 +2993,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 218
+    "id": 219
   },
   {
     "episodeNo": 11,
@@ -3006,27 +3006,17 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 219
+    "id": 220
   },
   {
     "episodeNo": 1,
     "title": "Best Trends Forever",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Best_Trends_Forever",
     "summary": [
-      "During a student-hosted CHS news report, Rarity reports on the latest fashion trends. However, when she discovers her purse lacking in any trendsetting fashions, she looks to her friends for inspiration: Twilight Sparkle, Pinkie Pie, or Rainbow Dash (prompting a choice from the viewer)."
-    ],
-    "airdate": "2017-12-17",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 1)",
-    "id": 220
-  },
-  {
-    "episodeNo": 2,
-    "title": "Best Trends Forever - Twilight",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Best_Trends_Forever",
-    "summary": [
-      "If the viewer chooses Twilight, Rarity declares the newest trend to be \"smart chic\", and everyone at the school starts adopting Twilight's glasses-wearing fashion and love for knowledge. Unfortunately, this prevents Twilight from being able to get the books she wants. Rarity apologizes to Twilight for the inconvenience, and she quickly gets everyone to adopt capes as the newest fashion trend."
+      "During a student-hosted CHS news report, Rarity reports on the latest fashion trends. However, when she discovers her purse lacking in any trendsetting fashions, she looks to her friends for inspiration: Twilight Sparkle, Pinkie Pie, or Rainbow Dash (prompting a choice from the viewer).",
+      "If the viewer chooses Twilight, Rarity declares the newest trend to be \"smart chic\", and everyone at the school starts adopting Twilight's glasses-wearing fashion and love for knowledge. Unfortunately, this prevents Twilight from being able to get the books she wants. Rarity apologizes to Twilight for the inconvenience, and she quickly gets everyone to adopt capes as the newest fashion trend.",
+      "If the viewer chooses Rainbow, Rarity declares the newest trend to be rainbows. Everyone at the school starts wearing rainbow wigs or using rainbow hair dye, causing Rarity to mistake everyone she runs into for Rainbow Dash. Rarity is deeply disturbed and starts to believe she's in an alternate dimension called the \"Rainbow Zone\", but Rainbow Dash herself is thrilled.",
+      "If the viewer chooses Pinkie, Rarity declares the newest trend to be confetti, and an utterly delighted Pinkie Pie starts filling the school halls and lockers with confetti. Despite Twilight, Applejack, and Rarity's efforts to clean up, Principal Celestia finds her office flooded with confetti, and Rarity fears a punishment of detention."
     ],
     "airdate": "2017-12-17",
     "series": "EqG",
@@ -3035,37 +3025,88 @@
     "id": 221
   },
   {
-    "episodeNo": 3,
+    "episodeNo": -1,
+    "title": "Best Trends Forever - Twilight",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Best_Trends_Forever",
+    "summary": [
+      "During a student-hosted CHS news report, Rarity reports on the latest fashion trends. However, when she discovers her purse lacking in any trendsetting fashions, she looks to her friends for inspiration: Twilight Sparkle, Pinkie Pie, or Rainbow Dash (prompting a choice from the viewer).",
+      "If the viewer chooses Twilight, Rarity declares the newest trend to be \"smart chic\", and everyone at the school starts adopting Twilight's glasses-wearing fashion and love for knowledge. Unfortunately, this prevents Twilight from being able to get the books she wants. Rarity apologizes to Twilight for the inconvenience, and she quickly gets everyone to adopt capes as the newest fashion trend."
+    ],
+    "airdate": "2017-12-17",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 1)",
+    "id": -1
+  },
+  {
+    "episodeNo": -2,
     "title": "Best Trends Forever - Rainbow",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Best_Trends_Forever",
     "summary": [
+      "During a student-hosted CHS news report, Rarity reports on the latest fashion trends. However, when she discovers her purse lacking in any trendsetting fashions, she looks to her friends for inspiration: Twilight Sparkle, Pinkie Pie, or Rainbow Dash (prompting a choice from the viewer).",
       "If the viewer chooses Rainbow, Rarity declares the newest trend to be rainbows. Everyone at the school starts wearing rainbow wigs or using rainbow hair dye, causing Rarity to mistake everyone she runs into for Rainbow Dash. Rarity is deeply disturbed and starts to believe she's in an alternate dimension called the \"Rainbow Zone\", but Rainbow Dash herself is thrilled."
     ],
     "airdate": "2017-12-17",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 222
+    "id": -2
   },
   {
-    "episodeNo": 4,
+    "episodeNo": -3,
     "title": "Best Trends Forever - Pinkie",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Best_Trends_Forever",
     "summary": [
+      "During a student-hosted CHS news report, Rarity reports on the latest fashion trends. However, when she discovers her purse lacking in any trendsetting fashions, she looks to her friends for inspiration: Twilight Sparkle, Pinkie Pie, or Rainbow Dash (prompting a choice from the viewer).",
       "If the viewer chooses Pinkie, Rarity declares the newest trend to be confetti, and an utterly delighted Pinkie Pie starts filling the school halls and lockers with confetti. Despite Twilight, Applejack, and Rarity's efforts to clean up, Principal Celestia finds her office flooded with confetti, and Rarity fears a punishment of detention."
     ],
     "airdate": "2017-12-17",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 223
+    "id": -3
   },
   {
-    "episodeNo": 5,
+    "episodeNo": 2,
     "title": "Fluttershy's Butterflies",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Fluttershy's_Butterflies",
     "summary": [
-      "The Mane Seven all decide to audition for the Canterlot High School Fall Play \"Dazzled\" together. Unfortunately, Fluttershy is terrified about auditioning on her own. Applejack and Rainbow Dash offer to give her advice on how to overcome her stage fright, and Fluttershy wonders who to choose."
+      "The Mane Seven all decide to audition for the Canterlot High School Fall Play \"Dazzled\" together. Unfortunately, Fluttershy is terrified about auditioning on her own. Applejack and Rainbow Dash offer to give her advice on how to overcome her stage fright, and Fluttershy wonders who to choose.",
+      "If the viewer chooses Rainbow Dash, Rainbow helps Fluttershy practice for her audition by making her a sports commentator during the school soccer game. Fluttershy's commentary starts out soft, but with Rainbow's encouragement, she slowly gets into it. When she later applies her practice at sports commentary to her play audition, it is met with applause.",
+      "If the viewer chooses Applejack, Applejack helps Fluttershy practice for her audition by telling her to picture her audience as chickens. When Fluttershy succeeds at the audition, she reveals that she pictured everyone in the audience as Applejack.",
+      "If the viewer chooses DJ Pon-3, DJ helps Fluttershy by providing music and light effects during her audition. The audience is so enamored with DJ's music and lights that it distracts from Fluttershy's soft speaking voice, leaving Rainbow and Applejack stunned."
+    ],
+    "airdate": "2017-12-23",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 1)",
+    "id": 222
+  },
+  {
+    "episodeNo": 3,
+    "title": "Text Support",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Text_Support",
+    "summary": [
+      "One day after school, Twilight gets a strange text message from Timber Spruce comprised entirely of emoticons. Unable to decipher the text, she turns to one of her friends to help translate it.",
+      "If the viewer chooses Rarity, Rarity uses her fluency in \"phone lingo\" to communicate with Timber on Twilight's behalf. When Twilight is still unclear about the messages being sent between them, Rarity explains that Timber was inviting her out on a Sunday date to have ice cream.",
+      "If the viewer chooses Fluttershy, Fluttershy tells Twilight to reply to Timber with a bunch of animal emoticons. Twilight doesn't know what the string of emoticons is supposed to mean, but Timber replies with approval of Twilight's apparent suggestion for a date at the zoo.",
+      "If the viewer chooses Sunset Shimmer, Sunset suggests that Twilight forget about texting and simply call Timber to ask him what he meant. Using Twilight's phone, Sunset calls Timber to find out what his text message meant, and she explains to Twilight that Timber was inviting her on a date to play mini-golf."
+    ],
+    "airdate": "2017-12-23",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 1)",
+    "id": 223
+  },
+  {
+    "episodeNo": 4,
+    "title": "Stressed in Show",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Stressed_in_Show",
+    "summary": [
+      "During rehearsal for the CHS Fall Play, Twilight suddenly becomes overwhelmed with stress from all the obligations she's promised to fulfill for her friends, like running lines with Flash Sentry and helping Applejack build the stage. Sunset Shimmer encourages Twilight to take a break from the play, and one of her other friends offers to help her get her mind off of it.",
+      "If the viewer chooses Fluttershy, Fluttershy takes Twilight to a forest meadow where she can frolic in peace with the animals. Twilight is resistant to Fluttershy's methods at first, still overcome with stress about the play, but as Fluttershy brings in more and more animals, Twilight starts to relax, and she takes a nap on the grass.",
+      "If the viewer chooses Rainbow Dash, Rainbow helps Twilight clear her head by running laps around the soccer field (accompanied by Sunset Shimmer and Spike). As Twilight and Rainbow engage in several sports, Twilight slowly gets into the activities and beats Rainbow at all of them, successfully getting her mind off the play.",
+      "If the viewer chooses Pinkie Pie, Pinkie Pie hounds Twilight all day with ideas on how to get her mind off the play. Twilight progressively gets so frustrated with Pinkie popping up out of nowhere that she becomes less concerned with the play and more concerned with where Pinkie Pie will pop up next."
     ],
     "airdate": "2017-12-23",
     "series": "EqG",
@@ -3074,11 +3115,14 @@
     "id": 224
   },
   {
-    "episodeNo": 6,
-    "title": "Text Support",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Text_Support",
+    "episodeNo": 5,
+    "title": "Driving Miss Shimmer",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Driving_Miss_Shimmer",
     "summary": [
-      "One day after school, Twilight gets a strange text message from Timber Spruce comprised entirely of emoticons. Unable to decipher the text, she turns to one of her friends to help translate it."
+      "Sunset Shimmer fails an attempt to get her driver's license. She has a retest on the following Monday, but her driving instructor Cranky Doodle has advised her to practice with someone more experienced. One of Sunset's friends offers to give her driving lessons.",
+      "If the viewer chooses Rarity, Rarity takes Sunset on a drive in a rented limo. When most of Rarity's lessons relate to impromptu dance parties and how to cater to one's passengers, Sunset insists that she just wants to practice driving, and she gets some practice in with the limo chauffeur Randolph. Some time later, Sunset passes her retest with flying colors.",
+      "If the viewer chooses Applejack, Applejack and Granny Smith help Sunset practice driving in their old pickup truck. When the truck quickly breaks down with a flat tire, Applejack teaches Sunset how to change it. Later, when Cranky Doodle's car similarly gets a flat tire during Sunset's retest, Sunset demonstrates her resourcefulness by taking out the carjack, and Cranky gives her a passing grade.",
+      "If the viewer chooses Fluttershy, Fluttershy helps Sunset practice driving in her own car. Before Sunset can get on the road, however, Fluttershy recites a long rhyme about driving preparations. Later, during her retest with Cranky Doodle, Sunset recalls Fluttershy's rhyme and makes the proper preparations before starting the car."
     ],
     "airdate": "2017-12-23",
     "series": "EqG",
@@ -3087,11 +3131,14 @@
     "id": 225
   },
   {
-    "episodeNo": 7,
-    "title": "Stressed in Show",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Stressed_in_Show",
+    "episodeNo": 6,
+    "title": "Rarity Investigates: The Case of the Bedazzled Boot",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Rarity_Investigates:_The_Case_of_the_Bedazzled_Boot",
     "summary": [
-      "During rehearsal for the CHS Fall Play, Twilight suddenly becomes overwhelmed with stress from all the obligations she's promised to fulfill for her friends, like running lines with Flash Sentry and helping Applejack build the stage. Sunset Shimmer encourages Twilight to take a break from the play, and one of her other friends offers to help her get her mind off of it."
+      "During rehearsal for the CHS Fall Play, Sunset Shimmer notices that one of the boot props is missing. Rarity adopts her \"Detective Rarity\" persona in order to investigate, and she picks one of several suspects to interrogate:",
+      "If the viewer chooses Pinkie Pie, Rarity interrogates her in a small room, and she quickly cracks under the pressure and confesses, even though she has an alibi for when the boot went missing. When Pinkie confesses to an unrelated incident, Rarity asks her if she's seen the missing boot, and Pinkie points out that it's right under a pile of bell-bottoms nearby.",
+      "If the viewer chooses Trixie, Rarity and Trixie engage in a back-and-forth of inner monologues. After a long period of complete silence, Rarity takes out a bag and starts doing her own makeup. Realizing Rarity could outlast her, Trixie starts to leave, but she nearly trips over a trail of boot studs. The trail leads to Spike, who had taken the boot so he could experience what it's like to be a dancer. Feeling sorry for Spike, Rarity offers to give him a part in the play, but she scolds him for stealing.",
+      "If the viewer chooses Applejack, Rarity interrogates her, and she says she last saw the missing boot near the costume rack. When Rarity checks the costume rack, she discovers Maud Pie with the boot. Maud had apparently been enamored with the boot's amethyst rhinestones. As she and Rarity fantasize about gemstones, Sunset walks up and takes the boot back to rehearsal."
     ],
     "airdate": "2017-12-23",
     "series": "EqG",
@@ -3100,433 +3147,446 @@
     "id": 226
   },
   {
-    "episodeNo": 8,
-    "title": "Driving Miss Shimmer",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Driving_Miss_Shimmer",
-    "summary": [
-      "Sunset Shimmer fails an attempt to get her driver's license. She has a retest on the following Monday, but her driving instructor Cranky Doodle has advised her to practice with someone more experienced. One of Sunset's friends offers to give her driving lessons."
-    ],
-    "airdate": "2017-12-23",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 1)",
-    "id": 227
-  },
-  {
-    "episodeNo": 9,
-    "title": "Rarity Investigates: The Case of the Bedazzled Boot",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Rarity_Investigates:_The_Case_of_the_Bedazzled_Boot",
-    "summary": [
-      "During rehearsal for the CHS Fall Play, Sunset Shimmer notices that one of the boot props is missing. Rarity adopts her \"Detective Rarity\" persona in order to investigate, and she picks one of several suspects to interrogate:"
-    ],
-    "airdate": "2017-12-23",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 1)",
-    "id": 228
-  },
-  {
-    "episodeNo": 10,
+    "episodeNo": -4,
     "title": "Fluttershy's Butterflies - Rainbow Dash",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Fluttershy's_Butterflies",
     "summary": [
+      "The Mane Seven all decide to audition for the Canterlot High School Fall Play \"Dazzled\" together. Unfortunately, Fluttershy is terrified about auditioning on her own. Applejack and Rainbow Dash offer to give her advice on how to overcome her stage fright, and Fluttershy wonders who to choose.",
       "If the viewer chooses Rainbow Dash, Rainbow helps Fluttershy practice for her audition by making her a sports commentator during the school soccer game. Fluttershy's commentary starts out soft, but with Rainbow's encouragement, she slowly gets into it. When she later applies her practice at sports commentary to her play audition, it is met with applause."
     ],
     "airdate": "2017-12-23",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 229
+    "id": -4
   },
   {
-    "episodeNo": 11,
+    "episodeNo": -5,
     "title": "Fluttershy's Butterflies - Applejack",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Fluttershy's_Butterflies",
     "summary": [
+      "The Mane Seven all decide to audition for the Canterlot High School Fall Play \"Dazzled\" together. Unfortunately, Fluttershy is terrified about auditioning on her own. Applejack and Rainbow Dash offer to give her advice on how to overcome her stage fright, and Fluttershy wonders who to choose.",
       "If the viewer chooses Applejack, Applejack helps Fluttershy practice for her audition by telling her to picture her audience as chickens. When Fluttershy succeeds at the audition, she reveals that she pictured everyone in the audience as Applejack."
     ],
     "airdate": "2017-12-23",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 230
+    "id": -5
   },
   {
-    "episodeNo": 12,
+    "episodeNo": -6,
     "title": "Fluttershy's Butterflies - DJ Pon-3",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Fluttershy's_Butterflies",
     "summary": [
+      "The Mane Seven all decide to audition for the Canterlot High School Fall Play \"Dazzled\" together. Unfortunately, Fluttershy is terrified about auditioning on her own. Applejack and Rainbow Dash offer to give her advice on how to overcome her stage fright, and Fluttershy wonders who to choose.",
       "If the viewer chooses DJ Pon-3, DJ helps Fluttershy by providing music and light effects during her audition. The audience is so enamored with DJ's music and lights that it distracts from Fluttershy's soft speaking voice, leaving Rainbow and Applejack stunned."
     ],
     "airdate": "2017-12-23",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 231
+    "id": -6
   },
   {
-    "episodeNo": 13,
+    "episodeNo": -7,
     "title": "Text Support - Rarity",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Text_Support",
     "summary": [
+      "One day after school, Twilight gets a strange text message from Timber Spruce comprised entirely of emoticons. Unable to decipher the text, she turns to one of her friends to help translate it.",
       "If the viewer chooses Rarity, Rarity uses her fluency in \"phone lingo\" to communicate with Timber on Twilight's behalf. When Twilight is still unclear about the messages being sent between them, Rarity explains that Timber was inviting her out on a Sunday date to have ice cream."
     ],
     "airdate": "2017-12-23",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 232
+    "id": -7
   },
   {
-    "episodeNo": 14,
+    "episodeNo": -8,
     "title": "Text Support - Fluttershy",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Text_Support",
     "summary": [
+      "One day after school, Twilight gets a strange text message from Timber Spruce comprised entirely of emoticons. Unable to decipher the text, she turns to one of her friends to help translate it.",
       "If the viewer chooses Fluttershy, Fluttershy tells Twilight to reply to Timber with a bunch of animal emoticons. Twilight doesn't know what the string of emoticons is supposed to mean, but Timber replies with approval of Twilight's apparent suggestion for a date at the zoo."
     ],
     "airdate": "2017-12-23",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 233
+    "id": -8
   },
   {
-    "episodeNo": 15,
+    "episodeNo": -9,
     "title": "Text Support - Sunset Shimmer",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Text_Support",
     "summary": [
+      "One day after school, Twilight gets a strange text message from Timber Spruce comprised entirely of emoticons. Unable to decipher the text, she turns to one of her friends to help translate it.",
       "If the viewer chooses Sunset Shimmer, Sunset suggests that Twilight forget about texting and simply call Timber to ask him what he meant. Using Twilight's phone, Sunset calls Timber to find out what his text message meant, and she explains to Twilight that Timber was inviting her on a date to play mini-golf."
     ],
     "airdate": "2017-12-23",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 234
+    "id": -9
   },
   {
-    "episodeNo": 16,
+    "episodeNo": -10,
     "title": "Stressed in Show - Fluttershy",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Stressed_in_Show",
     "summary": [
+      "During rehearsal for the CHS Fall Play, Twilight suddenly becomes overwhelmed with stress from all the obligations she's promised to fulfill for her friends, like running lines with Flash Sentry and helping Applejack build the stage. Sunset Shimmer encourages Twilight to take a break from the play, and one of her other friends offers to help her get her mind off of it.",
       "If the viewer chooses Fluttershy, Fluttershy takes Twilight to a forest meadow where she can frolic in peace with the animals. Twilight is resistant to Fluttershy's methods at first, still overcome with stress about the play, but as Fluttershy brings in more and more animals, Twilight starts to relax, and she takes a nap on the grass."
     ],
     "airdate": "2017-12-23",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 235
+    "id": -10
   },
   {
-    "episodeNo": 17,
+    "episodeNo": -11,
     "title": "Stressed in Show - Rainbow Dash",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Stressed_in_Show",
     "summary": [
+      "During rehearsal for the CHS Fall Play, Twilight suddenly becomes overwhelmed with stress from all the obligations she's promised to fulfill for her friends, like running lines with Flash Sentry and helping Applejack build the stage. Sunset Shimmer encourages Twilight to take a break from the play, and one of her other friends offers to help her get her mind off of it.",
       "If the viewer chooses Rainbow Dash, Rainbow helps Twilight clear her head by running laps around the soccer field (accompanied by Sunset Shimmer and Spike). As Twilight and Rainbow engage in several sports, Twilight slowly gets into the activities and beats Rainbow at all of them, successfully getting her mind off the play."
     ],
     "airdate": "2017-12-23",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 236
+    "id": -11
   },
   {
-    "episodeNo": 18,
+    "episodeNo": -12,
     "title": "Stressed in Show - Pinkie Pie",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Stressed_in_Show",
     "summary": [
+      "During rehearsal for the CHS Fall Play, Twilight suddenly becomes overwhelmed with stress from all the obligations she's promised to fulfill for her friends, like running lines with Flash Sentry and helping Applejack build the stage. Sunset Shimmer encourages Twilight to take a break from the play, and one of her other friends offers to help her get her mind off of it.",
       "If the viewer chooses Pinkie Pie, Pinkie Pie hounds Twilight all day with ideas on how to get her mind off the play. Twilight progressively gets so frustrated with Pinkie popping up out of nowhere that she becomes less concerned with the play and more concerned with where Pinkie Pie will pop up next."
     ],
     "airdate": "2017-12-23",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 237
+    "id": -12
   },
   {
-    "episodeNo": 19,
+    "episodeNo": -13,
     "title": "Driving Miss Shimmer - Rarity",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Driving_Miss_Shimmer",
     "summary": [
+      "Sunset Shimmer fails an attempt to get her driver's license. She has a retest on the following Monday, but her driving instructor Cranky Doodle has advised her to practice with someone more experienced. One of Sunset's friends offers to give her driving lessons.",
       "If the viewer chooses Rarity, Rarity takes Sunset on a drive in a rented limo. When most of Rarity's lessons relate to impromptu dance parties and how to cater to one's passengers, Sunset insists that she just wants to practice driving, and she gets some practice in with the limo chauffeur Randolph. Some time later, Sunset passes her retest with flying colors."
     ],
     "airdate": "2017-12-23",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 238
+    "id": -13
   },
   {
-    "episodeNo": 20,
+    "episodeNo": -14,
     "title": "Driving Miss Shimmer - Applejack",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Driving_Miss_Shimmer",
     "summary": [
+      "Sunset Shimmer fails an attempt to get her driver's license. She has a retest on the following Monday, but her driving instructor Cranky Doodle has advised her to practice with someone more experienced. One of Sunset's friends offers to give her driving lessons.",
       "If the viewer chooses Applejack, Applejack and Granny Smith help Sunset practice driving in their old pickup truck. When the truck quickly breaks down with a flat tire, Applejack teaches Sunset how to change it. Later, when Cranky Doodle's car similarly gets a flat tire during Sunset's retest, Sunset demonstrates her resourcefulness by taking out the carjack, and Cranky gives her a passing grade."
     ],
     "airdate": "2017-12-23",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 239
+    "id": -14
   },
   {
-    "episodeNo": 21,
+    "episodeNo": -15,
     "title": "Driving Miss Shimmer - Fluttershy",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Driving_Miss_Shimmer",
     "summary": [
+      "Sunset Shimmer fails an attempt to get her driver's license. She has a retest on the following Monday, but her driving instructor Cranky Doodle has advised her to practice with someone more experienced. One of Sunset's friends offers to give her driving lessons.",
       "If the viewer chooses Fluttershy, Fluttershy helps Sunset practice driving in her own car. Before Sunset can get on the road, however, Fluttershy recites a long rhyme about driving preparations. Later, during her retest with Cranky Doodle, Sunset recalls Fluttershy's rhyme and makes the proper preparations before starting the car."
     ],
     "airdate": "2017-12-23",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 240
+    "id": -15
   },
   {
-    "episodeNo": 22,
+    "episodeNo": -16,
     "title": "Rarity Investigates: The Case of the Bedazzled Boot - Pinkie Pie",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Rarity_Investigates:_The_Case_of_the_Bedazzled_Boot",
     "summary": [
+      "During rehearsal for the CHS Fall Play, Sunset Shimmer notices that one of the boot props is missing. Rarity adopts her \"Detective Rarity\" persona in order to investigate, and she picks one of several suspects to interrogate:",
       "If the viewer chooses Pinkie Pie, Rarity interrogates her in a small room, and she quickly cracks under the pressure and confesses, even though she has an alibi for when the boot went missing. When Pinkie confesses to an unrelated incident, Rarity asks her if she's seen the missing boot, and Pinkie points out that it's right under a pile of bell-bottoms nearby."
     ],
     "airdate": "2017-12-23",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 241
+    "id": -16
   },
   {
-    "episodeNo": 23,
+    "episodeNo": -17,
     "title": "Rarity Investigates: The Case of the Bedazzled Boot - Trixie",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Rarity_Investigates:_The_Case_of_the_Bedazzled_Boot",
     "summary": [
+      "During rehearsal for the CHS Fall Play, Sunset Shimmer notices that one of the boot props is missing. Rarity adopts her \"Detective Rarity\" persona in order to investigate, and she picks one of several suspects to interrogate:",
       "If the viewer chooses Trixie, Rarity and Trixie engage in a back-and-forth of inner monologues. After a long period of complete silence, Rarity takes out a bag and starts doing her own makeup. Realizing Rarity could outlast her, Trixie starts to leave, but she nearly trips over a trail of boot studs. The trail leads to Spike, who had taken the boot so he could experience what it's like to be a dancer. Feeling sorry for Spike, Rarity offers to give him a part in the play, but she scolds him for stealing."
     ],
     "airdate": "2017-12-23",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 242
+    "id": -17
   },
   {
-    "episodeNo": 24,
+    "episodeNo": -18,
     "title": "Rarity Investigates: The Case of the Bedazzled Boot - Applejack",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Rarity_Investigates:_The_Case_of_the_Bedazzled_Boot",
     "summary": [
+      "During rehearsal for the CHS Fall Play, Sunset Shimmer notices that one of the boot props is missing. Rarity adopts her \"Detective Rarity\" persona in order to investigate, and she picks one of several suspects to interrogate:",
       "If the viewer chooses Applejack, Rarity interrogates her, and she says she last saw the missing boot near the costume rack. When Rarity checks the costume rack, she discovers Maud Pie with the boot. Maud had apparently been enamored with the boot's amethyst rhinestones. As she and Rarity fantasize about gemstones, Sunset walks up and takes the boot back to rehearsal."
     ],
     "airdate": "2017-12-23",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 243
+    "id": -18
   },
   {
-    "episodeNo": 25,
+    "episodeNo": 7,
     "title": "All the World's Off Stage",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#All_the_World's_Off_Stage",
     "summary": [
-      "Sunset Shimmer continues to oversee rehearsals for the Canterlot High School Fall Play. During rehearsal, Snips and Snails have trouble moving the heavy \"Shiny City\" backdrop across the stage, and Sunset turns to one of her friends for assistance:"
-    ],
-    "airdate": "2017-12-30",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 1)",
-    "id": 244
-  },
-  {
-    "episodeNo": 26,
-    "title": "Constructive Criticism",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Constructive_Criticism",
-    "summary": [
-      "While building the stage sets for the CHS Fall Play, Applejack accidentally injures her hand with a hammer. With Applejack unable to finish the sets in time for the play on Friday, Sunset Shimmer suggests asking one of their friends to be an assistant set designer:"
-    ],
-    "airdate": "2017-12-30",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 1)",
-    "id": 245
-  },
-  {
-    "episodeNo": 27,
-    "title": "Opening Night",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Opening_Night",
-    "summary": [
-      "On opening night of the Canterlot High Fall Play, everything goes smoothly at first, and Applejack gives Fluttershy some encouragement before she goes on stage to say her line. Unfortunately, Snips and Snails cause a bell prop to fall and crash in the middle of Fluttershy's line, and she freezes up in the spotlight. This prompts one of her friends to try and help:"
-    ],
-    "airdate": "2017-12-30",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 1)",
-    "id": 246
-  },
-  {
-    "episodeNo": 28,
-    "title": "Happily Ever After Party",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Happily_Ever_After_Party",
-    "summary": [
-      "The Canterlot High School Fall Play is a great success, but the Cutie Mark Crusaders are disappointed. They made a slideshow of everyone's time putting the play together and planned to show it at the afterparty, but Cranky Doodle refused to let them borrow his movie projector. Sympathizing with the Crusaders' plight, Applejack, Rarity, or Rainbow Dash offer to help:"
-    ],
-    "airdate": "2017-12-30",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 1)",
-    "id": 247
-  },
-  {
-    "episodeNo": 29,
-    "title": "All the World's Off Stage - Twilight Sparkle",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#All_the_World's_Off_Stage",
-    "summary": [
-      "If the viewer chooses Twilight Sparkle, Sunset expects Twilight to use her telekinesis to move the set across the stage, but Twilight instead uses a small droid she built for her robotics club project."
-    ],
-    "airdate": "2017-12-30",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 1)",
-    "id": 248
-  },
-  {
-    "episodeNo": 30,
-    "title": "All the World's Off Stage - Pinkie Pie",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#All_the_World's_Off_Stage",
-    "summary": [
-      "If the viewer chooses Pinkie Pie, Pinkie replaces the set with a new set made entirely out of balloons, making it easy to float across the stage."
-    ],
-    "airdate": "2017-12-30",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 1)",
-    "id": 249
-  },
-  {
-    "episodeNo": 31,
-    "title": "All the World's Off Stage - Micro Chips",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#All_the_World's_Off_Stage",
-    "summary": [
+      "Sunset Shimmer continues to oversee rehearsals for the Canterlot High School Fall Play. During rehearsal, Snips and Snails have trouble moving the heavy \"Shiny City\" backdrop across the stage, and Sunset turns to one of her friends for assistance:",
+      "If the viewer chooses Twilight Sparkle, Sunset expects Twilight to use her telekinesis to move the set across the stage, but Twilight instead uses a small droid she built for her robotics club project.",
+      "If the viewer chooses Pinkie Pie, Pinkie replaces the set with a new set made entirely out of balloons, making it easy to float across the stage.",
       "If the viewer chooses Micro Chips, Micro Chips uses his brains to convince Bulk Biceps to move the set with his brawn."
     ],
     "airdate": "2017-12-30",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 250
+    "id": 227
   },
   {
-    "episodeNo": 32,
-    "title": "Constructive Criticism - Rainbow Dash",
+    "episodeNo": 8,
+    "title": "Constructive Criticism",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Constructive_Criticism",
     "summary": [
-      "If the viewer chooses Rainbow Dash, Rainbow uses her powers of super speed to quickly build the set without looking at Applejack's blueprints. When the set is finished, Applejack thinks it looks even better than her blueprints, and Rainbow reveals that she actually followed Applejack's vision board containing designs that she knew she would never have time to build."
-    ],
-    "airdate": "2017-12-30",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 1)",
-    "id": 251
-  },
-  {
-    "episodeNo": 33,
-    "title": "Constructive Criticism - Pinkie Pie",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Constructive_Criticism",
-    "summary": [
-      "If the viewer chooses Pinkie Pie, Pinkie helps build the set while practicing her drum solo at the same time. With Applejack's guidance, the set is finished and met with her approval."
-    ],
-    "airdate": "2017-12-30",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 1)",
-    "id": 252
-  },
-  {
-    "episodeNo": 34,
-    "title": "Constructive Criticism - Photo Finish",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Constructive_Criticism",
-    "summary": [
+      "While building the stage sets for the CHS Fall Play, Applejack accidentally injures her hand with a hammer. With Applejack unable to finish the sets in time for the play on Friday, Sunset Shimmer suggests asking one of their friends to be an assistant set designer:",
+      "If the viewer chooses Rainbow Dash, Rainbow uses her powers of super speed to quickly build the set without looking at Applejack's blueprints. When the set is finished, Applejack thinks it looks even better than her blueprints, and Rainbow reveals that she actually followed Applejack's vision board containing designs that she knew she would never have time to build.",
+      "If the viewer chooses Pinkie Pie, Pinkie helps build the set while practicing her drum solo at the same time. With Applejack's guidance, the set is finished and met with her approval.",
       "If the viewer chooses Photo Finish, Photo Finish and her friends Violet Blurr and Pixel Pizzaz disregard Applejack's blueprints and design the set out of cameras and lasers."
     ],
     "airdate": "2017-12-30",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 253
+    "id": 228
   },
   {
-    "episodeNo": 35,
-    "title": "Opening Night - Applejack",
+    "episodeNo": 9,
+    "title": "Opening Night",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Opening_Night",
     "summary": [
-      "If the viewer chooses Applejack, Applejack goes on stage in a tree costume and picks up the bell for Fluttershy to get through her line."
-    ],
-    "airdate": "2017-12-30",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 1)",
-    "id": 254
-  },
-  {
-    "episodeNo": 36,
-    "title": "Opening Night - Twilight Sparkle",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Opening_Night",
-    "summary": [
-      "If the viewer chooses Twilight Sparkle, Sunset Shimmer signals Twilight to use her telekinesis to pick up the bell, and Fluttershy rings it before saying her line."
-    ],
-    "airdate": "2017-12-30",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 1)",
-    "id": 255
-  },
-  {
-    "episodeNo": 37,
-    "title": "Opening Night - Sunset Shimmer",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Opening_Night",
-    "summary": [
+      "On opening night of the Canterlot High Fall Play, everything goes smoothly at first, and Applejack gives Fluttershy some encouragement before she goes on stage to say her line. Unfortunately, Snips and Snails cause a bell prop to fall and crash in the middle of Fluttershy's line, and she freezes up in the spotlight. This prompts one of her friends to try and help:",
+      "If the viewer chooses Applejack, Applejack goes on stage in a tree costume and picks up the bell for Fluttershy to get through her line.",
+      "If the viewer chooses Twilight Sparkle, Sunset Shimmer signals Twilight to use her telekinesis to pick up the bell, and Fluttershy rings it before saying her line.",
       "If the viewer chooses Sunset Shimmer, Sunset goes on stage herself and improvises a speech about the play's message and how it allegorically applies to real life. Despite Sunset's awkwardness, Fluttershy successfully rings the bell and says her line."
     ],
     "airdate": "2017-12-30",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 256
+    "id": 229
   },
   {
-    "episodeNo": 38,
-    "title": "Happily Ever After Party - Applejack",
+    "episodeNo": 10,
+    "title": "Happily Ever After Party",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Happily_Ever_After_Party",
     "summary": [
-      "If the viewer chooses Applejack, Applejack has a \"stubborn-off\" with Mr. Doodle in which they both refuse to budge on their respective stances. As Applejack keeps Mr. Doodle distracted, the Crusaders steal the projector for the after-party."
-    ],
-    "airdate": "2017-12-30",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 1)",
-    "id": 257
-  },
-  {
-    "episodeNo": 39,
-    "title": "Happily Ever After Party - Rarity",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Happily_Ever_After_Party",
-    "summary": [
-      "If the viewer chooses Rarity, Rarity challenges Mr. Doodle's ownership over the projector like a prosecuting lawyer. After applying enough pressure, Rarity convinces him to let the Crusaders borrow the projector\u2014on the condition that he stay close to it to make sure no one damages it."
-    ],
-    "airdate": "2017-12-30",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 1)",
-    "id": 258
-  },
-  {
-    "episodeNo": 40,
-    "title": "Happily Ever After Party - Rainbow Dash",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Happily_Ever_After_Party",
-    "summary": [
+      "The Canterlot High School Fall Play is a great success, but the Cutie Mark Crusaders are disappointed. They made a slideshow of everyone's time putting the play together and planned to show it at the afterparty, but Cranky Doodle refused to let them borrow his movie projector. Sympathizing with the Crusaders' plight, Applejack, Rarity, or Rainbow Dash offer to help:",
+      "If the viewer chooses Applejack, Applejack has a \"stubborn-off\" with Mr. Doodle in which they both refuse to budge on their respective stances. As Applejack keeps Mr. Doodle distracted, the Crusaders steal the projector for the after-party.",
+      "If the viewer chooses Rarity, Rarity challenges Mr. Doodle's ownership over the projector like a prosecuting lawyer. After applying enough pressure, Rarity convinces him to let the Crusaders borrow the projector\u2014on the condition that he stay close to it to make sure no one damages it.",
       "If the viewer chooses Rainbow Dash, the Crusaders distract Mr. Doodle with a \"math emergency\" in the school gymnasium while Rainbow Dash steals the projector. While the after-party is a success, the Crusaders are stuck solving math problems with Mr. Doodle."
     ],
     "airdate": "2017-12-30",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 259
+    "id": 230
+  },
+  {
+    "episodeNo": -19,
+    "title": "All the World's Off Stage - Twilight Sparkle",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#All_the_World's_Off_Stage",
+    "summary": [
+      "Sunset Shimmer continues to oversee rehearsals for the Canterlot High School Fall Play. During rehearsal, Snips and Snails have trouble moving the heavy \"Shiny City\" backdrop across the stage, and Sunset turns to one of her friends for assistance:",
+      "If the viewer chooses Twilight Sparkle, Sunset expects Twilight to use her telekinesis to move the set across the stage, but Twilight instead uses a small droid she built for her robotics club project."
+    ],
+    "airdate": "2017-12-30",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 1)",
+    "id": -19
+  },
+  {
+    "episodeNo": -20,
+    "title": "All the World's Off Stage - Pinkie Pie",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#All_the_World's_Off_Stage",
+    "summary": [
+      "Sunset Shimmer continues to oversee rehearsals for the Canterlot High School Fall Play. During rehearsal, Snips and Snails have trouble moving the heavy \"Shiny City\" backdrop across the stage, and Sunset turns to one of her friends for assistance:",
+      "If the viewer chooses Pinkie Pie, Pinkie replaces the set with a new set made entirely out of balloons, making it easy to float across the stage."
+    ],
+    "airdate": "2017-12-30",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 1)",
+    "id": -20
+  },
+  {
+    "episodeNo": -21,
+    "title": "All the World's Off Stage - Micro Chips",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#All_the_World's_Off_Stage",
+    "summary": [
+      "Sunset Shimmer continues to oversee rehearsals for the Canterlot High School Fall Play. During rehearsal, Snips and Snails have trouble moving the heavy \"Shiny City\" backdrop across the stage, and Sunset turns to one of her friends for assistance:",
+      "If the viewer chooses Micro Chips, Micro Chips uses his brains to convince Bulk Biceps to move the set with his brawn."
+    ],
+    "airdate": "2017-12-30",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 1)",
+    "id": -21
+  },
+  {
+    "episodeNo": -22,
+    "title": "Constructive Criticism - Rainbow Dash",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Constructive_Criticism",
+    "summary": [
+      "While building the stage sets for the CHS Fall Play, Applejack accidentally injures her hand with a hammer. With Applejack unable to finish the sets in time for the play on Friday, Sunset Shimmer suggests asking one of their friends to be an assistant set designer:",
+      "If the viewer chooses Rainbow Dash, Rainbow uses her powers of super speed to quickly build the set without looking at Applejack's blueprints. When the set is finished, Applejack thinks it looks even better than her blueprints, and Rainbow reveals that she actually followed Applejack's vision board containing designs that she knew she would never have time to build."
+    ],
+    "airdate": "2017-12-30",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 1)",
+    "id": -22
+  },
+  {
+    "episodeNo": -23,
+    "title": "Constructive Criticism - Pinkie Pie",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Constructive_Criticism",
+    "summary": [
+      "While building the stage sets for the CHS Fall Play, Applejack accidentally injures her hand with a hammer. With Applejack unable to finish the sets in time for the play on Friday, Sunset Shimmer suggests asking one of their friends to be an assistant set designer:",
+      "If the viewer chooses Pinkie Pie, Pinkie helps build the set while practicing her drum solo at the same time. With Applejack's guidance, the set is finished and met with her approval."
+    ],
+    "airdate": "2017-12-30",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 1)",
+    "id": -23
+  },
+  {
+    "episodeNo": -24,
+    "title": "Constructive Criticism - Photo Finish",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Constructive_Criticism",
+    "summary": [
+      "While building the stage sets for the CHS Fall Play, Applejack accidentally injures her hand with a hammer. With Applejack unable to finish the sets in time for the play on Friday, Sunset Shimmer suggests asking one of their friends to be an assistant set designer:",
+      "If the viewer chooses Photo Finish, Photo Finish and her friends Violet Blurr and Pixel Pizzaz disregard Applejack's blueprints and design the set out of cameras and lasers."
+    ],
+    "airdate": "2017-12-30",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 1)",
+    "id": -24
+  },
+  {
+    "episodeNo": -25,
+    "title": "Opening Night - Applejack",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Opening_Night",
+    "summary": [
+      "On opening night of the Canterlot High Fall Play, everything goes smoothly at first, and Applejack gives Fluttershy some encouragement before she goes on stage to say her line. Unfortunately, Snips and Snails cause a bell prop to fall and crash in the middle of Fluttershy's line, and she freezes up in the spotlight. This prompts one of her friends to try and help:",
+      "If the viewer chooses Applejack, Applejack goes on stage in a tree costume and picks up the bell for Fluttershy to get through her line."
+    ],
+    "airdate": "2017-12-30",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 1)",
+    "id": -25
+  },
+  {
+    "episodeNo": -26,
+    "title": "Opening Night - Twilight Sparkle",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Opening_Night",
+    "summary": [
+      "On opening night of the Canterlot High Fall Play, everything goes smoothly at first, and Applejack gives Fluttershy some encouragement before she goes on stage to say her line. Unfortunately, Snips and Snails cause a bell prop to fall and crash in the middle of Fluttershy's line, and she freezes up in the spotlight. This prompts one of her friends to try and help:",
+      "If the viewer chooses Twilight Sparkle, Sunset Shimmer signals Twilight to use her telekinesis to pick up the bell, and Fluttershy rings it before saying her line."
+    ],
+    "airdate": "2017-12-30",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 1)",
+    "id": -26
+  },
+  {
+    "episodeNo": -27,
+    "title": "Opening Night - Sunset Shimmer",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Opening_Night",
+    "summary": [
+      "On opening night of the Canterlot High Fall Play, everything goes smoothly at first, and Applejack gives Fluttershy some encouragement before she goes on stage to say her line. Unfortunately, Snips and Snails cause a bell prop to fall and crash in the middle of Fluttershy's line, and she freezes up in the spotlight. This prompts one of her friends to try and help:",
+      "If the viewer chooses Sunset Shimmer, Sunset goes on stage herself and improvises a speech about the play's message and how it allegorically applies to real life. Despite Sunset's awkwardness, Fluttershy successfully rings the bell and says her line."
+    ],
+    "airdate": "2017-12-30",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 1)",
+    "id": -27
+  },
+  {
+    "episodeNo": -28,
+    "title": "Happily Ever After Party - Applejack",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Happily_Ever_After_Party",
+    "summary": [
+      "The Canterlot High School Fall Play is a great success, but the Cutie Mark Crusaders are disappointed. They made a slideshow of everyone's time putting the play together and planned to show it at the afterparty, but Cranky Doodle refused to let them borrow his movie projector. Sympathizing with the Crusaders' plight, Applejack, Rarity, or Rainbow Dash offer to help:",
+      "If the viewer chooses Applejack, Applejack has a \"stubborn-off\" with Mr. Doodle in which they both refuse to budge on their respective stances. As Applejack keeps Mr. Doodle distracted, the Crusaders steal the projector for the after-party."
+    ],
+    "airdate": "2017-12-30",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 1)",
+    "id": -28
+  },
+  {
+    "episodeNo": -29,
+    "title": "Happily Ever After Party - Rarity",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Happily_Ever_After_Party",
+    "summary": [
+      "The Canterlot High School Fall Play is a great success, but the Cutie Mark Crusaders are disappointed. They made a slideshow of everyone's time putting the play together and planned to show it at the afterparty, but Cranky Doodle refused to let them borrow his movie projector. Sympathizing with the Crusaders' plight, Applejack, Rarity, or Rainbow Dash offer to help:",
+      "If the viewer chooses Rarity, Rarity challenges Mr. Doodle's ownership over the projector like a prosecuting lawyer. After applying enough pressure, Rarity convinces him to let the Crusaders borrow the projector\u2014on the condition that he stay close to it to make sure no one damages it."
+    ],
+    "airdate": "2017-12-30",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 1)",
+    "id": -29
+  },
+  {
+    "episodeNo": -30,
+    "title": "Happily Ever After Party - Rainbow Dash",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_1)#Happily_Ever_After_Party",
+    "summary": [
+      "The Canterlot High School Fall Play is a great success, but the Cutie Mark Crusaders are disappointed. They made a slideshow of everyone's time putting the play together and planned to show it at the afterparty, but Cranky Doodle refused to let them borrow his movie projector. Sympathizing with the Crusaders' plight, Applejack, Rarity, or Rainbow Dash offer to help:",
+      "If the viewer chooses Rainbow Dash, the Crusaders distract Mr. Doodle with a \"math emergency\" in the school gymnasium while Rainbow Dash steals the projector. While the after-party is a success, the Crusaders are stuck solving math problems with Mr. Doodle."
+    ],
+    "airdate": "2017-12-30",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 1)",
+    "id": -30
   },
   {
     "episodeNo": 1,
@@ -3540,7 +3600,7 @@
     "season": "Forgotten Friendship",
     "series": "EqG",
     "animationType": "special",
-    "id": 260
+    "id": 231
   },
   {
     "episodeNo": 12,
@@ -3553,7 +3613,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 261
+    "id": 232
   },
   {
     "episodeNo": 13,
@@ -3567,7 +3627,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 262
+    "id": 233
   },
   {
     "episodeNo": 14,
@@ -3580,7 +3640,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 263
+    "id": 234
   },
   {
     "episodeNo": 15,
@@ -3595,7 +3655,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 264
+    "id": 235
   },
   {
     "episodeNo": 16,
@@ -3609,7 +3669,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 265
+    "id": 236
   },
   {
     "episodeNo": 17,
@@ -3623,7 +3683,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 266
+    "id": 237
   },
   {
     "episodeNo": 18,
@@ -3636,7 +3696,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 267
+    "id": 238
   },
   {
     "episodeNo": 19,
@@ -3650,7 +3710,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 268
+    "id": 239
   },
   {
     "episodeNo": 1,
@@ -3664,7 +3724,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 269
+    "id": 240
   },
   {
     "episodeNo": 2,
@@ -3678,7 +3738,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 270
+    "id": 241
   },
   {
     "episodeNo": 20,
@@ -3692,7 +3752,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 271
+    "id": 242
   },
   {
     "episodeNo": 21,
@@ -3706,7 +3766,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 272
+    "id": 243
   },
   {
     "episodeNo": 22,
@@ -3720,7 +3780,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 273
+    "id": 244
   },
   {
     "episodeNo": 23,
@@ -3734,7 +3794,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 274
+    "id": 245
   },
   {
     "episodeNo": 24,
@@ -3748,7 +3808,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 275
+    "id": 246
   },
   {
     "episodeNo": 25,
@@ -3762,7 +3822,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 276
+    "id": 247
   },
   {
     "episodeNo": 26,
@@ -3776,7 +3836,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 277
+    "id": 248
   },
   {
     "episodeNo": 3,
@@ -3790,7 +3850,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 278
+    "id": 249
   },
   {
     "episodeNo": 4,
@@ -3804,7 +3864,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 279
+    "id": 250
   },
   {
     "episodeNo": 5,
@@ -3818,7 +3878,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 280
+    "id": 251
   },
   {
     "episodeNo": 6,
@@ -3832,7 +3892,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 281
+    "id": 252
   },
   {
     "episodeNo": 7,
@@ -3846,7 +3906,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 282
+    "id": 253
   },
   {
     "episodeNo": 8,
@@ -3860,7 +3920,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 283
+    "id": 254
   },
   {
     "episodeNo": 9,
@@ -3874,7 +3934,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 284
+    "id": 255
   },
   {
     "episodeNo": 10,
@@ -3888,7 +3948,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 285
+    "id": 256
   },
   {
     "episodeNo": 11,
@@ -3902,7 +3962,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 286
+    "id": 257
   },
   {
     "episodeNo": 12,
@@ -3916,7 +3976,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 287
+    "id": 258
   },
   {
     "episodeNo": 13,
@@ -3930,7 +3990,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 288
+    "id": 259
   },
   {
     "episodeNo": 1,
@@ -3944,7 +4004,7 @@
     "season": "Rollercoaster of Friendship",
     "series": "EqG",
     "animationType": "special",
-    "id": 289
+    "id": 260
   },
   {
     "episodeNo": 14,
@@ -3958,7 +4018,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 290
+    "id": 261
   },
   {
     "episodeNo": 15,
@@ -3972,7 +4032,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 291
+    "id": 262
   },
   {
     "episodeNo": 16,
@@ -3986,7 +4046,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 292
+    "id": 263
   },
   {
     "episodeNo": 17,
@@ -4000,7 +4060,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 293
+    "id": 264
   },
   {
     "episodeNo": 18,
@@ -4014,7 +4074,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 294
+    "id": 265
   },
   {
     "episodeNo": 19,
@@ -4028,7 +4088,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 295
+    "id": 266
   },
   {
     "episodeNo": 20,
@@ -4042,7 +4102,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 296
+    "id": 267
   },
   {
     "episodeNo": 21,
@@ -4056,7 +4116,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 297
+    "id": 268
   },
   {
     "episodeNo": 22,
@@ -4070,7 +4130,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 298
+    "id": 269
   },
   {
     "episodeNo": 23,
@@ -4084,7 +4144,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 299
+    "id": 270
   },
   {
     "episodeNo": 27,
@@ -4098,7 +4158,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 1)",
-    "id": 300
+    "id": 271
   },
   {
     "episodeNo": 24,
@@ -4112,7 +4172,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 301
+    "id": 272
   },
   {
     "episodeNo": 25,
@@ -4126,7 +4186,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 302
+    "id": 273
   },
   {
     "episodeNo": 26,
@@ -4140,7 +4200,7 @@
     "season": "S8",
     "series": "FiM",
     "animationType": "episode",
-    "id": 303
+    "id": 274
   },
   {
     "episodeNo": 1,
@@ -4154,7 +4214,7 @@
     "season": "Best Gift Ever",
     "series": "FiM",
     "animationType": "special",
-    "id": 304
+    "id": 275
   },
   {
     "episodeNo": 2,
@@ -4168,7 +4228,7 @@
     "season": "Best Gift Ever",
     "series": "FiM",
     "animationType": "special",
-    "id": 305
+    "id": 276
   },
   {
     "episodeNo": 3,
@@ -4182,7 +4242,7 @@
     "season": "Best Gift Ever",
     "series": "FiM",
     "animationType": "special",
-    "id": 306
+    "id": 277
   },
   {
     "episodeNo": 4,
@@ -4197,7 +4257,7 @@
     "season": "Best Gift Ever",
     "series": "FiM",
     "animationType": "special",
-    "id": 307
+    "id": 278
   },
   {
     "episodeNo": 1,
@@ -4211,7 +4271,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 308
+    "id": 279
   },
   {
     "episodeNo": 2,
@@ -4224,7 +4284,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 309
+    "id": 280
   },
   {
     "episodeNo": 3,
@@ -4237,7 +4297,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 310
+    "id": 281
   },
   {
     "episodeNo": 1,
@@ -4251,7 +4311,7 @@
     "season": "Shorts",
     "series": "FiM",
     "animationType": "short",
-    "id": 311
+    "id": 282
   },
   {
     "episodeNo": 4,
@@ -4264,7 +4324,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 312
+    "id": 283
   },
   {
     "episodeNo": 2,
@@ -4277,7 +4337,7 @@
     "season": "Shorts",
     "series": "FiM",
     "animationType": "short",
-    "id": 313
+    "id": 284
   },
   {
     "episodeNo": 5,
@@ -4290,7 +4350,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 314
+    "id": 285
   },
   {
     "episodeNo": 3,
@@ -4304,7 +4364,7 @@
     "season": "Shorts",
     "series": "FiM",
     "animationType": "short",
-    "id": 315
+    "id": 286
   },
   {
     "episodeNo": 6,
@@ -4317,7 +4377,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 316
+    "id": 287
   },
   {
     "episodeNo": 4,
@@ -4331,7 +4391,7 @@
     "season": "Shorts",
     "series": "FiM",
     "animationType": "short",
-    "id": 317
+    "id": 288
   },
   {
     "episodeNo": 7,
@@ -4344,7 +4404,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 318
+    "id": 289
   },
   {
     "episodeNo": 5,
@@ -4357,7 +4417,7 @@
     "season": "Shorts",
     "series": "FiM",
     "animationType": "short",
-    "id": 319
+    "id": 290
   },
   {
     "episodeNo": 8,
@@ -4370,7 +4430,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 320
+    "id": 291
   },
   {
     "episodeNo": 9,
@@ -4383,7 +4443,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 321
+    "id": 292
   },
   {
     "episodeNo": 10,
@@ -4397,7 +4457,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 322
+    "id": 293
   },
   {
     "episodeNo": 11,
@@ -4410,7 +4470,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 323
+    "id": 294
   },
   {
     "episodeNo": 12,
@@ -4424,7 +4484,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 324
+    "id": 295
   },
   {
     "episodeNo": 1,
@@ -4438,7 +4498,7 @@
     "season": "Spring Breakdown",
     "series": "EqG",
     "animationType": "special",
-    "id": 325
+    "id": 296
   },
   {
     "episodeNo": 13,
@@ -4452,7 +4512,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 326
+    "id": 297
   },
   {
     "episodeNo": 1,
@@ -4466,7 +4526,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 327
+    "id": 298
   },
   {
     "episodeNo": 2,
@@ -4480,7 +4540,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 328
+    "id": 299
   },
   {
     "episodeNo": 3,
@@ -4494,7 +4554,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 329
+    "id": 300
   },
   {
     "episodeNo": 4,
@@ -4508,7 +4568,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 330
+    "id": 301
   },
   {
     "episodeNo": 5,
@@ -4522,7 +4582,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 331
+    "id": 302
   },
   {
     "episodeNo": 6,
@@ -4536,7 +4596,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 332
+    "id": 303
   },
   {
     "episodeNo": 7,
@@ -4550,7 +4610,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 333
+    "id": 304
   },
   {
     "episodeNo": 8,
@@ -4564,7 +4624,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 334
+    "id": 305
   },
   {
     "episodeNo": 14,
@@ -4578,7 +4638,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 335
+    "id": 306
   },
   {
     "episodeNo": 9,
@@ -4592,7 +4652,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 336
+    "id": 307
   },
   {
     "episodeNo": 15,
@@ -4606,7 +4666,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 337
+    "id": 308
   },
   {
     "episodeNo": 10,
@@ -4620,7 +4680,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 338
+    "id": 309
   },
   {
     "episodeNo": 16,
@@ -4633,7 +4693,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 339
+    "id": 310
   },
   {
     "episodeNo": 11,
@@ -4647,7 +4707,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 340
+    "id": 311
   },
   {
     "episodeNo": 17,
@@ -4660,7 +4720,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 341
+    "id": 312
   },
   {
     "episodeNo": 12,
@@ -4674,7 +4734,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 342
+    "id": 313
   },
   {
     "episodeNo": 18,
@@ -4687,7 +4747,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 343
+    "id": 314
   },
   {
     "episodeNo": 13,
@@ -4701,7 +4761,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 344
+    "id": 315
   },
   {
     "episodeNo": 19,
@@ -4714,7 +4774,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 345
+    "id": 316
   },
   {
     "episodeNo": 1,
@@ -4728,7 +4788,7 @@
     "season": "Rainbow Roadtrip",
     "series": "FiM",
     "animationType": "special",
-    "id": 346
+    "id": 317
   },
   {
     "episodeNo": 20,
@@ -4741,7 +4801,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 347
+    "id": 318
   },
   {
     "episodeNo": 1,
@@ -4755,7 +4815,7 @@
     "season": "Sunset's Backstage Pass",
     "series": "EqG",
     "animationType": "special",
-    "id": 348
+    "id": 319
   },
   {
     "episodeNo": 14,
@@ -4769,7 +4829,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 349
+    "id": 320
   },
   {
     "episodeNo": 15,
@@ -4783,7 +4843,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 350
+    "id": 321
   },
   {
     "episodeNo": 16,
@@ -4797,7 +4857,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 351
+    "id": 322
   },
   {
     "episodeNo": 17,
@@ -4811,7 +4871,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 352
+    "id": 323
   },
   {
     "episodeNo": 21,
@@ -4825,7 +4885,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 353
+    "id": 324
   },
   {
     "episodeNo": 22,
@@ -4838,7 +4898,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 354
+    "id": 325
   },
   {
     "episodeNo": 18,
@@ -4852,7 +4912,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 355
+    "id": 326
   },
   {
     "episodeNo": 23,
@@ -4866,111 +4926,123 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 356
+    "id": 327
   },
   {
     "episodeNo": 1,
     "title": "Wake-Up!",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Wake-Up!",
     "summary": [
-      "On the morning of the Starswirled Music Festival, most of the Equestria Girls are awake, but some of them are quite groggy because of Pinkie Pie's all-night drumming, and Sunset Shimmer is still fast asleep. Applejack, Rainbow Dash, and Pinkie Pie each have an idea on how to wake her up."
-    ],
-    "airdate": "2019-09-03",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 357
-  },
-  {
-    "episodeNo": 2,
-    "title": "Wake-Up! - Applejack",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Wake-Up!",
-    "summary": [
-      "If the viewer chooses Applejack, Applejack drags Sunset out of bed and puts her to work building a fire pit for breakfast, believing hard work to be the best motivator for waking up."
-    ],
-    "airdate": "2019-09-03",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 358
-  },
-  {
-    "episodeNo": 3,
-    "title": "Wake-Up! - Rainbow Dash",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Wake-Up!",
-    "summary": [
-      "If the viewer chooses Rainbow Dash, Rainbow and Sunset do morning yoga stretches that get increasingly complicated. Sunset does not see the point in doing such exercises so early until she and Rainbow behold a beautiful sunrise."
-    ],
-    "airdate": "2019-09-03",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 359
-  },
-  {
-    "episodeNo": 4,
-    "title": "Wake-Up! - Pinkie Pie",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Wake-Up!",
-    "summary": [
+      "On the morning of the Starswirled Music Festival, most of the Equestria Girls are awake, but some of them are quite groggy because of Pinkie Pie's all-night drumming, and Sunset Shimmer is still fast asleep. Applejack, Rainbow Dash, and Pinkie Pie each have an idea on how to wake her up.",
+      "If the viewer chooses Applejack, Applejack drags Sunset out of bed and puts her to work building a fire pit for breakfast, believing hard work to be the best motivator for waking up.",
+      "If the viewer chooses Rainbow Dash, Rainbow and Sunset do morning yoga stretches that get increasingly complicated. Sunset does not see the point in doing such exercises so early until she and Rainbow behold a beautiful sunrise.",
       "If the viewer chooses Pinkie Pie, Pinkie serves Sunset a breakfast of various foods that are very high in sugar. Though this results in a high-energy sugar rush, it ends with a sugar crash and severe stomachache."
     ],
     "airdate": "2019-09-03",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 2)",
-    "id": 360
+    "id": 328
   },
   {
-    "episodeNo": 5,
+    "episodeNo": -31,
+    "title": "Wake-Up! - Applejack",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Wake-Up!",
+    "summary": [
+      "On the morning of the Starswirled Music Festival, most of the Equestria Girls are awake, but some of them are quite groggy because of Pinkie Pie's all-night drumming, and Sunset Shimmer is still fast asleep. Applejack, Rainbow Dash, and Pinkie Pie each have an idea on how to wake her up.",
+      "If the viewer chooses Applejack, Applejack drags Sunset out of bed and puts her to work building a fire pit for breakfast, believing hard work to be the best motivator for waking up."
+    ],
+    "airdate": "2019-09-03",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -31
+  },
+  {
+    "episodeNo": -32,
+    "title": "Wake-Up! - Rainbow Dash",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Wake-Up!",
+    "summary": [
+      "On the morning of the Starswirled Music Festival, most of the Equestria Girls are awake, but some of them are quite groggy because of Pinkie Pie's all-night drumming, and Sunset Shimmer is still fast asleep. Applejack, Rainbow Dash, and Pinkie Pie each have an idea on how to wake her up.",
+      "If the viewer chooses Rainbow Dash, Rainbow and Sunset do morning yoga stretches that get increasingly complicated. Sunset does not see the point in doing such exercises so early until she and Rainbow behold a beautiful sunrise."
+    ],
+    "airdate": "2019-09-03",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -32
+  },
+  {
+    "episodeNo": -33,
+    "title": "Wake-Up! - Pinkie Pie",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Wake-Up!",
+    "summary": [
+      "On the morning of the Starswirled Music Festival, most of the Equestria Girls are awake, but some of them are quite groggy because of Pinkie Pie's all-night drumming, and Sunset Shimmer is still fast asleep. Applejack, Rainbow Dash, and Pinkie Pie each have an idea on how to wake her up.",
+      "If the viewer chooses Pinkie Pie, Pinkie serves Sunset a breakfast of various foods that are very high in sugar. Though this results in a high-energy sugar rush, it ends with a sugar crash and severe stomachache."
+    ],
+    "airdate": "2019-09-03",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -33
+  },
+  {
+    "episodeNo": 2,
     "title": "The Last Drop",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#The_Last_Drop",
     "summary": [
-      "DJ Pon-3 is playing for the Starswirled Music Festival. Just before the last beat drops, she invites someone in the crowd to come on stage and finish the beat as part of an \"interactive\" experience."
-    ],
-    "airdate": "2019-09-06",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 361
-  },
-  {
-    "episodeNo": 6,
-    "title": "The Last Drop - Sunset Shimmer",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#The_Last_Drop",
-    "summary": [
-      "If the viewer chooses Sunset Shimmer, DJ challenges her to an 8-bit platformer mobile game that gives the beat an 8-bit video game feel."
-    ],
-    "airdate": "2019-09-06",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 362
-  },
-  {
-    "episodeNo": 7,
-    "title": "The Last Drop - Fluttershy",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#The_Last_Drop",
-    "summary": [
-      "If the viewer chooses Fluttershy, DJ invites her to the stage and encourages her to start dancing. With the help of her animal friends, Fluttershy gives in to the beat and howls like a wolf."
-    ],
-    "airdate": "2019-09-06",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 363
-  },
-  {
-    "episodeNo": 8,
-    "title": "The Last Drop - Big McIntosh",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#The_Last_Drop",
-    "summary": [
+      "DJ Pon-3 is playing for the Starswirled Music Festival. Just before the last beat drops, she invites someone in the crowd to come on stage and finish the beat as part of an \"interactive\" experience.",
+      "If the viewer chooses Sunset Shimmer, DJ challenges her to an 8-bit platformer mobile game that gives the beat an 8-bit video game feel.",
+      "If the viewer chooses Fluttershy, DJ invites her to the stage and encourages her to start dancing. With the help of her animal friends, Fluttershy gives in to the beat and howls like a wolf.",
       "If the viewer chooses Big McIntosh, DJ gives him a banjo, and the two create a country/techno beat together that impresses the crowd."
     ],
     "airdate": "2019-09-06",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 2)",
-    "id": 364
+    "id": 329
+  },
+  {
+    "episodeNo": -34,
+    "title": "The Last Drop - Sunset Shimmer",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#The_Last_Drop",
+    "summary": [
+      "DJ Pon-3 is playing for the Starswirled Music Festival. Just before the last beat drops, she invites someone in the crowd to come on stage and finish the beat as part of an \"interactive\" experience.",
+      "If the viewer chooses Sunset Shimmer, DJ challenges her to an 8-bit platformer mobile game that gives the beat an 8-bit video game feel."
+    ],
+    "airdate": "2019-09-06",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -34
+  },
+  {
+    "episodeNo": -35,
+    "title": "The Last Drop - Fluttershy",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#The_Last_Drop",
+    "summary": [
+      "DJ Pon-3 is playing for the Starswirled Music Festival. Just before the last beat drops, she invites someone in the crowd to come on stage and finish the beat as part of an \"interactive\" experience.",
+      "If the viewer chooses Fluttershy, DJ invites her to the stage and encourages her to start dancing. With the help of her animal friends, Fluttershy gives in to the beat and howls like a wolf."
+    ],
+    "airdate": "2019-09-06",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -35
+  },
+  {
+    "episodeNo": -36,
+    "title": "The Last Drop - Big McIntosh",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#The_Last_Drop",
+    "summary": [
+      "DJ Pon-3 is playing for the Starswirled Music Festival. Just before the last beat drops, she invites someone in the crowd to come on stage and finish the beat as part of an \"interactive\" experience.",
+      "If the viewer chooses Big McIntosh, DJ gives him a banjo, and the two create a country/techno beat together that impresses the crowd."
+    ],
+    "airdate": "2019-09-06",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -36
   },
   {
     "episodeNo": 19,
@@ -4984,163 +5056,181 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 365
+    "id": 330
   },
   {
-    "episodeNo": 9,
+    "episodeNo": 3,
     "title": "Inclement Leather",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Inclement_Leather",
     "summary": [
-      "During the Starswirled Music Festival, Rarity is excited to debut her new outfit of suede and fringe. When it suddenly starts to rain, which threatens to ruin her outfit, she desperately turns to one of her friends for help."
-    ],
-    "airdate": "2019-09-08",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 366
-  },
-  {
-    "episodeNo": 10,
-    "title": "Inclement Leather - Applejack",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Inclement_Leather",
-    "summary": [
-      "If the viewer chooses Applejack, Applejack helps Rarity look for the silver lining in her situation. For Applejack, that silver lining is using the mud created by the rain to find fishing bait. For Rarity, it is using the mud to make a relaxing mud mask."
-    ],
-    "airdate": "2019-09-08",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 367
-  },
-  {
-    "episodeNo": 11,
-    "title": "Inclement Leather - Twilight Sparkle",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Inclement_Leather",
-    "summary": [
-      "If the viewer chooses Twilight Sparkle, Twilight says she has been brainstorming equipment to protect oneself against inclement weather, but she has not yet developed any of it, having only garbage bags on hand. Rarity comes up with the idea of using the garbage bags to make rain ponchos."
-    ],
-    "airdate": "2019-09-08",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 368
-  },
-  {
-    "episodeNo": 12,
-    "title": "Inclement Leather - Vignette Valencia",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Inclement_Leather",
-    "summary": [
+      "During the Starswirled Music Festival, Rarity is excited to debut her new outfit of suede and fringe. When it suddenly starts to rain, which threatens to ruin her outfit, she desperately turns to one of her friends for help.",
+      "If the viewer chooses Applejack, Applejack helps Rarity look for the silver lining in her situation. For Applejack, that silver lining is using the mud created by the rain to find fishing bait. For Rarity, it is using the mud to make a relaxing mud mask.",
+      "If the viewer chooses Twilight Sparkle, Twilight says she has been brainstorming equipment to protect oneself against inclement weather, but she has not yet developed any of it, having only garbage bags on hand. Rarity comes up with the idea of using the garbage bags to make rain ponchos.",
       "If the viewer chooses Vignette Valencia, Rarity calls Vignette and alerts her to her fashion emergency. However, Vignette approves of how Rarity's hair looks when it is wet, and Rarity starts a trend of wet hair at the music festival."
     ],
     "airdate": "2019-09-08",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 2)",
-    "id": 369
+    "id": 331
   },
   {
-    "episodeNo": 13,
+    "episodeNo": -37,
+    "title": "Inclement Leather - Applejack",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Inclement_Leather",
+    "summary": [
+      "During the Starswirled Music Festival, Rarity is excited to debut her new outfit of suede and fringe. When it suddenly starts to rain, which threatens to ruin her outfit, she desperately turns to one of her friends for help.",
+      "If the viewer chooses Applejack, Applejack helps Rarity look for the silver lining in her situation. For Applejack, that silver lining is using the mud created by the rain to find fishing bait. For Rarity, it is using the mud to make a relaxing mud mask."
+    ],
+    "airdate": "2019-09-08",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -37
+  },
+  {
+    "episodeNo": -38,
+    "title": "Inclement Leather - Twilight Sparkle",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Inclement_Leather",
+    "summary": [
+      "During the Starswirled Music Festival, Rarity is excited to debut her new outfit of suede and fringe. When it suddenly starts to rain, which threatens to ruin her outfit, she desperately turns to one of her friends for help.",
+      "If the viewer chooses Twilight Sparkle, Twilight says she has been brainstorming equipment to protect oneself against inclement weather, but she has not yet developed any of it, having only garbage bags on hand. Rarity comes up with the idea of using the garbage bags to make rain ponchos."
+    ],
+    "airdate": "2019-09-08",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -38
+  },
+  {
+    "episodeNo": -39,
+    "title": "Inclement Leather - Vignette Valencia",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Inclement_Leather",
+    "summary": [
+      "During the Starswirled Music Festival, Rarity is excited to debut her new outfit of suede and fringe. When it suddenly starts to rain, which threatens to ruin her outfit, she desperately turns to one of her friends for help.",
+      "If the viewer chooses Vignette Valencia, Rarity calls Vignette and alerts her to her fashion emergency. However, Vignette approves of how Rarity's hair looks when it is wet, and Rarity starts a trend of wet hair at the music festival."
+    ],
+    "airdate": "2019-09-08",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -39
+  },
+  {
+    "episodeNo": 4,
     "title": "Lost and Pound",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Lost_and_Pound",
     "summary": [
-      "While checking out the various food trucks at the Starswirled Music Festival, Twilight, Fluttershy, Rarity, and Spike run into a lost and mud-covered puppy\u2060\u2014later identified as Princess Thunder Guts. Fluttershy offers to help the dog, and she chooses one of Twilight's friends to follow."
-    ],
-    "airdate": "2019-09-10",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 370
-  },
-  {
-    "episodeNo": 14,
-    "title": "Lost and Pound - Rarity",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Lost_and_Pound",
-    "summary": [
-      "If the viewer chooses Rarity, Princess Thunder Guts becomes attached to her. Repulsed by the dog's muddy state, Rarity runs away, and the dog follows her around the festival. Princess Thunder Guts eventually chases Rarity into the festival's lounge area, where it is revealed she belongs to Supernova Zap of PostCrush. Su-Z is overjoyed to be reunited with her pet, and she thanks Rarity with a fashionable feather boa."
-    ],
-    "airdate": "2019-09-10",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 371
-  },
-  {
-    "episodeNo": 15,
-    "title": "Lost and Pound - Spike",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Lost_and_Pound",
-    "summary": [
-      "If the viewer chooses Spike, Princess Thunder Guts becomes attached to him, and Spike develops a crush on her. The two spend some time together playing games and eating festival food. When Su-Z appears to collect her lost pet, Spike is heartbroken over Princess Thunder Guts leaving, but she says goodbye with a lick on his cheek."
-    ],
-    "airdate": "2019-09-10",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 372
-  },
-  {
-    "episodeNo": 16,
-    "title": "Lost and Pound - Fluttershy",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Lost_and_Pound",
-    "summary": [
+      "While checking out the various food trucks at the Starswirled Music Festival, Twilight, Fluttershy, Rarity, and Spike run into a lost and mud-covered puppy\u2060\u2014later identified as Princess Thunder Guts. Fluttershy offers to help the dog, and she chooses one of Twilight's friends to follow.",
+      "If the viewer chooses Rarity, Princess Thunder Guts becomes attached to her. Repulsed by the dog's muddy state, Rarity runs away, and the dog follows her around the festival. Princess Thunder Guts eventually chases Rarity into the festival's lounge area, where it is revealed she belongs to Supernova Zap of PostCrush. Su-Z is overjoyed to be reunited with her pet, and she thanks Rarity with a fashionable feather boa.",
+      "If the viewer chooses Spike, Princess Thunder Guts becomes attached to him, and Spike develops a crush on her. The two spend some time together playing games and eating festival food. When Su-Z appears to collect her lost pet, Spike is heartbroken over Princess Thunder Guts leaving, but she says goodbye with a lick on his cheek.",
       "If the viewer chooses Fluttershy, Fluttershy uses her geode powers to communicate with Princess Thunder Guts. Upon learning the identity of the dog's owner, Fluttershy returns her to Su-Z immediately."
     ],
     "airdate": "2019-09-10",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 2)",
-    "id": 373
+    "id": 332
   },
   {
-    "episodeNo": 17,
+    "episodeNo": -40,
+    "title": "Lost and Pound - Rarity",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Lost_and_Pound",
+    "summary": [
+      "While checking out the various food trucks at the Starswirled Music Festival, Twilight, Fluttershy, Rarity, and Spike run into a lost and mud-covered puppy\u2060\u2014later identified as Princess Thunder Guts. Fluttershy offers to help the dog, and she chooses one of Twilight's friends to follow.",
+      "If the viewer chooses Rarity, Princess Thunder Guts becomes attached to her. Repulsed by the dog's muddy state, Rarity runs away, and the dog follows her around the festival. Princess Thunder Guts eventually chases Rarity into the festival's lounge area, where it is revealed she belongs to Supernova Zap of PostCrush. Su-Z is overjoyed to be reunited with her pet, and she thanks Rarity with a fashionable feather boa."
+    ],
+    "airdate": "2019-09-10",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -40
+  },
+  {
+    "episodeNo": -41,
+    "title": "Lost and Pound - Spike",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Lost_and_Pound",
+    "summary": [
+      "While checking out the various food trucks at the Starswirled Music Festival, Twilight, Fluttershy, Rarity, and Spike run into a lost and mud-covered puppy\u2060\u2014later identified as Princess Thunder Guts. Fluttershy offers to help the dog, and she chooses one of Twilight's friends to follow.",
+      "If the viewer chooses Spike, Princess Thunder Guts becomes attached to him, and Spike develops a crush on her. The two spend some time together playing games and eating festival food. When Su-Z appears to collect her lost pet, Spike is heartbroken over Princess Thunder Guts leaving, but she says goodbye with a lick on his cheek."
+    ],
+    "airdate": "2019-09-10",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -41
+  },
+  {
+    "episodeNo": -42,
+    "title": "Lost and Pound - Fluttershy",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Lost_and_Pound",
+    "summary": [
+      "While checking out the various food trucks at the Starswirled Music Festival, Twilight, Fluttershy, Rarity, and Spike run into a lost and mud-covered puppy\u2060\u2014later identified as Princess Thunder Guts. Fluttershy offers to help the dog, and she chooses one of Twilight's friends to follow.",
+      "If the viewer chooses Fluttershy, Fluttershy uses her geode powers to communicate with Princess Thunder Guts. Upon learning the identity of the dog's owner, Fluttershy returns her to Su-Z immediately."
+    ],
+    "airdate": "2019-09-10",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -42
+  },
+  {
+    "episodeNo": 5,
     "title": "Accountibilibuddies",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Accountibilibuddies",
     "summary": [
-      "During the Dirk Thistleweed concert at the Starswirled Music Festival, Applejack gets her foot stomped while dancing at the front of the crowd, and Rainbow Dash and Pinkie Pie help her get away from the crowd. She tells her friends to go back and enjoy the concert without her, but they refuse to let her miss the concert by herself, and one of them offers to be her \"accountibilibuddy\"."
-    ],
-    "airdate": "2019-09-13",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 374
-  },
-  {
-    "episodeNo": 18,
-    "title": "Accountibilibuddies - Rainbow Dash",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Accountibilibuddies",
-    "summary": [
-      "If the viewer chooses Rainbow Dash, Rainbow makes a special healing ointment to soothe Applejack's sore foot. Suddenly, Dirk Thistleweed himself appears with a sore throat and uses Rainbow's ointment to restore his voice, and Applejack is awestruck to meet one of her favorite musicians face-to-face."
-    ],
-    "airdate": "2019-09-13",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 375
-  },
-  {
-    "episodeNo": 19,
-    "title": "Accountibilibuddies - Pinkie Pie",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Accountibilibuddies",
-    "summary": [
-      "If the viewer chooses Pinkie Pie, Pinkie vows to make sure that Applejack does not miss the concert. She puts Applejack in a wheelbarrow and carries her to the top of a hill that oversees the concert stage, and she pushes Dirk Thistleweed to the front of the stage so that Applejack can see and hear him clearly."
-    ],
-    "airdate": "2019-09-13",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 376
-  },
-  {
-    "episodeNo": 20,
-    "title": "Accountibilibuddies - Snips",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Accountibilibuddies",
-    "summary": [
+      "During the Dirk Thistleweed concert at the Starswirled Music Festival, Applejack gets her foot stomped while dancing at the front of the crowd, and Rainbow Dash and Pinkie Pie help her get away from the crowd. She tells her friends to go back and enjoy the concert without her, but they refuse to let her miss the concert by herself, and one of them offers to be her \"accountibilibuddy\".",
+      "If the viewer chooses Rainbow Dash, Rainbow makes a special healing ointment to soothe Applejack's sore foot. Suddenly, Dirk Thistleweed himself appears with a sore throat and uses Rainbow's ointment to restore his voice, and Applejack is awestruck to meet one of her favorite musicians face-to-face.",
+      "If the viewer chooses Pinkie Pie, Pinkie vows to make sure that Applejack does not miss the concert. She puts Applejack in a wheelbarrow and carries her to the top of a hill that oversees the concert stage, and she pushes Dirk Thistleweed to the front of the stage so that Applejack can see and hear him clearly.",
       "If the viewer chooses Snips, Applejack picks Snips to be her accountibilibuddy after seeing him looking lonely without Snails. When Snips explains that Snails inexplicably abandoned him at the festival, Applejack feels sorry for him and offers to be his new best friend. Just then, Snails appears, having not abandoned Snips after all, followed by Dirk Thistleweed, who is amused by Snails' funny personality. Snips and Snails reconcile, and Dirk offers them and Applejack stage-side seats at the concert."
     ],
     "airdate": "2019-09-13",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 2)",
-    "id": 377
+    "id": 333
+  },
+  {
+    "episodeNo": -43,
+    "title": "Accountibilibuddies - Rainbow Dash",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Accountibilibuddies",
+    "summary": [
+      "During the Dirk Thistleweed concert at the Starswirled Music Festival, Applejack gets her foot stomped while dancing at the front of the crowd, and Rainbow Dash and Pinkie Pie help her get away from the crowd. She tells her friends to go back and enjoy the concert without her, but they refuse to let her miss the concert by herself, and one of them offers to be her \"accountibilibuddy\".",
+      "If the viewer chooses Rainbow Dash, Rainbow makes a special healing ointment to soothe Applejack's sore foot. Suddenly, Dirk Thistleweed himself appears with a sore throat and uses Rainbow's ointment to restore his voice, and Applejack is awestruck to meet one of her favorite musicians face-to-face."
+    ],
+    "airdate": "2019-09-13",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -43
+  },
+  {
+    "episodeNo": -44,
+    "title": "Accountibilibuddies - Pinkie Pie",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Accountibilibuddies",
+    "summary": [
+      "During the Dirk Thistleweed concert at the Starswirled Music Festival, Applejack gets her foot stomped while dancing at the front of the crowd, and Rainbow Dash and Pinkie Pie help her get away from the crowd. She tells her friends to go back and enjoy the concert without her, but they refuse to let her miss the concert by herself, and one of them offers to be her \"accountibilibuddy\".",
+      "If the viewer chooses Pinkie Pie, Pinkie vows to make sure that Applejack does not miss the concert. She puts Applejack in a wheelbarrow and carries her to the top of a hill that oversees the concert stage, and she pushes Dirk Thistleweed to the front of the stage so that Applejack can see and hear him clearly."
+    ],
+    "airdate": "2019-09-13",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -44
+  },
+  {
+    "episodeNo": -45,
+    "title": "Accountibilibuddies - Snips",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Accountibilibuddies",
+    "summary": [
+      "During the Dirk Thistleweed concert at the Starswirled Music Festival, Applejack gets her foot stomped while dancing at the front of the crowd, and Rainbow Dash and Pinkie Pie help her get away from the crowd. She tells her friends to go back and enjoy the concert without her, but they refuse to let her miss the concert by herself, and one of them offers to be her \"accountibilibuddy\".",
+      "If the viewer chooses Snips, Applejack picks Snips to be her accountibilibuddy after seeing him looking lonely without Snails. When Snips explains that Snails inexplicably abandoned him at the festival, Applejack feels sorry for him and offers to be his new best friend. Just then, Snails appears, having not abandoned Snips after all, followed by Dirk Thistleweed, who is amused by Snails' funny personality. Snips and Snails reconcile, and Dirk offers them and Applejack stage-side seats at the concert."
+    ],
+    "airdate": "2019-09-13",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -45
   },
   {
     "episodeNo": 20,
@@ -5154,59 +5244,65 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 378
+    "id": 334
   },
   {
-    "episodeNo": 21,
+    "episodeNo": 6,
     "title": "The Road Less Scheduled",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#The_Road_Less_Scheduled",
     "summary": [
-      "Twilight has her schedule for the Starswirled Music Festival planned out in her schedule planner, but it accidentally gets destroyed by Bulk Biceps' sweat. Without her own festival agenda to follow, she turns to one of her friends to follow theirs."
-    ],
-    "airdate": "2019-09-15",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 379
-  },
-  {
-    "episodeNo": 22,
-    "title": "The Road Less Scheduled - Principal Celestia",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#The_Road_Less_Scheduled",
-    "summary": [
-      "If the viewer chooses Principal Celestia, Twilight discovers that she, Vice Principal Luna, and Cranky Doodle are original music festival attendees, and she accompanies them on their \"old school\" tour of the festival grounds. At the end of the day, Twilight thanks Celestia for teaching her, and Celestia jokes that Twilight should send her letters after every music festival explaining what she learned."
-    ],
-    "airdate": "2019-09-15",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 380
-  },
-  {
-    "episodeNo": 23,
-    "title": "The Road Less Scheduled - Fluttershy",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#The_Road_Less_Scheduled",
-    "summary": [
-      "If the viewer chooses Fluttershy, Twilight discovers that she is secretly a fan of the heavy metal band Skull Cruncher. Fluttershy is afraid Twilight thinks she is weird for being into such a band, but Twilight supports her interest and decides to join in."
-    ],
-    "airdate": "2019-09-15",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 381
-  },
-  {
-    "episodeNo": 24,
-    "title": "The Road Less Scheduled - Micro Chips",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#The_Road_Less_Scheduled",
-    "summary": [
+      "Twilight has her schedule for the Starswirled Music Festival planned out in her schedule planner, but it accidentally gets destroyed by Bulk Biceps' sweat. Without her own festival agenda to follow, she turns to one of her friends to follow theirs.",
+      "If the viewer chooses Principal Celestia, Twilight discovers that she, Vice Principal Luna, and Cranky Doodle are original music festival attendees, and she accompanies them on their \"old school\" tour of the festival grounds. At the end of the day, Twilight thanks Celestia for teaching her, and Celestia jokes that Twilight should send her letters after every music festival explaining what she learned.",
+      "If the viewer chooses Fluttershy, Twilight discovers that she is secretly a fan of the heavy metal band Skull Cruncher. Fluttershy is afraid Twilight thinks she is weird for being into such a band, but Twilight supports her interest and decides to join in.",
       "If the viewer chooses Micro Chips, Twilight discovers that he is secretly a musical performer under the stage name \"MC Dex Effex\"."
     ],
     "airdate": "2019-09-15",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 2)",
-    "id": 382
+    "id": 335
+  },
+  {
+    "episodeNo": -46,
+    "title": "The Road Less Scheduled - Principal Celestia",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#The_Road_Less_Scheduled",
+    "summary": [
+      "Twilight has her schedule for the Starswirled Music Festival planned out in her schedule planner, but it accidentally gets destroyed by Bulk Biceps' sweat. Without her own festival agenda to follow, she turns to one of her friends to follow theirs.",
+      "If the viewer chooses Principal Celestia, Twilight discovers that she, Vice Principal Luna, and Cranky Doodle are original music festival attendees, and she accompanies them on their \"old school\" tour of the festival grounds. At the end of the day, Twilight thanks Celestia for teaching her, and Celestia jokes that Twilight should send her letters after every music festival explaining what she learned."
+    ],
+    "airdate": "2019-09-15",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -46
+  },
+  {
+    "episodeNo": -47,
+    "title": "The Road Less Scheduled - Fluttershy",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#The_Road_Less_Scheduled",
+    "summary": [
+      "Twilight has her schedule for the Starswirled Music Festival planned out in her schedule planner, but it accidentally gets destroyed by Bulk Biceps' sweat. Without her own festival agenda to follow, she turns to one of her friends to follow theirs.",
+      "If the viewer chooses Fluttershy, Twilight discovers that she is secretly a fan of the heavy metal band Skull Cruncher. Fluttershy is afraid Twilight thinks she is weird for being into such a band, but Twilight supports her interest and decides to join in."
+    ],
+    "airdate": "2019-09-15",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -47
+  },
+  {
+    "episodeNo": -48,
+    "title": "The Road Less Scheduled - Micro Chips",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#The_Road_Less_Scheduled",
+    "summary": [
+      "Twilight has her schedule for the Starswirled Music Festival planned out in her schedule planner, but it accidentally gets destroyed by Bulk Biceps' sweat. Without her own festival agenda to follow, she turns to one of her friends to follow theirs.",
+      "If the viewer chooses Micro Chips, Twilight discovers that he is secretly a musical performer under the stage name \"MC Dex Effex\"."
+    ],
+    "airdate": "2019-09-15",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -48
   },
   {
     "episodeNo": 21,
@@ -5220,7 +5316,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 383
+    "id": 336
   },
   {
     "episodeNo": 22,
@@ -5234,7 +5330,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 384
+    "id": 337
   },
   {
     "episodeNo": 23,
@@ -5248,7 +5344,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 385
+    "id": 338
   },
   {
     "episodeNo": 24,
@@ -5262,7 +5358,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 386
+    "id": 339
   },
   {
     "episodeNo": 25,
@@ -5277,7 +5373,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 387
+    "id": 340
   },
   {
     "episodeNo": 26,
@@ -5292,7 +5388,7 @@
     "season": "S9",
     "series": "FiM",
     "animationType": "episode",
-    "id": 388
+    "id": 341
   },
   {
     "episodeNo": 1,
@@ -5305,7 +5401,7 @@
     "season": "Holidays Unwrapped",
     "series": "EqG",
     "animationType": "special",
-    "id": 389
+    "id": 342
   },
   {
     "episodeNo": 24,
@@ -5318,7 +5414,7 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Better Together (season 2)",
-    "id": 390
+    "id": 343
   },
   {
     "episodeNo": 1,
@@ -5332,7 +5428,7 @@
     "season": "Friendship is Forever",
     "series": "FiM",
     "animationType": "clipshow",
-    "id": 391
+    "id": 344
   },
   {
     "episodeNo": 2,
@@ -5346,7 +5442,7 @@
     "season": "Friendship is Forever",
     "series": "FiM",
     "animationType": "clipshow",
-    "id": 392
+    "id": 345
   },
   {
     "episodeNo": 3,
@@ -5360,7 +5456,7 @@
     "season": "Friendship is Forever",
     "series": "FiM",
     "animationType": "clipshow",
-    "id": 393
+    "id": 346
   },
   {
     "episodeNo": 4,
@@ -5374,7 +5470,7 @@
     "season": "Friendship is Forever",
     "series": "FiM",
     "animationType": "clipshow",
-    "id": 394
+    "id": 347
   },
   {
     "episodeNo": 5,
@@ -5388,7 +5484,7 @@
     "season": "Friendship is Forever",
     "series": "FiM",
     "animationType": "clipshow",
-    "id": 395
+    "id": 348
   },
   {
     "episodeNo": 6,
@@ -5402,162 +5498,180 @@
     "season": "Friendship is Forever",
     "series": "FiM",
     "animationType": "clipshow",
-    "id": 396
+    "id": 349
   },
   {
-    "episodeNo": 25,
+    "episodeNo": 7,
     "title": "Sock It to Me",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Sock_It_to_Me",
     "summary": [
-      "Minutes before a championship soccer game between Canterlot High School and Crystal Prep Academy, Rainbow Dash misplaces her lucky sock, and she fears she will cause her team to lose without it. Luckily, one of her friends steps up to help with a solution."
-    ],
-    "airdate": "2020-05-23",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 397
-  },
-  {
-    "episodeNo": 26,
-    "title": "Sock It to Me - Rarity",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Sock_It_to_Me",
-    "summary": [
-      "If the viewer chooses Rarity, Rarity sews a brand new lucky sock for Rainbow Dash studded with gems. When Rainbow finally joins her team on the field, sunlight reflects off the gems and blinds the opposing players, allowing Rainbow to make the winning goal."
-    ],
-    "airdate": "2020-05-23",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 398
-  },
-  {
-    "episodeNo": 27,
-    "title": "Sock It to Me - Trixie",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Sock_It_to_Me",
-    "summary": [
-      "If the viewer chooses Trixie, Trixie lends her own lucky sock to Rainbow Dash from her magic hat. When Rainbow joins her team on the field, Trixie's lucky sock turns out to be actually magical, guiding Rainbow's leg to make the winning goal."
-    ],
-    "airdate": "2020-05-23",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 399
-  },
-  {
-    "episodeNo": 28,
-    "title": "Sock It to Me - Bulk Biceps",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Sock_It_to_Me",
-    "summary": [
+      "Minutes before a championship soccer game between Canterlot High School and Crystal Prep Academy, Rainbow Dash misplaces her lucky sock, and she fears she will cause her team to lose without it. Luckily, one of her friends steps up to help with a solution.",
+      "If the viewer chooses Rarity, Rarity sews a brand new lucky sock for Rainbow Dash studded with gems. When Rainbow finally joins her team on the field, sunlight reflects off the gems and blinds the opposing players, allowing Rainbow to make the winning goal.",
+      "If the viewer chooses Trixie, Trixie lends her own lucky sock to Rainbow Dash from her magic hat. When Rainbow joins her team on the field, Trixie's lucky sock turns out to be actually magical, guiding Rainbow's leg to make the winning goal.",
       "If the viewer chooses Bulk Biceps, Bulk lends Rainbow his smelly, unwashed lucky sock. When Rainbow joins her team on the field, all the other players\u2014including those on Rainbow's team\u2014are so repulsed by the sock's stench that she easily makes the winning goal."
     ],
     "airdate": "2020-05-23",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 2)",
-    "id": 400
+    "id": 350
   },
   {
-    "episodeNo": 29,
+    "episodeNo": -49,
+    "title": "Sock It to Me - Rarity",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Sock_It_to_Me",
+    "summary": [
+      "Minutes before a championship soccer game between Canterlot High School and Crystal Prep Academy, Rainbow Dash misplaces her lucky sock, and she fears she will cause her team to lose without it. Luckily, one of her friends steps up to help with a solution.",
+      "If the viewer chooses Rarity, Rarity sews a brand new lucky sock for Rainbow Dash studded with gems. When Rainbow finally joins her team on the field, sunlight reflects off the gems and blinds the opposing players, allowing Rainbow to make the winning goal."
+    ],
+    "airdate": "2020-05-23",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -49
+  },
+  {
+    "episodeNo": -50,
+    "title": "Sock It to Me - Trixie",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Sock_It_to_Me",
+    "summary": [
+      "Minutes before a championship soccer game between Canterlot High School and Crystal Prep Academy, Rainbow Dash misplaces her lucky sock, and she fears she will cause her team to lose without it. Luckily, one of her friends steps up to help with a solution.",
+      "If the viewer chooses Trixie, Trixie lends her own lucky sock to Rainbow Dash from her magic hat. When Rainbow joins her team on the field, Trixie's lucky sock turns out to be actually magical, guiding Rainbow's leg to make the winning goal."
+    ],
+    "airdate": "2020-05-23",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -50
+  },
+  {
+    "episodeNo": -51,
+    "title": "Sock It to Me - Bulk Biceps",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Sock_It_to_Me",
+    "summary": [
+      "Minutes before a championship soccer game between Canterlot High School and Crystal Prep Academy, Rainbow Dash misplaces her lucky sock, and she fears she will cause her team to lose without it. Luckily, one of her friends steps up to help with a solution.",
+      "If the viewer chooses Bulk Biceps, Bulk lends Rainbow his smelly, unwashed lucky sock. When Rainbow joins her team on the field, all the other players\u2014including those on Rainbow's team\u2014are so repulsed by the sock's stench that she easily makes the winning goal."
+    ],
+    "airdate": "2020-05-23",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -51
+  },
+  {
+    "episodeNo": 8,
     "title": "Tip Toppings",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Tip_Toppings",
     "summary": [
-      "At a Canterlot City frozen yogurt shop, Pinkie Pie is the one thousandth customer, and she wins a free topping with her frozen yogurt. When Pinkie is unable to choose from the wide variety of toppings, she turns to one of her friends to help her with her choice\u2014though Fluttershy insists that she not be picked because she is looking after some animals and they are not permitted inside the store."
-    ],
-    "airdate": "2020-07-21",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 401
-  },
-  {
-    "episodeNo": 30,
-    "title": "Tip Toppings - Applejack",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Tip_Toppings",
-    "summary": [
-      "If the viewer chooses Applejack, Applejack recommends fresh fruit for Pinkie's yogurt topping, but Pinkie prefers candy. Pinkie pretends to agree with Applejack's suggestion and picks candied cherries, but Applejack catches on and secretly swaps out the candied cherries for real cherries. As Pinkie enjoys her frozen yogurt, she and Applejack each believe they have fooled the other."
-    ],
-    "airdate": "2020-07-21",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 402
-  },
-  {
-    "episodeNo": 31,
-    "title": "Tip Toppings - Twilight Sparkle",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Tip_Toppings",
-    "summary": [
-      "If the viewer chooses Twilight Sparkle, Twilight uses a complex scientific method to choose the perfect yogurt topping based on which flavors go well together. She eventually suggests chocolate-covered walnuts, but by the time she finishes her anaylsis, Pinkie's yogurt has melted. Twilight requests another yogurt cup from the cashier, but Pinkie enjoys the melted yogurt anyway."
-    ],
-    "airdate": "2020-07-21",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 403
-  },
-  {
-    "episodeNo": 32,
-    "title": "Tip Toppings - Fluttershy",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Tip_Toppings",
-    "summary": [
+      "At a Canterlot City frozen yogurt shop, Pinkie Pie is the one thousandth customer, and she wins a free topping with her frozen yogurt. When Pinkie is unable to choose from the wide variety of toppings, she turns to one of her friends to help her with her choice\u2014though Fluttershy insists that she not be picked because she is looking after some animals and they are not permitted inside the store.",
+      "If the viewer chooses Applejack, Applejack recommends fresh fruit for Pinkie's yogurt topping, but Pinkie prefers candy. Pinkie pretends to agree with Applejack's suggestion and picks candied cherries, but Applejack catches on and secretly swaps out the candied cherries for real cherries. As Pinkie enjoys her frozen yogurt, she and Applejack each believe they have fooled the other.",
+      "If the viewer chooses Twilight Sparkle, Twilight uses a complex scientific method to choose the perfect yogurt topping based on which flavors go well together. She eventually suggests chocolate-covered walnuts, but by the time she finishes her anaylsis, Pinkie's yogurt has melted. Twilight requests another yogurt cup from the cashier, but Pinkie enjoys the melted yogurt anyway.",
       "If the viewer chooses Fluttershy, Pinkie opens the store's front door, allowing the animals in Fluttershy's care to storm inside and wreak chaos. This causes the yogurt shop to close due to health code violations, and Pinkie is saddened that she will have to eat her frozen yogurt without a topping. Luckily, one of Fluttershy's squirrel friends tops Pinkie's yogurt with acorn bits."
     ],
     "airdate": "2020-07-21",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 2)",
-    "id": 404
+    "id": 351
   },
   {
-    "episodeNo": 33,
+    "episodeNo": -52,
+    "title": "Tip Toppings - Applejack",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Tip_Toppings",
+    "summary": [
+      "At a Canterlot City frozen yogurt shop, Pinkie Pie is the one thousandth customer, and she wins a free topping with her frozen yogurt. When Pinkie is unable to choose from the wide variety of toppings, she turns to one of her friends to help her with her choice\u2014though Fluttershy insists that she not be picked because she is looking after some animals and they are not permitted inside the store.",
+      "If the viewer chooses Applejack, Applejack recommends fresh fruit for Pinkie's yogurt topping, but Pinkie prefers candy. Pinkie pretends to agree with Applejack's suggestion and picks candied cherries, but Applejack catches on and secretly swaps out the candied cherries for real cherries. As Pinkie enjoys her frozen yogurt, she and Applejack each believe they have fooled the other."
+    ],
+    "airdate": "2020-07-21",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -52
+  },
+  {
+    "episodeNo": -53,
+    "title": "Tip Toppings - Twilight Sparkle",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Tip_Toppings",
+    "summary": [
+      "At a Canterlot City frozen yogurt shop, Pinkie Pie is the one thousandth customer, and she wins a free topping with her frozen yogurt. When Pinkie is unable to choose from the wide variety of toppings, she turns to one of her friends to help her with her choice\u2014though Fluttershy insists that she not be picked because she is looking after some animals and they are not permitted inside the store.",
+      "If the viewer chooses Twilight Sparkle, Twilight uses a complex scientific method to choose the perfect yogurt topping based on which flavors go well together. She eventually suggests chocolate-covered walnuts, but by the time she finishes her anaylsis, Pinkie's yogurt has melted. Twilight requests another yogurt cup from the cashier, but Pinkie enjoys the melted yogurt anyway."
+    ],
+    "airdate": "2020-07-21",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -53
+  },
+  {
+    "episodeNo": -54,
+    "title": "Tip Toppings - Fluttershy",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Tip_Toppings",
+    "summary": [
+      "At a Canterlot City frozen yogurt shop, Pinkie Pie is the one thousandth customer, and she wins a free topping with her frozen yogurt. When Pinkie is unable to choose from the wide variety of toppings, she turns to one of her friends to help her with her choice\u2014though Fluttershy insists that she not be picked because she is looking after some animals and they are not permitted inside the store.",
+      "If the viewer chooses Fluttershy, Pinkie opens the store's front door, allowing the animals in Fluttershy's care to storm inside and wreak chaos. This causes the yogurt shop to close due to health code violations, and Pinkie is saddened that she will have to eat her frozen yogurt without a topping. Luckily, one of Fluttershy's squirrel friends tops Pinkie's yogurt with acorn bits."
+    ],
+    "airdate": "2020-07-21",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -54
+  },
+  {
+    "episodeNo": 9,
     "title": "Costume Conundrum",
     "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Costume_Conundrum",
     "summary": [
-      "While hanging out at Sunset Shimmer's house, Sunset, Rarity, Applejack, and Fluttershy all receive an invitation to Bulk Biceps' costume party. When Fluttershy does not know what to wear, her friends all offer to help her pick out a costume."
-    ],
-    "airdate": "2020-08-26",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 405
-  },
-  {
-    "episodeNo": 34,
-    "title": "Costume Conundrum - Sunset Shimmer",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Costume_Conundrum",
-    "summary": [
-      "If the viewer chooses Sunset Shimmer, Sunset picks out a costume that makes Fluttershy look like an alien creature with tentacles, which Bulk Biceps mistakes for a real monster when they arrive to his party."
-    ],
-    "airdate": "2020-08-26",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 406
-  },
-  {
-    "episodeNo": 35,
-    "title": "Costume Conundrum - Rarity",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Costume_Conundrum",
-    "summary": [
-      "If the viewer chooses Rarity, Rarity designs a beautiful dress that makes Fluttershy look like a princess. However, Rarity reveals that the dress is actually for her, and she lends Fluttershy one of her older but also beautiful dresses."
-    ],
-    "airdate": "2020-08-26",
-    "series": "EqG",
-    "animationType": "short",
-    "season": "Choose Your Own Ending (season 2)",
-    "id": 407
-  },
-  {
-    "episodeNo": 36,
-    "title": "Costume Conundrum - Applejack",
-    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Costume_Conundrum",
-    "summary": [
+      "While hanging out at Sunset Shimmer's house, Sunset, Rarity, Applejack, and Fluttershy all receive an invitation to Bulk Biceps' costume party. When Fluttershy does not know what to wear, her friends all offer to help her pick out a costume.",
+      "If the viewer chooses Sunset Shimmer, Sunset picks out a costume that makes Fluttershy look like an alien creature with tentacles, which Bulk Biceps mistakes for a real monster when they arrive to his party.",
+      "If the viewer chooses Rarity, Rarity designs a beautiful dress that makes Fluttershy look like a princess. However, Rarity reveals that the dress is actually for her, and she lends Fluttershy one of her older but also beautiful dresses.",
       "If the viewer chooses Applejack, Applejack picks out a large two-person pony costume for herself and Fluttershy to wear to the party."
     ],
     "airdate": "2020-08-26",
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 2)",
-    "id": 408
+    "id": 352
+  },
+  {
+    "episodeNo": -55,
+    "title": "Costume Conundrum - Sunset Shimmer",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Costume_Conundrum",
+    "summary": [
+      "While hanging out at Sunset Shimmer's house, Sunset, Rarity, Applejack, and Fluttershy all receive an invitation to Bulk Biceps' costume party. When Fluttershy does not know what to wear, her friends all offer to help her pick out a costume.",
+      "If the viewer chooses Sunset Shimmer, Sunset picks out a costume that makes Fluttershy look like an alien creature with tentacles, which Bulk Biceps mistakes for a real monster when they arrive to his party."
+    ],
+    "airdate": "2020-08-26",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -55
+  },
+  {
+    "episodeNo": -56,
+    "title": "Costume Conundrum - Rarity",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Costume_Conundrum",
+    "summary": [
+      "While hanging out at Sunset Shimmer's house, Sunset, Rarity, Applejack, and Fluttershy all receive an invitation to Bulk Biceps' costume party. When Fluttershy does not know what to wear, her friends all offer to help her pick out a costume.",
+      "If the viewer chooses Rarity, Rarity designs a beautiful dress that makes Fluttershy look like a princess. However, Rarity reveals that the dress is actually for her, and she lends Fluttershy one of her older but also beautiful dresses."
+    ],
+    "airdate": "2020-08-26",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -56
+  },
+  {
+    "episodeNo": -57,
+    "title": "Costume Conundrum - Applejack",
+    "urlName": "My_Little_Pony_Equestria_Girls:_Choose_Your_Own_Ending_(season_2)#Costume_Conundrum",
+    "summary": [
+      "While hanging out at Sunset Shimmer's house, Sunset, Rarity, Applejack, and Fluttershy all receive an invitation to Bulk Biceps' costume party. When Fluttershy does not know what to wear, her friends all offer to help her pick out a costume.",
+      "If the viewer chooses Applejack, Applejack picks out a large two-person pony costume for herself and Fluttershy to wear to the party."
+    ],
+    "airdate": "2020-08-26",
+    "series": "EqG",
+    "animationType": "short",
+    "season": "Choose Your Own Ending (season 2)",
+    "id": -57
   }
 ]
