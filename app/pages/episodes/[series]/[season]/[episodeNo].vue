@@ -119,7 +119,7 @@
       </a>
     </aside>
     <div class="TranscriptLines">
-      <TranscriptLineTable :transcriptLines="transcriptLines" :episode="episode" />
+      <TranscriptLineTable :transcriptLines="transcriptLines" :episode="episode" :jumpedLine="route.hash.slice(2)" />
       <UAccordion :items="items">
         <template #body="{ item }">
           <TranscriptLineTable :transcriptLines="item.content" :episode="item.episode" />
