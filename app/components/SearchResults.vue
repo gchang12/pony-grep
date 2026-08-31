@@ -5,6 +5,7 @@
   import makeVHighlight from "../mixins/makeVHighlight.js";
   import animationTypes from "../assets/json/animationTypes.json";
   import seasonList from "../assets/json/seasonList.json";
+  import stringifyEpisodeNo from "../functions/stringifyEpisodeNo.js";
 
   const props = defineProps({
     searchResults: Array,
@@ -16,6 +17,7 @@
 
   console.log('searchResults', searchResults);
   console.log('searchResults.value', searchResults.value);
+  //console.log('dialoguePattern', dialoguePattern);
 
   const response = await useFetch("json/animationIndex.json");
 
@@ -67,7 +69,17 @@
 
   const items = computed(() => reformatTranscriptLines("FiM"));
 
-  const vHighlight = makeVHighlight(dialoguePattern);
+  /*
+  const vHighlight = computed(() => {
+    //console.log(dialoguePattern);
+    console.log("dialoguePattern", dialoguePattern);
+    return makeVHighlight(dialoguePattern);
+  });
+  */
+
+  const vHighlight = makeVHighlight(dialoguePattern.value ?? "");
+  //const vHighlight = computed(() => makeVHighlight(dialoguePattern));
+  console.log("vHighlight", vHighlight);
   console.log("dialoguePattern", dialoguePattern);
 
 </script>
