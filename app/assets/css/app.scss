@@ -174,31 +174,33 @@ footer {
 */
 
 /* Hacking BS5 to get the styling I want. */
-[data-slot='group'] {
-  display: flex;
-  flex-direction: column;
-}
+#episodes {
+  & [data-slot='group'] {
+    display: flex;
+    flex-direction: column;
+  }
 
-.rounded-md {
-  background-color: rgb(0, 0, 0, 0);
-  color: rgb(0, 0, 0, 0);
-  border: 0;
-  width: 100%;
-  height: 100%;
-  // transition
-  transition: color 0.5s, background 0.5s;
-}
+  & .rounded-md {
+    background-color: rgb(0, 0, 0, 0);
+    color: rgb(0, 0, 0, 0);
+    border: 0;
+    width: 100%;
+    height: 100%;
+    // transition
+    transition: color 0.5s, background 0.5s;
+  }
 
-.rounded-md:hover, .rounded-md[aria-expanded='true'] {
-  //color: white;
-  background: rgba(39, 62, 84, 0.82);
-  overflow: hidden;
-  height: 100%;
-  z-index: 2;
-  color: #FFFFFF;
-}
+  & .rounded-md:hover, .rounded-md[aria-expanded='true'] {
+    //color: white;
+    background: rgba(39, 62, 84, 0.82);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+    color: #FFFFFF;
+  }
 
-[type='link'] {
-  display: flex;
-  justify-content: start;
+  & [type='link'] {
+    display: flex;
+    justify-content: start;
+  }
 }
