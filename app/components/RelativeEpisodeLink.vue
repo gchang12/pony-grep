@@ -9,13 +9,13 @@
 </script>
 
 <template>
-  <a class="RelativeEpisodeLink" v-if="episode != null" :href="['/episodes', episode.series, episode.seasonUrl, episode.episodeNo].join('/')">
+  <NuxtLink class="RelativeEpisodeLink" v-if="episode != null" :to="['/episodes', episode.series, episode.seasonUrl, episode.episodeNo].join('/')">
     <span class="NaviText">{{ naviText }}</span>
     <span class="Season">{{ episode.season }}</span>
     <span class="Episode">{{ episode.episodeNo }}</span>
     <span class="Title">{{ episode.title }}</span>
-  </a>
-  <a v-else>
+  </NuxtLink>
+  <NuxtLink v-else>
     <span class="MissingEpisodeMessage">{{ missingEpisodeMessage }}</span>
-  </a>
+  </NuxtLink>
 </template>
