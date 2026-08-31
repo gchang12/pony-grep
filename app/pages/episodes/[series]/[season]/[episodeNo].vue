@@ -61,17 +61,17 @@
       return [];
     }
     const season = getSeasonName(route.params.season);
-    console.log("episode", episode);
-    console.log("episode.value", episode.value);
+    //console.log("episode", episode);
+    //console.log("episode.value", episode.value);
     const branchedEndings = response2.data.value
       .filter(someEpisode => someEpisode.series === route.params.series)
       .filter(someEpisode => someEpisode.season === season)
       .filter(someEpisode => someEpisode.title.startsWith(episode.value.title + " - "));
-    console.log("branchedEndings", branchedEndings);
+    //console.log("branchedEndings", branchedEndings);
     const items = branchedEndings.map(someEpisode => {
       const title = someEpisode.title;
       const label = title.slice(title.indexOf(' - ') + 3);
-      console.log(someEpisode.id);
+      //console.log(someEpisode.id);
       const content = response1.data.value.filter(tline => tline.episodeId === someEpisode.id);
       return {
         label,
@@ -87,18 +87,10 @@
   //console.log("episode", episode);
   //console.log("transcriptLines", transcriptLines);
 
-  console.log("items", items);
-  console.log("items.value", items.value);
+  //console.log("items", items);
+  //console.log("items.value", items.value);
 
-  // TODO: If the viewer chooses a 'CYOE' short, put the ending branches in the main transcript page.
-  // TODO: If the viewer is in a 'CYOE' branched ending page, redirect him to the main short page.
-  // TODO: Next and Back buttons probably.
-  // TODO: Make use of 'dialoguePattern' search-param; highlight the relevant lines.
-  // TODO: Highlight jumped-to line.
-  // TODO: Append summary of ending branch.
-  // TODO: Put branched endings at the end.
-
-  console.log("route.hash", route.hash);
+  //console.log("route.hash", route.hash);
   //console.log("route.query", route.query);
   //console.log("Object.keys(route.query)", Object.keys(route.query));
 
@@ -131,7 +123,7 @@
   const prevEpisode = computed(() => calculateRelativeEpisode(-1));
   const nextEpisode = computed(() => calculateRelativeEpisode(1));
 
-  console.log(nextEpisode);
+  //console.log(nextEpisode);
 
 </script>
 
@@ -168,7 +160,6 @@
         </template>
       </UAccordion>
     </div>
-    <!-- TODO: Accordions each containing transcript table -->
     <nav>
       <RelativeEpisodeLink :episode="prevEpisode" missingEpisodeMessage="Welcome to G4 Equestria!" />
       <!-- <RelativeEpisodeLink :episode="nextEpisode" missingEpisodeMessage="No more episodes to show. You're done with the series." /> -->
