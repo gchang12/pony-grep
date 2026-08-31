@@ -45,6 +45,7 @@
   // TODO: Next and Back buttons probably.
   // TODO: Make use of 'dialoguePattern' search-param; highlight the relevant lines.
   // TODO: Highlight jumped-to line.
+  // TODO: Append summary of ending branch.
 
 </script>
 
