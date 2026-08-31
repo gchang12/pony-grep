@@ -145,7 +145,7 @@
             <th>Season</th>
             <td>{{ episode.season }}</td>
           </tr>
-          <tr>
+          <tr v-if="episode.episodeNo > 0">
             <th>Episode</th>
             <td>{{ episode.episodeNo }}</td>
           </tr>
@@ -171,7 +171,8 @@
     <!-- TODO: Accordions each containing transcript table -->
     <nav>
       <RelativeEpisodeLink :episode="prevEpisode" missingEpisodeMessage="Welcome to G4 Equestria!" />
-      <RelativeEpisodeLink :episode="nextEpisode" missingEpisodeMessage="No more episodes to show. You're done with the series." />
+      <!-- <RelativeEpisodeLink :episode="nextEpisode" missingEpisodeMessage="No more episodes to show. You're done with the series." /> -->
+      <RelativeEpisodeLink :episode="nextEpisode" missingEpisodeMessage="" />
     </nav>
   </div>
 </template>
