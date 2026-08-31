@@ -4,27 +4,33 @@
 
   import seasonList from "../../../../assets/json/seasonList.json";
   import TranscriptLineTable from "../../../../components/TranscriptLineTable.vue";
+  import RelativeEpisodeLink from "../../../../components/RelativeEpisodeLink.vue";
+  import stringifyEpisodeNo from "../../../../functions/stringifyEpisodeNo.js";
+  import getSeasonUrlName from "../../../../functions/getSeasonUrlName.js";
+  import getSeasonName from "../../../../functions/getSeasonName.js";
 
-  const route = useRoute()
+  const route = useRoute();
 
   const response1 = await useFetch("../../../../json/transcriptLines.json");
   const response2 = await useFetch("../../../../json/animationIndex.json");
 
-  const episode = computed(() => {
+  function calculateThisEpisode() {
     if (response2.data.value == null) {
       response2.refresh();
       return {};
     }
     //console.log("response2.data.value", response2.data.value);
     //console.log("route.params", route.params);
-    const season = seasonList.find(season => season.urlName === route.params.season).name;
+    const season = getSeasonName(route.params.season);
     const currentEp = response2.data.value
       .filter(episode => episode.series === route.params.series)
       .filter(episode => episode.season === season)
       .find(episode => episode.episodeNo == route.params.episodeNo);
     //console.log("currentEp", currentEp);
     return currentEp;
-  });
+  }
+
+  const episode = computed(() => calculateThisEpisode());
 
   const transcriptLines = computed(() => {
     if (response1.data.value == null) {
@@ -54,7 +60,7 @@
       response1.refresh();
       return [];
     }
-    const season = seasonList.find(season => season.urlName === route.params.season).name;
+    const season = getSeasonName(route.params.season);
     console.log("episode", episode);
     console.log("episode.value", episode.value);
     const branchedEndings = response2.data.value
@@ -90,6 +96,42 @@
   // TODO: Make use of 'dialoguePattern' search-param; highlight the relevant lines.
   // TODO: Highlight jumped-to line.
   // TODO: Append summary of ending branch.
+  // TODO: Put branched endings at the end.
+
+  console.log("route.hash", route.hash);
+  //console.log("route.query", route.query);
+  //console.log("Object.keys(route.query)", Object.keys(route.query));
+
+  function calculateRelativeEpisode(increment) {
+    if (response2.data.value == null) {
+      response2.refresh();
+      return {};
+    }
+    const episode = calculateThisEpisode();
+    const episodeNo = Number(episode.episodeNo);
+    const newEpisodeNo = stringifyEpisodeNo(episodeNo + increment);
+    const season = getSeasonName(route.params.season);
+    let newEpisode = response2.data.value
+      .filter(someEpisode => episode.series === route.params.series)
+      .filter(someEpisode => someEpisode.season === season)
+      .find(someEpisode => someEpisode.episodeNo == newEpisodeNo) ?? response2.data.value.find(someEpisode => someEpisode.id == episode.id + increment);
+    if (newEpisode == null) {
+      return null;
+    } else {
+      return {
+        title: newEpisode.title,
+        series: newEpisode.series,
+        seasonUrl: getSeasonUrlName(newEpisode.season),
+        season: newEpisode.season,
+        episodeNo: newEpisode.episodeNo,
+      };
+    };
+  }
+
+  const prevEpisode = computed(() => calculateRelativeEpisode(-1));
+  const nextEpisode = computed(() => calculateRelativeEpisode(1));
+
+  console.log(nextEpisode);
 
 </script>
 
@@ -127,5 +169,9 @@
       </UAccordion>
     </div>
     <!-- TODO: Accordions each containing transcript table -->
+    <nav>
+      <RelativeEpisodeLink :episode="prevEpisode" />
+      <RelativeEpisodeLink :episode="nextEpisode" />
+    </nav>
   </div>
 </template>
