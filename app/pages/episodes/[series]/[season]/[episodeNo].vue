@@ -141,6 +141,10 @@
       <table>
         <tbody>
           <tr>
+            <th>Series</th>
+            <td>{{ episode.series }}</td>
+          </tr>
+          <tr>
             <th>Season</th>
             <td>{{ episode.season }}</td>
           </tr>
@@ -163,7 +167,7 @@
       <TranscriptLineTable :transcriptLines="transcriptLines" :episode="episode" :jumpedLine="route.hash.slice(2)" />
       <UAccordion :items="items">
         <template #body="{ item }">
-          <TranscriptLineTable :transcriptLines="item.content" :episode="item.episode" />
+          <TranscriptLineTable :transcriptLines="item.content" :episode="item.episode" jumpedLine="" />
         </template>
       </UAccordion>
     </div>

@@ -7,6 +7,7 @@
   import makeVHighlight from "../mixins/makeVHighlight.js";
   import stringifyEpisodeNo from "../functions/stringifyEpisodeNo.js";
 
+  import SeasonSelectInput from "../components/SeasonSelectInput.vue";
 
   //import SearchResults from "../components/SearchResults.vue";
 
@@ -73,12 +74,6 @@
     searchResults.value = searchTranscript(formData, transcriptLines);
     //console.log("searchResults.value", searchResults.value);
     e.preventDefault();
-  }
-
-  function toggleSeason(e) {
-    const checkbox = e.currentTarget;
-    const selectList = document.getElementById(checkbox.id + "-season");
-    selectList.disabled = !checkbox.checked;
   }
 
   function clearResults() {
@@ -174,7 +169,7 @@
     <form>
       <div class="dialoguePattern field">
         <label for="dialoguePattern">Dialogue</label>
-        <input value="friendship is magic" placeholder="friendship is magic" id="dialoguePattern" type="text" name="dialoguePattern" required />
+        <input value="friendship is magic" placeholder="friendship is magic" id="dialoguePattern" type="search" name="dialoguePattern" required />
         <div class="help-text">Pattern to search for in all G4 dialogue.</div>
       </div>
       <div class="speaker field">
@@ -184,28 +179,8 @@
       </div>
       <fieldset>
         <legend>Series</legend>
-        <div class="FiM field">
-          <label for="FiM">Friendship is Magic</label>
-          <input value="FiM" name="series" checked id="FiM" type="checkbox" @click="toggleSeason" />
-          <div class="season field">
-            <select id="FiM-season" name="FiM-season" multiple>
-              <option v-for="season in seasonList.filter(season => season.series === 'FiM')" :value="season.name" :key="season.name" :selected="season.name.startsWith('S') && season.name.length === 2">
-                {{ season.name }}
-              </option>
-            </select>
-          </div>
-        </div>
-        <div class="EqG field">
-          <label for="EqG">Equestria Girls</label>
-          <input value="EqG" name="series" id="EqG" type="checkbox" @click="toggleSeason" />
-          <div class="season field">
-            <select id="EqG-season" name="EqG-season" multiple disabled>
-              <option v-for="season in seasonList.filter(season => season.series === 'EqG')" :value="season.name" :key="season.name" :selected="['Equestria Girls', 'Rainbow Rocks', 'Friendship Games', 'Legend of Everfree'].includes(season.name)">
-                {{ season.name }}
-              </option>
-            </select>
-          </div>
-        </div>
+        <SeasonSelectInput series="FiM" checked label="Friendship is Magic" />
+        <SeasonSelectInput series="EqG" label="Equestria Girls" />
         <div class="help-text">Only selected seasons will be searched.</div>
       </fieldset>
       <button @click="ponyGrep" id="search">Search</button>
