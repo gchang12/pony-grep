@@ -43,8 +43,8 @@
   // TODO: If the viewer chooses a 'CYOE' short, put the ending branches in the main transcript page.
   // TODO: If the viewer is in a 'CYOE' branched ending page, redirect him to the main short page.
   // TODO: Next and Back buttons probably.
-  // TODO: Put line number id-attributes in each row of data.
   // TODO: Make use of 'dialoguePattern' search-param; highlight the relevant lines.
+  // TODO: Highlight jumped-to line.
 
 </script>
 
@@ -82,7 +82,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="tline in transcriptLines.filter(tline => tline.episodeId === episode.id)" :key="tline.id">
+          <tr v-for="tline in transcriptLines.filter(tline => tline.episodeId === episode.id)" :key="tline.id" :id="'L' + tline.lineNo">
             <th>
               {{ tline.speaker }}
             </th>
