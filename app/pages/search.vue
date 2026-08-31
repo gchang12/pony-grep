@@ -155,6 +155,19 @@
   const items2 = computed(() => reformatTranscriptLines("EqG"));
   const resultCount2 = computed(() => countResults("EqG"));
 
+  const items3 = computed(() => {
+    return [
+      {
+        label: `[${resultCount1.value}] ` + "Friendship is Magic",
+        slot: "FiM",
+      },
+      {
+        label: `[${resultCount2.value}] ` + "Equestria Girls",
+        slot: "EqG",
+      },
+    ];
+  });
+
 </script>
 
 <template>
@@ -208,66 +221,72 @@
   <article>
     <h2>Results</h2>
     <!-- List of accordions, each corresponding to a season, which are classed by series. -->
-    <article>
-      <h3><span class="ResultCount">{{ resultCount1 }}</span> Friendship is Magic</h3>
-      <!-- NOTE: Unable to make this into a component. -->
-      <UAccordion :items="items1">
-        <template #body="{ item }">
-          <table>
-            <thead>
-              <tr>
-                <th>Speaker</th>
-                <th>Dialogue</th>
-                <th>Episode</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="tline in item.content" :key="tline.id">
-                <th>{{tline.speaker}}</th>
-                <td v-highlight>{{tline.dialogue}}</td>
-                <td>
-                  <!-- <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.animationPrefix + tline.episodeCode + '#L' + tline.lineNo].join('/')"> -->
-                  <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, 'E' + tline.episodeCode + '#L' + tline.lineNo].join('/')">
-                    <i>{{tline.episodeTitle}}</i>
-                  </NuxtLink>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <!-- each content must have an array of transcript lines corresponding to an anmType -->
-          <!-- {{ item }} -->
-        </template>
-      </UAccordion>
-    </article>
-    <article>
-      <h3><span class="ResultCount">{{ resultCount2 }}</span> Equestria Girls</h3>
-      <UAccordion :items="items2">
-        <template #body="{ item }">
-          <table>
-            <thead>
-              <tr>
-                <th>Speaker</th>
-                <th>Dialogue</th>
-                <th>Episode</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="tline in item.content" :key="tline.id">
-                <th>{{tline.speaker}}</th>
-                <td>{{tline.dialogue}}</td>
-                <td>
-                  <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.animationPrefix + tline.episodeCode + '#L' + tline.lineNo].join('/')">
-                    <i>{{tline.episodeTitle}}</i>
-                  </NuxtLink>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <!-- each content must have an array of transcript lines corresponding to an anmType -->
-          <!-- {{ item }} -->
-        </template>
-      </UAccordion>
-    </article>
+    <UTabs :items="items3">
+      <template #FiM>
+        <!-- <article> -->
+          <!-- <h3><span class="ResultCount">{{ resultCount1 }}</span> Friendship is Magic</h3> -->
+          <!-- NOTE: Unable to make this into a component. -->
+          <UAccordion :items="items1">
+            <template #body="{ item }">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Speaker</th>
+                    <th>Dialogue</th>
+                    <th>Episode</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="tline in item.content" :key="tline.id">
+                    <th>{{tline.speaker}}</th>
+                    <td v-highlight>{{tline.dialogue}}</td>
+                    <td>
+                      <!-- <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.animationPrefix + tline.episodeCode + '#L' + tline.lineNo].join('/')"> -->
+                      <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, 'E' + tline.episodeCode + '#L' + tline.lineNo].join('/')">
+                        <i>{{tline.episodeTitle}}</i>
+                      </NuxtLink>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- each content must have an array of transcript lines corresponding to an anmType -->
+              <!-- {{ item }} -->
+            </template>
+          </UAccordion>
+          <!-- </article> -->
+      </template>
+      <template #EqG>
+        <!-- <article> -->
+          <!-- <h3><span class="ResultCount">{{ resultCount2 }}</span> Equestria Girls</h3> -->
+          <UAccordion :items="items2">
+            <template #body="{ item }">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Speaker</th>
+                    <th>Dialogue</th>
+                    <th>Episode</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="tline in item.content" :key="tline.id">
+                    <th>{{tline.speaker}}</th>
+                    <td>{{tline.dialogue}}</td>
+                    <td>
+                      <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.animationPrefix + tline.episodeCode + '#L' + tline.lineNo].join('/')">
+                        <i>{{tline.episodeTitle}}</i>
+                      </NuxtLink>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- each content must have an array of transcript lines corresponding to an anmType -->
+              <!-- {{ item }} -->
+            </template>
+          </UAccordion>
+          <!-- </article> -->
+      </template>
+    </UTabs>
   </article>
 
 </template>
