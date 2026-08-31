@@ -2,6 +2,8 @@
 
   import { computed } from "vue";
 
+  import seasonList from "../../../../assets/json/seasonList.json";
+
   const route = useRoute()
 
   const response1 = await useFetch("../../../../json/transcriptLines.json");
@@ -12,10 +14,14 @@
       response2.refresh();
       return {};
     }
+    //console.log("response2.data.value", response2.data.value);
+    //console.log("route.params", route.params);
+    const season = seasonList.find(season => season.urlName === route.params.season).name;
     const currentEp = response2.data.value
       .filter(episode => episode.series === route.params.series)
-      .filter(episode => episode.season === route.params.season)
-      .find(episode => episode.episodeNo === route.params.episodeNo);
+      .filter(episode => episode.season === season)
+      .find(episode => episode.episodeNo == route.params.episodeNo);
+    //console.log("currentEp", currentEp);
     return currentEp;
   });
 
@@ -24,11 +30,15 @@
       response1.refresh();
       return [];
     }
-    console.log(currentEp);
+    //console.log(episode);
     const lines = response1.data.value
-      .filter(tline => tline.episodeId === currentEp.value.id);
+      .filter(tline => tline.episodeId == episode.value.id);
+    //console.log(lines);
     return lines;
   });
+
+  //console.log("episode", episode);
+  //console.log("transcriptLines", transcriptLines);
 
 </script>
 
@@ -68,10 +78,10 @@
         <tbody>
           <tr v-for="tline in transcriptLines.filter(tline => tline.episodeId === episode.id)" :key="tline.id">
             <th>
-              {{ transcriptLine.speaker }}
+              {{ tline.speaker }}
             </th>
             <td>
-              {{ transcriptLine.dialogue }}
+              {{ tline.dialogue }}
             </td>
           </tr>
         </tbody>
