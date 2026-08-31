@@ -6,7 +6,7 @@
   import animationTypes from "../assets/json/animationTypes.json";
   import searchTranscript from "../functions/searchTranscript.js";
 
-  import SearchResults from "../components/SearchResults.vue";
+  //import SearchResults from "../components/SearchResults.vue";
 
   //const seasonList = getSeasonList();
   //const animationTypes = getAnimationTypes();
@@ -77,7 +77,7 @@
     /* searchResults */
     const transcriptLines = response1.data.value;
     searchResults.value = searchTranscript(formData, transcriptLines);
-    console.log("searchResults.value", searchResults.value);
+    //console.log("searchResults.value", searchResults.value);
     e.preventDefault();
   }
 
@@ -158,15 +158,17 @@
   const items3 = computed(() => {
     return [
       {
-        label: `[${resultCount1.value}] ` + "Friendship is Magic",
+        label: `[${resultCount1.value ?? 0}] ` + "Friendship is Magic",
         slot: "FiM",
       },
       {
-        label: `[${resultCount2.value}] ` + "Equestria Girls",
+        label: `[${resultCount2.value ?? 0}] ` + "Equestria Girls",
         slot: "EqG",
       },
     ];
   });
+
+  //console.log("response2", response2);
 
 </script>
 
@@ -226,6 +228,7 @@
         <!-- <article> -->
           <!-- <h3><span class="ResultCount">{{ resultCount1 }}</span> Friendship is Magic</h3> -->
           <!-- NOTE: Unable to make this into a component. -->
+          <!-- <SearchResults series="FiM" :searchResults="searchResults" :animationIndex="animationIndex" /> -->
           <UAccordion :items="items1">
             <template #body="{ item }">
               <table>
@@ -242,7 +245,7 @@
                     <td v-highlight>{{tline.dialogue}}</td>
                     <td>
                       <!-- <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.animationPrefix + tline.episodeCode + '#L' + tline.lineNo].join('/')"> -->
-                      <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, 'E' + tline.episodeCode + '#L' + tline.lineNo].join('/')">
+                      <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.episodeCode + '#L' + tline.lineNo].join('/')">
                         <i>{{tline.episodeTitle}}</i>
                       </NuxtLink>
                     </td>
@@ -273,7 +276,7 @@
                     <th>{{tline.speaker}}</th>
                     <td>{{tline.dialogue}}</td>
                     <td>
-                      <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.animationPrefix + tline.episodeCode + '#L' + tline.lineNo].join('/')">
+                      <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.episodeCode + '#L' + tline.lineNo].join('/')">
                         <i>{{tline.episodeTitle}}</i>
                       </NuxtLink>
                     </td>
