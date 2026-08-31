@@ -21,6 +21,7 @@
   // TODO: For CYOA shorts, implement branched transcripts
   // TODO: Highlight matched patterns
   // TODO: add grepPattern query string to episode transcript
+  // TODO: Reindex CYOE shorts
 
 </script>
 

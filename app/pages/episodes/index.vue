@@ -12,27 +12,27 @@
       response.refresh();
       return [];
     }
-    const index = response.data.value.map(episode => {
-      const { series, season, episodeNo, title } = episode;
-      const label = stringifyEpisodeNo(episodeNo) + " – " + title;
-      const seasonUrlName = seasonList.find(someSeason => someSeason.name === season).urlName;
-      return {
-        series,
-        season,
-        label,
-        color: "error",
-        type: "link",
-        "class": "",
-        onSelect(e) {
-          navigateTo(["/episodes", series, seasonUrlName, stringifyEpisodeNo(episodeNo)].join("/"));
-        },
-      };
+    const index = response.data.value
+      .filter(episode => !(episode.season.includes("Choose Your Own Ending") && episode.title.includes(" - ")))
+      .map(episode => {
+        const { series, season, episodeNo, title } = episode;
+        const label = stringifyEpisodeNo(episodeNo) + " – " + title;
+        const seasonUrlName = seasonList.find(someSeason => someSeason.name === season).urlName;
+        return {
+          series,
+          season,
+          label,
+          color: "error",
+          type: "link",
+          "class": "",
+          onSelect(e) {
+            navigateTo(["/episodes", series, seasonUrlName, stringifyEpisodeNo(episodeNo)].join("/"));
+          },
+        };
+      });
+      console.log(response.data.value.length);
+      return index;
     });
-    console.log(response.data.value.length);
-    return index;
-  });
-
-  // TODO: In the CYOE shorts, show only the main short that branches off into three others.
 
 </script>
 
