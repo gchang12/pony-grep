@@ -104,7 +104,6 @@
 <template>
   <div class="Transcript">
     <aside class="EpisodeInfo">
-      <h3>{{ episode.title }}</h3>
       <table>
         <tbody>
           <tr>
@@ -131,6 +130,7 @@
       </a>
     </aside>
     <div class="TranscriptLines">
+      <h1>{{ episode.title }}</h1>
       <TranscriptLineTable :transcriptLines="transcriptLines" :episode="episode" :jumpedLine="route.hash.slice(2)" />
       <UAccordion :items="items">
         <template #body="{ item }">
