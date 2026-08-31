@@ -31,6 +31,8 @@
     return index;
   });
 
+  // TODO: In the CYOE shorts, show only the main short that branches off into three others.
+
 </script>
 
 <template>

@@ -40,6 +40,10 @@
   //console.log("episode", episode);
   //console.log("transcriptLines", transcriptLines);
 
+  // TODO: If the viewer chooses a 'CYOE' short, put the ending branches in the main transcript page.
+  // TODO: If the viewer is in a 'CYOE' branched ending page, redirect him to the main short page.
+  // TODO: Next and Back buttons probably.
+
 </script>
 
 <template>
