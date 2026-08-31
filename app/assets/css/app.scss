@@ -1,265 +1,206 @@
-/*
-  light-orange #f1ba40
-  light-orange-outline #f08322
-  reddish #cb3208
-  reddish-outline #e0581d
-  blue #125271
-  blue-outline #06363f
-  light-green #67e4be
-  peach #f8f9c9
-*/
-
-$light-green: #67e4be;
-$light-orange: #f1ba40;
-$reddish: #cb3208;
-$reddish-outline: #e0581d;
-$light-orange-outline: #f08322;
-$blue: #125271;
-$blue-outline: #06363f;
-
-body {
-  background-color: $blue;
-}
+//@use "tailwindcss";
+//@use "@nuxt/ui";
 
 header {
-  /* padding: 4rem; */
-  background-color: $blue-outline;
-  background-image: url("../images/star.png");
-  border: 1rem solid $light-green;
-  //display: flex;
-  //justify-content: space-between;
-  & a.Logo {
-    display: inline-block;
-    margin: 1rem;
-    padding: 1rem;
-    border: 0.5rem solid $reddish;
-    background-color: $light-orange;
-    /* border-radius: 100px; */
-    /* background: radial-gradient($light-orange-outline, $blue); */
-    /* background: radial-gradient($blue, $light-orange-outline); */
-    /* background: radial-gradient(closest-side, $light-orange-outline, $blue); */
-    transition: box-shadow 0.25s;
-  }
-  & a.Logo:hover {
-    box-shadow: 0 0 2rem $reddish-outline;
-  }
-  & nav {
-    background-color: $blue;
-    border: 0.5rem solid $light-green;
-    margin: 1rem;
-  }
-  & nav a.nav-link {
-    color: $light-green;
-    transition: text-shadow 0.25s;
-    //font-size: 1.5rem;
-  }
-  & nav a.nav-link:hover {
-    text-shadow: 0 0 1rem white;
-    color: white;
-    text-decoration: none;
-  }
-  & nav a.nav-link:visited {
-    color: $light-green;
-  }
-}
-
-form .Help {
-  font-size: 0.75rem;
+  background-color: lightgreen;
 }
 
 main {
-  color: $light-green;
+  background-color: lightblue;
 }
 
-.Content {
-  display: flex;
-  justify-content: space-between;
+footer {
+  background-color: violet;
 }
 
-span._fieldValue {
-  text-decoration: underline;
-}
-
-span._fieldValue::before {
-  content: "‘";
-}
-span._fieldValue::after {
-  content: "’";
-}
-
-span._fieldName {
-  font-weight: bold;
-}
-
-.EpisodeIndex a[role='button'] {
-  display: inline-block;
-  width: 100%;
-  //text-align: left;
-}
-
-.Help {
-  text-align: left;
-}
-
-.EpisodeList {
-  //text-align: left;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  //width: 16rem;
-  //height: 100%;
-  height: 40rem;
-  overflow-y: scroll;
-  border: 5px dashed $blue-outline;
-  padding: 0;
-}
-
-.EpisodeList ol {
-  padding: 0;
-  list-style-type: none;
-}
-
-.EpisodeInfo {
-  position: sticky;
-  top: 0;
-  padding: 1rem;
-  //margin: 1rem;
-}
-
-.EpisodeInfo p {
-  //text-align: left;
-}
-
-.EpisodeIndex > ol {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.ResultCount::before {
-  content: "(";
-}
-.ResultCount::after {
-  content: ")";
-}
-
-[data-series='FiM'] {
-  background-color: purple;
-  color: white;
-}
-
-footer ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.FooterSectionHeader {
-  color: white;
-  font-size: 1.5rem;
-}
-
-.Credits {
-  padding: 2rem;
-  //background-color: black;
-  background: linear-gradient(to top, black 80%, $blue);
-}
-
-#app {
-  //height: 100vh;
-  min-height: 100vh;
-}
-
-main {
-  height: 100%;
-  min-height: 100%;;
-}
-
-form > * {
-  margin: 1rem;
-  text-align: left;
-}
-
-#transcript-search {
-  height: 70vh;
-}
-
-hr {
-  //color: white;
-  background-color: white;
-}
-
-/*
-.Disclaimer {
-  font-size: 0.5rem;
-}
-*/
-
-.WelcomeMessage {
-  //text-align: left;
-}
-
-@media (max-width: 989px) {
-  .EpisodeData {
-    display: flex;
-    flex-direction: column;
-    & .col {
-      width: 100%;
-      max-width: 100%;
-    }
-  }
-  .NaviBar {
-    display: flex;
-    flex-direction: column;
-  }
-  #transcript-search .container .row > * {
-    max-width: 100%;
-  }
-  #transcript-search .container .row {
-    display: flex;
-    flex-direction: column;
-  }
-  #index .Usage-Step.d-flex {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 768px) {
-  .EpisodeIndex > ol {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .EpisodeList {
-    width: 5rem;
-  }
-}
-
-@media (max-width: 574px) {
-  .EpisodeIndex > ol {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .EpisodeList {
-    width: 5rem;
-  }
-  #transcript-search .SearchResults table thead {
-    display: none;
-  }
-  #transcript-search .SearchResults table tr {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.External::after {
-  // https://www.svgrepo.com/svg/510970/external-link
-  //background-image: url("assets/external-link-svgrepo-com.svg");
-  content: '\1f517';
-  //n
-}
-
-.SeriesTitle {
+.Header {
   font-weight: bold;
 }
 
 .PatternMatch {
   background-color: yellow;
+}
+
+.SeasonIndex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// https://stackoverflow.com/questions/18815157/how-to-overlay-image-with-color-in-css
+
+#S1 {
+  background-image: url("../images/My_Little_Pony_Theme_Song.webp");
+}
+#S2 {
+  background-image: url("../images/My_Little_Pony_Theme_Song.webp");
+}
+#S3 {
+  background-image: url("../images/My_Little_Pony_Theme_Song.webp");
+}
+#S4 {
+  background-image: url("../images/Photo_Finish_taking_photo_S4_Opening.webp");
+}
+#S5 {
+  background-image: url("../images/Photo_Finish_taking_photo_S4_Opening.webp");
+}
+#S6 {
+  background-image: url("../images/Photo_Finish_taking_photo_S6_opening.webp");
+}
+#S7 {
+  background-image: url("../images/Photo_Finish_taking_photo_S7_opening.webp");
+}
+#The_Movie {
+  background-image: url("../images/My_Little_Pony_The_Movie_new_poster_by_Lionsgate.webp");
+}
+#S8 {
+  background-image: url("../images/Photo_Finish_taking_the_class_photo_S8_opening.webp");
+}
+#Best_Gift_Ever {
+  background-image: url("../images/My_Little_Pony_Best_Gift_Ever_promotional_title_card.webp");
+}
+#Shorts {
+  background-image: url("../images/Twilight_stares_at_ladybug_with_fright_MLPS4.webp");
+}
+#S9 {
+  background-image: url("../images/Photo_Finish_taking_the_class_photo_S8_opening.webp");
+}
+#Rainbow_Roadtrip {
+  background-image: url("../images/My_Little_Pony_Rainbow_Roadtrip_title_card.webp");
+}
+#Friendship_is_Forever {
+  background-image: url("../images/Mane_Six,_Starlight,_and_Spike_after_the_coronation_MLPCS6.webp");
+}
+#Equestria_Girls {
+  background-image: url("../images/Equestria_Girls_second_movie_poster.webp");
+}
+#Rainbow_Rocks {
+  background-image: url("../images/Rainbow_Rocks_Poster_2.webp");
+}
+#Friendship_Games {
+  background-image: url("../images/Friendship_Games_Shout!_Factory_poster.webp");
+}
+#Legend_of_Everfree {
+  background-image: url("../images/Legend_of_Everfree_poster.webp");
+}
+#Dance_Magic {
+  background-image: url("../images/Dance_Magic_title_card_EGS1.webp");
+}
+#Movie_Magic {
+  background-image: url("../images/Movie_Magic_title_card_EGS2.webp");
+}
+#Mirror_Magic {
+  background-image: url("../images/Mirror_Magic_title_card_EGS3.webp");
+}
+#Summertime_Shorts {
+  background-image: url("../images/Sunset_and_Twilight_enter_Canterlot_High_School_SS6.webp");
+}
+#Better_Together-S1 {
+  background-image: url("../images/Rarity_singing_her_heart_out_EGDS27.webp");
+}
+#Choose_Your_Own_Ending-S1 {
+  background-image: url("../images/Twilight_Sparkle_in_contemplative_thought_CYOE3.webp");
+}
+#Forgotten_Friendship {
+  background-image: url("../images/Forgotten_Friendship_Netflix_poster.webp");
+}
+#Rollercoaster_of_Friendship {
+  background-image: url("../images/Rollercoaster_of_Friendship_Netflix_thumbnail.webp");
+}
+#Better_Together-S2 {
+  background-image: url("../images/Dazzlings_lying_in_the_neon_garden_EGDS48.webp");
+}
+#Spring_Breakdown {
+  background-image: url("../images/Spring_Breakdown_title_card_EGSB.webp");
+}
+#Sunsets_Backstage_Pass {
+  background-image: url("../images/Sunset's_Backstage_Pass_title_card_EGSBP.webp");
+}
+#Choose_Your_Own_Ending_S2 {
+  background-image: url("../images/Rainbow_Dash_wondering_who_to_choose_CYOE17.webp");
+}
+#Holidays_Unwrapped {
+  background-image: url("../images/Holidays_Unwrapped_title_card_EGHU.webp");
+}
+
+.SeasonIndex > li {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+// https://www.w3schools.com/howto/howto_css_image_text.asp
+.SeasonIndex > li {
+  height: 100%;
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+  color: rgb(0, 0, 0, 0);
+  margin: 2rem;
+}
+.SeasonImage {
+  // fix text
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  height: 100%;
+}
+
+/*
+.SeasonIndex figure {
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  // fiddle with the font.
+  color: white;
+  font-size: 2.5rem;
+}
+.SeasonIndex > li {
+  position: relative;
+}
+.SeasonName {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.SeasonIndex figure {
+  background-color: black;
+  z-index: 2;
+}
+*/
+
+/* Hacking BS5 to get the styling I want. */
+#episodes {
+  & [data-slot='group'] {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & .rounded-md {
+    background-color: rgb(0, 0, 0, 0);
+    color: rgb(0, 0, 0, 0);
+    border: 0;
+    width: 100%;
+    height: 100%;
+    // transition
+    transition: color 0.5s, background 0.5s;
+  }
+
+  & .rounded-md:hover, .rounded-md[aria-expanded='true'] {
+    //color: white;
+    background: rgba(39, 62, 84, 0.82);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+    color: #FFFFFF;
+  }
+
+  & [type='link'] {
+    display: flex;
+    justify-content: start;
+  }
 }

@@ -1,0 +1,262 @@
+/*
+  light-orange #f1ba40
+  light-orange-outline #f08322
+  reddish #cb3208
+  reddish-outline #e0581d
+  blue #125271
+  blue-outline #06363f
+  light-green #67e4be
+  peach #f8f9c9
+*/
+
+$light-green: #67e4be;
+$light-orange: #f1ba40;
+$reddish: #cb3208;
+$reddish-outline: #e0581d;
+$light-orange-outline: #f08322;
+$blue: #125271;
+$blue-outline: #06363f;
+
+body {
+  background-color: $blue;
+}
+
+header {
+  /* padding: 4rem; */
+  background-color: $blue-outline;
+  background-image: url("./assets/star.png");
+  border: 1rem solid $light-green;
+  //display: flex;
+  //justify-content: space-between;
+  & a.Logo {
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem;
+    border: 0.5rem solid $reddish;
+    background-color: $light-orange;
+    /* border-radius: 100px; */
+    /* background: radial-gradient($light-orange-outline, $blue); */
+    /* background: radial-gradient($blue, $light-orange-outline); */
+    /* background: radial-gradient(closest-side, $light-orange-outline, $blue); */
+    transition: box-shadow 0.25s;
+  }
+  & a.Logo:hover {
+    box-shadow: 0 0 2rem $reddish-outline;
+  }
+  & nav {
+    background-color: $blue;
+    border: 0.5rem solid $light-green;
+    margin: 1rem;
+  }
+  & nav a {
+    color: $light-green;
+    transition: text-shadow 0.25s;
+    //font-size: 1.5rem;
+  }
+  & nav a:hover {
+    text-shadow: 0 0 1rem white;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+form .Help {
+  font-size: 0.75rem;
+}
+
+main {
+  color: $light-green;
+}
+
+.Content {
+  display: flex;
+  justify-content: space-between;
+}
+
+span._fieldValue {
+  text-decoration: underline;
+}
+
+span._fieldValue::before {
+  content: "‘";
+}
+span._fieldValue::after {
+  content: "’";
+}
+
+span._fieldName {
+  font-weight: bold;
+}
+
+.EpisodeIndex a[role='button'] {
+  display: inline-block;
+  width: 100%;
+  //text-align: left;
+}
+
+.Help {
+  text-align: left;
+}
+
+.EpisodeList {
+  //text-align: left;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  //width: 16rem;
+  //height: 100%;
+  height: 40rem;
+  overflow-y: scroll;
+  border: 5px dashed $blue-outline;
+  padding: 0;
+}
+
+.EpisodeList ol {
+  padding: 0;
+  list-style-type: none;
+}
+
+.EpisodeInfo {
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  //margin: 1rem;
+}
+
+.EpisodeInfo p {
+  text-align: left;
+}
+
+.EpisodeIndex > ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ResultCount::before {
+  content: "(";
+}
+.ResultCount::after {
+  content: ")";
+}
+
+[data-series='FiM'] {
+  background-color: purple;
+  color: white;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.FooterSectionHeader {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.Credits {
+  padding: 2rem;
+  //background-color: black;
+  background: linear-gradient(to top, black 80%, $blue);
+}
+
+#app {
+  //height: 100vh;
+  min-height: 100vh;
+}
+
+main {
+  height: 100%;
+  min-height: 100%;;
+}
+
+form > * {
+  margin: 1rem;
+  text-align: left;
+}
+
+#transcript-search {
+  height: 70vh;
+}
+
+hr {
+  //color: white;
+  background-color: white;
+}
+
+/*
+.Disclaimer {
+  font-size: 0.5rem;
+}
+*/
+
+.WelcomeMessage {
+  text-align: left;
+}
+
+@media (max-width: 989px) {
+  .EpisodeData {
+    display: flex;
+    flex-direction: column;
+    & .col {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .NaviBar {
+    display: flex;
+    flex-direction: column;
+  }
+  #transcript-search .container .row > * {
+    max-width: 100%;
+  }
+  #transcript-search .container .row {
+    display: flex;
+    flex-direction: column;
+  }
+  #index .Usage-Step.d-flex {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .EpisodeIndex > ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .EpisodeList {
+    width: 5rem;
+  }
+}
+
+@media (max-width: 574px) {
+  .EpisodeIndex > ol {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .EpisodeList {
+    width: 5rem;
+  }
+  #transcript-search .SearchResults table thead {
+    display: none;
+  }
+  #transcript-search .SearchResults table tr {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.External::after {
+  // https://www.svgrepo.com/svg/510970/external-link
+  //background-image: url("assets/external-link-svgrepo-com.svg");
+  content: '\1f517';
+  //n
+}
+
+.SeriesTitle {
+  font-weight: bold;
+}
+
+.highlighted {
+  background-color: yellow;
+}
