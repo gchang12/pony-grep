@@ -4,6 +4,7 @@
 
   import seasonList from "../assets/json/seasonList.json";
   import animationTypes from "../assets/json/animationTypes.json";
+  import stringifyEpisodeNo from "../functions/stringifyEpisodeNo.js"
 
   const props = defineProps({
     series: String,
@@ -51,7 +52,7 @@
               "episodeTitle": episode.title,
               //"season": episode.season,
               "seasonCode": seasonList.find(season => season.name === episode.season).urlName,
-              "episodeCode": String(episode.episodeNo).padStart(2, '0'),
+              "episodeCode": stringifyEpisodeNo(episode.episodeNo),
               "animationPrefix": animationTypes.find(animationType => animationType.name === episode.animationType).alias,
               "dialogue": result.dialogue,
               "speaker": result.speaker,

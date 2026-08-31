@@ -23,7 +23,6 @@
   For CYOA shorts, implement branched transcripts
   Highlight matched patterns
 
-  Make a function for converting 'episodeNo' values to String.
   add grepPattern query string to episode transcript
   */
 

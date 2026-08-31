@@ -6,6 +6,7 @@
   import animationTypes from "../assets/json/animationTypes.json";
   import searchTranscript from "../functions/searchTranscript.js";
   import makeVHighlight from "../mixins/makeVHighlight.js";
+  import stringifyEpisodeNo from "../functions/stringifyEpisodeNo.js";
 
 
   //import SearchResults from "../components/SearchResults.vue";
@@ -118,7 +119,7 @@
               "episodeTitle": episode.title,
               //"season": episode.season,
               "seasonCode": seasonList.find(season => season.name === episode.season).urlName,
-              "episodeCode": String(episode.episodeNo).padStart(2, '0'),
+              "episodeCode": stringifyEpisodeNo(episode.episodeNo),
               "animationPrefix": animationTypes.find(animationType => animationType.name === episode.animationType).alias,
               "dialogue": result.dialogue,
               "speaker": result.speaker,
@@ -293,7 +294,6 @@
       result.content = {
         "episodeTitle": episode.title,
         "seasonCode": seasonList.find(season => season.name === episode.season).urlName,
-        "episodeCode": String(episode.episodeNo).padStart(2, '0'),
         "animationPrefix": animationTypes.find(animationType => animationType.name === episode.animationType).alias,
       };
 <thead>

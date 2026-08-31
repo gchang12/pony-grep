@@ -1,6 +1,7 @@
 <script setup>
 
   import seasonList from "../../assets/json/seasonList.json";
+  import stringifyEpisodeNo from "../../functions/stringifyEpisodeNo.js";
 
   import PictureIndex from "../../components/PictureIndex.vue";
 
@@ -13,7 +14,7 @@
     }
     const index = response.data.value.map(episode => {
       const { series, season, episodeNo, title } = episode;
-      const label = String(episodeNo).padStart(2, '0') + " – " + title;
+      const label = stringifyEpisodeNo(episodeNo) + " – " + title;
       const seasonUrlName = seasonList.find(someSeason => someSeason.name === season).urlName;
       return {
         series,
@@ -23,7 +24,7 @@
         type: "link",
         "class": "",
         onSelect(e) {
-          navigateTo(["/episodes", series, seasonUrlName, String(episodeNo).padStart(2, '0')].join("/"));
+          navigateTo(["/episodes", series, seasonUrlName, stringifyEpisodeNo(episodeNo)].join("/"));
         },
       };
     });
