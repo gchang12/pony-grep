@@ -170,8 +170,8 @@
     </div>
     <!-- TODO: Accordions each containing transcript table -->
     <nav>
-      <RelativeEpisodeLink :episode="prevEpisode" />
-      <RelativeEpisodeLink :episode="nextEpisode" />
+      <RelativeEpisodeLink :episode="prevEpisode" missingEpisodeMessage="Welcome to G4 Equestria!" />
+      <RelativeEpisodeLink :episode="nextEpisode" missingEpisodeMessage="No more episodes to show. You're done with the series." />
     </nav>
   </div>
 </template>

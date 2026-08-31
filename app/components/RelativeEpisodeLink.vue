@@ -2,6 +2,7 @@
 
   defineProps({
     episode: Object,
+    missingEpisodeMessage: String,
   })
 
 </script>
@@ -12,5 +13,8 @@
     <span class="Season">{{ episode.season }}</span>
     <span class="Episode">{{ episode.episodeNo }}</span>
     <span class="Title">{{ episode.title }}</span>
+  </a>
+  <a v-else>
+    <span class="MissingEpisodeMessage">{{ missingEpisodeMessage }}</span>
   </a>
 </template>
