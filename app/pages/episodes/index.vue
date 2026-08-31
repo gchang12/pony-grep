@@ -44,15 +44,9 @@
               <UButton color="neutral" :label="season.name" />
             </UDropdownMenu>
           </div>
-          <!-- <figure> -->
-            <!-- <img width="300" :src="'/images/' + season.imgName + '.webp'" /> -->
-            <!-- <span class="SeasonName">{{ season.name }}</span> -->
-            <!-- </figure> -->
         </li>
       </ol>
     </article>
   </div>
 </template>
 
-<!--
--->
