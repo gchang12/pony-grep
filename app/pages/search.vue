@@ -1,5 +1,6 @@
 <script setup>
   import { ref, computed } from "vue";
+  // TODO: Put SearchResults in different component and pass reference, not value, as props.
 
   import seasonList from "../assets/json/seasonList.json";
   import animationTypes from "../assets/json/animationTypes.json";
@@ -17,12 +18,14 @@
   const searchResults = ref([]);
   const dialoguePattern = ref("");
 
-  //const response1 = (await useFetch("/json/transcriptLines.json")); let transcriptLines = response1.data.value;
   //import getTranscriptLines from "../functions/getTranscriptLines.js"; const transcriptLines = getTranscriptLines();
   //import getAnimationIndex from "../functions/getAnimationIndex.js"; const animationIndex = getAnimationIndex();
-  import transcriptLines from "../assets/json/transcriptLines.json";
-  import animationIndex from "../assets/json/animationIndex.json";
-  //const response2 = (await useFetch("/json/animationIndex.json")); let animationIndex = response2.data.value;
+  //import transcriptLines from "../assets/json/transcriptLines.json";
+  //import animationIndex from "../assets/json/animationIndex.json";
+  const response1 = await useFetch("json/transcriptLines.json");
+  //let transcriptLines = response1.data.value;
+  const response2 = await useFetch("json/animationIndex.json");
+  //let animationIndex = response2.data.value;
   //console.log(response1);
   //console.log(response2);
 
@@ -67,6 +70,12 @@
     /* dialoguePattern */
     dialoguePattern.value = formData.get("dialoguePattern");
     /* searchResults */
+    if (response1.data.value == null) {
+      response1.refresh();
+      e.preventDefault();
+      return;
+    }
+    const transcriptLines = response1.data.value;
     searchResults.value = searchTranscript(formData, transcriptLines);
     console.log("searchResults.value", searchResults.value);
     e.preventDefault();
@@ -89,6 +98,11 @@
     // [transcript line]
     // {label: animationType, content: {...}
     const items = [];
+    if (response2.data.value == null) {
+      response2.refresh();
+      return;
+    }
+    const animationIndex = response2.data.value;
     for (const animationType of animationTypes) {
       const resultCount = searchResults.value.filter(result => {
         const episode = animationIndex.find(episode => episode.id === result.episodeId);
@@ -125,6 +139,11 @@
   }
 
   function countResults(series) {
+    if (response2.data.value == null) {
+      response2.refresh();
+      return;
+    }
+    const animationIndex = response2.data.value;
     return searchResults.value.filter(result => {
       const episode = animationIndex.find(episode => episode.id === result.episodeId);
       return episode.series === series;
