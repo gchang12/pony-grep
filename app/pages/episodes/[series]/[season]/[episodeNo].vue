@@ -31,6 +31,12 @@
   }
 
   const episode = computed(() => calculateThisEpisode());
+  /*
+  const isBranchedEnding = computed(() => {
+    const thisEpisode = calculateThisEpisode();
+    return route.params.season.startsWith("Choose_Your_Own_Ending") && thisEpisode.title.includes(" - ");
+  });
+  */
 
   const transcriptLines = computed(() => {
     if (response1.data.value == null) {
@@ -137,7 +143,7 @@
             <th>Season</th>
             <td>{{ episode.season }}</td>
           </tr>
-          <tr v-if="episode.episodeNo > 0">
+          <tr>
             <th>Episode</th>
             <td>{{ episode.episodeNo }}</td>
           </tr>
@@ -160,10 +166,11 @@
         </template>
       </UAccordion>
     </div>
-    <nav>
-      <RelativeEpisodeLink :episode="prevEpisode" missingEpisodeMessage="Welcome to G4 Equestria!" />
+    <!-- <nav v-if="!isBranchedEnding"> -->
+    <nav v-if="prevEpisode.id !== nextEpisode.id">
+      <RelativeEpisodeLink naviText="Previous" :episode="prevEpisode" missingEpisodeMessage="Welcome to G4 Equestria!" />
       <!-- <RelativeEpisodeLink :episode="nextEpisode" missingEpisodeMessage="No more episodes to show. You're done with the series." /> -->
-      <RelativeEpisodeLink :episode="nextEpisode" missingEpisodeMessage="" />
+      <RelativeEpisodeLink naviText="Next" :episode="nextEpisode" missingEpisodeMessage="" />
     </nav>
   </div>
 </template>
