@@ -117,6 +117,7 @@
       return null;
     } else {
       return {
+        id: newEpisode.id,
         title: newEpisode.title,
         series: newEpisode.series,
         seasonUrl: getSeasonUrlName(newEpisode.season),
@@ -167,8 +168,8 @@
       </UAccordion>
     </div>
     <!-- <nav v-if="!isBranchedEnding"> -->
-    <nav v-if="prevEpisode.id !== nextEpisode.id">
-      <RelativeEpisodeLink naviText="Previous" :episode="prevEpisode" missingEpisodeMessage="Welcome to G4 Equestria!" />
+    <nav>
+      <RelativeEpisodeLink v-if="prevEpisode.id !== nextEpisode.id" naviText="Previous" :episode="prevEpisode" missingEpisodeMessage="Welcome to G4 Equestria!" />
       <!-- <RelativeEpisodeLink :episode="nextEpisode" missingEpisodeMessage="No more episodes to show. You're done with the series." /> -->
       <RelativeEpisodeLink naviText="Next" :episode="nextEpisode" missingEpisodeMessage="" />
     </nav>
