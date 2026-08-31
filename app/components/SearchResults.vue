@@ -1,14 +1,21 @@
 <script setup>
   // TODO: Fix this. Seriously. Also, consider passing in ref as props, not values.
 
+  import { computed } from "vue";
+  import makeVHighlight from "../mixins/makeVHighlight.js";
+  import animationTypes from "../assets/json/animationTypes.json";
+  import seasonList from "../assets/json/seasonList.json";
+
   const props = defineProps({
     searchResults: Array,
     series: String,
+    dialoguePattern: String,
   });
 
-  const { series, searchResults } = props;
+  const { series, searchResults, dialoguePattern } = props;
 
-  import { computed } from "vue";
+  console.log('searchResults', searchResults);
+  console.log('searchResults.value', searchResults.value);
 
   const response = await useFetch("json/animationIndex.json");
 
@@ -24,14 +31,14 @@
     }
     const animationIndex = response.data.value;
     for (const animationType of animationTypes) {
-      const resultCount = searchResults.value.filter(result => {
+      const resultCount = searchResults.filter(result => {
         const episode = animationIndex.find(episode => episode.id === result.episodeId);
         return episode.animationType === animationType.name && episode.series === series;
       }).length;
       items.push({
         "disabled": resultCount === 0,
         "label": "[" + resultCount + "] " + animationType.title,
-        "content": searchResults.value
+        "content": searchResults
           .filter(result => {
             const episode = animationIndex.find(episode => episode.id === result.episodeId);
             //return episode.animationType === animationType.name && episode.series === series;
@@ -59,6 +66,9 @@
   }
 
   const items = computed(() => reformatTranscriptLines("FiM"));
+
+  const vHighlight = makeVHighlight(dialoguePattern);
+  console.log("dialoguePattern", dialoguePattern);
 
 </script>
 
