@@ -19,43 +19,25 @@
       response2.refresh();
       return {};
     }
-    //console.log("response2.data.value", response2.data.value);
-    //console.log("route.params", route.params);
     const season = getSeasonName(route.params.season);
     const currentEp = response2.data.value
       .filter(episode => episode.series === route.params.series)
       .filter(episode => episode.season === season)
       .find(episode => episode.episodeNo == route.params.episodeNo);
-    //console.log("currentEp", currentEp);
     return currentEp;
   }
 
   const episode = computed(() => calculateThisEpisode());
-  /*
-  const isBranchedEnding = computed(() => {
-    const thisEpisode = calculateThisEpisode();
-    return route.params.season.startsWith("Choose_Your_Own_Ending") && thisEpisode.title.includes(" - ");
-  });
-  */
 
   const transcriptLines = computed(() => {
     if (response1.data.value == null) {
       response1.refresh();
       return [];
     }
-    //console.log(episode);
     const lines = response1.data.value
       .filter(tline => tline.episodeId == episode.value.id);
-    //console.log(lines);
     return lines;
   });
-
-  // items: Array
-  // - item: {
-  //     disabled: false,
-  //     label: title.textAfter(' - '),
-  //     content: transcriptLines.filter(title matches),
-  //   }
 
   function compileEndingBranches() {
     if (response2.data.value == null) {
@@ -67,17 +49,14 @@
       return [];
     }
     const season = getSeasonName(route.params.season);
-    //console.log("episode", episode);
-    //console.log("episode.value", episode.value);
     const branchedEndings = response2.data.value
       .filter(someEpisode => someEpisode.series === route.params.series)
       .filter(someEpisode => someEpisode.season === season)
       .filter(someEpisode => someEpisode.title.startsWith(episode.value.title + " - "));
-    //console.log("branchedEndings", branchedEndings);
     const items = branchedEndings.map(someEpisode => {
       const title = someEpisode.title;
       const label = title.slice(title.indexOf(' - ') + 3);
-      //console.log(someEpisode.id);
+      // transcript lines.
       const content = response1.data.value.filter(tline => tline.episodeId === someEpisode.id);
       return {
         label,
@@ -90,16 +69,6 @@
 
   const items = computed(() => compileEndingBranches());
 
-  //console.log("episode", episode);
-  //console.log("transcriptLines", transcriptLines);
-
-  //console.log("items", items);
-  //console.log("items.value", items.value);
-
-  //console.log("route.hash", route.hash);
-  //console.log("route.query", route.query);
-  //console.log("Object.keys(route.query)", Object.keys(route.query));
-
   function calculateRelativeEpisode(increment) {
     if (response2.data.value == null) {
       response2.refresh();
@@ -109,7 +78,7 @@
     const episodeNo = Number(episode.episodeNo);
     const newEpisodeNo = stringifyEpisodeNo(episodeNo + increment);
     const season = getSeasonName(route.params.season);
-    let newEpisode = response2.data.value
+    const newEpisode = response2.data.value
       .filter(someEpisode => episode.series === route.params.series)
       .filter(someEpisode => someEpisode.season === season)
       .find(someEpisode => someEpisode.episodeNo == newEpisodeNo) ?? response2.data.value.find(someEpisode => someEpisode.id == episode.id + increment);
@@ -129,8 +98,6 @@
 
   const prevEpisode = computed(() => calculateRelativeEpisode(-1));
   const nextEpisode = computed(() => calculateRelativeEpisode(1));
-
-  //console.log(nextEpisode);
 
 </script>
 
@@ -171,10 +138,8 @@
         </template>
       </UAccordion>
     </div>
-    <!-- <nav v-if="!isBranchedEnding"> -->
     <nav>
       <RelativeEpisodeLink v-if="prevEpisode.id !== nextEpisode.id" naviText="Previous" :episode="prevEpisode" missingEpisodeMessage="Welcome to G4 Equestria!" />
-      <!-- <RelativeEpisodeLink :episode="nextEpisode" missingEpisodeMessage="No more episodes to show. You're done with the series." /> -->
       <RelativeEpisodeLink naviText="Next" :episode="nextEpisode" missingEpisodeMessage="" />
     </nav>
   </div>

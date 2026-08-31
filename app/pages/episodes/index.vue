@@ -30,7 +30,6 @@
           },
         };
       });
-      //console.log(response.data.value.length);
       return index;
     });
 

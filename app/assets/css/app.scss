@@ -1,37 +1,6 @@
 //@use "tailwindcss";
 //@use "@nuxt/ui";
 
-header {
-  background-color: lightgreen;
-}
-
-main {
-  background-color: lightblue;
-}
-
-footer {
-  background-color: violet;
-}
-
-.Header {
-  font-weight: bold;
-}
-
-.PatternMatch {
-  background-color: yellow;
-}
-
-.JumpedLine {
-  background-color: yellow;
-}
-
-.SeasonIndex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-// https://stackoverflow.com/questions/18815157/how-to-overlay-image-with-color-in-css
-
 #S1 {
   background-image: url("../images/My_Little_Pony_Theme_Song.webp");
 }
@@ -126,6 +95,37 @@ footer {
   background-image: url("../images/Holidays_Unwrapped_title_card_EGHU.webp");
 }
 
+// Debug purposes
+header {
+  background-color: lightgreen;
+}
+
+main {
+  background-color: lightblue;
+}
+
+footer {
+  background-color: violet;
+}
+// END: Debug purposes
+
+.Header {
+  font-weight: bold;
+}
+
+.PatternMatch {
+  background-color: yellow;
+}
+
+.JumpedLine {
+  background-color: yellow;
+}
+
+.SeasonIndex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .SeasonIndex > li {
   background-position: center;
   background-size: contain;
@@ -151,32 +151,8 @@ footer {
   height: 100%;
 }
 
-/*
-.SeasonIndex figure {
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  // fiddle with the font.
-  color: white;
-  font-size: 2.5rem;
-}
-.SeasonIndex > li {
-  position: relative;
-}
-.SeasonName {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.SeasonIndex figure {
-  background-color: black;
-  z-index: 2;
-}
-*/
-
+// EPISODE INDEX
+// https://stackoverflow.com/questions/18815157/how-to-overlay-image-with-color-in-css
 /* Hacking BS5 to get the styling I want. */
 #episodes {
   // dropdown picture-buttons (before)
@@ -213,3 +189,4 @@ footer {
   }
 }
 /* END: Hacking BS5 to get the styling I want. */
+
