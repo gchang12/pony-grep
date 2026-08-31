@@ -5,6 +5,8 @@
   import seasonList from "../assets/json/seasonList.json";
   import animationTypes from "../assets/json/animationTypes.json";
   import searchTranscript from "../functions/searchTranscript.js";
+  import makeVHighlight from "../mixins/makeVHighlight.js";
+
 
   //import SearchResults from "../components/SearchResults.vue";
 
@@ -17,6 +19,8 @@
 
   const searchResults = ref([]);
   const dialoguePattern = ref("");
+
+  const vHighlight = makeVHighlight(dialoguePattern);
 
   //import getTranscriptLines from "../functions/getTranscriptLines.js"; const transcriptLines = getTranscriptLines();
   //import getAnimationIndex from "../functions/getAnimationIndex.js"; const animationIndex = getAnimationIndex();
@@ -38,20 +42,10 @@
   const eqgItems = computed(() => reformatTranscriptLines("EqG"));
   */
 
-  const vHighlight = {
-    mounted: (el) => {
-      const re = new RegExp(dialoguePattern.value, "ig");
-      //console.log("vHighlight: el", el);
-      //console.log(el.innerHTML);
-      //console.log("vHighlight: re", re);
-      //console.log("vHighlight: el.innerHTML", el.innerHTML);
-      el.innerHTML = el.innerHTML.replaceAll(re, (match) => "<span class='PatternMatch'>" + match + "</span>" );
-    }
-  }
-
   function ponyGrep(e) {
     if (response1.data.value == null) {
       response1.refresh();
+      alert("Sorry! Something went wrong. Please try again.");
       e.preventDefault();
       return;
     }
@@ -221,7 +215,7 @@
 
   <!-- By series, by animation type. -->
   <article>
-    <h2>Results</h2>
+    <h2>Results for: <span class="SearchQuery" v-if="dialoguePattern !== ''">{{ dialoguePattern }}</span></h2>
     <!-- List of accordions, each corresponding to a season, which are classed by series. -->
     <UTabs :items="items3">
       <template #FiM>
