@@ -2,7 +2,32 @@
 
   import seasonList from "../../assets/json/seasonList.json";
 
-  const response2 = await useFetch("json/animationIndex.json");
+  const response = await useFetch("json/animationIndex.json");
+
+  const animationIndex = computed(() => {
+    if (response.data.value == null) {
+      response.refresh();
+      return [];
+    }
+    const index = response.data.value.map(episode => {
+      const { series, season, episodeNo, title } = episode;
+      const label = String(episodeNo).padStart(2, '0') + " – " + title;
+      const seasonUrlName = seasonList.find(someSeason => someSeason.name === season).urlName;
+      return {
+        series,
+        season,
+        label,
+        color: "error",
+        type: "link",
+        "class": "",
+        onSelect(e) {
+          navigateTo(["/episodes", series, seasonUrlName, String(episodeNo).padStart(2, '0')].join("/"));
+        },
+      };
+    });
+    console.log(response.data.value.length);
+    return index;
+  });
 
 </script>
 
@@ -17,7 +42,10 @@
           <!-- <figure> -->
             <!-- <img width="300" :src="'/images/' + season.imgName + '.webp'" /> -->
           <div class="SeasonImage">
-            <span class="SeasonName">{{ season.name }}</span>
+            <UDropdownMenu :items="animationIndex.filter(episode => episode.series === 'FiM' && episode.season === season.name)">
+              <UButton color="neutral" :label="season.name" />
+            </UDropdownMenu>
+            <!-- <span class="SeasonName">{{ season.name }}</span> -->
           </div>
             <!-- </figure> -->
         </li>
