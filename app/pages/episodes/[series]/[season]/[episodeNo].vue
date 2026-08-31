@@ -3,6 +3,7 @@
   import { computed } from "vue";
 
   import seasonList from "../../../../assets/json/seasonList.json";
+  import TranscriptLineTable from "../../../../components/TranscriptLineTable.vue";
 
   const route = useRoute()
 
@@ -75,24 +76,11 @@
       </a>
     </aside>
     <div class="TranscriptLines">
-      <table>
-        <thead>
-          <tr>
-            <th>Character</th>
-            <th>Line</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="tline in transcriptLines.filter(tline => tline.episodeId === episode.id)" :key="tline.id" :id="'L' + tline.lineNo">
-            <th>
-              {{ tline.speaker }}
-            </th>
-            <td>
-              {{ tline.dialogue }}
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <TranscriptLineTable :transcriptLines="transcriptLines" :episode="episode" />
+      <UAccordion #items="items">
+      <!-- <template #body="{ item }"> </template> -->
+      </UAccordion>
     </div>
+    <!-- TODO: Accordions each containing transcript table -->
   </div>
 </template>
