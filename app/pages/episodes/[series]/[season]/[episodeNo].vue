@@ -38,8 +38,51 @@
     return lines;
   });
 
+  // items: Array
+  // - item: {
+  //     disabled: false,
+  //     label: title.textAfter(' - '),
+  //     content: transcriptLines.filter(title matches),
+  //   }
+
+  function compileEndingBranches() {
+    if (response2.data.value == null) {
+      response2.refresh();
+      return [];
+    }
+    if (response1.data.value == null) {
+      response1.refresh();
+      return [];
+    }
+    const season = seasonList.find(season => season.urlName === route.params.season).name;
+    console.log("episode", episode);
+    console.log("episode.value", episode.value);
+    const branchedEndings = response2.data.value
+      .filter(someEpisode => someEpisode.series === route.params.series)
+      .filter(someEpisode => someEpisode.season === season)
+      .filter(someEpisode => someEpisode.title.startsWith(episode.value.title + " - "));
+    console.log("branchedEndings", branchedEndings);
+    const items = branchedEndings.map(someEpisode => {
+      const title = someEpisode.title;
+      const label = title.slice(title.indexOf(' - ') + 3);
+      console.log(someEpisode.id);
+      const content = response1.data.value.filter(tline => tline.episodeId === someEpisode.id);
+      return {
+        label,
+        content,
+        episode: someEpisode,
+      };
+    });
+    return items;
+  }
+
+  const items = computed(() => compileEndingBranches());
+
   //console.log("episode", episode);
   //console.log("transcriptLines", transcriptLines);
+
+  console.log("items", items);
+  console.log("items.value", items.value);
 
   // TODO: If the viewer chooses a 'CYOE' short, put the ending branches in the main transcript page.
   // TODO: If the viewer is in a 'CYOE' branched ending page, redirect him to the main short page.
@@ -77,8 +120,10 @@
     </aside>
     <div class="TranscriptLines">
       <TranscriptLineTable :transcriptLines="transcriptLines" :episode="episode" />
-      <UAccordion #items="items">
-      <!-- <template #body="{ item }"> </template> -->
+      <UAccordion :items="items">
+        <template #body="{ item }">
+          <TranscriptLineTable :transcriptLines="item.content" :episode="item.episode" />
+        </template>
       </UAccordion>
     </div>
     <!-- TODO: Accordions each containing transcript table -->
