@@ -22,6 +22,8 @@
   // TODO: Highlight matched patterns
   // TODO: add grepPattern query string to episode transcript
   // TODO: Reindex CYOE shorts
+  // TODO: Include whole summary for main short.
+  // TODO: Include summary plus branch summary for branched short.
 
 </script>
 
