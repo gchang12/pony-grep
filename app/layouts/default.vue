@@ -17,13 +17,13 @@
      <slot />
    </main>
    <footer>
-     <div class="credits">
-       <span class="header">Credits</span>
+     <div class="Credits">
+       <span class="Header">Credits</span>
        <p>All textual content is owned by <a target="_blank" href="https://www.fandom.com/licensing">Fandom</a></p>
        <p>Site logo provided by <a target="_blank" href="https://fontmeme.com/friendship-is-magic-font/">this site</a></p>
        <p>All images are owned by Hasbro</p>
      </div>
-     <div class="about">
+     <div class="About">
        <span class="header">About</span>
        <p>This project's <a target="_blank" href="https://github.com/gchang12/pony-grep">GitHub</a> page</p>
        <p>Made with no AI</p>
