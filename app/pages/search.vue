@@ -50,6 +50,11 @@
   }
 
   function ponyGrep(e) {
+    if (response1.data.value == null) {
+      response1.refresh();
+      e.preventDefault();
+      return;
+    }
     const formData = new FormData(e.currentTarget.form);
     if (!e.currentTarget.reportValidity() || formData.get("dialoguePattern") === "") {
       return;
@@ -70,11 +75,6 @@
     /* dialoguePattern */
     dialoguePattern.value = formData.get("dialoguePattern");
     /* searchResults */
-    if (response1.data.value == null) {
-      response1.refresh();
-      e.preventDefault();
-      return;
-    }
     const transcriptLines = response1.data.value;
     searchResults.value = searchTranscript(formData, transcriptLines);
     console.log("searchResults.value", searchResults.value);
@@ -210,6 +210,7 @@
     <!-- List of accordions, each corresponding to a season, which are classed by series. -->
     <article>
       <h3><span class="ResultCount">{{ resultCount1 }}</span> Friendship is Magic</h3>
+      <!-- NOTE: Unable to make this into a component. -->
       <UAccordion :items="items1">
         <template #body="{ item }">
           <table>
