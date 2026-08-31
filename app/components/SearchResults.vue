@@ -1,4 +1,5 @@
 <script setup>
+  // TODO: Fix this. Seriously. Also, consider passing in ref as props, not values.
 
   import { computed } from "vue";
 

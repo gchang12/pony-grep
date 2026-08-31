@@ -38,7 +38,8 @@ export default function parseTranscriptLines(searchResults) {
       }
     );
   }
-  /* TODO: Figure out how to sort results.
+  // TODO: Figure out how to sort results.
+  /*
   parsedTranscriptLines.sort((a, b) => a.seasonNo - b.seasonNo);
   parsedTranscriptLines.sort((a, b) => a.episodeNo - b.episodeNo);
   parsedTranscriptLines.sort((a, b) => a.lineNo - b.lineNo);

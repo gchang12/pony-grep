@@ -1,6 +1,5 @@
 <script setup>
   import { ref, computed } from "vue";
-  // TODO: Put SearchResults in different component and pass reference, not value, as props.
 
   import seasonList from "../assets/json/seasonList.json";
   import animationTypes from "../assets/json/animationTypes.json";
