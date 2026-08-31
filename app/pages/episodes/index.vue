@@ -2,6 +2,8 @@
 
   import seasonList from "../../assets/json/seasonList.json";
 
+  import PictureIndex from "../../components/PictureIndex.vue";
+
   const response = await useFetch("json/animationIndex.json");
 
   const animationIndex = computed(() => {
@@ -36,16 +38,11 @@
     <h1>Episodes</h1>
     <article>
       <h2>Friendship is Magic</h2>
-      <ol class="SeasonIndex FiM">
-        <!-- Each of these has to be a dropdown menu. -->
-        <li :id="season.urlName" v-for="season in seasonList.filter(season => season.series === 'FiM')" :key="season.urlName">
-          <div class="SeasonImage">
-            <UDropdownMenu :content="{side: 'right'}" :items="animationIndex.filter(episode => episode.series === 'FiM' && episode.season === season.name)">
-              <UButton color="neutral" :label="season.name" />
-            </UDropdownMenu>
-          </div>
-        </li>
-      </ol>
+      <PictureIndex :seasonList="seasonList" series="FiM" :animationIndex="animationIndex" />
+    </article>
+    <article>
+      <h2>Equestria Girls</h2>
+      <PictureIndex :seasonList="seasonList" series="EqG" :animationIndex="animationIndex" />
     </article>
   </div>
 </template>
