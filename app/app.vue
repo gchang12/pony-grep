@@ -1,7 +1,6 @@
 <script setup>
   import '~/assets/css/app.scss';
 
-  // TODO: Insert button to load episode image via PonyAPI.
   // TODO: Redo all the Bootstrap classes so that they're up-to-date WRT BS5
   // TODO: Re-style everything from scratch.
   // TODO: Put content onto index page.
