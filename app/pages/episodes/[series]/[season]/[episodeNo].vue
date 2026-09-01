@@ -139,7 +139,7 @@
       </UAccordion>
     </div>
     <nav>
-      <RelativeEpisodeLink v-if="prevEpisode.id !== nextEpisode.id" naviText="Previous" :episode="prevEpisode" missingEpisodeMessage="Welcome to G4 Equestria!" />
+      <RelativeEpisodeLink naviText="Previous" :episode="prevEpisode" missingEpisodeMessage="Welcome to G4 Equestria!" />
       <RelativeEpisodeLink naviText="Next" :episode="nextEpisode" missingEpisodeMessage="" />
     </nav>
   </div>

@@ -172,8 +172,8 @@
                   <th>{{tline.speaker}}</th>
                   <td v-highlight>{{tline.dialogue}}</td>
                   <td>
-                    <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.episodeCode + '#L' + tline.lineNo].join('/')">
-                      <i>{{tline.episodeTitle}}</i>
+                    <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.episodeCode + '#L' + tline.lineNo].join('/')" :title="tline.episodeTitle">
+                      <i>{{ tline.seasonCode }} E{{tline.episodeCode}}</i>
                     </NuxtLink>
                   </td>
                 </tr>
@@ -201,8 +201,8 @@
                   <th>{{tline.speaker}}</th>
                   <td>{{tline.dialogue}}</td>
                   <td>
-                    <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.episodeCode + '#L' + tline.lineNo].join('/')">
-                      <i>{{tline.episodeTitle}}</i>
+                    <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.episodeCode + '#L' + tline.lineNo].join('/')" :title="tline.episodeTitle">
+                      <i>{{ tline.seasonCode }} E{{tline.episodeCode}}</i>
                     </NuxtLink>
                   </td>
                 </tr>

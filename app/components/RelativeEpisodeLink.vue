@@ -1,19 +1,22 @@
 <script setup>
 
-  defineProps({
+  import stringifyEpisodeNo from "../functions/stringifyEpisodeNo.js";
+
+  const props = defineProps({
     naviText: String,
     episode: Object,
     missingEpisodeMessage: String,
   })
 
+  const episodeNo = ref(stringifyEpisodeNo(props.episode.episodeNo));
+
 </script>
 
 <template>
-  <NuxtLink class="RelativeEpisodeLink" v-if="episode != null" :to="['/episodes', episode.series, episode.seasonUrl, episode.episodeNo].join('/')">
-    <span class="NaviText">{{ naviText }}</span>
+  <NuxtLink class="RelativeEpisodeLink" v-if="episode != null" :to="['/episodes', episode.series, episode.seasonUrl, episodeNo].join('/')" :title="episode.title">
+    <div class="NaviText">{{ naviText }}</div>
     <span class="Season">{{ episode.season }}</span>
-    <span class="Episode">{{ episode.episodeNo }}</span>
-    <span class="Title">{{ episode.title }}</span>
+    <span class="Episode">{{ episodeNo }}</span>
   </NuxtLink>
   <NuxtLink v-else>
     <span class="MissingEpisodeMessage">{{ missingEpisodeMessage }}</span>
