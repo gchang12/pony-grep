@@ -5,7 +5,7 @@
   import seasonList from "../../../../assets/json/seasonList.json";
   import TranscriptLineTable from "../../../../components/TranscriptLineTable.vue";
   import RelativeEpisodeLink from "../../../../components/RelativeEpisodeLink.vue";
-  import EpisodeInfo from "../../../../components/EpisodeInfo.vue";
+  import EpisodeInfoBox from "../../../../components/EpisodeInfoBox.vue";
   import stringifyEpisodeNo from "../../../../functions/stringifyEpisodeNo.js";
   import getSeasonUrlName from "../../../../functions/getSeasonUrlName.js";
   import getSeasonName from "../../../../functions/getSeasonName.js";
@@ -138,30 +138,32 @@
         <EpisodeInfoBox :image="props.image" :url="props.url" :writtenby="props.writtenby" :storyboard="props.storyboard" />
         <button @click="fetchImage">Load Image</button>
       </div>
-      <table>
-        <tbody>
-          <tr>
-            <th>Series</th>
-            <td>{{ episode.series }}</td>
-          </tr>
-          <tr>
-            <th>Season</th>
-            <td>{{ episode.season }}</td>
-          </tr>
-          <tr>
-            <th>Episode</th>
-            <td>{{ episode.episodeNo }}</td>
-          </tr>
-          <tr>
-            <th>Airdate</th>
-            <td>{{ episode.airdate }}</td>
-          </tr>
-        </tbody>
-      </table>
-      <p v-for="line in episode.summary" :key="line">{{ line }}</p>
-      <a target="_blank" :href="'https://mlp.fandom.com/wiki/' + episode.urlName">
-        MLP Wikia Page
-      </a>
+      <div class="EpisodeInfoBox2" v-else>
+        <table>
+          <tbody>
+            <tr>
+              <th>Series</th>
+              <td>{{ episode.series }}</td>
+            </tr>
+            <tr>
+              <th>Season</th>
+              <td>{{ episode.season }}</td>
+            </tr>
+            <tr>
+              <th>Episode</th>
+              <td>{{ episode.episodeNo }}</td>
+            </tr>
+            <tr>
+              <th>Airdate</th>
+              <td>{{ episode.airdate }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <p v-for="line in episode.summary" :key="line">{{ line }}</p>
+        <a target="_blank" :href="'https://mlp.fandom.com/wiki/' + episode.urlName">
+          MLP Wikia Page
+        </a>
+      </div>
     </aside>
     <div class="TranscriptLines">
       <h1>{{ episode.title }}</h1>
