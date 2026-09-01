@@ -29,8 +29,8 @@
 
   const episode = computed(() => calculateThisEpisode());
 
-  console.log("episode", episode);
-  console.log("episode.value", episode.value);
+  //console.log("episode", episode);
+  //console.log("episode.value", episode.value);
 
   if (Object.keys(episode.value).length === 0) {
     await navigateTo({
@@ -89,6 +89,7 @@
       return {};
     }
     const episode = calculateThisEpisode();
+    console.log("episode", episode);
     const episodeNo = Number(episode.episodeNo);
     const newEpisodeNo = stringifyEpisodeNo(episodeNo + increment);
     const season = getSeasonName(route.params.season);
@@ -96,8 +97,10 @@
       .filter(someEpisode => episode.series === route.params.series)
       .filter(someEpisode => someEpisode.season === season)
       .find(someEpisode => someEpisode.episodeNo == newEpisodeNo) ?? response2.data.value.find(someEpisode => someEpisode.id == episode.id + increment);
+    //return newEpisode;
+    //console.log(newEpisode);
     if (newEpisode == null) {
-      return null;
+      return {};
     } else {
       return {
         id: newEpisode.id,

@@ -13,7 +13,7 @@
 </script>
 
 <template>
-  <NuxtLink class="RelativeEpisodeLink" v-if="episode != null" :to="['/episodes', episode.series, episode.seasonUrl, episodeNo].join('/')" :title="episode.title">
+  <NuxtLink class="RelativeEpisodeLink" v-if="Object.keys(episode).length != 0" :to="['/episodes', episode.series, episode.seasonUrl, episodeNo].join('/')" :title="episode.title">
     <div class="NaviText">{{ naviText }}</div>
     <span class="Season">{{ episode.season }}</span>
     <span class="Episode">{{ episodeNo }}</span>
