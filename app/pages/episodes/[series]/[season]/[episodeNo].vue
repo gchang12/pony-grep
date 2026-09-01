@@ -14,6 +14,13 @@
   const response1 = await useFetch("../../../../json/transcriptLines.json");
   const response2 = await useFetch("../../../../json/animationIndex.json");
 
+  if (response1.status.value !== "success") {
+    response1.refresh();
+  }
+  if (response2.status.value !== "success") {
+    response2.refresh();
+  }
+
   function calculateThisEpisode() {
     if (response2.data.value == null) {
       response2.refresh();
@@ -33,6 +40,9 @@
   //console.log("episode.value", episode.value);
 
   if (Object.keys(episode.value).length === 0) {
+    //console.log("response1.status.value", response1.status.value);
+    //console.log("response2.status.value", response2.status.value);
+    /*
     await navigateTo({
       path: "/episodes/not-found",
       query: {
@@ -41,6 +51,7 @@
         episodeNo: route.params.episodeNo,
       },
     });
+    */
   }
 
   const transcriptLines = computed(() => {
