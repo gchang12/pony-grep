@@ -29,6 +29,20 @@
 
   const episode = computed(() => calculateThisEpisode());
 
+  console.log("episode", episode);
+  console.log("episode.value", episode.value);
+
+  if (Object.keys(episode.value).length === 0) {
+    await navigateTo({
+      path: "/episodes/not-found",
+      query: {
+        series: route.params.series,
+        season: route.params.season,
+        episodeNo: route.params.episodeNo,
+      },
+    });
+  }
+
   const transcriptLines = computed(() => {
     if (response1.data.value == null) {
       response1.refresh();

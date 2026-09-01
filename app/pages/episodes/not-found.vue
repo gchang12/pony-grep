@@ -1,9 +1,15 @@
 <script setup>
-  defineProps({
-    series: String,
-    season: String,
-    episodeNo: String,
-  });
+
+  import { ref } from "vue";
+
+  const route = useRoute();
+
+  const series = ref(route.query.series);
+  const season = ref(route.query.season);
+  const episodeNo = ref(route.query.episodeNo);
+
+  console.log(route.query);
+
 </script>
 
 <template>
@@ -22,7 +28,7 @@
         </tr>
         <tr>
           <th>Episode</th>
-          <td>{{ episode }}</td>
+          <td>{{ episodeNo }}</td>
         </tr>
       </tbody>
     </table>
