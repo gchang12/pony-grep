@@ -70,8 +70,6 @@
       .filter(someEpisode => someEpisode.title.startsWith(episode.value.title))
       .filter(someEpisode => typeof(someEpisode.path) === 'string');
     const items = mainEp.paths.map(path => {
-      //const title = someEpisode.title;
-      //const label = title.slice(title.indexOf(' - ') + 3);
       const label = path;
       // transcript lines.
       const content = response1.data.value.filter(tline => tline.path === label);
@@ -85,7 +83,6 @@
   }
 
   const items = computed(() => compileEndingBranches());
-  console.log("items", items);
 
   function calculateRelativeEpisode(increment) {
     if (response2.data.value == null) {
@@ -101,8 +98,6 @@
       .filter(someEpisode => episode.series === route.params.series)
       .filter(someEpisode => someEpisode.season === season)
       .find(someEpisode => someEpisode.episodeNo == newEpisodeNo) ?? response2.data.value.find(someEpisode => someEpisode.id == episode.id + increment);
-    //return newEpisode;
-    //console.log(newEpisode);
     if (newEpisode == null) {
       return {};
     } else {
@@ -177,9 +172,9 @@
     <div class="TranscriptLines">
       <h1>{{ episode.title }}</h1>
       <TranscriptLineTable :transcriptLines="transcriptLines" :episode="episode" :jumpedLine="route.hash.slice(2)" />
-      <UAccordion :items="items">
+      <UAccordion type="multiple" :defaultValue="route.hash ? ['0', '1', '2'] : []" :items="items">
         <template #body="{ item }">
-          <TranscriptLineTable :transcriptLines="item.content" :episode="item.episode" jumpedLine="route.hash.slice(2)" />
+          <TranscriptLineTable :transcriptLines="item.content" :episode="item.episode" :jumpedLine="route.hash.slice(2)" />
         </template>
       </UAccordion>
     </div>
