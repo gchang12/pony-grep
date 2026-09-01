@@ -2,12 +2,10 @@
   import '~/assets/css/app.scss';
 
   // TODO: Insert error-page for episode transcript page.
-  // TODO: Implement loading screen
   // TODO: Insert button to load episode image via PonyAPI.
   // TODO: Redo all the Bootstrap classes so that they're up-to-date WRT BS5
   // TODO: Re-style everything from scratch.
   // TODO: Put content onto index page.
-  // TODO: Create SearchResults component.
 
 </script>
 
