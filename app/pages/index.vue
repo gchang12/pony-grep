@@ -11,6 +11,8 @@
     console.log(response1.data.value.length);
   }
 
+  // TODO: Mention how to populate infobox for S1-S9 in the home page.
+
 </script>
 
 <template>

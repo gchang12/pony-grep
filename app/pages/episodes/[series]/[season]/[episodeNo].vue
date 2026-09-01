@@ -5,6 +5,7 @@
   import seasonList from "../../../../assets/json/seasonList.json";
   import TranscriptLineTable from "../../../../components/TranscriptLineTable.vue";
   import RelativeEpisodeLink from "../../../../components/RelativeEpisodeLink.vue";
+  import EpisodeInfo from "../../../../components/EpisodeInfo.vue";
   import stringifyEpisodeNo from "../../../../functions/stringifyEpisodeNo.js";
   import getSeasonUrlName from "../../../../functions/getSeasonUrlName.js";
   import getSeasonName from "../../../../functions/getSeasonName.js";
@@ -34,25 +35,8 @@
     return currentEp;
   }
 
+  const props = ref({});
   const episode = computed(() => calculateThisEpisode());
-
-  //console.log("episode", episode);
-  //console.log("episode.value", episode.value);
-
-  if (Object.keys(episode.value).length === 0) {
-    //console.log("response1.status.value", response1.status.value);
-    //console.log("response2.status.value", response2.status.value);
-    /*
-    await navigateTo({
-      path: "/episodes/not-found",
-      query: {
-        series: route.params.series,
-        season: route.params.season,
-        episodeNo: route.params.episodeNo,
-      },
-    });
-    */
-  }
 
   const transcriptLines = computed(() => {
     if (response1.data.value == null) {
@@ -124,6 +108,23 @@
     };
   }
 
+  async function fetchImage() {
+    console.log("fetchImage:episode", episode);
+    console.log("fetchImage:episode.value", episode.value);
+    const url = `https://ponyapi.net/v1/episode/by-season/${episode.value.season.slice(1)}/all`;
+    const response = await useFetch(url);
+    console.log("fetchImage:response.data", response.data);
+    console.log("fetchImage:response.data.value", response.data.value);
+    console.log("fetchImage:response.data.value.data", response.data.value.data);
+    const episode2 = response.data.value.data.find(someEpisode => someEpisode.episode == episode.value.episodeNo);
+    props.value = {
+      image: episode2.image,
+      url: episode2.url,
+      writtenby: episode2.writtenby,
+      storyboard: episode2.storyboard,
+    };
+  }
+
   const prevEpisode = computed(() => calculateRelativeEpisode(-1));
   const nextEpisode = computed(() => calculateRelativeEpisode(1));
 
@@ -132,6 +133,11 @@
 <template>
   <div class="Transcript">
     <aside class="EpisodeInfo">
+      <!-- <figure> -->
+      <div v-if="Object.keys(episode).length > 0 && episode.season.startsWith('S') && episode.season.length === 2" class="EpisodeInfoBox-wrapper">
+        <EpisodeInfoBox :image="props.image" :url="props.url" :writtenby="props.writtenby" :storyboard="props.storyboard" />
+        <button @click="fetchImage">Load Image</button>
+      </div>
       <table>
         <tbody>
           <tr>
