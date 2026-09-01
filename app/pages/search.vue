@@ -20,10 +20,22 @@
   const response1 = await useFetch("json/transcriptLines.json");
   const response2 = await useFetch("json/animationIndex.json");
 
+  if (response1.status.value === "error") {
+    response1.refresh();
+  }
+  if (response2.status.value === "error") {
+    response2.refresh();
+  }
+
+  /*
+  console.log("response1.status.value", response1.status.value);
+  console.log("response2.status.value", response2.status.value);
+  */
+
   function ponyGrep(e) {
     if (response1.data.value == null) {
       response1.refresh();
-      alert("Sorry! Something went wrong. Please try again.");
+      //alert("Sorry! Something went wrong. Please try again.");
       e.preventDefault();
       return;
     }
