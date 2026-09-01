@@ -119,7 +119,7 @@
         series: newEpisode.series,
         seasonUrl: getSeasonUrlName(newEpisode.season),
         season: newEpisode.season,
-        episodeNo: newEpisode.episodeNo,
+        episodeNo: stringifyEpisodeNo(newEpisode.episodeNo),
       };
     };
   }
@@ -167,7 +167,7 @@
       </UAccordion>
     </div>
     <nav>
-      <RelativeEpisodeLink naviText="Previous" :episode="prevEpisode" missingEpisodeMessage="Welcome to G4 Equestria!" />
+      <RelativeEpisodeLink v-if="prevEpisode.id != nextEpisode.id" naviText="Previous" :episode="prevEpisode" missingEpisodeMessage="Welcome to G4 Equestria!" />
       <RelativeEpisodeLink naviText="Next" :episode="nextEpisode" missingEpisodeMessage="" />
     </nav>
   </div>

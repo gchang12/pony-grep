@@ -88,6 +88,7 @@
             const item = {
               "series": episode.series,
               "episodeTitle": episode.title,
+              "season": episode.season,
               "seasonCode": getSeasonUrlName(episode.season),
               "episodeCode": stringifyEpisodeNo(episode.episodeNo),
               "dialogue": result.dialogue,
@@ -214,7 +215,7 @@
                   <td>{{tline.dialogue}}</td>
                   <td>
                     <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.episodeCode + '#L' + tline.lineNo].join('/')" :title="tline.episodeTitle">
-                      <i>{{ tline.seasonCode }} E{{tline.episodeCode}}</i>
+                      <i>{{ tline.season }} E{{tline.episodeCode}}</i>
                     </NuxtLink>
                   </td>
                 </tr>
