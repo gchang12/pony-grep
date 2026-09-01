@@ -3022,7 +3022,12 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 221
+    "id": 221,
+    "paths": [
+      "Twilight",
+      "Rainbow",
+      "Pinkie"
+    ]
   },
   {
     "episodeNo": 12,
@@ -3080,7 +3085,12 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 222
+    "id": 222,
+    "paths": [
+      "Rainbow Dash",
+      "Applejack",
+      "DJ Pon-3"
+    ]
   },
   {
     "episodeNo": 3,
@@ -3096,7 +3106,12 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 223
+    "id": 223,
+    "paths": [
+      "Rarity",
+      "Fluttershy",
+      "Sunset Shimmer"
+    ]
   },
   {
     "episodeNo": 4,
@@ -3112,7 +3127,12 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 224
+    "id": 224,
+    "paths": [
+      "Fluttershy",
+      "Rainbow Dash",
+      "Pinkie Pie"
+    ]
   },
   {
     "episodeNo": 5,
@@ -3128,7 +3148,12 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 225
+    "id": 225,
+    "paths": [
+      "Rarity",
+      "Applejack",
+      "Fluttershy"
+    ]
   },
   {
     "episodeNo": 6,
@@ -3144,7 +3169,12 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 226
+    "id": 226,
+    "paths": [
+      "Pinkie Pie",
+      "Trixie",
+      "Applejack"
+    ]
   },
   {
     "episodeNo": 15,
@@ -3370,7 +3400,12 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 227
+    "id": 227,
+    "paths": [
+      "Twilight Sparkle",
+      "Pinkie Pie",
+      "Micro Chips"
+    ]
   },
   {
     "episodeNo": 8,
@@ -3386,7 +3421,12 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 228
+    "id": 228,
+    "paths": [
+      "Rainbow Dash",
+      "Pinkie Pie",
+      "Photo Finish"
+    ]
   },
   {
     "episodeNo": 9,
@@ -3402,7 +3442,12 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 229
+    "id": 229,
+    "paths": [
+      "Applejack",
+      "Twilight Sparkle",
+      "Sunset Shimmer"
+    ]
   },
   {
     "episodeNo": 10,
@@ -3418,7 +3463,12 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 1)",
-    "id": 230
+    "id": 230,
+    "paths": [
+      "Applejack",
+      "Rarity",
+      "Rainbow Dash"
+    ]
   },
   {
     "episodeNo": 30,
@@ -4942,7 +4992,12 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 2)",
-    "id": 328
+    "id": 328,
+    "paths": [
+      "Applejack",
+      "Rainbow Dash",
+      "Pinkie Pie"
+    ]
   },
   {
     "episodeNo": 11,
@@ -5000,7 +5055,12 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 2)",
-    "id": 329
+    "id": 329,
+    "paths": [
+      "Sunset Shimmer",
+      "Fluttershy",
+      "Big McIntosh"
+    ]
   },
   {
     "episodeNo": 14,
@@ -5072,7 +5132,12 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 2)",
-    "id": 331
+    "id": 331,
+    "paths": [
+      "Applejack",
+      "Twilight Sparkle",
+      "Vignette Valencia"
+    ]
   },
   {
     "episodeNo": 17,
@@ -5130,7 +5195,12 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 2)",
-    "id": 332
+    "id": 332,
+    "paths": [
+      "Rarity",
+      "Spike",
+      "Fluttershy"
+    ]
   },
   {
     "episodeNo": 20,
@@ -5188,7 +5258,12 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 2)",
-    "id": 333
+    "id": 333,
+    "paths": [
+      "Rainbow Dash",
+      "Pinkie Pie",
+      "Snips"
+    ]
   },
   {
     "episodeNo": 23,
@@ -5260,7 +5335,12 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 2)",
-    "id": 335
+    "id": 335,
+    "paths": [
+      "Principal Celestia",
+      "Fluttershy",
+      "Micro Chips"
+    ]
   },
   {
     "episodeNo": 26,
@@ -5514,7 +5594,12 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 2)",
-    "id": 350
+    "id": 350,
+    "paths": [
+      "Rarity",
+      "Trixie",
+      "Bulk Biceps"
+    ]
   },
   {
     "episodeNo": 29,
@@ -5572,7 +5657,12 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 2)",
-    "id": 351
+    "id": 351,
+    "paths": [
+      "Applejack",
+      "Twilight Sparkle",
+      "Fluttershy"
+    ]
   },
   {
     "episodeNo": 32,
@@ -5630,7 +5720,12 @@
     "series": "EqG",
     "animationType": "short",
     "season": "Choose Your Own Ending (season 2)",
-    "id": 352
+    "id": 352,
+    "paths": [
+      "Sunset Shimmer",
+      "Rarity",
+      "Applejack"
+    ]
   },
   {
     "episodeNo": 35,

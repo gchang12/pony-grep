@@ -44,7 +44,8 @@
       return [];
     }
     const lines = response1.data.value
-      .filter(tline => tline.episodeId == episode.value.id);
+      .filter(tline => tline.episodeId == episode.value.id)
+      .filter(tline => tline.path == null);
     return lines;
   });
 
@@ -58,25 +59,33 @@
       return [];
     }
     const season = getSeasonName(route.params.season);
+    const mainEp = response2.data.value
+      .filter(someEpisode => someEpisode.series === route.params.series)
+      .filter(someEpisode => someEpisode.season === season)
+      .find(someEpisode => someEpisode.title === episode.value.title);
+    console.log('mainEp', mainEp);
     const branchedEndings = response2.data.value
       .filter(someEpisode => someEpisode.series === route.params.series)
       .filter(someEpisode => someEpisode.season === season)
-      .filter(someEpisode => someEpisode.title.startsWith(episode.value.title + " - "));
-    const items = branchedEndings.map(someEpisode => {
-      const title = someEpisode.title;
-      const label = title.slice(title.indexOf(' - ') + 3);
+      .filter(someEpisode => someEpisode.title.startsWith(episode.value.title))
+      .filter(someEpisode => typeof(someEpisode.path) === 'string');
+    const items = mainEp.paths.map(path => {
+      //const title = someEpisode.title;
+      //const label = title.slice(title.indexOf(' - ') + 3);
+      const label = path;
       // transcript lines.
-      const content = response1.data.value.filter(tline => tline.episodeId === someEpisode.id);
+      const content = response1.data.value.filter(tline => tline.path === label);
       return {
         label,
         content,
-        episode: someEpisode,
+        episode: mainEp,
       };
     });
     return items;
   }
 
   const items = computed(() => compileEndingBranches());
+  console.log("items", items);
 
   function calculateRelativeEpisode(increment) {
     if (response2.data.value == null) {
@@ -170,7 +179,7 @@
       <TranscriptLineTable :transcriptLines="transcriptLines" :episode="episode" :jumpedLine="route.hash.slice(2)" />
       <UAccordion :items="items">
         <template #body="{ item }">
-          <TranscriptLineTable :transcriptLines="item.content" :episode="item.episode" jumpedLine="" />
+          <TranscriptLineTable :transcriptLines="item.content" :episode="item.episode" jumpedLine="route.hash.slice(2)" />
         </template>
       </UAccordion>
     </div>
