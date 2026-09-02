@@ -5,13 +5,19 @@
 <template>
   <div>
    <header>
-     <NuxtLink to="/">
-       <img :src="Banner" />
-     </NuxtLink>
-     <nav>
-       <NuxtLink to="/search">Search</NuxtLink>
-       <NuxtLink to="/episodes">Episodes</NuxtLink>
-     </nav>
+     <div class="container">
+       <div class="row">
+         <div class="col">
+           <NuxtLink to="/">
+             <img :src="Banner" />
+           </NuxtLink>
+         </div>
+         <nav class="col-auto h-auto">
+           <NuxtLink to="/search">Search</NuxtLink>
+           <NuxtLink to="/episodes">Episodes</NuxtLink>
+         </nav>
+       </div>
+     </div>
    </header>
    <main>
      <slot />

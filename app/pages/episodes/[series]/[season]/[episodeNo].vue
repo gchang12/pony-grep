@@ -139,13 +139,14 @@
 
 <template>
   <div class="Transcript">
-    <aside class="EpisodeInfo">
-      <!-- <figure> -->
-      <div v-if="Object.keys(episode).length > 0 && episode.season.startsWith('S') && episode.season.length === 2" class="EpisodeInfoBox-wrapper">
+    <aside>
+      <!-- TODO: Loading icon. -->
+      <!-- TODO: HTML300 L6 - load data using four attributes or more. -->
+      <div v-if="Object.keys(episode).length > 0 && episode.season.startsWith('S') && episode.season.length === 2" class="EpisodeInfo FOR_CLASS">
         <EpisodeInfoBox :image="props.image" :url="props.url" :writtenby="props.writtenby" :storyboard="props.storyboard" />
         <button @click="fetchImage">Load Image</button>
       </div>
-      <div class="EpisodeInfoBox2" v-else>
+      <div class="EpisodeInfo" v-else>
         <table>
           <tbody>
             <tr>
