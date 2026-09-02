@@ -225,11 +225,14 @@ footer {
   & [data-slot='group'] {
     display: flex;
     flex-direction: column;
+    background-color: black;
   }
   // dropdown menu items
   & [type='link'] {
     display: flex;
     justify-content: start;
+    background-color: black;
+    color: white;
   }
 }
 /* END: Hacking BS5 to get the styling I want. */
