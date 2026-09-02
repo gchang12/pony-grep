@@ -27,9 +27,6 @@
     response2.refresh();
   }
 
-  /*
-  */
-
   function ponyGrep(e) {
     if (response1.data.value == null) {
       response1.refresh();

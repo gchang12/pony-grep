@@ -1,9 +1,11 @@
 <script setup>
   import '~/assets/css/app.scss';
 
-  // TODO: Redo all the Bootstrap classes so that they're up-to-date WRT BS5
-  // TODO: Re-style everything from scratch.
-  // TODO: Put content onto index page.
+  // TODO: Put content onto index page:
+  // - How to use episode index
+  // - how to use search feature
+  // - line-highlighting
+  // TODO: Substitute NuxtUI components for BS5 components
 
 </script>
 

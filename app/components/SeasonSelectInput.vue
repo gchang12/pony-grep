@@ -5,7 +5,10 @@
   const props = defineProps({
     series: String,
     label: String,
-    checked: String,
+    checked: {
+      type: String,
+      required: false,
+    },
   });
 
   function toggleSeason(e) {
