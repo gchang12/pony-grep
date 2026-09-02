@@ -69,17 +69,20 @@
       .filter(someEpisode => someEpisode.season === season)
       .filter(someEpisode => someEpisode.title.startsWith(episode.value.title))
       .filter(someEpisode => typeof(someEpisode.path) === 'string');
-    const items = mainEp.paths.map(path => {
-      const label = path;
-      // transcript lines.
-      const content = response1.data.value.filter(tline => tline.path === label);
-      return {
-        label,
-        content,
-        episode: mainEp,
-      };
-    });
-    return items;
+    if (mainEp.paths != null) {
+      return mainEp.paths.map(path => {
+        const label = path;
+        // transcript lines.
+        const content = response1.data.value.filter(tline => tline.path === label);
+        return {
+          label,
+          content,
+          episode: mainEp,
+        };
+      });
+    } else {
+      return [];
+    }
   }
 
   const items = computed(() => compileEndingBranches());
