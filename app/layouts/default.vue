@@ -6,10 +6,10 @@
   <div>
    <header>
      <div class="container-sm">
-       <div class="row">
+       <div class="row flex-sm-row flex-column">
          <div class="col">
            <NuxtLink to="/">
-             <img :src="Banner" />
+             <img :src="Banner" class="w-100" />
            </NuxtLink>
          </div>
          <div class="col-auto d-flex align-items-center justify-content-center">

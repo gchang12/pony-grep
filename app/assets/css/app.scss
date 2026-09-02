@@ -117,10 +117,6 @@ header {
     padding: 1rem;
     border: 0.5rem solid $reddish;
     background-color: $light-orange;
-    /* border-radius: 100px; */
-    /* background: radial-gradient($light-orange-outline, $blue); */
-    /* background: radial-gradient($blue, $light-orange-outline); */
-    /* background: radial-gradient(closest-side, $light-orange-outline, $blue); */
     transition: box-shadow 0.25s;
   }
   & a[href='/']:hover {
@@ -136,6 +132,11 @@ header {
     transition: text-shadow 0.25s;
   }
   & nav a.nav-link:hover {
+    text-shadow: 0 0 1rem white;
+    color: white;
+    text-decoration: none;
+  }
+  & nav a.nav-link:visited {
     text-shadow: 0 0 1rem white;
     color: white;
     text-decoration: none;
