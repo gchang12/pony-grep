@@ -28,8 +28,6 @@
   }
 
   /*
-  console.log("response1.status.value", response1.status.value);
-  console.log("response2.status.value", response2.status.value);
   */
 
   function ponyGrep(e) {

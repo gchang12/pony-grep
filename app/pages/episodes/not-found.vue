@@ -8,7 +8,6 @@
   const season = ref(route.query.season);
   const episodeNo = ref(route.query.episodeNo);
 
-  console.log(route.query);
 
 </script>
 

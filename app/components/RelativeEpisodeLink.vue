@@ -8,7 +8,6 @@
     missingEpisodeMessage: String,
   });
 
-  //console.log("props.episode", props.episode);
   //const episodeNo = ref(stringifyEpisodeNo(props.episode.episodeNo));
 
 </script>

@@ -15,9 +15,6 @@
 
   const { series, searchResults, dialoguePattern } = props;
 
-  //console.log('searchResults', searchResults);
-  //console.log('searchResults.value', searchResults.value);
-  //console.log('dialoguePattern', dialoguePattern);
 
   const response = await useFetch("json/animationIndex.json");
 
@@ -71,16 +68,12 @@
 
   /*
   const vHighlight = computed(() => {
-    //console.log(dialoguePattern);
-    console.log("dialoguePattern", dialoguePattern);
     return makeVHighlight(dialoguePattern);
   });
   */
 
   const vHighlight = makeVHighlight(dialoguePattern.value ?? "");
   //const vHighlight = computed(() => makeVHighlight(dialoguePattern));
-  //console.log("vHighlight", vHighlight);
-  //console.log("dialoguePattern", dialoguePattern);
 
 </script>
 

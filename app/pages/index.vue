@@ -4,11 +4,8 @@
 
   function reloadTranscript() {
     if (response1.data.value == null) {
-      console.log("refreshing");
       response1.refresh();
     }
-    console.log(response1);
-    console.log(response1.data.value.length);
   }
 
   // TODO: Mention how to populate infobox for S1-S9 in the home page.

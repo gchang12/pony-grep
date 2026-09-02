@@ -65,7 +65,6 @@
       .filter(someEpisode => someEpisode.series === route.params.series)
       .filter(someEpisode => someEpisode.season === season)
       .find(someEpisode => someEpisode.title === episode.value.title);
-    console.log('mainEp', mainEp);
     const branchedEndings = response2.data.value
       .filter(someEpisode => someEpisode.series === route.params.series)
       .filter(someEpisode => someEpisode.season === season)
@@ -95,7 +94,6 @@
       return {};
     }
     const episode = calculateThisEpisode();
-    console.log("episode", episode);
     const episodeNo = Number(episode.episodeNo);
     const newEpisodeNo = stringifyEpisodeNo(episodeNo + increment);
     const season = getSeasonName(route.params.season);
@@ -118,13 +116,8 @@
   }
 
   async function fetchImage() {
-    console.log("fetchImage:episode", episode);
-    console.log("fetchImage:episode.value", episode.value);
     const url = `https://ponyapi.net/v1/episode/by-season/${episode.value.season.slice(1)}/all`;
     const response = await useFetch(url);
-    console.log("fetchImage:response.data", response.data);
-    console.log("fetchImage:response.data.value", response.data.value);
-    console.log("fetchImage:response.data.value.data", response.data.value.data);
     const episode2 = response.data.value.data.find(someEpisode => someEpisode.episode == episode.value.episodeNo);
     props.value = {
       image: episode2.image,
