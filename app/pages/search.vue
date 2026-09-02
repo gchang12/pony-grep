@@ -179,7 +179,7 @@
               <!-- See: ../components/SearchResults.vue -->
               <UAccordion :items="items1">
                 <template #body="{ item }">
-                  <table>
+                  <table class="table table-striped">
                     <thead>
                       <tr>
                         <th>Speaker</th>
@@ -207,7 +207,7 @@
               <!-- See: ../components/SearchResults.vue -->
               <UAccordion :items="items2">
                 <template #body="{ item }">
-                  <table>
+                  <table class="table table-striped">
                     <thead>
                       <tr>
                         <th>Speaker</th>

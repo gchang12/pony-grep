@@ -130,6 +130,7 @@
   const prevEpisode = computed(() => calculateRelativeEpisode(-1));
   const nextEpisode = computed(() => calculateRelativeEpisode(1));
 
+
 </script>
 
 <template>
@@ -152,6 +153,7 @@
       </div>
       <div class="EpisodeInfo" v-else>
         <table>
+          <!-- <table class="table table-striped"> NOTE: Negates highlighting of rows. -->
           <tbody>
             <tr>
               <th>Series</th>
