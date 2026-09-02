@@ -1,3 +1,11 @@
+$light-green: #67e4be;
+$light-orange: #f1ba40;
+$reddish: #cb3208;
+$reddish-outline: #e0581d;
+$light-orange-outline: #f08322;
+$blue: #125271;
+$blue-outline: #06363f;
+
 // Images for Episode Index
 #S1 {
   background-image: url("../images/My_Little_Pony_Theme_Song.webp");
@@ -93,17 +101,55 @@
   background-image: url("../images/Holidays_Unwrapped_title_card_EGHU.webp");
 }
 
-// Debug purposes
+// color scheme
+body {
+  background-color: $blue;
+}
+
 header {
-  background-color: lightgreen;
+  background-color: $blue-outline;
+  background-image: url("../images/star.png");
+  border: 1rem solid $light-green;
+  & a[href='/'] {
+    // must have vertical margin and padding rules to have effect.
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem;
+    border: 0.5rem solid $reddish;
+    background-color: $light-orange;
+    /* border-radius: 100px; */
+    /* background: radial-gradient($light-orange-outline, $blue); */
+    /* background: radial-gradient($blue, $light-orange-outline); */
+    /* background: radial-gradient(closest-side, $light-orange-outline, $blue); */
+    transition: box-shadow 0.25s;
+  }
+  & a[href='/']:hover {
+    box-shadow: 0 0 2rem $reddish-outline;
+  }
+  & nav {
+    background-color: $blue;
+    border: 0.5rem solid $light-green;
+    margin: 1rem;
+  }
+  & nav a {
+    color: $light-green;
+    transition: text-shadow 0.25s;
+  }
+  & nav a:hover {
+    text-shadow: 0 0 1rem white;
+    color: white;
+    text-decoration: none;
+  }
 }
+
 main {
-  background-color: lightblue;
+  color: $light-green;
 }
+
 footer {
-  background-color: violet;
+  background-color: black;
+  color: white;
 }
-// END: Debug purposes
 
 .Header {
   font-weight: bold;
