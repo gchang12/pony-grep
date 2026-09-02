@@ -4,6 +4,27 @@
   import EpisodeIndex from "../assets/usage/episode-index.png";
   import Transcript from "../assets/usage/transcript.png";
 
+  import UsageArticle from "../components/UsageArticle.vue";
+
+  const rawHtmlDict = {
+    search: [
+      '&ldquo;I want to see if &lsquo;friendship is magic&rsquo; is said in MLP G4. I\'ll input <span class="FieldValue">friendship is magic</span> into the <span class="FieldName">Dialogue</span> box now.&rdquo;',
+      '&ldquo;I want to see if Discord or Twilight says it. I\'ll input <span class="FieldValue">Discord|Twilight</span> into the <span class="FieldName">Character</span> field.&rdquo;',
+      '&ldquo;I want to see if they say it <span class="FieldValue">Seasons 1, 3, 9</span> in <span class="FieldValue">Friendship is Magic</span>. I\'ll check the <span class="FieldName">Friendship is Magic</span> box, hold <code>&lt;Shift&gt;</code>, and select <span class="FieldValue">S1, S3, S9</span>.&rdquo;',
+      '&ldquo;Let\'s see if either Discord or Twilight say &lsquo;friendship is magic&rsquo; by hitting the <span class="FieldName">Search</span> button.&rdquo;',
+    ],
+    index: [
+      'Hover over an image to see the season it represents.',
+      'Click on the image to view the episodes for that season.',
+      'Select the episode name from the dropdown menu to view the transcript for the episode.',
+    ],
+    transcript: [
+      'Click on the <span class="FieldName">Load Image</span> button.',
+      'Wait for the data to load from <a target="_blank" href="https://ponyapi.net/">PonyAPI</a>.',
+      'Get data for the episode\'s wikia page, writer, storyboarder, plus the image thumbnail.',
+    ],
+  };
+
 </script>
 
 <template>
@@ -13,51 +34,25 @@
       <p>Trying to remember a line from MLP G4?</p>
       <p>You've come to the right place!</p>
       <hr />
-      <section class="container">
-        <h2>Search</h2>
-        <p>Use our <NuxtLink to="/search">search</NuxtLink> feature to search for a <code>regex</code> pattern.</p>
-        <div class="d-flex">
-          <img :src="Search" class="img-thumbnail" />
-          <section class="container">
-            <h3>Example</h3>
-            <ol>
-              <li class="mb-4 mt-4">&ldquo;I want to see if &lsquo;friendship is magic&rsquo; is said in MLP G4. I'll input <span class="FieldValue">friendship is magic</span> into the <span class="FieldName">Dialogue</span> box now.&rdquo;</li>
-              <li class="mb-4 mt-4">&ldquo;I want to see if Discord or Twilight says it. I'll input <span class="FieldValue">Discord|Twilight</span> into the <span class="FieldName">Character</span> field.&rdquo;</li> 
-              <li class="mb-4 mt-4">&ldquo;I want to see if they say it <span class="FieldValue">Seasons 1, 3, 9</span> in <span class="FieldValue">Friendship is Magic</span>. I'll check the <span class="FieldName">Friendship is Magic</span> box, hold <code>&lt;Shift&gt;</code>, and select <span class="FieldValue">S1, S3, S9</span>.&rdquo;</li> 
-              <li class="mb-4 mt-4">&ldquo;Let's see if either Discord or Twilight say &lsquo;friendship is magic&rsquo; by hitting the <span class="FieldName">Search</span> button.&rdquo;</li>
-            </ol>
-          </section>
-        </div>
-      </section>
+      <UsageArticle header="Search" :imgSrc="Search" imgAlt="Search page" subheader="Example" :rawHtmlList="rawHtmlDict.search">
+        <template #paragraph>
+          <p>Use our <NuxtLink to="/search">search</NuxtLink> feature to search for a <code>regex</code> pattern.</p>
+        </template>
+      </UsageArticle>
       <hr />
-      <section class="container">
-        <h2>Episode Index</h2>
-        <p>Browse our <NuxtLink to="/episodes">comprehensive list of G4 transcripts</NuxtLink>, which include transcripts from the episodes, movies, specials, shorts, and clip-shows from <span class="Franchise">Friendship is Magic</span> and <span class="Franchise">Equestria Girls</span>.</p>
-        <div class="d-flex">
-          <img :src="EpisodeIndex" class="img-thumbnail" />
-          <ol>
-            <li class="mb-4 mt-4">Hover over an image to see the season it represents.</li>
-            <li class="mb-4 mt-4">Click on the image to view the episodes for that season.</li>
-            <li class="mb-4 mt-4">Select the episode name from the dropdown menu to view the transcript for the episode.</li>
-          </ol>
-        </div>
-      </section>
+      <UsageArticle header="Episode Index" :imgSrc="EpisodeIndex" imgAlt="Episode index" subheader="How to Use" :rawHtmlList="rawHtmlDict.index">
+        <template #paragraph>
+           <p>Browse our <NuxtLink to="/episodes">comprehensive list of G4 transcripts</NuxtLink>, which include transcripts from the episodes, movies, specials, shorts, and clip-shows from <span class="Franchise">Friendship is Magic</span> and <span class="Franchise">Equestria Girls</span>.</p>
+        </template>
+      </UsageArticle>
       <hr />
-      <section class="container">
-        <h2>Episode</h2>
-        <p>Have no idea where to start? Try reading the <NuxtLink to="/episodes/FiM/S1/01">episode transcript for episode one</NuxtLink>!</p>
-        <div class="d-flex">
-          <img :src="Transcript" width="1000" class="img-thumbnail" />
-          <section>
-            <h3>Fetch from <a target="_blank" href="https://ponyapi.net/">PonyAPI</a></h3>
-            <ol>
-              <li class="mb-4 mt-4">Click on the <span class="FieldName">Load Image</span> button.</li>
-              <li class="mb-4 mt-4">Wait for the data to load.</li>
-              <li class="mb-4 mt-4">Get data for the episode's wikia page, writer, storyboarder, plus the image thumbnail.</li>
-            </ol>
-          </section>
-        </div>
-      </section>
+      <UsageArticle header="Episode Transcript" :imgSrc="Transcript" imgAlt="Episode transcript" subheader="Fetch from PonyAPI" :rawHtmlList="rawHtmlDict.transcript">
+        <template #paragraph>
+          <p>Have no idea where to start? Try reading the <NuxtLink to="/episodes/FiM/S1/01">episode transcript for episode one</NuxtLink>!</p>
+        </template>
+      </UsageArticle>
+      <!--
+      -->
       <hr />
     </article>
     <!-- <button @click="reloadTranscript">Reload Transcript</button> -->
