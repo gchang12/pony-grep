@@ -140,7 +140,7 @@
 
     <div class="container">
       <h1>Search</h1>
-      <div class="row">
+      <div class="row flex-column flex-lg-row">
         <section class="col mb-5">
           <h2>Parameters</h2>
           <form>

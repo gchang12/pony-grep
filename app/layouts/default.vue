@@ -31,7 +31,7 @@
      <slot />
    </main>
    <footer>
-     <div class="container d-flex justify-content-between">
+     <div class="container d-flex justify-content-between flex-md-row flex-column">
        <div class="Credits m-4">
          <span class="Header">Credits</span>
          <div class="Disclaimer">All textual content is owned by <a target="_blank" href="https://www.fandom.com/licensing">Fandom</a></div>
