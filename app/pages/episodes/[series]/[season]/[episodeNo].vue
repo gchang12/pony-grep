@@ -1,5 +1,7 @@
 <script setup>
 
+  // https://ponyapi.net/
+
   import { computed } from "vue";
 
   import seasonList from "../../../../assets/json/seasonList.json";

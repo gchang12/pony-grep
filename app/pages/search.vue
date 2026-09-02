@@ -145,23 +145,29 @@
           <h2>Parameters</h2>
           <form>
             <div class="dialoguePattern field">
-              <label for="dialoguePattern">Dialogue</label>
-              <input value="friendship is magic" placeholder="friendship is magic" id="dialoguePattern" type="search" name="dialoguePattern" required />
-              <div class="help-text">Pattern to search for in all G4 dialogue.</div>
+              <label for="dialoguePattern" class="form-label">Dialogue</label>
+              <input value="friendship is magic" placeholder="friendship is magic" id="dialoguePattern" type="search" name="dialoguePattern" class="form-control" required />
+              <div class="form-text">Pattern to search for in all G4 dialogue.</div>
             </div>
             <div class="speaker field">
-              <label for="speaker">Character</label>
-              <input placeholder="discord|mane six" id="speaker" type="text" name="speaker" />
-              <div class="help-text">Limit results to lines spoken only by specified character(s).</div>
+              <label class="form-label" for="speaker">Character</label>
+              <input placeholder="discord|mane six" id="speaker" type="text" name="speaker" class="form-control" />
+              <div class="form-text">Limit results to lines spoken only by specified character(s).</div>
             </div>
             <fieldset>
               <legend>Series</legend>
-              <SeasonSelectInput series="FiM" checked label="Friendship is Magic" />
-              <SeasonSelectInput series="EqG" label="Equestria Girls" />
-              <div class="help-text">Only selected seasons will be searched.</div>
+              <div class="row">
+                <div class="col">
+                  <SeasonSelectInput series="FiM" checked label="Friendship is Magic" />
+                </div>
+                <div class="col">
+                  <SeasonSelectInput series="EqG" label="Equestria Girls" />
+                </div>
+              </div>
+              <div class="form-text">Only selected seasons will be searched.</div>
             </fieldset>
-            <button @click="ponyGrep" id="search">Search</button>
-            <button @click="clearResults" id="reset" type="button">Reset</button>
+            <button class="btn btn-primary" @click="ponyGrep" id="search">Search</button>
+            <button class="btn btn-secondary" @click="clearResults" id="reset" type="button">Reset</button>
           </form>
         </section>
 

@@ -103,6 +103,10 @@ $blue-outline: #06363f;
 
 // color scheme
 body {
+  background-color: black;
+}
+
+#app {
   background-color: $blue;
 }
 
@@ -164,6 +168,15 @@ footer {
   background-color: yellow;
 }
 
+.SearchQuery::before {
+  content: "‘";
+}
+
+.SearchQuery::after {
+  content: "’";
+}
+
+
 .SeasonIndex > li {
   background-position: center;
   background-size: contain;
@@ -178,6 +191,9 @@ footer {
 }
 .SeasonImage {
   font-size: 2rem;
+}
+.season.field > select {
+  height: 10rem;
 }
 
 // EPISODE INDEX
