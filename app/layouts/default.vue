@@ -32,16 +32,16 @@
    </main>
    <footer>
      <div class="container d-flex justify-content-between">
-       <div class="Credits">
+       <div class="Credits m-4">
          <span class="Header">Credits</span>
-         <p>All textual content is owned by <a target="_blank" href="https://www.fandom.com/licensing">Fandom</a></p>
-         <p>Site logo provided by <a target="_blank" href="https://fontmeme.com/friendship-is-magic-font/">this site</a></p>
-         <p>All images are owned by Hasbro</p>
+         <div class="Disclaimer">All textual content is owned by <a target="_blank" href="https://www.fandom.com/licensing">Fandom</a></div>
+         <div class="Disclaimer">Site logo provided by <a target="_blank" href="https://fontmeme.com/friendship-is-magic-font/">this site</a></div>
+         <div class="Disclaimer">All images are owned by Hasbro</div>
        </div>
-       <div class="About">
+       <div class="About m-4">
          <span class="Header">About</span>
-         <p>This project's <a target="_blank" href="https://github.com/gchang12/pony-grep">GitHub</a> page</p>
-         <p>Made with no AI</p>
+         <div class="Disclaimer">This project's <a target="_blank" href="https://github.com/gchang12/pony-grep">GitHub</a> page</div>
+         <div class="Disclaimer">Made with no AI</div>
        </div>
      </div>
    </footer>

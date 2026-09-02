@@ -141,7 +141,7 @@
     <div class="container">
       <h1>Search</h1>
       <div class="row">
-        <section class="col">
+        <section class="col mb-5">
           <h2>Parameters</h2>
           <form>
             <div class="dialoguePattern field">
