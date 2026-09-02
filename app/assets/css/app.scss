@@ -175,12 +175,36 @@ footer {
 .SearchQuery::after {
   content: "’";
 }
-
+.Season::after {
+  content: " ";
+}
 
 .SeasonIndex > li {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.RelativeEpisodeLink > a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: $blue-outline;
+  border: 0.5rem solid $light-green;
+}
+.RelativeEpisodeLink > a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.RelativeLink {
+}
+
+.NaviText {
+  font-weight: bold;
 }
 
 // https://www.w3schools.com/howto/howto_css_image_text.asp

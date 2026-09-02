@@ -15,7 +15,7 @@
 
 <template>
   <div class="RelativeEpisodeLink">
-    <NuxtLink class="RelativeEpisodeLink" v-if="Object.keys(episode).length != 0" :to="['/episodes', episode.series, episode.seasonUrl, episode.episodeNo].join('/')" :title="episode.title">
+    <NuxtLink class="d-inline-block" v-if="Object.keys(episode).length != 0" :to="['/episodes', episode.series, episode.seasonUrl, episode.episodeNo].join('/')" :title="episode.title">
       <div class="NaviText">{{ naviText }}</div>
       <span class="Season">{{ episode.season }}</span>
       <span class="Episode">E{{ episode.episodeNo }}</span>

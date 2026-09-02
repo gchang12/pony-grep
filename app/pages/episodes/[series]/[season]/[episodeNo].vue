@@ -186,7 +186,7 @@
       </UAccordion>
     </div>
     <hr>
-    <nav class="d-flex justify-content-between">
+    <nav class="d-flex justify-content-between mb-4">
       <RelativeEpisodeLink v-if="prevEpisode.id != nextEpisode.id" naviText="Previous" :episode="prevEpisode" missingEpisodeMessage="Welcome to G4 Equestria!" />
       <RelativeEpisodeLink naviText="Next" :episode="nextEpisode" missingEpisodeMessage="" />
     </nav>
