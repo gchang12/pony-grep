@@ -6,6 +6,12 @@ $light-orange-outline: #f08322;
 $blue: #125271;
 $blue-outline: #06363f;
 
+$sunset-red: #f35733;
+$sunset-orange: #f8ba94;
+
+$twilight-purple: #e616eb;
+$twilight-light-purple: #f99bff;
+
 // Images for Episode Index
 #S1 {
   background-image: url("../images/My_Little_Pony_Theme_Song.webp");
@@ -245,7 +251,7 @@ footer {
 
 // EPISODE INDEX
 // https://stackoverflow.com/questions/18815157/how-to-overlay-image-with-color-in-css
-/* Hacking BS5 to get the styling I want. */
+/* Hacking Nuxt UI to get the styling I want. */
 #episodes {
   // dropdown picture-buttons (before)
   & .rounded-md {
@@ -283,17 +289,33 @@ footer {
     color: white;
   }
 }
-/* END: Hacking BS5 to get the styling I want. */
-
-// NOTE: Styling Nuxt UI components.
+#reka-tabs-v-0-0-0-content-0 {
+  background-color: $twilight-light-purple;
+  & .flex {
+    background-color: $twilight-purple;
+    ///border: 0 solid black;
+  }
+  & .flex[data-disabled] {
+    background-color: $twilight-light-purple;
+  }
+}
+#reka-tabs-v-0-0-0-content-1 {
+  background-color: $sunset-orange;
+  & .flex {
+    background-color: $sunset-red;
+  }
+  & .flex[data-disabled] {
+    background-color: $sunset-orange;
+  }
+}
 #search {
   & .relative.flex button {
     width: 50%;
     &:nth-child(2) {
-      background-color: orange;
+      background-color: $twilight-purple;
     }
     &:nth-child(3) {
-      background-color: red;
+      background-color: $sunset-red;
     }
   }
   & [data-state][data-slot='item'] .flex button {
@@ -301,3 +323,4 @@ footer {
     text-align: left;
   }
 }
+/* END: Hacking BS5 to get the styling I want. */
