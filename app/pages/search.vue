@@ -33,7 +33,6 @@
   function ponyGrep(e) {
     if (response1.data.value == null) {
       response1.refresh();
-      //alert("Sorry! Something went wrong. Please try again.");
       e.preventDefault();
       return;
     }
