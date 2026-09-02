@@ -7,17 +7,21 @@
 </script>
 
 <template>
-  <table class="TranscriptLineTable">
+  <table class="TranscriptLineTable table table-striped">
     <tbody>
-      <tr v-for="tline in transcriptLines.filter(tline => tline.episodeId === episode.id)" :key="tline.id" :id="'L' + tline.lineNo" :class="jumpedLine == tline.lineNo ? 'JumpedLine' : ''">
+      <tr v-for="tline in transcriptLines.filter(tline => tline.episodeId === episode.id)" :key="tline.id" :id="'L' + tline.lineNo">
         <td>
-          <NuxtLink class="me-2" :href="'#L' + tline.lineNo">#</NuxtLink>
+          <NuxtLink :href="'#L' + tline.lineNo">#</NuxtLink>
         </td>
         <th>
-          {{ tline.speaker }}
+          <span :class="jumpedLine == tline.lineNo ? 'JumpedLine' : ''">
+            {{ tline.speaker }}
+          </span>
         </th>
         <td>
-          {{ tline.dialogue }}
+          <span :class="jumpedLine == tline.lineNo ? 'JumpedLine' : ''">
+            {{ tline.dialogue }}
+          </span>
         </td>
       </tr>
     </tbody>
