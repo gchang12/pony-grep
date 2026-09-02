@@ -36,7 +36,7 @@
 </script>
 
 <template>
-  <div id="episodes">
+  <div id="episodes" class="container">
     <h1>Episodes</h1>
     <article>
       <h2>Friendship is Magic</h2>
