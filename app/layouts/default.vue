@@ -5,17 +5,25 @@
 <template>
   <div>
    <header>
-     <div class="container">
+     <div class="container-sm">
        <div class="row">
          <div class="col">
            <NuxtLink to="/">
              <img :src="Banner" />
            </NuxtLink>
          </div>
-         <nav class="col-auto h-auto">
-           <NuxtLink to="/search">Search</NuxtLink>
-           <NuxtLink to="/episodes">Episodes</NuxtLink>
-         </nav>
+         <div class="col-auto d-flex align-items-center justify-content-center">
+           <nav>
+             <ul class="nav">
+               <li class="nav-item">
+                 <NuxtLink class="nav-link" to="/search">Search</NuxtLink>
+               </li>
+               <li class="nav-item">
+                 <NuxtLink class="nav-link" to="/episodes">Episodes</NuxtLink>
+               </li>
+             </ul>
+           </nav>
+         </div>
        </div>
      </div>
    </header>

@@ -131,11 +131,11 @@ header {
     border: 0.5rem solid $light-green;
     margin: 1rem;
   }
-  & nav a {
+  & nav a.nav-link {
     color: $light-green;
     transition: text-shadow 0.25s;
   }
-  & nav a:hover {
+  & nav a.nav-link:hover {
     text-shadow: 0 0 1rem white;
     color: white;
     text-decoration: none;
