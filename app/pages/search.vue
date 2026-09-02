@@ -136,95 +136,99 @@
 </script>
 
 <template>
-  <h1>Search</h1>
+  <article id="search">
+    <h1>Search</h1>
 
-  <article>
-    <h2>Parameters</h2>
-    <form>
-      <div class="dialoguePattern field">
-        <label for="dialoguePattern">Dialogue</label>
-        <input value="friendship is magic" placeholder="friendship is magic" id="dialoguePattern" type="search" name="dialoguePattern" required />
-        <div class="help-text">Pattern to search for in all G4 dialogue.</div>
-      </div>
-      <div class="speaker field">
-        <label for="speaker">Character</label>
-        <input placeholder="discord|mane six" id="speaker" type="text" name="speaker" />
-        <div class="help-text">Limit results to lines spoken only by specified character(s).</div>
-      </div>
-      <fieldset>
-        <legend>Series</legend>
-        <SeasonSelectInput series="FiM" checked label="Friendship is Magic" />
-        <SeasonSelectInput series="EqG" label="Equestria Girls" />
-        <div class="help-text">Only selected seasons will be searched.</div>
-      </fieldset>
-      <button @click="ponyGrep" id="search">Search</button>
-      <button @click="clearResults" id="reset" type="button">Reset</button>
-    </form>
-  </article>
+    <div class="row">
+      <section class="col">
+        <h2>Parameters</h2>
+        <form>
+          <div class="dialoguePattern field">
+            <label for="dialoguePattern">Dialogue</label>
+            <input value="friendship is magic" placeholder="friendship is magic" id="dialoguePattern" type="search" name="dialoguePattern" required />
+            <div class="help-text">Pattern to search for in all G4 dialogue.</div>
+          </div>
+          <div class="speaker field">
+            <label for="speaker">Character</label>
+            <input placeholder="discord|mane six" id="speaker" type="text" name="speaker" />
+            <div class="help-text">Limit results to lines spoken only by specified character(s).</div>
+          </div>
+          <fieldset>
+            <legend>Series</legend>
+            <SeasonSelectInput series="FiM" checked label="Friendship is Magic" />
+            <SeasonSelectInput series="EqG" label="Equestria Girls" />
+            <div class="help-text">Only selected seasons will be searched.</div>
+          </fieldset>
+          <button @click="ponyGrep" id="search">Search</button>
+          <button @click="clearResults" id="reset" type="button">Reset</button>
+        </form>
+      </section>
 
-  <!-- By series, by animation type. -->
-  <article>
-    <h2>Results for: <span class="SearchQuery" v-if="dialoguePattern !== ''">{{ dialoguePattern }}</span></h2>
-    <!-- List of accordions, each corresponding to a season, which are classed by series. -->
-    <UTabs :items="items3">
-      <template #FiM>
+      <!-- By series, by animation type. -->
+      <article class="col">
+        <h2>Results for: <span class="SearchQuery" v-if="dialoguePattern !== ''">{{ dialoguePattern }}</span></h2>
+        <!-- List of accordions, each corresponding to a season, which are classed by series. -->
+        <UTabs :items="items3">
+          <template #FiM>
 
-        <!-- See: ../components/SearchResults.vue -->
-        <UAccordion :items="items1">
-          <template #body="{ item }">
-            <table>
-              <thead>
-                <tr>
-                  <th>Speaker</th>
-                  <th>Dialogue</th>
-                  <th>Episode</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr v-for="tline in item.content" :key="tline.id">
-                  <th>{{tline.speaker}}</th>
-                  <td v-highlight>{{tline.dialogue}}</td>
-                  <td>
-                    <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.episodeCode + '#L' + tline.lineNo].join('/')" :title="tline.episodeTitle">
-                      <i>{{ tline.seasonCode }} E{{tline.episodeCode}}</i>
-                    </NuxtLink>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <!-- See: ../components/SearchResults.vue -->
+            <UAccordion :items="items1">
+              <template #body="{ item }">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Speaker</th>
+                      <th>Dialogue</th>
+                      <th>Episode</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="tline in item.content" :key="tline.id">
+                      <th>{{tline.speaker}}</th>
+                      <td v-highlight>{{tline.dialogue}}</td>
+                      <td>
+                        <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.episodeCode + '#L' + tline.lineNo].join('/')" :title="tline.episodeTitle">
+                          <i>{{ tline.seasonCode }} E{{tline.episodeCode}}</i>
+                        </NuxtLink>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </template>
+            </UAccordion>
+
           </template>
-        </UAccordion>
+          <template #EqG>
 
-      </template>
-      <template #EqG>
-
-        <!-- See: ../components/SearchResults.vue -->
-        <UAccordion :items="items2">
-          <template #body="{ item }">
-            <table>
-              <thead>
-                <tr>
-                  <th>Speaker</th>
-                  <th>Dialogue</th>
-                  <th>Episode</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr v-for="tline in item.content" :key="tline.id">
-                  <th>{{tline.speaker}}</th>
-                  <td>{{tline.dialogue}}</td>
-                  <td>
-                    <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.episodeCode + '#L' + tline.lineNo].join('/')" :title="tline.episodeTitle">
-                      <i>{{ tline.season }} E{{tline.episodeCode}}</i>
-                    </NuxtLink>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <!-- See: ../components/SearchResults.vue -->
+            <UAccordion :items="items2">
+              <template #body="{ item }">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Speaker</th>
+                      <th>Dialogue</th>
+                      <th>Episode</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="tline in item.content" :key="tline.id">
+                      <th>{{tline.speaker}}</th>
+                      <td>{{tline.dialogue}}</td>
+                      <td>
+                        <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.episodeCode + '#L' + tline.lineNo].join('/')" :title="tline.episodeTitle">
+                          <i>{{ tline.season }} E{{tline.episodeCode}}</i>
+                        </NuxtLink>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </template>
+            </UAccordion>
           </template>
-        </UAccordion>
-      </template>
-    </UTabs>
+        </UTabs>
+      </article>
+    </div>
   </article>
 
 </template>
