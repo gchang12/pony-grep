@@ -1,7 +1,7 @@
 <script setup>
   defineProps({
     header: String,
-    imgSrc: Object,
+    imgSrc: String,
     imgAlt: String,
     subheader: String,
     rawHtmlList: Array,

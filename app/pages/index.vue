@@ -36,7 +36,7 @@
       <hr />
       <UsageArticle header="Search" :imgSrc="Search" imgAlt="Search page" subheader="Example" :rawHtmlList="rawHtmlDict.search">
         <template #paragraph>
-          <p>Use our <NuxtLink to="/search">search</NuxtLink> feature to search for a <code>regex</code> pattern.</p>
+          <p>Use our <NuxtLink to="/search">search</NuxtLink> feature to search all MLP G4 dialogue for a <code>regex</code> pattern.</p>
         </template>
       </UsageArticle>
       <hr />
