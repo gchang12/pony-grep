@@ -158,13 +158,13 @@
                   <SeasonSelectInput series="FiM" checked label="Friendship is Magic" />
                 </div>
                 <div class="col">
-                  <SeasonSelectInput series="EqG" label="Equestria Girls" />
+                  <SeasonSelectInput series="EqG" checked label="Equestria Girls" />
                 </div>
               </div>
               <div class="form-text">Only selected seasons will be searched.</div>
             </fieldset>
-            <button class="btn btn-primary" @click="ponyGrep" id="search">Search</button>
-            <button class="btn btn-secondary" @click="clearResults" id="reset" type="button">Reset</button>
+            <button class="btn btn-primary w-100" @click="ponyGrep" id="search">Search</button>
+            <!-- <button class="btn btn-secondary" @click="clearResults" id="reset" type="button">Reset</button> -->
           </form>
         </section>
 

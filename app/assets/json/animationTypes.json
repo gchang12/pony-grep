@@ -1,19 +1,13 @@
 [
   {
-    "name": "clipshow",
-    "title": "Clip Shows",
-    "alias": "CS"
+    "name": "episode",
+    "title": "Episodes",
+    "alias": "E"
   },
   {
     "name": "film",
-    "title": "Films",
+    "title": "Movies",
     "alias": "MV"
-  },
-  {
-    "name": "episode",
-    "title": "Episodes",
-    "alias": "MV",
-    "alias": "E"
   },
   {
     "name": "special",
@@ -24,5 +18,10 @@
     "name": "short",
     "title": "Shorts",
     "alias": "SH"
+  },
+  {
+    "name": "clipshow",
+    "title": "Clip Shows",
+    "alias": "CS"
   }
 ]
