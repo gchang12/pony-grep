@@ -9,10 +9,10 @@
 </script>
 
 <template>
-  <ol :class="'SeasonIndex ' + series">
+  <ol class="SeasonIndex d-flex flex-wrap">
     <!-- Each of these has to be a dropdown menu. -->
-    <li :id="season.urlName" v-for="season in seasonList.filter(season => season.series === series)" :key="season.urlName">
-      <div class="SeasonImage">
+    <li class="overflow-hidden" :id="season.urlName" v-for="season in seasonList.filter(season => season.series === series)" :key="season.urlName">
+      <div class="SeasonImage h-100">
         <UDropdownMenu :content="{side: 'right'}" :items="animationIndex.filter(episode => episode.series === series && episode.season === season.name)">
           <UButton color="neutral" :label="season.name" />
         </UDropdownMenu>

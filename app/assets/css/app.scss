@@ -163,12 +163,6 @@ footer {
   background-color: yellow;
 }
 
-// TODO: Replace with BS5 classes.
-.SeasonIndex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .SeasonIndex > li {
   background-position: center;
   background-size: contain;
@@ -177,22 +171,12 @@ footer {
 
 // https://www.w3schools.com/howto/howto_css_image_text.asp
 .SeasonIndex > li {
-  height: 100%;
   width: 400px;
   height: 250px;
-  overflow: hidden;
-  color: rgb(0, 0, 0, 0);
   margin: 2rem;
 }
-// TODO: Replace with BS5 classes.
 .SeasonImage {
-  // fix text
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 2rem;
-  height: 100%;
 }
 
 // EPISODE INDEX
