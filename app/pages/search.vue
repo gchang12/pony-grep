@@ -218,7 +218,7 @@
                     <tbody>
                       <tr v-for="tline in item.content" :key="tline.id">
                         <th>{{tline.speaker}}</th>
-                        <td>{{tline.dialogue}}</td>
+                        <td v-highlight>{{tline.dialogue}}</td>
                         <td>
                           <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.episodeCode + '#L' + tline.lineNo].join('/')" :title="tline.episodeTitle">
                             <i>{{ tline.season }} E{{tline.episodeCode}}</i>

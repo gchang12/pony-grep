@@ -285,3 +285,19 @@ footer {
 }
 /* END: Hacking BS5 to get the styling I want. */
 
+// NOTE: Styling Nuxt UI components.
+#search {
+  & .relative.flex button {
+    width: 50%;
+    &:nth-child(2) {
+      background-color: orange;
+    }
+    &:nth-child(3) {
+      background-color: red;
+    }
+  }
+  & [data-state][data-slot='item'] .flex button {
+    width: 100%;
+    text-align: left;
+  }
+}
