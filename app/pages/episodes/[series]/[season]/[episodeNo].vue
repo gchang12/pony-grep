@@ -138,7 +138,7 @@
 </script>
 
 <template>
-  <div class="Transcript">
+  <div class="Transcript container">
     <aside>
       <!-- TODO: Loading icon. -->
       <!-- TODO: HTML300 L6 - load data using four attributes or more. -->
@@ -175,6 +175,7 @@
     </aside>
     <div class="TranscriptLines">
       <h1>{{ episode.title }}</h1>
+      <hr>
       <TranscriptLineTable :transcriptLines="transcriptLines" :episode="episode" :jumpedLine="route.hash.slice(2)" />
       <UAccordion type="multiple" :defaultValue="route.hash ? ['0', '1', '2'] : []" :items="items">
         <template #body="{ item }">
@@ -182,7 +183,8 @@
         </template>
       </UAccordion>
     </div>
-    <nav>
+    <hr>
+    <nav class="d-flex justify-content-between">
       <RelativeEpisodeLink v-if="prevEpisode.id != nextEpisode.id" naviText="Previous" :episode="prevEpisode" missingEpisodeMessage="Welcome to G4 Equestria!" />
       <RelativeEpisodeLink naviText="Next" :episode="nextEpisode" missingEpisodeMessage="" />
     </nav>
