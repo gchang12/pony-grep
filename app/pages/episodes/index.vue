@@ -38,11 +38,6 @@
 <template>
   <div id="episodes" class="container">
     <h1>Browse Episode Transcripts</h1>
-    <ol>
-      <li>Hover over an image to see the season it represents.</li>
-      <li>Click on the image to view the episodes for that season.</li>
-      <li>Select the episode name from the dropdown menu to view the transcript for the episode.</li>
-    </ol>
     <article>
       <h2>Friendship is Magic</h2>
       <PictureIndex :seasonList="seasonList" series="FiM" :animationIndex="animationIndex" />

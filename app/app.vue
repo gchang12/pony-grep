@@ -1,10 +1,6 @@
 <script setup>
   import '~/assets/css/app.scss';
 
-  // TODO: Put content onto index page:
-  // - How to use episode index
-  // - how to use search feature
-  // - line-highlighting
   // TODO: Substitute NuxtUI components for BS5 components
 
 </script>

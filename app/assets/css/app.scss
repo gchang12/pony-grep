@@ -249,6 +249,32 @@ footer {
   height: 10rem;
 }
 
+.FieldName {
+  color: white;
+  font-weight: bold;
+}
+
+.FieldValue {
+  color: white;
+}
+.FieldValue::before {
+  content: "‘";
+}
+.FieldValue::after {
+  content: "’";
+}
+
+#index a {
+  color: white;
+}
+#index a:hover {
+  text-shadow: 0 0 0.5rem;
+}
+
+.EpisodeInfo a {
+  color: white;
+}
+
 // EPISODE INDEX
 // https://stackoverflow.com/questions/18815157/how-to-overlay-image-with-color-in-css
 /* Hacking Nuxt UI to get the styling I want. */
