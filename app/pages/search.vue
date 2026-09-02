@@ -167,7 +167,7 @@
 
         <!-- By series, by animation type. -->
         <article class="col">
-          <h2>Results for: <span class="SearchQuery" v-if="dialoguePattern !== ''">{{ dialoguePattern }}</span></h2>
+          <h2>Results for pattern: <span class="SearchQuery" v-if="dialoguePattern !== ''">{{ dialoguePattern }}</span></h2>
           <!-- List of accordions, each corresponding to a season, which are classed by series. -->
           <UTabs :items="items3">
 

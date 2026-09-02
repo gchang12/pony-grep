@@ -349,4 +349,7 @@ footer {
     text-align: left;
   }
 }
+[data-state='active'] {
+  border: 0.25rem white solid;
+}
 /* END: Hacking BS5 to get the styling I want. */
