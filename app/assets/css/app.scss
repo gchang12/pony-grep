@@ -200,11 +200,27 @@ footer {
   text-decoration: underline;
 }
 
-.RelativeLink {
+.TranscriptLineTable tbody tr td:first-child a {
+  //display: flex;
+  //margin-right: 0.5rem;
+  //color: yellow;
+  //justify-content: center;
+  //align-items: center;
+}
+
+.EpisodeInfo {
+  position: sticky;
+  top: 0;
+  //padding: 0.1rem;
+  border: 1px solid black;
 }
 
 .NaviText {
   font-weight: bold;
+}
+
+.EpisodeImageContainer {
+  width: 400px;
 }
 
 // https://www.w3schools.com/howto/howto_css_image_text.asp

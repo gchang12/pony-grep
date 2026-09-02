@@ -141,12 +141,21 @@
 
 <template>
   <div class="Transcript container">
-    <aside>
+    <div class="row">
+    <aside class="col">
       <!-- TODO: Loading icon. -->
       <!-- TODO: HTML300 L6 - load data using four attributes or more. -->
       <div v-if="Object.keys(episode).length > 0 && episode.season.startsWith('S') && episode.season.length === 2" class="EpisodeInfo FOR_CLASS">
         <EpisodeInfoBox :image="props.image" :url="props.url" :writtenby="props.writtenby" :storyboard="props.storyboard" />
-        <button @click="fetchImage">Load Image</button>
+        <button v-if="typeof(props.image) !== 'string'" @click="fetchImage">Load Image</button>
+        <div class="Disclaimer">
+          Courtesy of:
+          <ul>
+            <li><a target="_blank" href="https://ponyapi.net/">https://ponyapi.net/</a></li>
+            <li><a target="_blank" href="https://mlp.fandom.com/wiki/My_Little_Pony_Friendship_is_Magic_Wiki"> https://mlp.fandom.com/wiki/My_Little_Pony_Friendship_is_Magic_Wiki </a></li>
+          </ul>
+        </div>
+
       </div>
       <div class="EpisodeInfo" v-else>
         <table>
@@ -164,6 +173,10 @@
               <td>{{ episode.episodeNo }}</td>
             </tr>
             <tr>
+              <th>Title</th>
+              <td>{{ episode.title }}</td>
+            </tr>
+            <tr>
               <th>Airdate</th>
               <td>{{ episode.airdate }}</td>
             </tr>
@@ -175,7 +188,8 @@
         </a>
       </div>
     </aside>
-    <div class="TranscriptLines">
+    <div class="TranscriptLines col-8">
+      <!-- TODO: Replace with 'Transcript' in final draft. -->
       <h1>{{ episode.title }}</h1>
       <hr>
       <TranscriptLineTable :transcriptLines="transcriptLines" :episode="episode" :jumpedLine="route.hash.slice(2)" />
@@ -184,6 +198,7 @@
           <TranscriptLineTable :transcriptLines="item.content" :episode="item.episode" :jumpedLine="route.hash.slice(2)" />
         </template>
       </UAccordion>
+    </div>
     </div>
     <hr>
     <nav class="d-flex justify-content-between mb-4">
