@@ -142,7 +142,7 @@
             <div class="dialoguePattern field">
               <label for="dialoguePattern" class="form-label"><span title="This field is required." aria-labelledby="dialoguePattern" aria-required="true">*</span> Dialogue</label>
               <input value="friendship is magic" placeholder="friendship is magic" id="dialoguePattern" type="search" name="dialoguePattern" class="form-control" required />
-              <div class="form-text">Pattern to search for in all G4 dialogue.</div>
+              <div class="form-text">Regex pattern to search for in all G4 dialogue.</div>
             </div>
             <div class="speaker field">
               <label class="form-label" for="speaker">Character</label>
