@@ -196,8 +196,8 @@
     </div>
     <hr>
     <nav class="d-flex justify-content-between mb-4">
-      <RelativeEpisodeLink v-if="prevEpisode.id != nextEpisode.id" naviText="Previous" :episode="prevEpisode" missingEpisodeMessage="Welcome to G4 Equestria!" />
-      <RelativeEpisodeLink naviText="Next" :episode="nextEpisode" missingEpisodeMessage="" />
+      <RelativeEpisodeLink v-if="prevEpisode.id != nextEpisode.id" naviText="Previous" :episode="prevEpisode" />
+      <RelativeEpisodeLink naviText="Next" :episode="nextEpisode" />
     </nav>
   </div>
 </template>

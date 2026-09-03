@@ -12,6 +12,11 @@ $sunset-orange: #f8ba94;
 $twilight-purple: #e616eb;
 $twilight-light-purple: #f99bff;
 
+$starlight-purple: #f2c7f8;
+$starlight-dark-purple: #69328f;
+$starlight-green: #9be9d8;
+// #69328f #8640b4
+
 // Images for Episode Index
 #S1 {
   background-image: url("../images/My_Little_Pony_Theme_Song.webp");
@@ -199,26 +204,24 @@ footer {
 }
 
 .RelativeEpisodeLink > a {
-  color: white;
+  color: black;
   text-decoration: none;
   text-align: center;
   padding: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  background-color: $blue-outline;
-  border: 0.5rem solid $light-green;
+  background-color: $starlight-purple;
+  border: 0.5rem solid $starlight-dark-purple;
 }
 .RelativeEpisodeLink > a:hover {
-  color: white;
   text-decoration: underline;
 }
-
-.TranscriptLineTable tbody tr td:first-child a {
-  //display: flex;
-  //margin-right: 0.5rem;
-  //color: yellow;
-  //justify-content: center;
-  //align-items: center;
+// TODO: Make this smoother
+.RelativeEpisodeLink:first-child > a:hover::before {
+  content: "←";
+}
+.RelativeEpisodeLink:last-child > a:hover::before {
+  content: "→";
 }
 
 .EpisodeInfo {
