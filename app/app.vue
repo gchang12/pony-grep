@@ -7,11 +7,9 @@
 
 <template>
   <UApp>
-    <div id="app">
-      <NuxtLayout>
-        <NuxtPage />
-      </NuxtLayout>
-    </div>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </UApp>
 </template>
 

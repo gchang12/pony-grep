@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div>
+  <div id="app">
    <header>
      <div class="container-sm">
        <div class="row flex-sm-row flex-column">
@@ -34,7 +34,7 @@
      <div class="container d-flex justify-content-between flex-md-row flex-column">
        <div class="Credits m-4">
          <span class="Header">Credits</span>
-         <div class="Disclaimer">All textual content is owned by <a target="_blank" href="https://www.fandom.com/licensing">Fandom</a></div>
+         <div class="Disclaimer">All textual content is owned by <a target="_blank" href="https://www.fandom.com/licensing">Fandom</a> and is licensed under under <a target="_blank" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</div>
          <div class="Disclaimer">Site logo provided by <a target="_blank" href="https://fontmeme.com/friendship-is-magic-font/">this site</a></div>
          <div class="Disclaimer">All images are owned by Hasbro</div>
        </div>
