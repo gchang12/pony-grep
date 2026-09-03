@@ -1,8 +1,5 @@
 <script setup>
 
-  // NOTE: Does not work as intended. Accordions do not populate properly.
-  // TODO: Fix this. Seriously. Also, consider passing in ref as props, not values.
-
   import { ref, computed } from "vue";
   import makeVHighlight from "../mixins/makeVHighlight.js";
   import animationTypes from "../assets/json/animationTypes.json";
@@ -14,7 +11,12 @@
     items: Array,
   });
 
-  const dialoguePattern = {value: props.dialoguePattern ?? ""};
+  // TODO: vHighlight does not update upon re-search, only re-mounting of UTabs
+
+  // No effect.
+  //const dialoguePattern = ref("");
+  //dialoguePattern.value = props.dialoguePattern;
+  const dialoguePattern = {value: props.dialoguePattern};
 
   console.log("dialoguePattern", dialoguePattern);
   console.log("dialoguePattern.value", dialoguePattern.value);

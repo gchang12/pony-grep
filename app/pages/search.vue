@@ -20,6 +20,8 @@
   const response1 = await useFetch("json/transcriptLines.json");
   const response2 = await useFetch("json/animationIndex.json");
 
+  const route = useRoute();
+
   if (response1.status.value === "error") {
     response1.refresh();
   }
@@ -27,6 +29,7 @@
     response2.refresh();
   }
 
+  // TODO: New method: upon submission, reload page and populate results for query string.
   function ponyGrep(e) {
     if (response1.data.value == null) {
       response1.refresh();
@@ -37,6 +40,7 @@
     if (!e.currentTarget.reportValidity() || formData.get("dialoguePattern") === "") {
       return;
     }
+    //if (dialoguePattern.value !== "") { reload(); }
     // set:
     // - dialoguePattern
     // - searchResults
@@ -45,6 +49,7 @@
     /* searchResults */
     const transcriptLines = response1.data.value;
     searchResults.value = searchTranscript(formData, transcriptLines);
+    e.currentTarget.disabled = true;
     e.preventDefault();
   }
 
