@@ -29,7 +29,6 @@
     response2.refresh();
   }
 
-  // TODO: New method: upon submission, reload page and populate results for query string.
   function ponyGrep(e) {
     if (response1.data.value == null) {
       response1.refresh();
@@ -49,13 +48,8 @@
     /* searchResults */
     const transcriptLines = response1.data.value;
     searchResults.value = searchTranscript(formData, transcriptLines);
-    e.currentTarget.disabled = true;
+    //e.currentTarget.disabled = true;
     e.preventDefault();
-  }
-
-  function clearResults() {
-    searchResults.value = [];
-    dialoguePattern.value = "";
   }
 
   function reformatTranscriptLines(series) {
@@ -179,12 +173,12 @@
           <UTabs :items="items3">
 
             <template #FiM>
-              <SearchResults :dialoguePattern="dialoguePattern" :items="items1" v-if="dialoguePattern !== ''" />
+              <SearchResults :dialoguePattern="dialoguePattern" :items="items1" :vHighlight="vHighlight" v-if="dialoguePattern !== ''" />
             </template>
 
             <template #EqG>
               <!-- Copy-pasted from here: ../components/SearchResults.vue -->
-              <SearchResults :dialoguePattern="dialoguePattern" :items="items2" v-if="dialoguePattern !== ''" />
+              <SearchResults :dialoguePattern="dialoguePattern" :items="items2" :vHighlight="vHighlight" v-if="dialoguePattern !== ''" />
             </template>
 
           </UTabs>

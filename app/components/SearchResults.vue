@@ -1,27 +1,11 @@
 <script setup>
 
-  import { ref, computed } from "vue";
-  import makeVHighlight from "../mixins/makeVHighlight.js";
-  import animationTypes from "../assets/json/animationTypes.json";
-  import seasonList from "../assets/json/seasonList.json";
-  import stringifyEpisodeNo from "../functions/stringifyEpisodeNo.js";
-
   const props = defineProps({
-    dialoguePattern: String,
     items: Array,
+    vHighlight: Object,
   });
 
-  // TODO: vHighlight does not update upon re-search, only re-mounting of UTabs
-
-  // No effect.
-  //const dialoguePattern = ref("");
-  //dialoguePattern.value = props.dialoguePattern;
-  const dialoguePattern = {value: props.dialoguePattern};
-
-  console.log("dialoguePattern", dialoguePattern);
-  console.log("dialoguePattern.value", dialoguePattern.value);
-
-  const vHighlight = makeVHighlight(dialoguePattern);
+  const vHighlight = props.vHighlight;
 
 </script>
 
