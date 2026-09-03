@@ -92,3 +92,56 @@ Netlify Hosting
 - 0 pts - Missing - No Netlify link
 -->
 
+<!--
+Hello Students,
+
+I'm writing because George brought to my attention that the Lesson 6 instructions are out of date. Unfortunately, I'm not able to make updates to the course content as the university uses specific course developers for that work, though I will definitely bring this to their attention.
+
+To move forward I'm advising the class to use the latest Nuxt with just plain Bootstrap 5 for CSS. Disregard the setup instructions in the README and use:
+npm create nuxt@latest my-new-app-project
+cd my-new-app-project
+npm install bootstrap
+
+Then in nuxt.config.ts:
+export default defineNuxtConfig({
+  css: ['bootstrap/dist/css/bootstrap.min.css']
+})
+
+Then simply use Bootstrap's CSS classes directly. Two other deviations from the README: skip the node-sass step (this is deprecated and won't build on current Node; use npm install -D sass if you want SCSS). 
+
+Nuxt 4 puts your folders inside app/ directory, it shoudl like this:
+my-project-title/
+├── app/
+│   ├── app.vue
+│   ├── pages/          ← your pages (routing is automatic)
+│   ├── components/     ← your components
+│   └── layouts/        ← default.vue goes here
+├── public/             ← static files (images, JSON) — NOT inside app/
+└── nuxt.config.ts
+
+Make sure app/app.vue contains:
+<template>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
+</template>
+
+For Netlify, set build command npm run generate and publish directory .output/public.
+
+IMO building on the legacy versions would be counter-productive (Nuxt 2 and Vue 2 are both past end-of-life) and you're less likely to encounter them when working professionally.
+
+A few other notes:
+
+    <nuxt-link> has been updated <NuxtLink>
+
+    If you run into the error:
+
+npm error Cannot read properties of null (reading 'edgesOut')
+
+run 
+npm install -g npm@latest
+
+Then delete node_modules and package-lock.json and run npm install again. This is a bug in older npm versions, not a problem with your project.
+
+Please let me know if you need additional time to submit, I want to be lenient with due dates because of the out of date curriculum content.
+-->
