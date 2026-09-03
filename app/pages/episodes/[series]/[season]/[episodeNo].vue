@@ -137,8 +137,7 @@
   <div class="Transcript container">
     <div class="row">
     <aside class="col">
-      <!-- TODO: Loading icon. -->
-      <!-- TODO: HTML300 L6 - load data using four attributes or more. -->
+      <!-- NOTE: Loads data using four attributes or more. -->
       <div v-if="Object.keys(episode).length > 0 && episode.season.startsWith('S') && episode.season.length === 2" class="EpisodeInfo FOR_CLASS">
         <EpisodeInfoBox :image="props.image" :url="props.url" :writtenby="props.writtenby" :storyboard="props.storyboard" />
         <button v-if="typeof(props.image) !== 'string'" @click="fetchImage">Load Image</button>

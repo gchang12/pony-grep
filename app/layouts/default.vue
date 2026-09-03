@@ -41,6 +41,7 @@
        <div class="About m-4">
          <span class="Header">About</span>
          <div class="Disclaimer">This project's <a target="_blank" href="https://github.com/gchang12/pony-grep">GitHub</a> page</div>
+         <div class="Disclaimer">See an issue? Report it <a target="_blank" href="https://github.com/gchang12/pony-grep/issues">here</a>!</div>
          <div class="Disclaimer">Made with no AI</div>
        </div>
      </div>

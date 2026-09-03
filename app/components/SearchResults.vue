@@ -1,4 +1,6 @@
 <script setup>
+
+  // NOTE: Does not work as intended. Accordions do not populate properly.
   // TODO: Fix this. Seriously. Also, consider passing in ref as props, not values.
 
   import { computed } from "vue";
@@ -40,7 +42,6 @@
         "content": searchResults
           .filter(result => {
             const episode = animationIndex.find(episode => episode.id === result.episodeId);
-            //return episode.animationType === animationType.name && episode.series === series;
             return episode.animationType === animationType.name && episode.series === series;
           })
           .map(result => {
@@ -48,7 +49,6 @@
             const item = {
               "series": episode.series,
               "episodeTitle": episode.title,
-              //"season": episode.season,
               "seasonCode": seasonList.find(season => season.name === episode.season).urlName,
               "episodeCode": stringifyEpisodeNo(episode.episodeNo),
               "animationPrefix": animationTypes.find(animationType => animationType.name === episode.animationType).alias,
@@ -66,14 +66,7 @@
 
   const items = computed(() => reformatTranscriptLines("FiM"));
 
-  /*
-  const vHighlight = computed(() => {
-    return makeVHighlight(dialoguePattern);
-  });
-  */
-
   const vHighlight = makeVHighlight(dialoguePattern.value ?? "");
-  //const vHighlight = computed(() => makeVHighlight(dialoguePattern));
 
 </script>
 
@@ -93,7 +86,6 @@
             <th>{{tline.speaker}}</th>
             <td v-highlight>{{tline.dialogue}}</td>
             <td>
-              <!-- <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.animationPrefix + tline.episodeCode + '#L' + tline.lineNo].join('/')"> -->
               <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.episodeCode + '#L' + tline.lineNo].join('/')">
                 <i>{{tline.episodeTitle}}</i>
               </NuxtLink>
@@ -102,7 +94,6 @@
         </tbody>
       </table>
       <!-- each content must have an array of transcript lines corresponding to an anmType -->
-      <!-- {{ item }} -->
     </template>
   </UAccordion>
 </template>

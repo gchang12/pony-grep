@@ -29,7 +29,7 @@
 
 <template>
   <div id="index">
-    <article class="container">
+    <article class="container mb-5">
       <h1>Welcome to <code>pony grep</code>!</h1>
       <p>Trying to remember a line from MLP G4?</p>
       <p>You've come to the right place!</p>
@@ -51,56 +51,6 @@
           <p>Have no idea where to start? Try reading the <NuxtLink to="/episodes/FiM/S1/01">episode transcript for episode one</NuxtLink>!</p>
         </template>
       </UsageArticle>
-      <!--
-      -->
-      <hr />
     </article>
-    <!-- <button @click="reloadTranscript">Reload Transcript</button> -->
   </div>
 </template>
-
-<!--
-<article class="container w-75">
-<h1>Welcome to <code>ponygrep</code>!</h1>
-<div class="WelcomeMessage">
-<p>Trying to remember something a MLP:FiM character might have said?</p>
-<p>You've come to the right place!</p>
-<p><code>ponygrep</code> allows you to search all of MLP G4 for the bit of dialogue you're thinking of.</p>
-</div>
-<hr />
-<article class="container">
-<h2>Searching</h2>
-<section class="Usage-Example">
-<h3>Example</h3>
-<div class="Usage-Step d-flex">
-<img class="img-thumbnail" :src="SearchFormImg" />
-</div>
-</section>
-</article>
-<hr />
-<article class="BrowsingTranscripts w-75 container">
-<h2>Browsing Transcripts</h2>
-<hr />
-<section class="BrowsingStep">
-<h3>1. Select Season</h3>
-<img width="500px" class="img-thumbnail" :src="SeasonIndexImg" />
-</section>
-<hr />
-<section class="BrowsingStep">
-<h3>2. Select Episode</h3>
-<img width="500px" class="img-thumbnail" :src="EpisodeIndexImg" />
-</section>
-<hr />
-<section class="BrowsingStep">
-<h3>3. Scroll Down and View</h3>
-<img width="500px" class="img-thumbnail" :src="TranscriptImg" />
-</section>
-<hr />
-<section class="BrowsingStep">
-<h3>4. Close Transcript</h3>
-<img width="500px" class="img-thumbnail" :src="CloseTranscriptImg" />
-</section>
-<hr />
-</article>
-</article>
--->

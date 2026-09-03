@@ -172,7 +172,7 @@
           <UTabs :items="items3">
 
             <template #FiM>
-              <!-- See: ../components/SearchResults.vue -->
+              <!-- Copy-pasted from here: ../components/SearchResults.vue -->
               <UAccordion :items="items1">
                 <template #body="{ item }">
                   <table class="table table-striped">
@@ -200,7 +200,7 @@
             </template>
 
             <template #EqG>
-              <!-- See: ../components/SearchResults.vue -->
+              <!-- Copy-pasted from here: ../components/SearchResults.vue -->
               <UAccordion :items="items2">
                 <template #body="{ item }">
                   <table class="table table-striped">
