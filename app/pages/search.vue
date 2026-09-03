@@ -119,10 +119,12 @@
       {
         label: `[${resultCount1.value ?? 0}] ` + "Friendship is Magic",
         slot: "FiM",
+        disabled: (resultCount1.value ?? 0) === 0,
       },
       {
         label: `[${resultCount2.value ?? 0}] ` + "Equestria Girls",
         slot: "EqG",
+        disabled: (resultCount2.value ?? 0) === 0,
       },
     ];
   });
