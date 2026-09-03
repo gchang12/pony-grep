@@ -3,7 +3,7 @@
   // NOTE: Does not work as intended. Accordions do not populate properly.
   // TODO: Fix this. Seriously. Also, consider passing in ref as props, not values.
 
-  import { computed } from "vue";
+  import { ref, computed } from "vue";
   import makeVHighlight from "../mixins/makeVHighlight.js";
   import animationTypes from "../assets/json/animationTypes.json";
   import seasonList from "../assets/json/seasonList.json";
@@ -14,12 +14,12 @@
     items: Array,
   });
 
-  const { dialoguePattern } = props;
+  const dialoguePattern = {value: props.dialoguePattern ?? ""};
 
   console.log("dialoguePattern", dialoguePattern);
   console.log("dialoguePattern.value", dialoguePattern.value);
 
-  const vHighlight = makeVHighlight({value: dialoguePattern ?? ""});
+  const vHighlight = makeVHighlight(dialoguePattern);
 
 </script>
 

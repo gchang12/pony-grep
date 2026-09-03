@@ -172,12 +172,12 @@
           <UTabs :items="items3">
 
             <template #FiM>
-              <SearchResults :dialoguePattern="dialoguePattern" :items="items1" />
+              <SearchResults :dialoguePattern="dialoguePattern" :items="items1" v-if="dialoguePattern !== ''" />
             </template>
 
             <template #EqG>
               <!-- Copy-pasted from here: ../components/SearchResults.vue -->
-              <SearchResults :dialoguePattern="dialoguePattern" :items="items2" />
+              <SearchResults :dialoguePattern="dialoguePattern" :items="items2" v-if="dialoguePattern !== ''" />
             </template>
 
           </UTabs>
