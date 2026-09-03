@@ -6,9 +6,9 @@
 </script>
 
 <template>
-  <table class="TranscriptLineTable table table-striped table-dark">
+  <table class="TranscriptLineTable table table-light">
     <tbody>
-      <tr v-for="tline in transcriptLines" :key="tline.id" :id="'L' + tline.lineNo" :class="jumpedLine == tline.lineNo ? 'table-info' : ''">
+      <tr v-for="tline in transcriptLines" :key="tline.id" :id="'L' + tline.lineNo" :class="jumpedLine == tline.lineNo ? 'table-active' : ''">
         <td>
           <NuxtLink :href="'#L' + tline.lineNo">#</NuxtLink>
         </td>
