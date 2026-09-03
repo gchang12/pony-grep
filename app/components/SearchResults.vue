@@ -10,70 +10,23 @@
   import stringifyEpisodeNo from "../functions/stringifyEpisodeNo.js";
 
   const props = defineProps({
-    searchResults: Array,
-    series: String,
     dialoguePattern: String,
+    items: Array,
   });
 
-  const { series, searchResults, dialoguePattern } = props;
+  const { dialoguePattern } = props;
 
+  console.log("dialoguePattern", dialoguePattern);
+  console.log("dialoguePattern.value", dialoguePattern.value);
 
-  const response = await useFetch("json/animationIndex.json");
-
-  function reformatTranscriptLines() {
-    // group by series, then animation-type.
-    // for each animation type:
-    // [transcript line]
-    // {label: animationType, content: {...}
-    const items = [];
-    if (response.data.value == null) {
-      response.refresh();
-      return;
-    }
-    const animationIndex = response.data.value;
-    for (const animationType of animationTypes) {
-      const resultCount = searchResults.filter(result => {
-        const episode = animationIndex.find(episode => episode.id === result.episodeId);
-        return episode.animationType === animationType.name && episode.series === series;
-      }).length;
-      items.push({
-        "disabled": resultCount === 0,
-        "label": "[" + resultCount + "] " + animationType.title,
-        "content": searchResults
-          .filter(result => {
-            const episode = animationIndex.find(episode => episode.id === result.episodeId);
-            return episode.animationType === animationType.name && episode.series === series;
-          })
-          .map(result => {
-            const episode = animationIndex.find(episode => episode.id === result.episodeId);
-            const item = {
-              "series": episode.series,
-              "episodeTitle": episode.title,
-              "seasonCode": seasonList.find(season => season.name === episode.season).urlName,
-              "episodeCode": stringifyEpisodeNo(episode.episodeNo),
-              "animationPrefix": animationTypes.find(animationType => animationType.name === episode.animationType).alias,
-              "dialogue": result.dialogue,
-              "speaker": result.speaker,
-              "lineNo": result.lineNo,
-              "id": result.id,
-            };
-            return item;
-          }),
-        });
-    }
-    return items;
-  }
-
-  const items = computed(() => reformatTranscriptLines("FiM"));
-
-  const vHighlight = makeVHighlight(dialoguePattern.value ?? "");
+  const vHighlight = makeVHighlight({value: dialoguePattern ?? ""});
 
 </script>
 
 <template>
   <UAccordion :items="items">
     <template #body="{ item }">
-      <table>
+      <table class="table table-striped">
         <thead>
           <tr>
             <th>Speaker</th>
@@ -86,14 +39,13 @@
             <th>{{tline.speaker}}</th>
             <td v-highlight>{{tline.dialogue}}</td>
             <td>
-              <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.episodeCode + '#L' + tline.lineNo].join('/')">
-                <i>{{tline.episodeTitle}}</i>
+              <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.episodeCode + '#L' + tline.lineNo].join('/')" :title="tline.episodeTitle">
+                <i>{{ tline.seasonCode }} E{{tline.episodeCode}}</i>
               </NuxtLink>
             </td>
           </tr>
         </tbody>
       </table>
-      <!-- each content must have an array of transcript lines corresponding to an anmType -->
     </template>
   </UAccordion>
 </template>

@@ -10,7 +10,7 @@
 
   import SeasonSelectInput from "../components/SeasonSelectInput.vue";
 
-  //import SearchResults from "../components/SearchResults.vue";
+  import SearchResults from "../components/SearchResults.vue";
 
   const searchResults = ref([]);
   const dialoguePattern = ref("");
@@ -172,59 +172,12 @@
           <UTabs :items="items3">
 
             <template #FiM>
-              <!-- Copy-pasted from here: ../components/SearchResults.vue -->
-              <UAccordion :items="items1">
-                <template #body="{ item }">
-                  <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th>Speaker</th>
-                        <th>Dialogue</th>
-                        <th>Episode</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr v-for="tline in item.content" :key="tline.id">
-                        <th>{{tline.speaker}}</th>
-                        <td v-highlight>{{tline.dialogue}}</td>
-                        <td>
-                          <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.episodeCode + '#L' + tline.lineNo].join('/')" :title="tline.episodeTitle">
-                            <i>{{ tline.seasonCode }} E{{tline.episodeCode}}</i>
-                          </NuxtLink>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </template>
-              </UAccordion>
+              <SearchResults :dialoguePattern="dialoguePattern" :items="items1" />
             </template>
 
             <template #EqG>
               <!-- Copy-pasted from here: ../components/SearchResults.vue -->
-              <UAccordion :items="items2">
-                <template #body="{ item }">
-                  <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th>Speaker</th>
-                        <th>Dialogue</th>
-                        <th>Episode</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr v-for="tline in item.content" :key="tline.id">
-                        <th>{{tline.speaker}}</th>
-                        <td v-highlight>{{tline.dialogue}}</td>
-                        <td>
-                          <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.episodeCode + '#L' + tline.lineNo].join('/')" :title="tline.episodeTitle">
-                            <i>{{ tline.season }} E{{tline.episodeCode}}</i>
-                          </NuxtLink>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </template>
-              </UAccordion>
+              <SearchResults :dialoguePattern="dialoguePattern" :items="items2" />
             </template>
 
           </UTabs>
