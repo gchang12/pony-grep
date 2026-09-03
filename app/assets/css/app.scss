@@ -318,34 +318,42 @@ footer {
     color: white;
   }
 }
-#reka-tabs-v-0-0-0-content-0 {
-  background-color: $twilight-light-purple;
-  & .flex {
-    background-color: $twilight-purple;
-    ///border: 0 solid black;
-  }
-  & .flex[data-disabled] {
+// tab buttons
+[role='tablist'] {
+  & button:nth-child(2) {
     background-color: $twilight-light-purple;
+    &[aria-selected='true'] {
+      background-color: $twilight-purple;
+    }
+  }
+  & button:nth-child(3) {
+    background-color: $sunset-orange;
+    &[aria-selected='true'] {
+      background-color: $sunset-red;
+    }
   }
 }
-#reka-tabs-v-0-0-0-content-1 {
-  background-color: $sunset-orange;
-  & .flex {
-    background-color: $sunset-red;
+[role='tabpanel'] {
+  &:nth-child(2) {
+    & .flex button {
+      background-color: $twilight-purple;
+      &[data-disabled] {
+        background-color: $twilight-light-purple;
+      }
+    }
   }
-  & .flex[data-disabled] {
-    background-color: $sunset-orange;
+  &:nth-child(3) {
+    & .flex button {
+      background-color: $sunset-red;
+      &[data-disabled] {
+        background-color: $sunset-orange;
+      }
+    }
   }
 }
 #search {
   & .relative.flex button {
     width: 50%;
-    &:nth-child(2) {
-      background-color: $twilight-purple;
-    }
-    &:nth-child(3) {
-      background-color: $sunset-red;
-    }
   }
   & [data-state][data-slot='item'] .flex button {
     width: 100%;
