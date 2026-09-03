@@ -5,6 +5,10 @@
 
   import PictureIndex from "../../components/PictureIndex.vue";
 
+  useHead({
+    title: "Pony Grep! - Episode Index",
+  });
+
   const response = await useFetch("json/animationIndex.json");
 
   const animationIndex = computed(() => {

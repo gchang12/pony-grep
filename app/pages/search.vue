@@ -12,6 +12,10 @@
 
   import SearchResults from "../components/SearchResults.vue";
 
+  useHead({
+    title: "Pony Grep! - Search",
+  });
+
   const searchResults = ref([]);
   const dialoguePattern = ref("");
 

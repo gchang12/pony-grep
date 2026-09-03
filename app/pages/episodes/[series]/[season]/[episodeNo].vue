@@ -40,6 +40,10 @@
   const props = ref({});
   const episode = computed(() => calculateThisEpisode());
 
+  useHead({
+    title: `Pony Grep! - Transcript - ${episode.value.series} ${episode.value.season} E${episode.value.episodeNo} - ${episode.value.title}`,
+  });
+
   const transcriptLines = computed(() => {
     if (response1.data.value == null) {
       response1.refresh();

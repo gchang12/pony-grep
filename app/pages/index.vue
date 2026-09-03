@@ -6,6 +6,10 @@
 
   import UsageArticle from "../components/UsageArticle.vue";
 
+  useHead({
+    title: "Pony Grep!",
+  });
+
   const rawHtmlDict = {
     search: [
       '&ldquo;I want to see if &lsquo;friendship is magic&rsquo; is said in MLP G4. I\'ll input <span class="FieldValue">friendship is magic</span> into the <span class="FieldName">Dialogue</span> box now.&rdquo;',
