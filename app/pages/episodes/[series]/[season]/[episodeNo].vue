@@ -187,10 +187,10 @@
       <!-- TODO: Replace with 'Transcript' in final draft. -->
       <h1>{{ episode.title }}</h1>
       <hr>
-      <TranscriptLineTable :transcriptLines="transcriptLines" :episode="episode" :jumpedLine="route.hash.slice(2)" />
+      <TranscriptLineTable :transcriptLines="transcriptLines.filter(tline => tline.episodeId === episode.id)" :jumpedLine="route.hash.slice(2)" />
       <UAccordion type="multiple" :defaultValue="route.hash ? ['0', '1', '2'] : []" :items="items">
         <template #body="{ item }">
-          <TranscriptLineTable :transcriptLines="item.content" :episode="item.episode" :jumpedLine="route.hash.slice(2)" />
+          <TranscriptLineTable :transcriptLines="item.content.filter(tline => tline.episodeId === item.episode.id)" :jumpedLine="route.hash.slice(2)" />
         </template>
       </UAccordion>
     </div>
