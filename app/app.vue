@@ -2,7 +2,6 @@
   import '~/assets/css/app.scss';
 
   // TODO: Substitute NuxtUI components for BS5 components
-  // TODO: Fade usage images
 
 </script>
 

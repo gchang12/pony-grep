@@ -34,19 +34,19 @@
       <p>Trying to remember a line from MLP G4?</p>
       <p>You've come to the right place!</p>
       <hr />
-      <UsageArticle header="Search" :imgSrc="Search" imgAlt="Search page" subheader="Example" :rawHtmlList="rawHtmlDict.search">
+      <UsageArticle header="Search" :imgSrc="Search" imgAlt="search page" subheader="Example" :rawHtmlList="rawHtmlDict.search">
         <template #paragraph>
           <p>Use our <NuxtLink to="/search">search</NuxtLink> feature to search all MLP G4 dialogue for a <code>regex</code> pattern.</p>
         </template>
       </UsageArticle>
       <hr />
-      <UsageArticle header="Episode Index" :imgSrc="EpisodeIndex" imgAlt="Episode index" subheader="How to Use" :rawHtmlList="rawHtmlDict.index">
+      <UsageArticle header="Episode Index" :imgSrc="EpisodeIndex" imgAlt="episode index" subheader="How to Use" :rawHtmlList="rawHtmlDict.index">
         <template #paragraph>
            <p>Browse our <NuxtLink to="/episodes">comprehensive list of G4 transcripts</NuxtLink>, which include transcripts from the episodes, movies, specials, shorts, and clip-shows from <span class="Franchise">Friendship is Magic</span> and <span class="Franchise">Equestria Girls</span>.</p>
         </template>
       </UsageArticle>
       <hr />
-      <UsageArticle header="Episode Transcript" :imgSrc="Transcript" imgAlt="Episode transcript" subheader="Fetch from PonyAPI" :rawHtmlList="rawHtmlDict.transcript">
+      <UsageArticle header="Episode Transcript" :imgSrc="Transcript" imgAlt="episode transcript" subheader="Fetch from PonyAPI" :rawHtmlList="rawHtmlDict.transcript">
         <template #paragraph>
           <p>Have no idea where to start? Try reading the <NuxtLink to="/episodes/FiM/S1/01">episode transcript for episode one</NuxtLink>!</p>
         </template>

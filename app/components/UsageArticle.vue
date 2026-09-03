@@ -6,6 +6,9 @@
     subheader: String,
     rawHtmlList: Array,
   });
+  function informUserAboutScreenshot() {
+    alert('This is just a screenshot');
+  }
 </script>
 
 <template>
@@ -14,10 +17,12 @@
     <slot name="paragraph">
     </slot>
     <div class="d-flex flex-column flex-lg-row">
-      <figure>
-        <figcaption>Screenshot of {{ imgAlt }}</figcaption>
-        <img :src="imgSrc" :alt="imgAlt" title="This is just a screenshot" class="img-thumbnail w-100" />
-      </figure>
+      <button @click="informUserAboutScreenshot" class="btn btn-info">
+        <figure>
+          <figcaption>Screenshot of {{ imgAlt }}</figcaption>
+          <img :src="imgSrc" :alt="imgAlt" title="This is just a screenshot" class="img-thumbnail w-100" />
+        </figure>
+      </button>
       <section class="container">
         <h3>{{ subheader }}</h3>
         <hr />
