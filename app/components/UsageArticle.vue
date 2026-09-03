@@ -14,7 +14,10 @@
     <slot name="paragraph">
     </slot>
     <div class="d-flex flex-column flex-lg-row">
-      <img :src="imgSrc" :alt="imgAlt" title="This is just a screenshot" class="img-thumbnail w-100" />
+      <figure>
+        <figcaption>Screenshot of {{ imgAlt }}</figcaption>
+        <img :src="imgSrc" :alt="imgAlt" title="This is just a screenshot" class="img-thumbnail w-100" />
+      </figure>
       <section class="container">
         <h3>{{ subheader }}</h3>
         <hr />
