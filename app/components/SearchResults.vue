@@ -46,18 +46,20 @@
           </tr>
         </tbody>
       </table>
-      <div class="d-flex justify-content-between" v-if="item.content.length > 100">
-        <button class="btn w-50 btn-secondary" type="button" v-if="pageRange[0] > 0" @click="decrementPageRange">
-          Previous
-        </button>
-        <div class="invisible" v-else></div>
-        <button class="btn w-50 btn-secondary" type="button" v-if="pageRange[1] < item.content.length" @click="incrementPageRange">
-          Next
-        </button>
-        <div class="invisible" v-else></div>
-      </div>
-      <div class="PageRange w-100 text-center">
-        Results: {{ pageRange[0] + 1}} – {{ Math.min(pageRange[1], item.content.length) }}
+      <div v-if="item.content.length > 100">
+        <div class="PageRange w-100 text-center">
+          Showing results: {{ pageRange[0] + 1}} – {{ Math.min(pageRange[1], item.content.length) }}
+        </div>
+        <div class="NaviButtons d-flex justify-content-between">
+          <button class="btn w-50 btn-secondary" type="button" v-if="pageRange[0] > 0" @click="decrementPageRange">
+            Previous
+          </button>
+          <div class="invisible" v-else></div>
+          <button class="btn w-50 btn-secondary" type="button" v-if="pageRange[1] < item.content.length" @click="incrementPageRange">
+            Next
+          </button>
+          <div class="invisible" v-else></div>
+        </div>
       </div>
     </template>
   </UAccordion>
