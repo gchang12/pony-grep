@@ -57,7 +57,7 @@
         <div class="invisible" v-else></div>
       </div>
       <div class="PageRange w-100 text-center">
-        Results {{ pageRange[0] + 1}} – {{ pageRange[1] }}
+        Results: {{ pageRange[0] + 1}} – {{ Math.min(pageRange[1], item.content.length) }}
       </div>
     </template>
   </UAccordion>
