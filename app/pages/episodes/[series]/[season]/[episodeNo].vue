@@ -138,7 +138,7 @@
 </script>
 
 <template>
-  <div class="Transcript container">
+  <div class="Transcript container" v-if="transcriptLines.filter(tline => tline.episodeId === episode.id).length > 0">
     <div class="row">
     <aside class="col">
       <!-- NOTE: Loads data using four attributes or more. -->
@@ -152,7 +152,6 @@
             <li><a target="_blank" href="https://mlp.fandom.com/wiki/My_Little_Pony_Friendship_is_Magic_Wiki"> https://mlp.fandom.com/wiki/My_Little_Pony_Friendship_is_Magic_Wiki </a></li>
           </ul>
         </div>
-
       </div>
       <div class="EpisodeInfo" v-else>
         <table>
@@ -200,8 +199,28 @@
     </div>
     <hr>
     <nav class="d-flex justify-content-between mb-4">
-      <RelativeEpisodeLink v-if="prevEpisode.id != nextEpisode.id" naviText="Previous" :episode="prevEpisode" />
+      <RelativeEpisodeLink naviText="Previous" :episode="prevEpisode" />
       <RelativeEpisodeLink naviText="Next" :episode="nextEpisode" />
     </nav>
   </div>
+  <article v-else class="container d-flex flex-column align-items-center">
+    <h1>Episode Not Found</h1>
+    <p>No episode with these parameters was found.</p>
+    <table class="m-4">
+      <tbody>
+        <tr>
+          <th>Series</th>
+          <td>{{ route.params.series }}</td>
+        </tr>
+        <tr>
+          <th>Season</th>
+          <td>{{ route.params.season }}</td>
+        </tr>
+        <tr>
+          <th>Episode</th>
+          <td>{{ route.params.episodeNo }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </article>
 </template>
