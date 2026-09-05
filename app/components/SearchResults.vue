@@ -39,8 +39,8 @@
             <th>{{tline.speaker}}</th>
             <td v-highlight>{{tline.dialogue}}</td>
             <td>
-              <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.episodeCode + '#L' + tline.lineNo].join('/')" :title="tline.episodeTitle" target="_blank">
-                <i>{{ tline.seasonCode }} E{{tline.episodeCode}}</i>
+              <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.episodeCode + '#L' + tline.lineNo].join('/')" :title="[tline.season, 'E' + tline.episodeCode].join(' ')">
+                <i>{{ tline.episodeTitle }}</i>
               </NuxtLink>
             </td>
           </tr>
