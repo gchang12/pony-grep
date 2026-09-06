@@ -2,6 +2,8 @@
 
   import { ref } from "vue";
 
+  import animationTypes from "../assets/json/animationTypes.json";
+
   const props = defineProps({
     items: Array,
     vHighlight: Object,
@@ -11,14 +13,27 @@
 
   const maxResultCount = 100;
 
-  const pageRange = ref([0, maxResultCount]);
+  const pageRanges = ref(animationTypes.map(animationType => {
+    return {
+      "animationType": animationType.name,
+      "pageRange": [0, maxResultCount],
+    };
+    })
+  );
 
-  function incrementPageRange() {
-    pageRange.value = [pageRange.value[0] + maxResultCount, pageRange.value[1] + maxResultCount];
+  function incrementPageRange(e) {
+    const animationType = e.currentTarget.dataset.animationtype;
+    const item = pageRanges.value.find(item => item.animationType === animationType);
+    item.pageRange = [item.pageRange[0] + maxResultCount, item.pageRange[1] + maxResultCount];
+    pageRanges.value = [...pageRanges.value.filter(item2 => item2.animationType !== animationType), item];
   }
 
-  function decrementPageRange() {
-    pageRange.value = [pageRange.value[0] - maxResultCount, pageRange.value[1] - maxResultCount];
+  function decrementPageRange(e) {
+    //pageRange.value = [pageRange.value[0] - maxResultCount, pageRange.value[1] - maxResultCount];
+    const animationType = e.currentTarget.dataset.animationtype;
+    const item = pageRanges.value.find(item => item.animationType === animationType);
+    item.pageRange = [item.pageRange[0] - maxResultCount, item.pageRange[1] - maxResultCount];
+    pageRanges.value = [...pageRanges.value.filter(item2 => item2.animationType !== animationType), item];
   }
 
 </script>
@@ -35,7 +50,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="tline in item.content.slice(...pageRange)" :key="tline.id">
+          <tr v-for="tline in item.content.slice(...pageRanges.find(item2 => item2.animationType === item.animationType).pageRange)" :key="tline.id">
             <th>{{tline.speaker}}</th>
             <td v-highlight>{{tline.dialogue}}</td>
             <td>
@@ -47,15 +62,14 @@
         </tbody>
       </table>
       <div v-if="item.content.length > 100">
-        <div class="PageRange w-100 text-center">
-          Showing results: {{ pageRange[0] + 1}} – {{ Math.min(pageRange[1], item.content.length) }}
-        </div>
+        <!-- NOTE: Counter no longer shows the correct result numbers -->
+        <!-- <div class="PageRange w-100 text-center"> Showing results: {{ pageRanges.find(item2 => item.animationType === item.animationType).pageRange[0] + 1}} – {{ Math.min(pageRanges.find(item2 => item.animationType === item.animationType).pageRange[1], item.content.length) }} </div> -->
         <div class="NaviButtons d-flex justify-content-between">
-          <button class="btn w-50 btn-secondary" type="button" v-if="pageRange[0] > 0" @click="decrementPageRange">
+          <button :data-animationtype="item.animationType" class="btn w-50 btn-secondary" type="button" v-if="pageRanges.find(item2 => item2.animationType === item.animationType).pageRange[0] > 0" @click="decrementPageRange">
             Previous
           </button>
           <div class="invisible" v-else></div>
-          <button class="btn w-50 btn-secondary" type="button" v-if="pageRange[1] < item.content.length" @click="incrementPageRange">
+          <button :data-animationtype="item.animationType" class="btn w-50 btn-secondary" type="button" v-if="pageRanges.find(item2 => item2.animationType === item.animationType).pageRange[1] < item.content.length" @click="incrementPageRange">
             Next
           </button>
           <div class="invisible" v-else></div>

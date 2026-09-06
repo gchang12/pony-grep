@@ -75,6 +75,7 @@
       items.push({
         "disabled": resultCount === 0,
         "label": "[" + resultCount + "] " + animationType.title,
+        "animationType": animationType.name,
         "content": searchResults.value
           .filter(result => {
             const episode = animationIndex.find(episode => episode.id === result.episodeId);
