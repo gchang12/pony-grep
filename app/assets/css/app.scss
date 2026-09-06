@@ -363,6 +363,12 @@ footer {
 [data-state='active'] {
   border: 0.25rem white solid;
 }
+.Transcript {
+  & [data-state][data-slot='item'] .flex button {
+    width: 100%;
+    text-align: left;
+  }
+}
 /* END: Hacking BS5 to get the styling I want. */
 
 /*
