@@ -14,7 +14,7 @@
     search: [
       '&ldquo;I want to see if &lsquo;friendship is magic&rsquo; is said in MLP G4. I\'ll input <span class="FieldValue">friendship is magic</span> into the <span class="FieldName">Dialogue</span> box now.&rdquo;',
       '&ldquo;I want to see if Discord or Twilight says it. I\'ll input <span class="FieldValue">Discord|Twilight</span> into the <span class="FieldName">Character</span> field.&rdquo;',
-      '&ldquo;I want to see if they say it <span class="FieldValue">Seasons 1, 3, 9</span> in <span class="FieldValue">Friendship is Magic</span>. I\'ll check the <span class="FieldName">Friendship is Magic</span> box, hold <code>&lt;Shift&gt;</code>, and select <span class="FieldValue">S1, S3, S9</span>.&rdquo;',
+      '&ldquo;I want to see if they say it <span class="FieldValue">Seasons 1, 3, 9</span> in <span class="FieldValue">Friendship is Magic</span>. I\'ll check the <span class="FieldName">Friendship is Magic</span> box, hold <code>&lt;Ctrl&gt;</code>, and select <span class="FieldValue">S1</span>, <span class="FieldValue">S3</span>, and <span class="FieldValue">S9</span>.&rdquo;',
       '&ldquo;Let\'s see if either Discord or Twilight say &lsquo;friendship is magic&rsquo; by hitting the <span class="FieldName">Search</span> button.&rdquo;',
     ],
     index: [
