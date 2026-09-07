@@ -66,11 +66,11 @@
         <!-- <div class="PageRange w-100 text-center"> Showing results: {{ pageRanges.find(item2 => item.animationType === item.animationType).pageRange[0] + 1}} – {{ Math.min(pageRanges.find(item2 => item.animationType === item.animationType).pageRange[1], item.content.length) }} </div> -->
         <div class="NaviButtons d-flex justify-content-between">
           <button :data-animationtype="item.animationType" class="btn w-50 btn-secondary" type="button" v-if="pageRanges.find(item2 => item2.animationType === item.animationType).pageRange[0] > 0" @click="decrementPageRange">
-            Previous
+            Previous 100
           </button>
           <div class="invisible" v-else></div>
           <button :data-animationtype="item.animationType" class="btn w-50 btn-secondary" type="button" v-if="pageRanges.find(item2 => item2.animationType === item.animationType).pageRange[1] < item.content.length" @click="incrementPageRange">
-            Next
+            Next 100
           </button>
           <div class="invisible" v-else></div>
         </div>
