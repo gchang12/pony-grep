@@ -13,27 +13,16 @@
 
   const maxResultCount = 100;
 
-  const pageRanges = ref(animationTypes.map(animationType => {
-    return {
-      "animationType": animationType.name,
-      "pageRange": [0, maxResultCount],
-    };
-    })
-  );
+  const pageRanges = ref(Object.fromEntries(animationTypes.map(animationType => [animationType.name, 0])));
 
   function incrementPageRange(e) {
     const animationType = e.currentTarget.dataset.animationtype;
-    const item = pageRanges.value.find(item => item.animationType === animationType);
-    item.pageRange = [item.pageRange[0] + maxResultCount, item.pageRange[1] + maxResultCount];
-    pageRanges.value = [...pageRanges.value.filter(item2 => item2.animationType !== animationType), item];
+    pageRanges.value[animationType] += 1;
   }
 
   function decrementPageRange(e) {
-    //pageRange.value = [pageRange.value[0] - maxResultCount, pageRange.value[1] - maxResultCount];
     const animationType = e.currentTarget.dataset.animationtype;
-    const item = pageRanges.value.find(item => item.animationType === animationType);
-    item.pageRange = [item.pageRange[0] - maxResultCount, item.pageRange[1] - maxResultCount];
-    pageRanges.value = [...pageRanges.value.filter(item2 => item2.animationType !== animationType), item];
+    pageRanges.value[animationType] -= 1;
   }
 
 </script>
@@ -50,7 +39,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="tline in item.content.slice(...pageRanges.find(item2 => item2.animationType === item.animationType).pageRange)" :key="tline.id">
+          <tr v-for="tline in item.content.slice(pageRanges[item.animationType] * maxResultCount, (pageRanges[item.animationType] + 1) * maxResultCount)" :key="tline.id">
             <th>{{tline.speaker}}</th>
             <td v-highlight>{{tline.dialogue}}</td>
             <td>
@@ -61,16 +50,24 @@
           </tr>
         </tbody>
       </table>
-      <div v-if="item.content.length > 100">
+      <div v-if="item.content.length > maxResultCount">
         <!-- NOTE: Counter no longer shows the correct result numbers -->
         <!-- <div class="PageRange w-100 text-center"> Showing results: {{ pageRanges.find(item2 => item.animationType === item.animationType).pageRange[0] + 1}} – {{ Math.min(pageRanges.find(item2 => item.animationType === item.animationType).pageRange[1], item.content.length) }} </div> -->
+        <div class="PageRange w-100 text-center">
+          Showing results:
+          <span v-text="(maxResultCount * pageRanges[item.animationType]) + 1">
+          </span>
+          –
+          <span v-text="Math.min((pageRanges[item.animationType] + 1) * maxResultCount, item.content.length)">
+          </span>
+        </div>
         <div class="NaviButtons d-flex justify-content-between">
-          <button :data-animationtype="item.animationType" class="btn w-50 btn-secondary" type="button" v-if="pageRanges.find(item2 => item2.animationType === item.animationType).pageRange[0] > 0" @click="decrementPageRange">
-            Previous 100
+          <button :data-animationtype="item.animationType" class="btn w-50 btn-secondary" type="button" v-if="pageRanges[item.animationType] > 0" @click="decrementPageRange">
+            Previous
           </button>
           <div class="invisible" v-else></div>
-          <button :data-animationtype="item.animationType" class="btn w-50 btn-secondary" type="button" v-if="pageRanges.find(item2 => item2.animationType === item.animationType).pageRange[1] < item.content.length" @click="incrementPageRange">
-            Next 100
+          <button :data-animationtype="item.animationType" class="btn w-50 btn-secondary" type="button" v-if="(maxResultCount * (pageRanges[item.animationType] + 1)) < item.content.length" @click="incrementPageRange">
+            Next
           </button>
           <div class="invisible" v-else></div>
         </div>
