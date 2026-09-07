@@ -68,19 +68,15 @@
     // {label: animationType, content: {...}
     const animationIndex = response2.data.value;
     for (const animationType of animationTypes) {
-      const resultCount = searchResults.value.filter(result => {
+      const results = searchResults.value.filter(result => {
         const episode = animationIndex.find(episode => episode.id === result.episodeId);
         return episode.animationType === animationType.name && episode.series === series;
-      }).length;
+      });
       items.push({
-        "disabled": resultCount === 0,
-        "label": "[" + resultCount + "] " + animationType.title,
+        "disabled": results.length === 0,
+        "label": "[" + results.length + "] " + animationType.title,
         "animationType": animationType.name,
-        "content": searchResults.value
-          .filter(result => {
-            const episode = animationIndex.find(episode => episode.id === result.episodeId);
-            return episode.animationType === animationType.name && episode.series === series;
-          })
+        "content": results
           .map(result => {
             const episode = animationIndex.find(episode => episode.id === result.episodeId);
             const item = {

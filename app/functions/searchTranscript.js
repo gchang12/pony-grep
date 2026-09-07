@@ -10,8 +10,6 @@ export default function(formData, transcriptLines) {
   const speakerRegex = new RegExp(searchCriteria.speaker, "i");
   const dialogueRegex = new RegExp(searchCriteria.dialoguePattern, "i");
   const searchResults = transcriptLines
-    .filter(tLine => searchCriteria.season.includes(tLine.season))
-    .filter(tLine => speakerRegex.test(tLine.speaker))
-    .filter(tLine => dialogueRegex.test(tLine.dialogue));
+    .filter(tLine => searchCriteria.season.includes(tLine.season) && speakerRegex.test(tLine.speaker) && dialogueRegex.test(tLine.dialogue));
   return searchResults;
 }
