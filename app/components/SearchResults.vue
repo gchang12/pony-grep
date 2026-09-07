@@ -17,12 +17,12 @@
 
   function incrementPageRange(e) {
     const animationType = e.currentTarget.dataset.animationtype;
-    pageRanges.value[animationType] += 1;
+    pageRanges.value[animationType] += maxResultCount;
   }
 
   function decrementPageRange(e) {
     const animationType = e.currentTarget.dataset.animationtype;
-    pageRanges.value[animationType] -= 1;
+    pageRanges.value[animationType] -= maxResultCount;
   }
 
 </script>
@@ -39,7 +39,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="tline in item.content.slice(pageRanges[item.animationType] * maxResultCount, (pageRanges[item.animationType] + 1) * maxResultCount)" :key="tline.id">
+          <tr v-for="tline in item.content.slice(pageRanges[item.animationType], pageRanges[item.animationType] + maxResultCount)" :key="tline.id">
             <th>{{tline.speaker}}</th>
             <td v-highlight>{{tline.dialogue}}</td>
             <td>
@@ -55,10 +55,10 @@
         <!-- <div class="PageRange w-100 text-center"> Showing results: {{ pageRanges.find(item2 => item.animationType === item.animationType).pageRange[0] + 1}} – {{ Math.min(pageRanges.find(item2 => item.animationType === item.animationType).pageRange[1], item.content.length) }} </div> -->
         <div class="PageRange w-100 text-center">
           Showing results:
-          <span v-text="(maxResultCount * pageRanges[item.animationType]) + 1">
+          <span v-text="pageRanges[item.animationType] + 1">
           </span>
           –
-          <span v-text="Math.min((pageRanges[item.animationType] + 1) * maxResultCount, item.content.length)">
+          <span v-text="Math.min(pageRanges[item.animationType] + maxResultCount, item.content.length)">
           </span>
         </div>
         <div class="NaviButtons d-flex justify-content-between">
@@ -66,7 +66,7 @@
             Previous
           </button>
           <div class="invisible" v-else></div>
-          <button :data-animationtype="item.animationType" class="btn w-50 btn-secondary" type="button" v-if="(maxResultCount * (pageRanges[item.animationType] + 1)) < item.content.length" @click="incrementPageRange">
+          <button :data-animationtype="item.animationType" class="btn w-50 btn-secondary" type="button" v-if="(maxResultCount + pageRanges[item.animationType]) < item.content.length" @click="incrementPageRange">
             Next
           </button>
           <div class="invisible" v-else></div>
