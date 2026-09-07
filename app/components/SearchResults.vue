@@ -50,7 +50,8 @@
           </tr>
         </tbody>
       </table>
-      <div v-if="item.content.length > maxResultCount">
+      <!-- <div v-if="item.content.length > maxResultCount"> -->
+      <div class="Pagination">
         <!-- NOTE: Counter no longer shows the correct result numbers -->
         <!-- <div class="PageRange w-100 text-center"> Showing results: {{ pageRanges.find(item2 => item.animationType === item.animationType).pageRange[0] + 1}} – {{ Math.min(pageRanges.find(item2 => item.animationType === item.animationType).pageRange[1], item.content.length) }} </div> -->
         <div class="PageRange w-100 text-center">
@@ -59,6 +60,9 @@
           </span>
           –
           <span v-text="Math.min(pageRanges[item.animationType] + maxResultCount, item.content.length)">
+          </span>
+          of
+          <span v-text="item.content.length">
           </span>
         </div>
         <div class="NaviButtons d-flex justify-content-between">
