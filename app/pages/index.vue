@@ -8,6 +8,12 @@
 
   useHead({
     title: "Pony Grep!",
+    meta: [
+      {
+        name: "description",
+        content: "A tool for searching and browsing through all MLP G4 transcripts, including EQG.",
+      },
+    ],
   });
 
   const rawHtmlDict = {

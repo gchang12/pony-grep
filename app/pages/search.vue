@@ -14,6 +14,12 @@
 
   useHead({
     title: "Pony Grep! - Search",
+    meta: [
+      {
+        name: "description",
+        content: "Search all G4 transcripts for a dialogue snippet and filter by speaker, series, and season.",
+      },
+    ],
   });
 
   const searchResults = ref([]);

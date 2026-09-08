@@ -44,6 +44,12 @@
 
   useHead({
     title: `Pony Grep! - Transcript - ${episode.value.series} ${episode.value.season} E${episode.value.episodeNo} - ${episode.value.title}`,
+    meta: [
+      {
+        name: "description",
+        content: `Transcript data and metadata for "[${episode.value.title}]" (MLP:${episode.value.series} ${episode.value.season} E${episode.value.episodeNo})`,
+      },
+    ],
   });
 
   const transcriptLines = computed(() => {

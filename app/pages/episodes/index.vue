@@ -7,6 +7,12 @@
 
   useHead({
     title: "Pony Grep! - Episode Index",
+    meta: [
+      {
+        name: "description",
+        content: "List of all MLP G4 episodes, shorts, specials, movies, and clip-shows.",
+      },
+    ],
   });
 
   const response = await useFetch("json/animationIndex.json");
