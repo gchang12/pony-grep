@@ -7,7 +7,7 @@
   import seasonList from "../../../../assets/json/seasonList.json";
   import TranscriptLineTable from "../../../../components/TranscriptLineTable.vue";
   import RelativeEpisodeLink from "../../../../components/RelativeEpisodeLink.vue";
-  import EpisodeInfoBox from "../../../../components/EpisodeInfoBox.vue";
+  //import EpisodeInfoBox from "../../../../components/EpisodeInfoBox.vue";
   import stringifyEpisodeNo from "../../../../functions/stringifyEpisodeNo.js";
   import getSeasonUrlName from "../../../../functions/getSeasonUrlName.js";
   import getSeasonName from "../../../../functions/getSeasonName.js";
@@ -141,21 +141,11 @@
 
 <template>
   <div class="Transcript container" v-if="transcriptLines.filter(tline => tline.episodeId === episode.id).length > 0">
+    <h1>{{ episode.title }}</h1>
     <div class="row">
     <aside class="col">
-      <!-- NOTE: Loads data using four attributes or more. -->
-      <div v-if="Object.keys(episode).length > 0 && episode.season.startsWith('S') && episode.season.length === 2" class="EpisodeInfo FOR_CLASS">
-        <EpisodeInfoBox :image="props.image" :url="props.url" :writtenby="props.writtenby" :storyboard="props.storyboard" />
-        <button v-if="typeof(props.image) !== 'string'" @click="fetchImage">Load Image</button>
-        <div class="Disclaimer">
-          Courtesy of:
-          <ul>
-            <li><a target="_blank" href="https://ponyapi.net/">https://ponyapi.net/</a></li>
-            <li><a target="_blank" href="https://mlp.fandom.com/wiki/My_Little_Pony_Friendship_is_Magic_Wiki"> https://mlp.fandom.com/wiki/My_Little_Pony_Friendship_is_Magic_Wiki </a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="EpisodeInfo" v-else>
+      <div class="EpisodeInfo">
+        <h2>Metadata</h2>
         <table>
           <!-- <table class="table table-striped"> NOTE: Negates highlighting of rows. -->
           <tbody>
@@ -189,7 +179,7 @@
     </aside>
     <div class="TranscriptLines col-8">
       <!-- TODO: Replace with 'Transcript' in final draft. -->
-      <h1>{{ episode.title }}</h1>
+      <h2>Transcript</h2>
       <hr>
       <TranscriptLineTable :transcriptLines="transcriptLines.filter(tline => tline.episodeId === episode.id)" :jumpedLine="route.hash.slice(2)" />
       <UAccordion type="multiple" :defaultValue="route.hash ? ['0', '1', '2'] : []" :items="items">
