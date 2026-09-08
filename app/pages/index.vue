@@ -23,9 +23,10 @@
       'Select the episode name from the dropdown menu to view the transcript for the episode.',
     ],
     transcript: [
-      'Click on the <span class="FieldName">Load Image</span> button.',
-      'Wait for the data to load from <a target="_blank" href="https://ponyapi.net/">PonyAPI</a>.',
-      'Get data for the episode\'s wikia page, writer, storyboarder, plus the image thumbnail.',
+      'Browse transcript on right.',
+      'Click on <span class="FieldValue">\#</span> symbol on the left of a line to get a link to it.',
+      'View metadata for episode on left side.',
+      'Visit MLP Wikia page by pressing the button in the Metadata section',
     ],
   };
 
@@ -50,7 +51,7 @@
         </template>
       </UsageArticle>
       <hr />
-      <UsageArticle header="Episode Transcript" :imgSrc="Transcript" imgAlt="episode transcript" subheader="Fetch from PonyAPI" :rawHtmlList="rawHtmlDict.transcript">
+      <UsageArticle header="Episode Transcript" :imgSrc="Transcript" imgAlt="episode transcript" subheader="Browse Episode Data" :rawHtmlList="rawHtmlDict.transcript">
         <template #paragraph>
           <p>Have no idea where to start? Try reading the <NuxtLink to="/episodes/FiM/S1/01" target="_blank">episode transcript for episode one</NuxtLink>!</p>
         </template>

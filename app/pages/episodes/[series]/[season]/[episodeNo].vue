@@ -141,53 +141,53 @@
 
 <template>
   <div class="Transcript container" v-if="transcriptLines.filter(tline => tline.episodeId === episode.id).length > 0">
-    <h1>{{ episode.title }}</h1>
-    <div class="row">
-    <aside class="col">
-      <div class="EpisodeInfo">
-        <h2>Metadata</h2>
-        <table>
-          <!-- <table class="table table-striped"> NOTE: Negates highlighting of rows. -->
-          <tbody>
-            <tr>
-              <th>Series</th>
-              <td>{{ episode.series }}</td>
-            </tr>
-            <tr>
-              <th>Season</th>
-              <td>{{ episode.season }}</td>
-            </tr>
-            <tr>
-              <th>Episode</th>
-              <td>{{ episode.episodeNo }}</td>
-            </tr>
-            <tr>
-              <th>Title</th>
-              <td>{{ episode.title }}</td>
-            </tr>
-            <tr>
-              <th>Airdate</th>
-              <td>{{ episode.airdate }}</td>
-            </tr>
-          </tbody>
-        </table>
-        <p v-for="line in episode.summary" :key="line">{{ line }}</p>
-        <a target="_blank" :href="'https://mlp.fandom.com/wiki/' + episode.urlName">
-          MLP Wikia Page
-        </a>
+    <h1 class="sticky-top d-flex justify-content-center align-items-center">{{ episode.title }}</h1>
+    <div class="row d-flex flex-column flex-xxl-row">
+      <aside class="col-xxl-4 col-auto mb-3">
+        <div class="EpisodeInfo p-4">
+          <h2 class="mb-3">Metadata</h2>
+          <table class="mb-4">
+            <!-- <table class="table table-striped"> NOTE: Negates highlighting of rows. -->
+            <tbody>
+              <tr>
+                <th>Series</th>
+                <td>{{ episode.series }}</td>
+              </tr>
+              <tr>
+                <th>Season</th>
+                <td>{{ episode.season }}</td>
+              </tr>
+              <tr>
+                <th>Episode</th>
+                <td>{{ episode.episodeNo }}</td>
+              </tr>
+              <tr>
+                <th>Airdate</th>
+                <td>{{ episode.airdate }}</td>
+              </tr>
+            </tbody>
+          </table>
+          <article>
+            <h3>Summary</h3>
+            <p v-for="line in episode.summary" :key="line">{{ line }}</p>
+          </article>
+          <div class="EpisodeLink">
+            <a class="d-flex justify-content-center align-items-center" target="_blank" :href="'https://mlp.fandom.com/wiki/' + episode.urlName">
+              MLP Wikia Page
+            </a>
+          </div>
+        </div>
+      </aside>
+      <div class="TranscriptLines col-xxl-8 col-auto">
+        <!-- TODO: Replace with 'Transcript' in final draft. -->
+        <h2>Transcript</h2>
+        <TranscriptLineTable :transcriptLines="transcriptLines.filter(tline => tline.episodeId === episode.id)" :jumpedLine="route.hash.slice(2)" />
+        <UAccordion type="multiple" :defaultValue="route.hash ? ['0', '1', '2'] : []" :items="items">
+          <template #body="{ item }">
+            <TranscriptLineTable :transcriptLines="item.content.filter(tline => tline.episodeId === item.episode.id)" :jumpedLine="route.hash.slice(2)" />
+          </template>
+        </UAccordion>
       </div>
-    </aside>
-    <div class="TranscriptLines col-8">
-      <!-- TODO: Replace with 'Transcript' in final draft. -->
-      <h2>Transcript</h2>
-      <hr>
-      <TranscriptLineTable :transcriptLines="transcriptLines.filter(tline => tline.episodeId === episode.id)" :jumpedLine="route.hash.slice(2)" />
-      <UAccordion type="multiple" :defaultValue="route.hash ? ['0', '1', '2'] : []" :items="items">
-        <template #body="{ item }">
-          <TranscriptLineTable :transcriptLines="item.content.filter(tline => tline.episodeId === item.episode.id)" :jumpedLine="route.hash.slice(2)" />
-        </template>
-      </UAccordion>
-    </div>
     </div>
     <hr>
     <nav class="d-flex justify-content-between mb-4">
