@@ -14,132 +14,147 @@
 </template>
 
 <!--
-### Additional items:
-- The site should have at least 4 pages (including the home) with `<nuxt-link>` used to navigate between them in the nav
-- Feel free to reuse as much content as you'd like from what you created in previous assignments
-- Incorporate data from an API. (See below for API suggestions)
-  - 1 instance of retrieving data from an API
-  - Build a custom component to display the data returned from the API
-  - That component should have props validation and use at least 4 pieces of data from the API (if possible). For example, if the returned data is of the format `{image: 'http://path.com/123', name: 'stingray', created: '10-12-2019', author: 'Claude'}`, the component should display the image, name, created date, and author information
-- Deploy to Netlify https://app.netlify.com/start
-- **Bonus:**  Create UI interactions to interact with your API data   
-- **Extra Bonus:**  Create dynamic routing with your data through components with single pages
--	**Super Extra Bonus:** Point a custom domain to your site
--->
-
-<!--
 # Instructions
-We'll spend our final couple of lessons working on the final project, so this will act as the final project rubric. We'll be using Nuxt, so please watch the video on Nuxt for a walkthrough of starting up a new project. Nuxt is very similar to Vue CLI, and we'll be able to deploy the course projects for free on Netlify automatically. We'll also be adding in our API calls and tying everything together.
-## Requirements
-- Create a new Nuxt app in a new repository, and push it to Github. Do not create it in the html300 repository that other assignments have been in.
-- In your newly created Nuxt app, start migrating over your Vue template files and assets from the Vue CLI project to their respective spots. Basically any content in the App.vue file now goes in the layouts/default.vue The <nuxt-link> tag acts like the <router-view />.
-- For internal links, now use <nuxt-link> components.
-- Migrate any views/page components to the pages directory. You can create folder structures, or have an index.vue file within a folder that will generate the route to the folder's name (i.e. about/index.vue shows up in the browser at /about).
-- Routes are generated based on the pages file structure, don't worry about a router file.
-- Migrate any components or additional assets
-- Add any additional packages you are using
-- Incorporate data from an API. You may use this on various components or pages, but at least 1 instance of retrieving data from an API and:
-  - With that returned data, build a corresponding component and use v-for to loop over the data
-  - That component should have props validation as well as use at least 4 data points in the template itself (heading, description, image, statistics, etc)
-  - The component should have some sort of method that causes a UI interaction on that instance of the component (show/hide, change the CSS, animation, etc)
-- Your site should have at least 4 pages (including the home) with <nuxt-link> used to navigate between them in your nav
-- Feel free to reuse as much content as you'd like from what you created in previous assignments.
-- Deploy to Netlify. Remember that this will not work if the final assignment code is in the html300 repository. It must be in a new repository.
+The main focus of the final lesson will be completing the course project. As a supplement, you'll learn about SEO best practices, write a proposal in your course project repo's documents folder as to your ideal SEO implementation, and configure the SEO on your global nuxt.config.js and Nuxt pages using the head method in your page's <script>.
+- Remember, the course project's repo is where we are working on the final project, not the main html300 repo.
+- In the documents folder you created, create a .md file and include within what you learned about SEO & analytics (1-2 paragraphs).
+- Include another section with how you would ideally implement SEO on your site (for our purposes we will add some light metadata -- this would be if you had plenty of time to fully implement the metadata that you'd like)
+- Check out the links on nuxt.config.js and the head method.
+  - Nuxt Config Global
+  - Nuxt Head Method (Components)
+- Your nuxt-config.js file should have some metadata in it already, modify that to include your site's fallback (default) metadata.
+- Within your pages, add the head method to the <script>, and then include the hid meta line to overwrite the description on a page-by-page basis
+Bonus: Add any additional metadata you'd like to include.
+
+## SEO Overview
+2 pts Complete Included 1-2 paragraphs of SEO knowledge learned through slides/research
+1 pts Incomplete Included less than 1-2 paragraphs of SEO knowledge learned through slides/research
+0 pts Missing No overview present
+
+## SEO Overview
+2 pts Complete Added detailed plan of ideal SEO implementation
+1 pts Incomplete Added detailed plan of SEO implementation, insufficient or nothing new proposed
+0 pts Missing No plan added
+
+## Next SEO
+2 pts Complete Adjusted default SEO config in nuxt.config.js and added the head method to pages to overwrite the description
+1 pts Incomplete Didn't adjust default SEO config in nuxt.config.js or didn't add the head methods to pages to overwrite the description
+0 pts Missing No changes to Nuxt app
 -->
 
 <!--
-Lesson 09 Assignment
-====================
-Criteria Ratings Pts
-Nuxt
-----
-- 2 pts - Complete - Converted to Nuxt framework
-- 1 pts - Incomplete - Missing Nuxt integration
-- 0 pts - Missing - Not refactored
-API
----
-- 2 pts - Complete - Returned data from API correctly
-- 1 pts - Incomplete - Returned data, didn’t use components or not enough data
-- 0 pts - Missing - Didn’t use an API
-Routing
--------
-- 2 pts - Complete - Added routing for all pages using pages directory and <nuxt-link>
-- 1 pts - Incomplete - Routing not available for all pages
-- 0 pts - Missing - No use of routing
-Props on Data Component
------------------------
-- 2 pts - Complete - Created props validation and correctly used props in component
-- 1 pts - Incomplete - Didn't create props validation or incorrectly used props in component
-- 0 pts - Missing - Didn't use a component
-Data Component
---------------
-- 3 pts - Complete - Used 4 data points in component from returned API and UI interaction
-- 2 pts - Approaching Complete - Used less than 4 data points in component from returned API data or missing UI interaction
-- 1 pts - Incomplete - Used less than 1 or 2 data points in component from returned API data and missing UI interaction
-- 0 pts - Missing - Didn't use a component
-Pages
+NOTES
+=====
+Video Summary
+-------------
+SEO = Search Engine Optimization
+Process by which a website becomes more visible in search engine results
+Works by matching keywords on site to user queries 
+Engines use crawlers to index content
+Relevance of content determine's site's ranking in results
+Hierarchy of HTML header tags - good usage of tags influences SEO score; bad usage...
+Ghost text harms SEO ranking
+Search engine algorithms always evolve
+
+Video
 -----
-- 3 pts - Complete - Created all 4 required pages
-- 2 pts - Approaching Complete - Missing a page or missing API usage
-- 1 pts - Incomplete - Only 1 or 2 pages
-- 0 pts - Missing - Static HTML instead of Nuxt
-Netlify Hosting
----------------
-- 2 pts - Complete - Created Netlify account and connected to project GitHub repo for automated deployment
-- 1 pts - Incomplete - Netlify deployment/link not working correctly
-- 0 pts - Missing - No Netlify link
--->
+Crawler goes into site and indexes it.
+It searches for keywords and matches them with results
+SEO inspects h[1-6] tags
+Good usage of h[1-6] tags influences SEO
+Do not put in invisible keyword block
+Link to other websites, good websites
+Google Analytics tells you which parts of the site the user frequents
+Heat maps are also important for figuring out design
 
-<!--
-Hello Students,
+PowerPoint Presentation
+-----------------------
+Structure matters
+Using SEO correctly will result in organic (free) traffic for your site
+Users are more likely to visit free sites, not paid advertisements.
+### KPI
+Key Performance Indexx
+Measures if company is getting desired results
+"Are users doing what is intended?"
+Does the promotional URL lead to paying users?
+Track via database to capture info, or use GAnalytics
+### Moz
+A leader in teaching SEO improvement.
+https://moz.com/beginners-guide-to-seo/
+Having a social tag controls how a link renders on a social account
+### Facebook
+https://developers.facebook.com/docs/plugins/share-button/
+Put in meta tag (Open Graph?)
+<meta property="og:url" content="https://www.your-domain.com/your-page.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Your Website Title" />
+  <meta property="og:description" content="Your description" />
+  <meta property="og:image" content="https://www.your-domain.com/path/image.jpg" />
+<div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
-I'm writing because George brought to my attention that the Lesson 6 instructions are out of date. Unfortunately, I'm not able to make updates to the course content as the university uses specific course developers for that work, though I will definitely bring this to their attention.
+  Your share button code
+  <div class="fb-share-button" 
+    data-href="https://www.your-domain.com/your-page.html" 
+    data-layout="button_count">
+  </div>
+### Twitter
+   <meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@publisher_handle">
+<meta name="twitter:title" content="Page Title">
+<meta name="twitter:description" content="Page description less than 200 characters">
+<meta name="twitter:creator" content="@author_handle">
+<meta name="twitter:image" content="http://www.example.com/image.jpg">
+	<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world" data-size="large">Tweet</a>
+        Allows Twitter to discover tag.
+        href value is the site to share.
+### Heat Map
+Lets one know which content is most frequented, least frequented.
 
-To move forward I'm advising the class to use the latest Nuxt with just plain Bootstrap 5 for CSS. Disregard the setup instructions in the README and use:
-npm create nuxt@latest my-new-app-project
-cd my-new-app-project
-npm install bootstrap
-
-Then in nuxt.config.ts:
-export default defineNuxtConfig({
-  css: ['bootstrap/dist/css/bootstrap.min.css']
-})
-
-Then simply use Bootstrap's CSS classes directly. Two other deviations from the README: skip the node-sass step (this is deprecated and won't build on current Node; use npm install -D sass if you want SCSS). 
-
-Nuxt 4 puts your folders inside app/ directory, it shoudl like this:
-my-project-title/
-├── app/
-│   ├── app.vue
-│   ├── pages/          ← your pages (routing is automatic)
-│   ├── components/     ← your components
-│   └── layouts/        ← default.vue goes here
-├── public/             ← static files (images, JSON) — NOT inside app/
-└── nuxt.config.ts
-
-Make sure app/app.vue contains:
-<template>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
-</template>
-
-For Netlify, set build command npm run generate and publish directory .output/public.
-
-IMO building on the legacy versions would be counter-productive (Nuxt 2 and Vue 2 are both past end-of-life) and you're less likely to encounter them when working professionally.
-
-A few other notes:
-
-    <nuxt-link> has been updated <NuxtLink>
-
-    If you run into the error:
-
-npm error Cannot read properties of null (reading 'edgesOut')
-
-run 
-npm install -g npm@latest
-
-Then delete node_modules and package-lock.json and run npm install again. This is a bug in older npm versions, not a problem with your project.
-
-Please let me know if you need additional time to submit, I want to be lenient with due dates because of the out of date curriculum content.
+Moz
+---
+### 1
+Install analytics
+- gives info about who visits the site, how much traffic you get and from where, which pages people visit, how they engage with content, etc.
+Google is transitioning to a new analytics type known as [GA4](https://moz.com/blog/transitioning-to-ga4)
+Run a [site-crawl](https://moz.com/products/pro/site-crawl) to make sure everything works
+### 2
+Indexing is when a search engine crawls a page and makes a record of its content
+Is the site new?
+Does it offer unique content?
+Is it crawlable and indexable?
+### 3
+Place keywords in
+- title
+- meta description
+- headline
+- paragraph headers
+- body text
+### 4
+Write unique, accurate titles
+Use keywords in titles
+Find out which keywords to use here: https://moz.com/explorer
+Use keywords once
+Titles should be between 50 to 60 characters
+Use meta descriptions t4o offer compelling reason for users to come and visit.
+Create unique, compelling descriptions for each page.
+Keep descriptions between 150-160 characters
+Rich results are triggered by structured data.
+https://developers.google.com/search/docs/appearance/structured-data/search-gallery
+Breadcrumbs
+https://developers.google.com/search/docs/appearance/structured-data/breadcrumb
+Use favicon
+Do not use overly large image files.
+Optimize images https://developers.google.com/search/docs/appearance/google-images
+Google does not index images
+Use clear navigation leading to most important pages.
+Make sure all important pages are linked.
+No orphaned pages.
+Descriptive, unique anchor text.
 -->
