@@ -4,4 +4,35 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/ui'],
   css: ['bootstrap/dist/css/bootstrap.min.css'],
+  head: {
+    meta: [
+      // This is going to be overridden in each page-local `useHead` invocation anyway.
+      /*
+      {
+        "name": "description",
+        "content": "A tool for searching and browsing through all MLP G4 transcripts, including EQG.",
+      },
+      */
+      {
+        "property": "og:url",
+        "content": "https://earnest-toffee-ecd594.netlify.app/",
+      },
+      {
+        "property": "og:type",
+        "content": "website",
+      },
+      {
+        "property": "og:title",
+        "content": "Pony Grep!",
+      },
+      {
+        "property": "og:description",
+        "content": "A tool for searching and browsing through all MLP G4 transcripts, including EQG.",
+      },
+      {
+        "property": "og:image",
+        "content": "https://earnest-toffee-ecd594.netlify.app/favicon.ico",
+      },
+    ],
+  },
 })
