@@ -73,7 +73,7 @@ Structure matters
 Using SEO correctly will result in organic (free) traffic for your site
 Users are more likely to visit free sites, not paid advertisements.
 ### KPI
-Key Performance Indexx
+Key Performance Index
 Measures if company is getting desired results
 "Are users doing what is intended?"
 Does the promotional URL lead to paying users?
@@ -142,7 +142,7 @@ Use keywords in titles
 Find out which keywords to use here: https://moz.com/explorer
 Use keywords once
 Titles should be between 50 to 60 characters
-Use meta descriptions t4o offer compelling reason for users to come and visit.
+Use meta descriptions to offer compelling reason for users to come and visit.
 Create unique, compelling descriptions for each page.
 Keep descriptions between 150-160 characters
 Rich results are triggered by structured data.
@@ -157,4 +157,48 @@ Use clear navigation leading to most important pages.
 Make sure all important pages are linked.
 No orphaned pages.
 Descriptive, unique anchor text.
+
+Moz-Explorer
+------------
+### https://moz.com/explorer
+transcript
+- Volume: 90.4k
+- Organic CTR: 59%
+- Difficulty: 61
+mlp
+- Volume: 56.0k
+- Organic CTR: 68%
+- Difficulty: 65
+search
+- Volume: 261.6k
+- Organic CTR: 94%
+- Difficulty: 74
+lines
+- Volume: 22.6k
+- Organic CTR: 94%
+- Difficulty: 56
+dialogue
+- Volume: 51.9k
+- Organic CTR: 94%
+- Difficulty: 56
+grep
+- Volume: 8.2k
+- Organic CTR: 86%
+- Difficulty: 60
+episode
+- Volume: 46.6k
+- Organic CTR: 71%
+- Difficulty: 62
+series
+- Volume: 48.5k
+- Organic CTR: 88%
+- Difficulty: 72
+search tool
+- Volume: 640
+- Organic CTR: 94%
+- Difficulty: 69
+lookup
+- Volume: 6.1k
+- Organic CTR: 97%
+- Difficulty: 69
 -->
