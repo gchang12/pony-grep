@@ -161,18 +161,6 @@ Descriptive, unique anchor text.
 Moz-Explorer
 ------------
 ### https://moz.com/explorer
-transcript
-- Volume: 90.4k
-- Organic CTR: 59%
-- Difficulty: 61
-mlp
-- Volume: 56.0k
-- Organic CTR: 68%
-- Difficulty: 65
-search
-- Volume: 261.6k
-- Organic CTR: 94%
-- Difficulty: 74
 lines
 - Volume: 22.6k
 - Organic CTR: 94%
@@ -185,14 +173,22 @@ grep
 - Volume: 8.2k
 - Organic CTR: 86%
 - Difficulty: 60
+favorite
+- Volume: 123k
+- Organic CTR: 94%
+- Difficulty: 61
+transcript
+- Volume: 90.4k
+- Organic CTR: 59%
+- Difficulty: 61
 episode
 - Volume: 46.6k
 - Organic CTR: 71%
 - Difficulty: 62
-series
-- Volume: 48.5k
-- Organic CTR: 88%
-- Difficulty: 72
+mlp
+- Volume: 56.0k
+- Organic CTR: 68%
+- Difficulty: 65
 search tool
 - Volume: 640
 - Organic CTR: 94%
@@ -201,4 +197,12 @@ lookup
 - Volume: 6.1k
 - Organic CTR: 97%
 - Difficulty: 69
+series
+- Volume: 48.5k
+- Organic CTR: 88%
+- Difficulty: 72
+search
+- Volume: 261.6k
+- Organic CTR: 94%
+- Difficulty: 74
 -->
