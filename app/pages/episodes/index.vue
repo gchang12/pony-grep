@@ -6,7 +6,7 @@
   import PictureIndex from "../../components/PictureIndex.vue";
 
   useHead({
-    title: "Pony Grep! - Episode Index",
+    title: "Pony Grep! – Episode Index",
     meta: [
       {
         name: "description",
