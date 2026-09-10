@@ -46,21 +46,21 @@
       <p>Trying to remember a line from MLP G4?</p>
       <p>You've come to the right place!</p>
       <hr />
-      <UsageArticle header="Search" :imgSrc="Search" imgAlt="search page" subheader="Example" :rawHtmlList="rawHtmlDict.search">
+      <UsageArticle href="/search" header="Search" :imgSrc="Search" imgAlt="search page" subheader="Example" :rawHtmlList="rawHtmlDict.search">
         <template #paragraph>
-          <p>Use our <NuxtLink to="/search">search</NuxtLink> feature to search all MLP G4 dialogue for a <code>regex</code> pattern.</p>
+          <p>Use our search feature to search all MLP G4 dialogue for a <code>regex</code> pattern.</p>
         </template>
       </UsageArticle>
       <hr />
-      <UsageArticle header="Episode Index" :imgSrc="EpisodeIndex" imgAlt="episode index" subheader="How to Use" :rawHtmlList="rawHtmlDict.index">
+      <UsageArticle href="/episodes" header="Episode Index" :imgSrc="EpisodeIndex" imgAlt="episode index" subheader="How to Use" :rawHtmlList="rawHtmlDict.index">
         <template #paragraph>
-           <p>Browse our <NuxtLink to="/episodes">comprehensive list of G4 transcripts</NuxtLink>, which include transcripts from the episodes, movies, specials, shorts, and clip-shows from <span class="Franchise">Friendship is Magic</span> and <span class="Franchise">Equestria Girls</span>.</p>
+           <p>Browse our comprehensive list of G4 transcripts, which include transcripts from the episodes, movies, specials, shorts, and clip-shows from <span class="Franchise">Friendship is Magic</span> and <span class="Franchise">Equestria Girls</span>.</p>
         </template>
       </UsageArticle>
       <hr />
-      <UsageArticle header="Episode Transcript" :imgSrc="Transcript" imgAlt="episode transcript" subheader="Browse Episode Data" :rawHtmlList="rawHtmlDict.transcript">
+      <UsageArticle href="/episodes/FiM/S1/01" header="Episode Transcript" :imgSrc="Transcript" imgAlt="episode transcript" subheader="Browse Episode Data" :rawHtmlList="rawHtmlDict.transcript">
         <template #paragraph>
-          <p>Have no idea where to start? Try reading the <NuxtLink to="/episodes/FiM/S1/01">episode transcript for episode one</NuxtLink>!</p>
+          <p>Have no idea where to start? Try reading the episode transcript for episode one!</p>
         </template>
       </UsageArticle>
     </article>
