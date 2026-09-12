@@ -5,6 +5,17 @@ export default defineNuxtConfig({
   modules: ['@nuxt/ui'],
   css: ['bootstrap/dist/css/bootstrap.min.css'],
   head: {
+    script: [
+     /*
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-9GH7X9N0XK",
+        async: true,
+      },
+     */
+      {
+        src: "./scripts/gtag.js",
+      },
+    ],
     meta: [
       // This is going to be overridden in each page-local `useHead` invocation anyway.
       /*

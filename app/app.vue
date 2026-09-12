@@ -1,7 +1,17 @@
 <script setup>
   import '~/assets/css/app.scss';
 
-  // TODO: Substitute NuxtUI components for BS5 components
+  /*
+  import gTag from "./assets/scripts/gtag.js";
+  useHead({
+    script: [
+      {
+        src: gTag,
+        tagPosition: "bodyOpen",
+      },
+    ],
+  });
+  */
 
 </script>
 
