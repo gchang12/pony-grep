@@ -11,8 +11,8 @@
     meta: [
       {
         name: "description",
-        //content: "A tool for searching and browsing through all MLP G4 transcripts, including EQG.",
-        content: "Explanations about how to search and browse through MLP G4 transcripts.",
+        content: "A tool for searching and browsing through all MLP G4 transcripts, including EQG.",
+        //content: "Explanations about how to search and browse through MLP G4 transcripts.",
       },
     ],
   });
@@ -42,7 +42,7 @@
 <template>
   <div id="index">
     <article class="container mb-5">
-      <h1>Welcome to <code>pony grep</code>!</h1>
+      <h1>Welcome to <code>my little grep</code>!</h1>
       <p>Trying to remember a line from MLP G4?</p>
       <p>You've come to the right place!</p>
       <hr />

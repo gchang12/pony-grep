@@ -5,6 +5,7 @@
 <template>
   <div id="app">
   <!-- Google tag (gtag.js) -->
+  <!--
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9GH7X9N0XK"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -12,6 +13,7 @@
     gtag('js', new Date());
     gtag('config', 'G-9GH7X9N0XK');
   </script>
+  -->
    <header>
      <div class="container-sm">
        <div class="row flex-sm-row flex-column">
