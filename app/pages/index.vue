@@ -11,8 +11,8 @@
     meta: [
       {
         name: "description",
-        content: "A tool for searching and browsing through all MLP G4 transcripts, including EQG.",
-        //content: "Explanations about how to search and browse through MLP G4 transcripts.",
+        //content: "A tool for searching and browsing through all MLP G4 transcripts, including EQG.",
+        content: "Explanations about how to search and browse through MLP G4 transcripts.",
       },
     ],
   });

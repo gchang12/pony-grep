@@ -17,13 +17,10 @@ export default defineNuxtConfig({
       },
     ],
     meta: [
-      // This is going to be overridden in each page-local `useHead` invocation anyway.
-      /*
       {
         "name": "description",
         "content": "A tool for searching and browsing through all MLP G4 transcripts, including EQG.",
       },
-      */
       {
         "property": "og:url",
         "content": "https://earnest-toffee-ecd594.netlify.app/",
