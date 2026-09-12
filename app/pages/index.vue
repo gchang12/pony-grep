@@ -7,7 +7,7 @@
   import UsageArticle from "../components/UsageArticle.vue";
 
   useHead({
-    title: "Pony Grep!",
+    title: "My Little Grep",
     meta: [
       {
         name: "description",

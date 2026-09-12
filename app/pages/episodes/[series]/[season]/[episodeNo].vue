@@ -43,7 +43,7 @@
   //console.log("episode.value", episode);
 
   useHead({
-    title: `Pony Grep! – Transcript of "${episode.value.title}" (MLP:${episode.value.series} ${episode.value.season} E${episode.value.episodeNo})'`,
+    title: `My Little Grep – Transcript of "${episode.value.title}" (MLP:${episode.value.series} ${episode.value.season} E${episode.value.episodeNo})'`,
     meta: [
       {
         name: "description",

@@ -13,7 +13,7 @@
   import SearchResults from "../components/SearchResults.vue";
 
   useHead({
-    title: "Pony Grep! – Search",
+    title: "My Little Grep – Search",
     meta: [
       {
         name: "description",
