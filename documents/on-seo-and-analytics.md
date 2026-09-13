@@ -6,5 +6,6 @@ Analytics give information about who visits the website, how much traffic it get
 
 Ideal SEO Implementation
 ========================
-I intend to leverage Nuxt's `useHead` method in order to modify the metadata of each given page which composes my website. Specifically, I intend to rewrite the meta-descriptions so that take into account keywords that will cause search engines to rank the site higher, while avoiding the 'keyword-stuffing' habit that they tend to penalize websites for. I intend to trim the existing titles and meta-descriptions so that they fall within the recommended character-length range. I will put in Open Graph attributes in the meta tag as well. I intend to leverage h[1-6] tags so that they can match keywords more easily. 
+I intend to leverage Nuxt's `useHead` method in order to modify the metadata of each given page which composes my website. Specifically, I intend to rewrite the meta-descriptions so that take into account keywords that will cause search engines to rank the site higher, while avoiding the 'keyword-stuffing' habit that they tend to penalize websites for. I intend to trim the existing titles and meta-descriptions so that they fall within the recommended character-length range. I will put in Open Graph attributes in the meta tag as well. I intend to leverage h[1-6] tags so that they can match keywords more easily.
+If I had the resources, I would put in more effort into investigating precisely which keywords are most-often searched for and put them into the content of my website.
 
