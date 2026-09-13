@@ -148,7 +148,7 @@
           <form>
             <div class="dialoguePattern field">
               <label for="dialoguePattern" class="form-label"><span title="This field is required." aria-labelledby="dialoguePattern" aria-required="true">*</span> Dialogue</label>
-              <input value="friendship is magic" placeholder="friendship is magic" id="dialoguePattern" type="search" name="dialoguePattern" class="form-control" required />
+              <input  placeholder="friendship is magic" id="dialoguePattern" type="search" name="dialoguePattern" class="form-control" required />
               <div class="form-text">Regex pattern to search for in all G4 dialogue.</div>
             </div>
             <div class="speaker field">
@@ -160,10 +160,10 @@
               <legend>Series</legend>
               <div class="row">
                 <div class="col">
-                  <SeasonSelectInput series="FiM" checked label="Friendship is Magic" />
+                  <SeasonSelectInput series="FiM" label="Friendship is Magic" />
                 </div>
                 <div class="col">
-                  <SeasonSelectInput series="EqG" checked label="Equestria Girls" />
+                  <SeasonSelectInput series="EqG" label="Equestria Girls" />
                 </div>
               </div>
               <div class="form-text">Only selected seasons will be searched.</div>
