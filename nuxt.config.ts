@@ -31,7 +31,7 @@ export default defineNuxtConfig({
       },
       {
         "property": "og:title",
-        "content": "Pony Grep!",
+        "content": "My Little Grep",
       },
       {
         "property": "og:description",
