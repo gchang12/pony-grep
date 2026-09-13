@@ -43,11 +43,11 @@
   //console.log("episode.value", episode);
 
   useHead({
-    title: `My Little Grep – "${episode.value.title}" (MLP:${episode.value.series} ${episode.value.season} E${episode.value.episodeNo}) Transcript`,
+    title: computed(() => `My Little Grep – "${episode.value.title}" (MLP:${episode.value.series} ${episode.value.season} E${episode.value.episodeNo}) Transcript`),
     meta: [
       {
         name: "description",
-        content: `Transcript data and metadata for "[${episode.value.title}]" (MLP:${episode.value.series} ${episode.value.season} E${episode.value.episodeNo})`,
+        content: computed(() => `Transcript data and metadata for "[${episode.value.title}]" (MLP:${episode.value.series} ${episode.value.season} E${episode.value.episodeNo})`),
       },
     ],
   });
