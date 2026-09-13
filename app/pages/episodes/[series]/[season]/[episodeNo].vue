@@ -43,7 +43,7 @@
   //console.log("episode.value", episode);
 
   useHead({
-    title: computed(() => `My Little Grep – "${episode.value.title}" (Transcript for MLP:${episode.value.series} ${episode.value.season} E${episode.value.episodeNo})`),
+    title: computed(() => `My Little Grep – “${episode.value.title}” (Transcript for MLP:${episode.value.series} ${episode.value.season} E${episode.value.episodeNo})`),
     meta: [
       {
         name: "description",
@@ -147,7 +147,7 @@
 
 <template>
   <div class="Transcript container" v-if="transcriptLines.filter(tline => tline.episodeId === episode.id).length > 0">
-    <h1 class="sticky-top d-flex justify-content-center align-items-center">{{ episode.title }}</h1>
+    <h1 class="d-flex justify-content-center align-items-center">{{ episode.title }}</h1>
     <div class="row d-flex flex-column flex-xxl-row">
       <aside class="col-xxl-4 col-auto mb-3">
         <div class="EpisodeInfo p-4">
