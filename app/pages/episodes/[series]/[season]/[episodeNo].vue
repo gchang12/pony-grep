@@ -34,6 +34,7 @@
       .filter(episode => episode.series === route.params.series)
       .filter(episode => episode.season === season)
       .find(episode => episode.episodeNo == route.params.episodeNo);
+    currentEp.episodeNo = stringifyEpisodeNo(currentEp.episodeNo);
     return currentEp;
   }
 
@@ -156,6 +157,10 @@
             <!-- <table class="table table-striped"> NOTE: Negates highlighting of rows. -->
             <tbody>
               <tr>
+                <th>Title</th>
+                <td>“{{ episode.title }}”</td>
+              </tr>
+              <tr>
                 <th>Series</th>
                 <td>{{ episode.series }}</td>
               </tr>
@@ -184,9 +189,9 @@
           </div>
         </div>
       </aside>
-      <div class="TranscriptLines col-xxl-8 col-auto">
+      <div class="TranscriptLines col-xxl-8 col-auto p-4">
         <!-- TODO: Replace with 'Transcript' in final draft. -->
-        <h2>Transcript</h2>
+        <h2 class="mb-3">Transcript</h2>
         <TranscriptLineTable :transcriptLines="transcriptLines.filter(tline => tline.episodeId === episode.id)" :jumpedLine="route.hash.slice(2)" />
         <UAccordion type="multiple" :defaultValue="route.hash ? ['0', '1', '2'] : []" :items="items">
           <template #body="{ item }">
