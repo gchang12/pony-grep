@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/ui'],
+  modules: ['@nuxt/ui', "@nuxt/scripts"],
   css: ['bootstrap/dist/css/bootstrap.min.css'],
   head: {
     script: [
@@ -42,5 +42,13 @@ export default defineNuxtConfig({
         "content": "https://earnest-toffee-ecd594.netlify.app/favicon.ico",
       },
     ],
+  },
+  scripts: {
+    registry: {
+      googleAnalytics: {
+        id: "9GH7X9N0XK",
+        trigger: 'onNuxtReady',
+      },
+    },
   },
 })
