@@ -218,12 +218,14 @@ footer {
   text-decoration: underline;
 }
 // TODO: Make this smoother
+/*
 .RelativeEpisodeLink:first-child > a:hover::before {
   content: "←";
 }
 .RelativeEpisodeLink:last-child > a:hover::before {
   content: "→";
 }
+*/
 
 .Transcript h1 {
   /*
@@ -237,7 +239,8 @@ footer {
 
 .EpisodeInfo {
   position: sticky;
-  top: 6rem;
+  //top: 6rem;
+  top: 1rem;
   //padding: 0.1rem;
   border: 1px solid white;
   font-size: 0.8rem;
