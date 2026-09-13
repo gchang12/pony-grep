@@ -11,7 +11,7 @@
 
 <template>
   <section class="UsageArticle container">
-    <h2>{{ header }}</h2>
+    <h2><NuxtLink :to="href" target="_blank">{{ header }}</NuxtLink></h2>
     <slot name="paragraph">
     </slot>
     <div class="d-flex flex-column flex-lg-row">

@@ -43,6 +43,7 @@
             <th>{{tline.speaker}}</th>
             <td v-highlight>{{tline.dialogue}}</td>
             <td>
+              <!-- target="_blank" does not have user jump to active line. -->
               <NuxtLink :to="['/episodes', tline.series, tline.seasonCode, tline.episodeCode + '#L' + tline.lineNo].join('/')" :title="[tline.season, 'E' + tline.episodeCode].join(' ')">
                 <i>{{ tline.episodeTitle }}</i>
               </NuxtLink>
