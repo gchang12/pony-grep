@@ -54,10 +54,24 @@
     // - dialoguePattern
     // - searchResults
     /* dialoguePattern */
-    dialoguePattern.value = formData.get("dialoguePattern");
     /* searchResults */
+    // validate speaker and dialogue regexes
+    try {
+      new RegExp(formData.get("speaker"));
+    } catch {
+      document.getElementById("speaker").setCustomValidity("Invalid regex!");
+      return;
+    }
+    try {
+      new RegExp(formData.get("dialoguePattern"));
+    } catch {
+      document.getElementById("dialoguePattern").setCustomValidity("Invalid regex!");
+      return;
+    }
+    // set values
     const transcriptLines = response1.data.value;
     searchResults.value = searchTranscript(formData, transcriptLines);
+    dialoguePattern.value = formData.get("dialoguePattern");
     //e.currentTarget.disabled = true;
     e.preventDefault();
   }
