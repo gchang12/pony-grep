@@ -13,6 +13,12 @@
   });
   */
 
+  /* TODO
+  Create Selenium tests to test form input and bad episodes
+  Dropdown menus should be visible on mobile
+  Deploy fix to regex input validation
+  */
+
 </script>
 
 <template>
