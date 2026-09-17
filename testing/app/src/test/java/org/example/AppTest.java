@@ -12,6 +12,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.NoSuchElementException;
 
 import java.time.Duration;
 
@@ -24,6 +25,43 @@ class AppTest {
         String[] args = {};
         FirstScript.main(args);
     }
+
+    @Test void submitBlankForm() {
+        String url = "http://localhost:3000/search";
+        WebDriver driver = new ChromeDriver();
+        driver.get(url);
+        WebElement submitButton = driver.findElement(By.id("search"));
+        submitButton.click();
+        // TODO: Fuss with NuxtUI to see what to target
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(500));
+        WebElement resultsButton;
+        try {
+            resultsButton = driver.findElement(By.cssSelector("[data-state='closed'][data-slot='item']:not(data-disabled)"));
+        } catch (NoSuchElementException e) {
+            resultsButton = null;
+        }
+        assertNull(resultsButton);
+    }
+
+    @Test void searchFiM() {
+        String url = "http://localhost:3000/search";
+        WebDriver driver = new ChromeDriver();
+        driver.get(url);
+        WebElement dialoguePattern = driver.findElement(By.id("dialoguePattern"));
+        dialoguePattern.sendKeys("friendship is magic");
+        WebElement submitButton = driver.findElement(By.id("search"));
+        submitButton.click();
+        // TODO: Fuss with NuxtUI to see what to target
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(500));
+        WebElement resultsButton;
+        try {
+            resultsButton = driver.findElement(By.cssSelector("[data-state='closed'][data-slot='item']:not(data-disabled)"));
+        } catch (NoSuchElementException e) {
+            resultsButton = null;
+        }
+        assertNotNull(resultsButton);
+    }
+
 }
 
 
@@ -49,3 +87,16 @@ class FirstScript {
         driver.quit();
     }
 }
+
+/* TODO
+   // for all the different scenarios.
+   //Submit.
+   //Input 'friendship is magic' into search-bar and submit.
+   Input 'friendship is magic' into search-bar, input 'discord' and submit.
+   Input 'friendship is magic' into search-bar, input 'discord', select FiM seasons only, and submit.
+   Input 'friendship is magic' into search-bar, select FiM and EqG seasons, and submit.
+   Input '.' into search-bar, select no seasons, and submit.
+   // Bad regex
+   Input '?' into search-bar and submit.
+   Input 'friendship is magic' into search-bar, '?' into character-input, and submit.
+*/
