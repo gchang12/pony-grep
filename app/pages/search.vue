@@ -32,11 +32,24 @@
 
   const route = useRoute();
 
+  // TODO: Will muting these cause the page to load faster?
+  /*
   if (response1.status.value === "error") {
     response1.refresh();
   }
   if (response2.status.value === "error") {
     response2.refresh();
+  }
+  */
+
+  function regexIsValid(formData, field) {
+    try {
+      new RegExp(formData.get(field));
+      return true;
+    } catch {
+      document.getElementById(field).setCustomValidity("Invalid regex!");
+      return false;
+    }
   }
 
   function ponyGrep(e) {
@@ -56,17 +69,10 @@
     /* dialoguePattern */
     /* searchResults */
     // validate speaker and dialogue regexes
-    try {
-      new RegExp(formData.get("speaker"));
-    } catch {
-      document.getElementById("speaker").setCustomValidity("Invalid regex!");
-      return;
-    }
-    try {
-      new RegExp(formData.get("dialoguePattern"));
-    } catch {
-      document.getElementById("dialoguePattern").setCustomValidity("Invalid regex!");
-      return;
+    for (const field of ["speaker", "dialoguePattern"]) {
+      if (!regexIsValid(formData, field)) {
+        return;
+      };
     }
     // set values
     const transcriptLines = response1.data.value;
